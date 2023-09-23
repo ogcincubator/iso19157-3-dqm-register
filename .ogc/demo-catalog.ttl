@@ -1,0 +1,29 @@
+@prefix dcfg: <http://www.example.org/ogc/domain-cfg#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix profiles: <http://www.opengis.net/def/metamodel/profiles/> .
+
+_:iso19157-3-sample a dcat:Catalog ;
+  dct:title "Profile vocabularies" ;
+  dcat:dataset _:properties-uplift, _:examples ;
+  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
+    ".ogc/profiles.ttl" ;
+  dcfg:ignoreProfileArtifactErrors true ;
+.
+
+_:properties-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
+  dct:description "Profile vocabularies uplift" ;
+  dcfg:glob "**/*.csv.json" ;
+  dcfg:hasUpliftDefinition [
+    dcfg:order 1 ;
+    dcfg:file "properties-uplift.yml" ;
+  ] ;
+.
+
+_:examples a dcat:Dataset, dcfg:DomainConfiguration ;
+  dct:identifier "examples" ;
+  dct:description "Entailment and validation for examples" ;
+  dcfg:glob "./*.ttl" ;
+  dct:conformsTo profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc, profiles:vocprez_ogc ;
+.

@@ -1,0 +1,126 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix policy: <http://www.opengis.net/def/metamodel/ogc-na/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/101> a skos:Concept ;
+    dct:description "The measure will take the  value true if all the requirements in the referred data product specification are fulfilled" ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:definition "indication that all requirements in the referred data product specification are fulfilled" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "data product specification passed" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/102> a skos:Concept ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:definition "number of data product specification requirements that are not fulfilled by the current product/dataset" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "data product specification fail count" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/11> a skos:Concept ;
+    dct:description "Which surfaces may overlap and which shall not is application dependent. Not all overlapping surfaces are necessarily erroneous. When reporting this data quality measure, the types of feature classes corresponding to the illegal overlapping surfaces shall be reported as well. See also: https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/204" ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:altLabel "overlapping surfaces" ;
+    skos:definition "total number of erroneous overlaps within the data" ;
+    skos:example "Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "number of invalid overlaps of surfaces" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/119> a skos:Concept ;
+    dct:description "The value true indicates physical structure conflict" ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/retired> ;
+    skos:definition "indication that items are stored in conflict with the physical structure of the dataset" ;
+    skos:example "True (the dataset is stored in wrong file format, a shape file instead of gml)" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "physical structure conflicts" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/12> a skos:Concept ;
+    dct:description "The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset" ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/draft> ;
+    skos:definition "number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset" ;
+    skos:example "0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "non-compliance rate with respect to the rules of the conceptual schema" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/14> a skos:Concept ;
+    dct:description "The value true indicates that an item is not in conformance with its value domain)" ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:definition "indication of if an item is not in conformance with its value domain" ;
+    skos:example "True – a feature with attribute colour has the value ‘blau’, but it does not exist in the specified value domain: red, green, blue, yellow" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "value domain non-conformance" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/21> a skos:Concept ;
+    dct:description "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. The data quality measure counts the number of errors of this kind." ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:altLabel "extraneous nodes" ;
+    skos:definition "number of faulty point-curve connections in the dataset" ;
+    skos:example "Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists)." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "number of faulty point-curve connections" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/4> a skos:Concept ;
+    dct:description "count of all items in the data that are incorrectly extracted with duplicate geometries" ;
+    dct:hasVersion "1.0" ;
+    dct:source "ISO/TS 19138 (modified)" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:definition "total number of exact duplications of feature instances within the data" ;
+    skos:example "Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other, two (or more) curves collected on top of each other, or two (or more) surfaces collected on top of each other." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "number of duplicate feature instances" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/47> a skos:Concept ;
+    dct:description "The true values of the observed coordinates X and Y are known as xt and yt. From this the estimator" ;
+    dct:hasVersion "2.0" ;
+    policy:status <http://www.opengis.net/def/status/superseded> ;
+    skos:altLabel "RMSEP" ;
+    skos:definition "radius of a circle around the given point, in which the true value lies with probability P" ;
+    skos:editorialNote "s =  RMSEP, linear root mean square error of planimetry" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "root mean square error of planimetry" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/59> a skos:Concept ;
+    dct:description "The value indicates the probability for the true value of being within a lower and the upper limit of the interval." ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:definition "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99,8 %" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "time accuracy at 99,8 % significance level" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure/62> a skos:Concept ;
+    dct:description """The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+MCM (i,j) = [# items of class (i) classified as class (j)]
+The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""" ;
+    dct:hasVersion "1.0" ;
+    policy:status <http://www.opengis.net/def/status/valid> ;
+    skos:altLabel "confusion matrix" ;
+    skos:definition "matrix that indicates the number of items of class (i) classified as class (j)" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> ;
+    skos:prefLabel "misclassification matrix" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure> a skos:ConceptScheme ;
+    skos:prefLabel "ISO19157-3 quality measures" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2023-05-16T11:43:57.671116"^^xsd:dateTime ;
+    prov:startedAtTime "2023-05-16T11:43:57.221475"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:e494f473b6f607d16bc1af947c06c0a85287c1cc" ;
+            rdfs:seeAlso <file:///home/runner/work/iso19157-3-sample/iso19157-3-sample/iso19156-3-examples.csv.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.0.0" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "cb7c5d96-3d57-47c8-8c6d-5ada21b9845e" ] .
+

@@ -1,0 +1,63 @@
+name: On push
+
+on:
+  workflow_dispatch:
+    inputs:
+      changed-files:
+        description: Changed files for processing
+        type: string
+  push:
+    branches:
+      - master
+
+jobs:
+  uplift:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+        with:
+          since_last_remote_commit: true
+          separator: ','
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/opengeospatial/ogc-na-tools.git
+      - name: Process files
+        env:
+          DB_USERNAME: admin
+          DB_PASSWORD: ${{ secrets.UPLOAD_GRAPH_STORE_PASSWORD }}
+        run: |
+          MOD_FILES=${{ steps.changed-files.outputs.all_changed_files }},${{ inputs.changed-files }}
+          echo Changed files: ${MOD_FILES}
+          find . -name '*.csv' | while read CSV_FILE; do python -m ogc.na.ingest_json \
+            --skip-on-missing-context --json-ld --context csv2python.yml "${CSV_FILE}" > "${CSV_FILE}.json"
+          done
+          python -m ogc.na.ingest_json --batch --use-git-status --skip-on-missing-context \
+            --json-ld --ttl --work-dir . --domain-config .ogc/catalog.ttl
+          python -m ogc.na.ingest_json --batch --skip-on-missing-context \
+            --json-ld --ttl --work-dir . --domain-config .ogc/catalog.ttl \
+            ${MOD_FILES}
+          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
+            --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
+            --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data
+          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl \
+            --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
+            --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data \
+            -m ${MOD_FILES}
+      - name: Add and commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Semantic uplift on push"
+          default_author: github_actions

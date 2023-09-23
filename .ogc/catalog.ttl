@@ -1,0 +1,48 @@
+@prefix dcfg: <http://www.example.org/ogc/domain-cfg#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix profiles: <http://www.opengis.net/def/metamodel/profiles/> .
+
+_:iso19157-3-register a dcat:Catalog ;
+  dct:title "ISO register components uplift" ;
+  dcat:dataset _:master-uplift , _:desc-uplift, _:param-uplift, _:formula-uplift , _:basic-uplift;
+  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
+    ".ogc/profiles.ttl" ;
+  dcfg:ignoreProfileArtifactErrors true ;
+.
+
+_:master-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
+  dct:description "Master sheet uplift" ;
+  dcfg:glob "**/dqm-master.csv.json" ;
+  dcfg:hasUpliftDefinition [
+    dcfg:order 1 ;
+    dcfg:file "master-uplift.yml" ;
+  ] ;
+.
+
+_:desc-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
+  dct:description "Description sheet uplift" ;
+  dcfg:glob "**/dqm-desc.csv.json" ;
+  dcfg:hasUpliftDefinition [
+    dcfg:order 1 ;
+    dcfg:file "desc-uplift.yml" ;
+  ] ;
+.
+
+_:param-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
+  dct:description "Master sheet uplift" ;
+  dcfg:glob "**/dqm-param.csv.json" ;
+  dcfg:hasUpliftDefinition [
+    dcfg:order 1 ;
+    dcfg:file "param-uplift.yml" ;
+  ] ;
+
+                .
+
+_:examples a dcat:Dataset, dcfg:DomainConfiguration ;
+  dct:identifier "examples" ;
+  dct:description "Entailment and validation for examples" ;
+  dcfg:glob "*.ttl" ;
+  dct:conformsTo profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc, profiles:vocprez_ogc ;
+.
