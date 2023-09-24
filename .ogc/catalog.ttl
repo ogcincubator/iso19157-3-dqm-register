@@ -7,10 +7,22 @@
 _:iso19157-3-register a dcat:Catalog ;
   dct:title "ISO register components uplift" ;
   dcat:dataset _:master-uplift , _:desc-uplift, _:param-uplift, _:formula-uplift , _:basic-uplift;
-  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
-    ".ogc/profiles.ttl" ;
+  # dcat:dataset  _:param-uplift;
+#  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
+#    ".ogc/profiles.ttl" ;
   dcfg:ignoreProfileArtifactErrors true ;
 .
+
+
+_:basic-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
+  dct:description "Basic Measure sheet uplift" ;
+  dcfg:glob "**/dqm-basic.csv.json" ;
+  dcfg:hasUpliftDefinition [
+    dcfg:order 1 ;
+    dcfg:file "basic-uplift.yml" ;
+  ] ;
+.
+
 
 _:master-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dct:description "Master sheet uplift" ;
@@ -36,6 +48,15 @@ _:param-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
     dcfg:file "param-uplift.yml" ;
+  ] ;
+.
+
+_:formula-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
+  dct:description "Master sheet uplift" ;
+  dcfg:glob "**/dqm-formula.csv.json" ;
+  dcfg:hasUpliftDefinition [
+    dcfg:order 1 ;
+    dcfg:file "formula-uplift.yml" ;
   ] ;
 
                 .

@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "policy": "http://www.opengis.net/def/metamodel/ogc-na/",
+    "basicMeasureID": "@id",
+    "Concept": "skos:scopeNote",
+    "Name": "skos:prefLabel",
+    "Alias": "skos:altLabel",
+    "Definition": "skos:definition",
+    "Text description": "dct:description",
+    "Source reference": "dct:source",
+    "example": "skos:example",
+    "Key": "skos:editorialNote",
+    "Version": "dct:hasVersion",
+    "Status": {
+      "@id": "policy:status",
+      "@type": "@id",
+      "@context": {
+        "@base": "http://www.opengis.net/def/status/"
+      }
+    },
+    "concepts": {
+      "@reverse": "skos:inScheme"
+    }
+  },
+  "@id": "https://standards.isotc211.org/19157/-3/1/req/content/basicQualityMeasure",
+  "@type": "skos:ConceptScheme",
+  "skos:prefLabel": "ISO19157-3 basic quality measures",
+  "concepts": [
+    {
+      "basicMeasureID": "https://standards.isotc211.org/19157/-3/1/dqc/basicMeasure/1",
+      "Name": "error indicator",
+      "Concept": "counting related basic measure",
+      "Definition": "indicator that an item is in error",
+      "example": "if the value is true the item is not correct",
+      "ValueType": null,
+      "@type": "skos:Concept"
+    }
+  ]
+}

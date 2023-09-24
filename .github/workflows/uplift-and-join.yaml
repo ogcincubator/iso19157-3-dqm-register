@@ -26,9 +26,9 @@ jobs:
           DB_USERNAME: admin
           DB_PASSWORD: ${{ secrets.UPLOAD_GRAPH_STORE_PASSWORD }}
         run: |
-          find . -name 'dqm-*.csv' | while read CSV_FILE; do python -m ogc.na.ingest_json \
+          # find . -name 'dqm-*.csv' | while read CSV_FILE; do python -m ogc.na.ingest_json \
             --skip-on-missing-context --json-ld --context csv2python.yml "${CSV_FILE}" > "${CSV_FILE}.json"
-          done
+          # done
           python -m ogc.na.ingest_json --batch --use-git-status --skip-on-missing-context \
             --json-ld --ttl --work-dir . --domain-config .ogc/catalog.ttl
           python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
