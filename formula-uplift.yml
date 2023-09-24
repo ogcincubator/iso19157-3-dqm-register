@@ -1,0 +1,40 @@
+transform:
+  # Keep data only
+  - '.data'
+  # Set fields with empty or '-' value to null
+  - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
+  # Remove colons in field names with spaces
+  - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  # turn known fields with space separated lists into arrays
+  - |
+        walk(if (type == "object" and (.formula)) then ( .formula |= split("\n") ) else . end)
+  # Add ConceptScheme
+  - |
+    {
+      "@id": "https://standards.isotc211.org/19157/-3/1/req/content/formulaType",
+      "@type": "skos:ConceptScheme",
+      "skos:prefLabel": "ISO19157-3 quality measures extended Description",
+      "concepts": .
+    }
+
+types:
+  '$.concepts[*]': skos:Concept
+
+context:
+  $:
+    # formulaID,mathematicalFormula ,language,languageVersion,key
+    # https://standards.isotc211.org/191,http://www.w3.org/1998/Math/MathML,1.0,For i=1..N calculate the absolute error in the horizontal dimension at each point.
+    skos: http://www.w3.org/2004/02/skos/core#
+    dct: http://purl.org/dc/terms/
+    policy: http://www.opengis.net/def/metamodel/ogc-na/
+    dqm: http://www.opengis.net/def/metamodel/isodqm/
+    formulaID: '@id'
+    formulaTypeID: '@id'
+    mathematicalFormula: skos:definition
+    language:
+      'type': '@id'
+      '@id': dqm:formulaLanguage
+    languageVersion: dqm:formulaLanguageVersion
+    key: dqm:formulaKey
+    concepts:
+      '@reverse': skos:inScheme

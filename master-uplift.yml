@@ -1,0 +1,49 @@
+transform:
+  # Keep data only
+  - '.data'
+  # Set fields with empty or '-' value to null
+  - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
+  # Remove colons in field names with spaces
+  - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  # Add ConceptScheme
+  - |
+    {
+      "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure",
+      "@type": "skos:ConceptScheme",
+      "skos:prefLabel": "ISO19157-3 quality measures",
+      "concepts": .
+    }
+
+types:
+  '$.concepts[*]': skos:Concept
+
+context:
+  $:
+    # name,alias,elementName,basicMeasure,definition,description,parameter,
+    # Value type,Value structure,Source reference,example,Measure Identifier,Version,Status,ID
+    skos: http://www.w3.org/2004/02/skos/core#
+    dct: http://purl.org/dc/terms/
+    policy: http://www.opengis.net/def/metamodel/ogc-na/
+    dqm: http://www.opengis.net/def/metamodel/isodqm/
+    ID: '@id'
+    Measure Identifier: skos:notation
+    name: skos:prefLabel
+    alias: skos:altLabel
+    elementName: dqm:elementName
+    definition: skos:definition
+    description: dct:description
+    parameter:
+      '@id': 'https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureParameter'
+      '@type': '@id'
+    Value Type: dqm:valueType
+    Value structure: dqm:valueStructure
+    Source reference: dct:source
+    example: skos:example
+    Version: dct:hasVersion
+    Status:
+      '@id': policy:status
+      '@type': '@id'
+      '@context':
+        '@base': http://www.opengis.net/def/status/
+    concepts:
+      '@reverse': skos:inScheme
