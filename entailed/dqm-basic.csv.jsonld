@@ -1,5 +1,16 @@
 [
   {
+    "@id": "https://standards.isotc211.org/19157/-3/1/req/content/basicQualityMeasure",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ISO19157-3 basic quality measures"
+      }
+    ]
+  },
+  {
     "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
@@ -11,22 +22,205 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
       }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "_:N6e92dac5e07e480e8bca0f48b110b63a"
+        "@id": "_:Nd2a623be23804c639bac14510ea35f61"
+      },
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb1"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "_:N75d9cf5ff47147c8b94792d8bd50c15a"
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb2"
+      },
+      {
+        "@id": "_:N4915282e5d6d4c27870d21fbb3cd9071"
       }
     ]
   },
   {
-    "@id": "_:N6e92dac5e07e480e8bca0f48b110b63a",
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb2",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:03:31.527570"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:03:31.507859"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb3"
+      },
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb4"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb1"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb5"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb3",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb4",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-basic.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb5",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "c75c9020-b6c2-4d6c-b469-2eddea39241d"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb1",
+    "@type": [
+      "https://schema.org/SoftwareApplication",
+      "http://www.w3.org/ns/prov#Agent"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4915282e5d6d4c27870d21fbb3cd9071",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:03:32.787347"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:03:32.769686"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N6c0edac923114279bb766fa2e6f70f4a"
+      },
+      {
+        "@id": "_:Nf53a69b5a11a47afb5027f80d08f8f88"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:Nd2a623be23804c639bac14510ea35f61"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:N62933dce80c34da7a461f00498042102"
+      }
+    ]
+  },
+  {
+    "@id": "_:N62933dce80c34da7a461f00498042102",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "c75c9020-b6c2-4d6c-b469-2eddea39241d"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd2a623be23804c639bac14510ea35f61",
     "@type": [
       "http://www.w3.org/ns/prov#Agent",
       "https://schema.org/SoftwareApplication"
@@ -53,7 +247,75 @@
     ]
   },
   {
-    "@id": "_:N75d9cf5ff47147c8b94792d8bd50c15a",
+    "@id": "_:N6c0edac923114279bb766fa2e6f70f4a",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf53a69b5a11a47afb5027f80d08f8f88",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.jsonld",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/ld+json"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:Nc60390e74ad84af8842bf5238daa4326"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:Nf42c73fc46324e0097a6ca41f8b1e363"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf42c73fc46324e0097a6ca41f8b1e363",
     "@type": [
       "http://www.w3.org/ns/prov#Activity"
     ],
@@ -70,36 +332,36 @@
     "http://www.w3.org/ns/prov#endedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:59.319362"
+        "@value": "2023-09-25T16:03:32.823411"
       }
     ],
     "http://www.w3.org/ns/prov#startedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:59.302596"
+        "@value": "2023-09-25T16:03:32.769686"
       }
     ],
     "http://www.w3.org/ns/prov#used": [
       {
-        "@id": "_:N66dd0abeea2e47d18c5dc00836f5181e"
+        "@id": "_:N1a5b90a2e2b34133a2f3c53f8c81ec8c"
       },
       {
-        "@id": "_:Nf816ad098ce948f79bc116b823071d71"
+        "@id": "_:Nb9d3dd5a0de64454bcc1c2415ef44ef5"
       }
     ],
     "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "_:N6e92dac5e07e480e8bca0f48b110b63a"
+        "@id": "_:Nc60390e74ad84af8842bf5238daa4326"
       }
     ],
     "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@id": "_:N632e00eb942b4f2eacd319c75a606913"
+        "@id": "_:N18738c75dc9a4bb1b61f3750db6e3cd8"
       }
     ]
   },
   {
-    "@id": "_:N66dd0abeea2e47d18c5dc00836f5181e",
+    "@id": "_:N1a5b90a2e2b34133a2f3c53f8c81ec8c",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -110,7 +372,28 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb9d3dd5a0de64454bcc1c2415ef44ef5",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -120,7 +403,198 @@
     ]
   },
   {
-    "@id": "_:Nf816ad098ce948f79bc116b823071d71",
+    "@id": "_:N18738c75dc9a4bb1b61f3750db6e3cd8",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "c75c9020-b6c2-4d6c-b469-2eddea39241d"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc60390e74ad84af8842bf5238daa4326",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb6",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:02:33.054284"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:02:32.988493"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb7"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb8"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb9"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb8",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb7",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/json"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:f7ceb303bd607cf3cbf5254c7edb9a7d2e0a946c"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-basic.csv.json"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfff7eb42cad146acbabf8c5dcaa56ebcb9",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "249c9aea-872e-4e75-b817-b32377c8155e"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.rdf",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/rdf+xml"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:Ndea2fb935a454f8aa38719f8533c96e1"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:N751f3435caf046169abc8cd686f76da7"
+      }
+    ]
+  },
+  {
+    "@id": "_:N751f3435caf046169abc8cd686f76da7",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:03:32.807252"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-25T16:03:32.769686"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N5d972a16781a403aa87a04834c30c5cb"
+      },
+      {
+        "@id": "_:N6e40a3b05e6444d483a7ec4fba83e670"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:Ndea2fb935a454f8aa38719f8533c96e1"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:N07324ea9fd6449859fe8ede9dc385028"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5d972a16781a403aa87a04834c30c5cb",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -131,20 +605,68 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-basic.csv.ttl"
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl"
       }
     ]
   },
   {
-    "@id": "_:N632e00eb942b4f2eacd319c75a606913",
+    "@id": "_:N6e40a3b05e6444d483a7ec4fba83e670",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:4c1c1a107c202da3f5204d791de9d44fa8345d3b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N07324ea9fd6449859fe8ede9dc385028",
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "f24e5326-ed40-491a-92f8-726639eb7f7b"
+        "@value": "c75c9020-b6c2-4d6c-b469-2eddea39241d"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndea2fb935a454f8aa38719f8533c96e1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
       }
     ]
   },
@@ -176,399 +698,6 @@
     "http://www.w3.org/2004/02/skos/core#scopeNote": [
       {
         "@value": "counting related basic measure"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/req/content/basicQualityMeasure",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "ISO19157-3 basic quality measures"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb6d15d559ba64107862683bb87438b40b1",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:17.192588"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:17.096764"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:nb6d15d559ba64107862683bb87438b40b2"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:nb6d15d559ba64107862683bb87438b40b3"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:nb6d15d559ba64107862683bb87438b40b4"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb6d15d559ba64107862683bb87438b40b4",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "4b2bf6eb-322e-4ccd-ad3e-e023b4c489ba"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb6d15d559ba64107862683bb87438b40b2",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:93f06811f1f3adafc21d2a530d5fda10c082622a"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-basic.csv.json"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb6d15d559ba64107862683bb87438b40b3",
-    "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.rdf",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/rdf+xml"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:Nae47dae1beed46c0aa6bb688b0c23de6"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:N18c61e1d5c384140a67c6e9e530e8c2d"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nae47dae1beed46c0aa6bb688b0c23de6",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:N18c61e1d5c384140a67c6e9e530e8c2d",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:59.334441"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:59.302596"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:N91ea671403844de08ba05ed5ef86b085"
-      },
-      {
-        "@id": "_:Ndc236e2777634f13b2782e9e1be08496"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:Nae47dae1beed46c0aa6bb688b0c23de6"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:N66bcfc530b594a7aa9a0ddb00473b1ca"
-      }
-    ]
-  },
-  {
-    "@id": "_:N91ea671403844de08ba05ed5ef86b085",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-basic.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:Ndc236e2777634f13b2782e9e1be08496",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N66bcfc530b594a7aa9a0ddb00473b1ca",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "f24e5326-ed40-491a-92f8-726639eb7f7b"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.jsonld",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/ld+json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:N59ab04410655472cb809c1acd9f992d9"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:Ne686b7669bb94e3b880509efb95a5548"
-      }
-    ]
-  },
-  {
-    "@id": "_:Ne686b7669bb94e3b880509efb95a5548",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:59.349696"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-25T15:44:59.302596"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:N1a28d728a70e4026aaba761e6beeda2e"
-      },
-      {
-        "@id": "_:N616129070e514e29aa7b28a85f8a2df6"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:N59ab04410655472cb809c1acd9f992d9"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:N3a62d1c4ca4844dda88f813c02d3d784"
-      }
-    ]
-  },
-  {
-    "@id": "_:N1a28d728a70e4026aaba761e6beeda2e",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-basic.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N616129070e514e29aa7b28a85f8a2df6",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:bb1a9da54ff93311c3c8be3ebe70a1f8032be896"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N3a62d1c4ca4844dda88f813c02d3d784",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "f24e5326-ed40-491a-92f8-726639eb7f7b"
-      }
-    ]
-  },
-  {
-    "@id": "_:N59ab04410655472cb809c1acd9f992d9",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
       }
     ]
   }
