@@ -1,132 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:dqm="http://www.opengis.net/def/metamodel/isodqm/"
    xmlns:prov="http://www.w3.org/ns/prov#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="N91491bcbfa5b42ef9aaf932bc295ce2c">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-param.csv.ttl"/>
-    <dct:hasVersion>git:815c4772123368fed7aeeb8d71ec9ebcfd099568</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab1">
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl">
-    <prov:wasAttributedTo rdf:nodeID="Nc17902746249458fbc28d54edba30782"/>
-    <dct:format>text/turtle</dct:format>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <prov:wasGeneratedBy rdf:nodeID="N7d965ff4aea04ab0a55a2a98c89675a7"/>
+  <rdf:Description rdf:nodeID="N9bfc578c71a54e0595e9be533ad2c440">
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:32:57.517275</prov:startedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="N68291480e6864424bdc2b5f81c930cd9"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasInformedBy rdf:nodeID="N29022cea5b62479890519c4e6558d79e"/>
+    <prov:used rdf:nodeID="N85f88aca150846edb0e9f9f01cb6262c"/>
+    <prov:used rdf:nodeID="N1a961803fcd44834ba5c8614785e23e3"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:32:57.534525</prov:endedAtTime>
+    <rdfs:label>Entailment and validation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b2">
+  <rdf:Description rdf:nodeID="N1a961803fcd44834ba5c8614785e23e3">
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>application/json</dct:format>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-param.csv.json"/>
-    <dct:hasVersion>git:1ff6a2656bfea3b25d0d7a8ee14fdbd0cca8fbec</dct:hasVersion>
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl"/>
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nee485ebb5149428bbf04fb2096be2113">
-    <dct:format>text/turtle</dct:format>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-param.csv.ttl"/>
-    <dct:hasVersion>git:815c4772123368fed7aeeb8d71ec9ebcfd099568</dct:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncfc6528f0e604314bfa7b27969d77252">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dct:hasVersion>git:815c4772123368fed7aeeb8d71ec9ebcfd099568</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>application/rdf+xml</dct:format>
-    <prov:wasGeneratedBy rdf:nodeID="N1c51215e5d404200a37856049590c168"/>
-    <prov:wasAttributedTo rdf:nodeID="N33ee0e95591649d2a190fc21548a2f19"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1c51215e5d404200a37856049590c168">
-    <prov:used rdf:nodeID="N91491bcbfa5b42ef9aaf932bc295ce2c"/>
-    <prov:used rdf:nodeID="Ncfc6528f0e604314bfa7b27969d77252"/>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab2">
+    <prov:used rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab3"/>
+    <prov:used rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab4"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T09:09:45.627810</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T09:09:45.649483</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="Nf2e0aa2a18394e1498b211e3c5a30f3a"/>
+    <prov:wasInformedBy rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab5"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:32:56.041949</prov:endedAtTime>
     <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="N33ee0e95591649d2a190fc21548a2f19"/>
+    <prov:wasAssociatedWith rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab1"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:32:56.028087</prov:startedAtTime>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N33ee0e95591649d2a190fc21548a2f19">
+  <rdf:Description rdf:nodeID="N1538e02a72dc4c0d9c6f02c4ad8ed5eb">
     <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
     <rdfs:label>OGC-NA tools</rdfs:label>
     <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
-    <dct:hasVersion>0.3.14</dct:hasVersion>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-1/1/dqc/content/measureParameter/MP2">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/measureParameter"/>
-    <dqm:valueType>Integer</dqm:valueType>
-    <skos:definition>number of classes under consideration</skos:definition>
-    <skos:prefLabel>n</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl">
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
+    <prov:wasAttributedTo rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab1"/>
+    <prov:wasAttributedTo rdf:nodeID="N68291480e6864424bdc2b5f81c930cd9"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+    <prov:wasGeneratedBy rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab2"/>
+    <prov:wasGeneratedBy rdf:nodeID="N9bfc578c71a54e0595e9be533ad2c440"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b1">
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T09:08:40.798967</prov:endedAtTime>
-    <prov:wasAssociatedWith rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b3"/>
-    <prov:wasInformedBy rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b4"/>
-    <prov:used rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b2"/>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.rdf">
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+    <prov:wasGeneratedBy rdf:nodeID="Nd206dc603b9d40f8aabf665a48fb198a"/>
+    <prov:wasAttributedTo rdf:nodeID="N1538e02a72dc4c0d9c6f02c4ad8ed5eb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab7">
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-param.csv.json"/>
+    <dcterms:hasVersion>git:9352b5598547dc38d8dab7d9c22bf781130d8906</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab6">
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T09:08:40.726531</prov:startedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab8"/>
+    <prov:wasInformedBy rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab9"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:31:43.107908</prov:endedAtTime>
+    <prov:used rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab7"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:31:43.012002</prov:startedAtTime>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/req/content/measureParameter">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <skos:prefLabel>ISO19157-3 quality measure Parameters</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd086e2ad95824eb285819ddfb8cd47c3">
-    <dct:identifier>d78aa953-c64e-4152-bc60-fb6e7c62acb4</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-1/1/dqc/content/measureParameter/MP1">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/measureParameter"/>
-    <skos:definition>minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Real</dqm:valueType>
-    <skos:prefLabel>Sample size</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf2e0aa2a18394e1498b211e3c5a30f3a">
-    <dct:identifier>d78aa953-c64e-4152-bc60-fb6e7c62acb4</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N7d965ff4aea04ab0a55a2a98c89675a7">
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasInformedBy rdf:nodeID="Nd086e2ad95824eb285819ddfb8cd47c3"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T09:09:45.627810</prov:startedAtTime>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:used rdf:nodeID="Nd4a0f33a000c4eab81b67986035243d5"/>
-    <prov:used rdf:nodeID="Nee485ebb5149428bbf04fb2096be2113"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T09:09:45.638879</prov:endedAtTime>
-    <prov:wasAssociatedWith rdf:nodeID="Nc17902746249458fbc28d54edba30782"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc17902746249458fbc28d54edba30782">
-    <dct:hasVersion>0.3.14</dct:hasVersion>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+  <rdf:Description rdf:nodeID="N68291480e6864424bdc2b5f81c930cd9">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
     <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
     <rdfs:label>OGC-NA tools</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b3">
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <dct:hasVersion>0.3.14</dct:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd4a0f33a000c4eab81b67986035243d5">
-    <dct:hasVersion>git:815c4772123368fed7aeeb8d71ec9ebcfd099568</dct:hasVersion>
-    <dct:format>text/turtle</dct:format>
+  <rdf:Description rdf:nodeID="N85f88aca150846edb0e9f9f01cb6262c">
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
     <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nf89eb50a98e845a9991ccf24157eab93b4">
-    <dct:identifier>9a0c96c3-2a82-4719-a017-cd156849fcbb</dct:identifier>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab8">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4575cfa23ef4181b04e826caddccee4">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl"/>
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc9ce610bc5a14933a8c187f740213085">
+    <dcterms:identifier>e62cd734-662a-4212-b3d2-47170d97bbb4</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-1/1/dqc/content/measureParameter/MP1">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Sample size</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/measureParameter"/>
+    <dqm:valueType>Real</dqm:valueType>
+    <skos:definition>minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-1/1/dqc/content/measureParameter/MP2">
+    <dqm:valueType>Integer</dqm:valueType>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/measureParameter"/>
+    <skos:definition>number of classes under consideration</skos:definition>
+    <skos:prefLabel>n</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab4">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-param.csv.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab3">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd206dc603b9d40f8aabf665a48fb198a">
+    <prov:used rdf:nodeID="Ne4575cfa23ef4181b04e826caddccee4"/>
+    <prov:used rdf:nodeID="N04d4ff47c9da4948b93a6e894de58de8"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:32:57.517275</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-25T15:32:57.550375</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="Nc9ce610bc5a14933a8c187f740213085"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="N1538e02a72dc4c0d9c6f02c4ad8ed5eb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N04d4ff47c9da4948b93a6e894de58de8">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:96c2e84a42f05f5fa05f1d4acb047059935f8e33</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab5">
+    <dcterms:identifier>e62cd734-662a-4212-b3d2-47170d97bbb4</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29022cea5b62479890519c4e6558d79e">
+    <dcterms:identifier>e62cd734-662a-4212-b3d2-47170d97bbb4</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndd443fd742e544d5af1c55efb733793ab9">
+    <dcterms:identifier>c535140f-7eea-4c25-892a-1df9b0f98322</dcterms:identifier>
   </rdf:Description>
 </rdf:RDF>
