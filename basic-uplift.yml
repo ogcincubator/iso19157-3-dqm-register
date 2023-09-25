@@ -8,9 +8,9 @@ transform:
   # Add ConceptScheme
   - |
     {
-      "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure",
+      "@id": "https://standards.isotc211.org/19157/-3/1/req/content/basicQualityMeasure",
       "@type": "skos:ConceptScheme",
-      "skos:prefLabel": "ISO19157-3 quality measures",
+      "skos:prefLabel": "ISO19157-3 basic quality measures",
       "concepts": .
     }
 
@@ -22,13 +22,14 @@ context:
     skos: http://www.w3.org/2004/02/skos/core#
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
-    ID: '@id'
+    basicMeasureID: '@id'
+    Concept: skos:scopeNote
     Name: skos:prefLabel
     Alias: skos:altLabel
     Definition: skos:definition
     Text description: dct:description
     Source reference: dct:source
-    Example Text Description: skos:example
+    example: skos:example
     Key: skos:editorialNote
     Version: dct:hasVersion
     Status:
