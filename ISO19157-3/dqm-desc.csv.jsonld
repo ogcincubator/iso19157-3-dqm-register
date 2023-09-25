@@ -4,11 +4,25 @@
     "dct": "http://purl.org/dc/terms/",
     "policy": "http://www.opengis.net/def/metamodel/ogc-na/",
     "dqm": "http://www.opengis.net/def/metamodel/isodqm/",
+    "@base": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/",
     "measureDescriptionID": "@id",
+    "measureID": {
+      "@type": "@id",
+      "@id": "dqm:describes",
+      "@reverse": "dqm:hasDescription",
+      "@context": {
+        "@base": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    },
     "textDescription": "skos:definition",
+    "prefLabel": "skos:prefLabel",
+    "sequence": "dqm:sequence",
     "extendedDescription": {
       "@id": "http://www.opengis.net/def/metamodel/isodqm/illustration",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "@base": "https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/"
+      }
     },
     "formula": {
       "@id": "http://www.opengis.net/def/metamodel/isodqm/formula",
@@ -23,7 +37,8 @@
   "skos:prefLabel": "ISO19157-3 quality measures extended Description",
   "concepts": [
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49",
+      "measureID": "49",
+      "sequence": "0",
       "extendedDescription": [],
       "formula": [
         "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1",
@@ -38,83 +53,102 @@
         "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10"
       ],
       "textDescription": "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A comparison of the data (source) and the control (reference) is calculated in the following manner:",
+      "measureDescriptionID": "49-0",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1",
+      "measureID": "28",
+      "sequence": "1",
       "extendedDescription": [],
       "formula": [
         "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1"
       ],
       "textDescription": null,
+      "measureDescriptionID": "28-1",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2",
+      "measureID": "28",
+      "sequence": "2",
       "extendedDescription": [],
       "formula": [
         "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2"
       ],
       "textDescription": null,
+      "measureDescriptionID": "28-2",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3",
+      "measureID": "28",
+      "sequence": "3",
       "extendedDescription": [],
       "formula": [
         "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3"
       ],
       "textDescription": null,
+      "measureDescriptionID": "28-3",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4",
+      "measureID": "28",
+      "sequence": "4",
       "extendedDescription": [],
       "formula": [
         "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4"
       ],
       "textDescription": null,
+      "measureDescriptionID": "28-4",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28",
+      "measureID": "28",
+      "sequence": null,
       "extendedDescription": [],
       "formula": [],
       "textDescription": "0,054 meter",
+      "measureDescriptionID": "28-null",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5",
+      "measureID": "5",
+      "sequence": null,
       "extendedDescription": [],
       "formula": [],
       "textDescription": "The value true indicates that an item is missing.",
+      "measureDescriptionID": "5-null",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5example",
+      "measureID": "5",
+      "sequence": "1",
       "extendedDescription": [],
       "formula": [],
       "textDescription": "A data product specification requires all towers higher than 300 m to be captured. The data quality measure \u201cmissing item\u201d allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type \u201ctower\u201d (name depends on the application schema), is missing.\nData quality scope: all towers with height > 300Example result of a completeness evaluation of a particular dataset:missing item = true fortower.name = \u201cEiffel Tower, Paris, France\u201dtower.name = \u201cBeijing Tower, Beijing, China\u201d",
+      "measureDescriptionID": "5-1",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD62",
+      "measureID": "62",
+      "sequence": null,
       "extendedDescription": [
-        "https://github.com/i2vana/ISO19157-3/blob/main/img/62.PNG"
+        "62.PNG"
       ],
       "formula": [],
       "textDescription": "The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.\n\nMCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.",
+      "measureDescriptionID": "62-null",
       "@type": "skos:Concept"
     },
     {
-      "measureDescriptionID": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4",
+      "measureID": "4",
+      "sequence": null,
       "extendedDescription": [
-        "https://github.com/i2vana/ISO19157-3/blob/main/img/4_1.PNG",
-        "https://github.com/i2vana/ISO19157-3/blob/main/img/4_2.PNG",
-        "https://github.com/i2vana/ISO19157-3/blob/main/img/4_3.PNG"
+        "4_1.PNG",
+        "4_2.PNG",
+        "4_3.PNG"
       ],
       "formula": [],
       "textDescription": "count of all items in the data that are incorrectly extracted with duplicate geometries",
+      "measureDescriptionID": "4-null",
       "@type": "skos:Concept"
     }
   ]
