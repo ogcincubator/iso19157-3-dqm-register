@@ -32,7 +32,7 @@ jobs:
           done
           python -m ogc.na.ingest_json --batch --use-git-status --skip-on-missing-context \
             --json-ld --ttl --work-dir . --domain-config .ogc/demo-catalog.ttl
-          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
+          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch \
             --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
             --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data
       - name: Add and commit
