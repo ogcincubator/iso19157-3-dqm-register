@@ -1,5 +1,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
@@ -46,11 +47,11 @@
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4-null> a skos:Concept ;
-    dqm:illustration <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.PNG> ;
     skos:definition "count of all items in the data that are incorrectly extracted with duplicate geometries" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.PNG> .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/49-0> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1>,
@@ -78,26 +79,26 @@ Data quality scope: all towers with height > 300Example result of a completeness
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62-null> a skos:Concept ;
-    dqm:illustration <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.PNG> ;
     skos:definition """The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.PNG> .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> a skos:ConceptScheme ;
     skos:prefLabel "ISO19157-3 quality measures extended Description" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-09-25T15:31:43.195103"^^xsd:dateTime ;
-    prov:startedAtTime "2023-09-25T15:31:43.110736"^^xsd:dateTime ;
+    prov:endedAtTime "2023-09-25T15:44:17.366817"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-25T15:44:17.281036"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:9352b5598547dc38d8dab7d9c22bf781130d8906" ;
+            dct:hasVersion "git:93f06811f1f3adafc21d2a530d5fda10c082622a" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-desc.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.14" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "c535140f-7eea-4c25-892a-1df9b0f98322" ] .
+    prov:wasInformedBy [ dct:identifier "4b2bf6eb-322e-4ccd-ad3e-e023b4c489ba" ] .
 
