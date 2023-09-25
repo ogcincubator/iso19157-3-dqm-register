@@ -5,6 +5,11 @@ transform:
   - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
   # Remove colons in field names with spaces
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  - # generate an id for the description object from measure and sequence information
+  - |
+      walk(if (type == "object") then
+        ( .measureDescriptionID = "\(.measureID)-\(.sequence)" )
+        else . end)
   # turn known fields with space separated lists into arrays
   - |
         walk(if (type == "object") then 
@@ -30,11 +35,24 @@ context:
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
     dqm: http://www.opengis.net/def/metamodel/isodqm/
-    measureDescriptionID: '@id'
+    measureDescriptionID:
+      '@type': '@id'
+      '@context':
+        '@base': 'https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/'
+    measureID:
+      '@type': '@id'
+      '@id': dqm:describes
+      '@reverse': dqm:hasDescription
+      '@context':
+        '@base': 'https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/'
     textDescription: skos:definition
+    prefLabel: skos:prefLabel
+    sequence: dqm:sequence
     extendedDescription:
       '@id': 'http://www.opengis.net/def/metamodel/isodqm/illustration'
       '@type': '@id'
+      '@context':
+        '@base': 'https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/'
     formula:
         '@id': 'http://www.opengis.net/def/metamodel/isodqm/formula'
         '@type': '@id'
