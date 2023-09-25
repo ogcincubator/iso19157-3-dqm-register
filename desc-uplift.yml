@@ -7,7 +7,10 @@ transform:
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
   # turn known fields with space separated lists into arrays
   - |
-        walk(if (type == "object" and (.formula)) then ( .formula |= split("\n") ) else . end)
+        walk(if (type == "object") then 
+          ( if (.formula and .formula != "-") then .formula |= split("\n") else .formula = [] end | 
+            if (.extendedDescription and .extendedDescription != "-") then .extendedDescription |= split("\n") else .extendedDescription = [] end )
+          else . end)
   # Add ConceptScheme
   - |
     {
