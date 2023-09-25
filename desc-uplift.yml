@@ -35,6 +35,7 @@ context:
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
     dqm: http://www.opengis.net/def/metamodel/isodqm/
+    foaf: http://xmlns.com/foaf/0.1/
     '@base': 'https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/'
     measureDescriptionID: '@id'
     measureID:
@@ -47,7 +48,8 @@ context:
     prefLabel: skos:prefLabel
     sequence: dqm:sequence
     extendedDescription:
-      '@id': 'http://www.opengis.net/def/metamodel/isodqm/illustration'
+      #'@id': 'http://www.opengis.net/def/metamodel/isodqm/illustration'
+      '@id': foaf:depiction
       '@type': '@id'
       '@context':
         '@base': 'https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/'
