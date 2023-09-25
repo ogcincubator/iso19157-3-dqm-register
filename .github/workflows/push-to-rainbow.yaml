@@ -26,7 +26,7 @@ jobs:
           DB_USERNAME: admin
           DB_PASSWORD: ${{ secrets.UPLOAD_GRAPH_STORE_PASSWORD }}
         run: |
-          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl \
+          python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch \
             --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
             --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data
       - name: Add and commit
