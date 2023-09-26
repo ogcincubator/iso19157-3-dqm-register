@@ -7,48 +7,54 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/28> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-1>,
+<https://standards.isotc211.org/19157/-3/1/req/content/28> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-1>,
         <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-2>,
         <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-3>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-4>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-null> .
+        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-4> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/4> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4-null> .
+<https://standards.isotc211.org/19157/-3/1/req/content/4> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4> .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/49> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/49-0> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/5> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-1>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-null> .
+<https://standards.isotc211.org/19157/-3/1/req/content/5> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-1> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/62> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62-null> .
+<https://standards.isotc211.org/19157/-3/1/req/content/62> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28> a skos:Concept ;
+    skos:definition "0,054 meter" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "28" .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-1> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
     dqm:sequence "1" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "28-1" .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-2> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> ;
     dqm:sequence "2" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "28-2" .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-3> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> ;
     dqm:sequence "3" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "28-3" .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-4> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> ;
     dqm:sequence "4" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "28-4" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-null> a skos:Concept ;
-    skos:definition "0,054 meter" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
-
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4-null> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4> a skos:Concept ;
     skos:definition "count of all items in the data that are incorrectly extracted with duplicate geometries" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "4" ;
     foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.png>,
         <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.png>,
         <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.png> .
@@ -66,39 +72,43 @@
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_9> ;
     dqm:sequence "0" ;
     skos:definition "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A comparison of the data (source) and the control (reference) is calculated in the following manner:" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "49-0" .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5> a skos:Concept ;
+    skos:definition "The value true indicates that an item is missing." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "5" .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-1> a skos:Concept ;
     dqm:sequence "1" ;
     skos:definition """A data product specification requires all towers higher than 300 m to be captured. The data quality measure “missing item” allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type “tower” (name depends on the application schema), is missing.
 Data quality scope: all towers with height > 300Example result of a completeness evaluation of a particular dataset:missing item = true fortower.name = “Eiffel Tower, Paris, France”tower.name = “Beijing Tower, Beijing, China”""" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "5-1" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-null> a skos:Concept ;
-    skos:definition "The value true indicates that an item is missing." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> .
-
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62-null> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62> a skos:Concept ;
     skos:definition """The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
+    skos:prefLabel "62" ;
     foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.png> .
 
 <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> a skos:ConceptScheme ;
     skos:prefLabel "ISO19157-3 quality measures extended Description" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-09-25T16:02:33.148574"^^xsd:dateTime ;
-    prov:startedAtTime "2023-09-25T16:02:33.056046"^^xsd:dateTime ;
+    prov:endedAtTime "2023-09-26T04:22:31.514049"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-26T04:22:31.427588"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:f7ceb303bd607cf3cbf5254c7edb9a7d2e0a946c" ;
+            dct:hasVersion "git:4e95d7c35f587b7a4fc68555d297b4868e03d7ac" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-desc.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.14" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "249c9aea-872e-4e75-b817-b32377c8155e" ] .
+    prov:wasInformedBy [ dct:identifier "ba5b9a09-3ab9-4aed-8042-4681343d1fe7" ] .
 
