@@ -5,6 +5,10 @@ This repository contains:
 * automation tooling to ingest a draft register from content included as a submodule
 * a original demo pipeline configuration to semantically uplift a Google Spreadsheet containing ISO19157-3 properties.
 
+The content is pushed to a staging/development node of the OGC Rainbow:
+
+e.g. http://defs-dev.opengis.net/vocprez-hosted/object?uri=https%3A//standards.isotc211.org/19157/-3/1/req/content/qualityMeasure
+
 # ISO 19157-3 register ingest
 
 A set of sheets are ingested from CSV sources into a set of graphs that combine to form a complete register complete with multivalued complex properties for examples, formulae etc.
@@ -13,13 +17,17 @@ A set of sheets are ingested from CSV sources into a set of graphs that combine 
 # Demo from spreadsheet
 ## Files
 
+### content files
+
+### configuration
 - `.ogc/`: OGC tools configuration
   - `config.yml`: General configuration (download URLs and target files) 
   - `catalog.ttl`: Domain Configuration catalog with uplift definition for `*.csv.json` files.
 - `csv2python.yml`: Uplift definition that simply turns CSV into JSON
 - `properties-uplift.yml`: Uplift definition that takes the JSONified CSV and converts it to JSON-LD and Turtle
 - `.github/workflows/`: GitHub workflows
-  - `download-and-uplift.yaml`: Downloads the spreadsheet and performs the conversion and uplift steps
+  - `uplift-and-join.yaml`: Converts CSV to Linked Data with cross references between elemennts
+  - `pus-to-rainbow.yaml`: 
 
 ## See also
 
