@@ -15,13 +15,12 @@ Note that when live, the URIs for each measure will redirect to these or equival
 
 # ISO 19157-3 register ingest
 
-A set of sheets are ingested from CSV sources into a set of graphs that combine to form a complete register complete with multivalued complex properties for examples, formulae etc.
+A set of sheets are ingested from CSV sources into a set of RDF graphs that combine to form a complete register complete with multivalued complex properties for examples, formulae etc.
 
-
-# Demo from spreadsheet
 ## Files
 
 ### content files
+Source XLS and extracted CSV and derived forms are in the directory [ISO19157-3/](./ISO19157-3/)
 
 ### configuration
 - `.ogc/`: OGC tools configuration
@@ -31,7 +30,8 @@ A set of sheets are ingested from CSV sources into a set of graphs that combine 
 - `properties-uplift.yml`: Uplift definition that takes the JSONified CSV and converts it to JSON-LD and Turtle
 - `.github/workflows/`: GitHub workflows
   - `uplift-and-join.yaml`: Converts CSV to Linked Data with cross references between elemennts
-  - `pus-to-rainbow.yaml`: 
+  - `pus-to-rainbow.yaml`: Uploads RDF files to configured node of the OGC RAINBOW (currently HOSTED-DEV)
+  - 
 
 ## See also
 
