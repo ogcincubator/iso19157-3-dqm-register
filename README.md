@@ -7,9 +7,11 @@ This repository contains:
 
 The content is (currently) pushed to a staging/development node of the OGC Rainbow as a set of related vocabularies linked together by identifiers.
 
-[http://defs-dev.opengis.net/vocprez-hosted/vocab/?filter=iso19157]()
+[Search for iso19157 on HOSTED node of OGC RAINBOW (Development)](http://defs-dev.opengis.net/vocprez-hosted/vocab/?filter=iso19157)
 
-e.g. http://defs-dev.opengis.net/vocprez-hosted/object?uri=https%3A//standards.isotc211.org/19157/-3/1/req/content/qualityMeasure
+Top level [Quality Measures Register](http://defs-dev.opengis.net/vocprez-hosted/object?uri=https%3A//standards.isotc211.org/19157/-3/1/req/content/qualityMeasure)
+
+Note that when live, the URIs for each measure will redirect to these or equivalent machine-readable resources using HTTP Content-Negotiation.
 
 # ISO 19157-3 register ingest
 
