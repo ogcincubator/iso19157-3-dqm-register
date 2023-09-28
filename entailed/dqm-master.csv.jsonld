@@ -1,5 +1,153 @@
 [
   {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/14",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The value true indicates that an item is not in conformance with its value domain)"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "domain consistency"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/valid"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "indication of if an item is not in conformance with its value domain"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "True – a feature with attribute colour has the value ‘blau’, but it does not exist in the specified value domain: red, green, blue, yellow"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "14"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "value domain non-conformance"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/12",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "conceptual consistency"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/draft"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "12"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "non-compliance rate with respect to the rules of the conceptual schema"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/59",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The value indicates the probability for the true value of being within a lower and the upper limit of the interval."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "accuracy of a time measurement"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/valid"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99,8 %"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "59"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "time accuracy at 99,8 % significance level"
+      }
+    ]
+  },
+  {
     "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/21",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -56,33 +204,33 @@
     ]
   },
   {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.rdf",
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.ttl",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
     "http://purl.org/dc/terms/format": [
       {
-        "@value": "application/rdf+xml"
+        "@value": "text/turtle"
       }
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
       }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "_:N37d8c525dfba40579e9de972c7914a6f"
+        "@id": "_:N095b7e9a872b47b59c9250b6f2b73a04"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "_:N38a1f8dee3f04a73a1f20c5c95928395"
+        "@id": "_:N19bc02f6bd3646dd93a4b5e4de2b8916"
       }
     ]
   },
   {
-    "@id": "_:N37d8c525dfba40579e9de972c7914a6f",
+    "@id": "_:N095b7e9a872b47b59c9250b6f2b73a04",
     "@type": [
       "http://www.w3.org/ns/prov#Agent",
       "https://schema.org/SoftwareApplication"
@@ -109,7 +257,7 @@
     ]
   },
   {
-    "@id": "_:N38a1f8dee3f04a73a1f20c5c95928395",
+    "@id": "_:N19bc02f6bd3646dd93a4b5e4de2b8916",
     "@type": [
       "http://www.w3.org/ns/prov#Activity"
     ],
@@ -126,44 +274,36 @@
     "http://www.w3.org/ns/prov#endedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:17.300141"
+        "@value": "2023-09-28T07:19:19.252601"
       }
     ],
     "http://www.w3.org/ns/prov#startedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:17.252808"
+        "@value": "2023-09-28T07:19:19.230025"
       }
     ],
     "http://www.w3.org/ns/prov#used": [
       {
-        "@id": "_:N826925c16c2045909f0293ca1dcbd049"
+        "@id": "_:N1cabfffb901f4acc90e7cb55d2b73fc0"
       },
       {
-        "@id": "_:N4e3a5030fef44791b2c838480af34c10"
+        "@id": "_:N204d81b4102a4f31bd14fbaa5f18d130"
       }
     ],
     "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "_:N37d8c525dfba40579e9de972c7914a6f"
+        "@id": "_:N095b7e9a872b47b59c9250b6f2b73a04"
       }
     ],
     "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@id": "_:N150fa3ed651c4f68a330575efca7f330"
+        "@id": "_:N7fa348e69b1b46c6ba4ad52afd0b727b"
       }
     ]
   },
   {
-    "@id": "_:N150fa3ed651c4f68a330575efca7f330",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "ad84a10f-ab85-4975-a837-022db3380dc0"
-      }
-    ]
-  },
-  {
-    "@id": "_:N826925c16c2045909f0293ca1dcbd049",
+    "@id": "_:N1cabfffb901f4acc90e7cb55d2b73fc0",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -174,7 +314,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -184,7 +324,7 @@
     ]
   },
   {
-    "@id": "_:N4e3a5030fef44791b2c838480af34c10",
+    "@id": "_:N204d81b4102a4f31bd14fbaa5f18d130",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -195,12 +335,71 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.ttl"
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-master.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7fa348e69b1b46c6ba4ad52afd0b727b",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/49",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "absolute or external accuracy"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/valid"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "ACE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "absolute horizontal accuracy of the data’s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "49"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "absolute circular error at 90 % significance level of biased data"
       }
     ]
   },
@@ -242,6 +441,542 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@value": "data product specification passed"
+      }
+    ]
+  },
+  {
+    "@id": "_:n464f402af324445084aab2506983d90ab1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-28T07:18:14.179156"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-28T07:18:14.067468"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:n464f402af324445084aab2506983d90ab2"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:n464f402af324445084aab2506983d90ab3"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:n464f402af324445084aab2506983d90ab4"
+      }
+    ]
+  },
+  {
+    "@id": "_:n464f402af324445084aab2506983d90ab4",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "d10e5479-eb34-44e6-b025-be0c8bd53e66"
+      }
+    ]
+  },
+  {
+    "@id": "_:n464f402af324445084aab2506983d90ab3",
+    "@type": [
+      "https://schema.org/SoftwareApplication",
+      "http://www.w3.org/ns/prov#Agent"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:n464f402af324445084aab2506983d90ab2",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/json"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:5e0e1e821491ba97070e6d580443b88caee70298"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-master.csv.json"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.jsonld",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/ld+json"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:Ne96261a6f4884f6b9eeba505f34957ef"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:N3e5d202a382141a697abcac78bd75fa1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3e5d202a382141a697abcac78bd75fa1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-28T07:19:19.286874"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-28T07:19:19.230025"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N5427c3908c1d464a829fb0436aef5703"
+      },
+      {
+        "@id": "_:N5ccfc350f3e84bd7b770611be923bc4c"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:Ne96261a6f4884f6b9eeba505f34957ef"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:Nb05d64633d2c4ae7b4fe8e91c7b8c9d0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5427c3908c1d464a829fb0436aef5703",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-master.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5ccfc350f3e84bd7b770611be923bc4c",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb05d64633d2c4ae7b4fe8e91c7b8c9d0",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne96261a6f4884f6b9eeba505f34957ef",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ISO19157-3 quality measures"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/47",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The true values of the observed coordinates X and Y are known as xt and yt. From this the estimator"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "2.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "absolute or external accuracy"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/superseded"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@value": "RMSEP"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "radius of a circle around the given point, in which the true value lies with probability P"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "47"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "root mean square error of planimetry"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/119",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The value true indicates physical structure conflict"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "format consistency"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/retired"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "indication that items are stored in conflict with the physical structure of the dataset"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "True (the dataset is stored in wrong file format, a shape file instead of gml)"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "119"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "physical structure conflicts"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.rdf",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/rdf+xml"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:N2e1fee4cccc9419685f400b09878c0e4"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:N793ab61f1cdf4fae8c8bfb051c548d6e"
+      }
+    ]
+  },
+  {
+    "@id": "_:N793ab61f1cdf4fae8c8bfb051c548d6e",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-28T07:19:19.271033"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-09-28T07:19:19.230025"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:Nab80ed4fb65947d3b5d2f2de1a0f7daf"
+      },
+      {
+        "@id": "_:Na1356870c9644edd9a8ef7e5845150c6"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:N2e1fee4cccc9419685f400b09878c0e4"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:Nfaa2648b11994718a3ce988a9821bf5a"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e1fee4cccc9419685f400b09878c0e4",
+    "@type": [
+      "https://schema.org/SoftwareApplication",
+      "http://www.w3.org/ns/prov#Agent"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.14"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nab80ed4fb65947d3b5d2f2de1a0f7daf",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na1356870c9644edd9a8ef7e5845150c6",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-master.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfaa2648b11994718a3ce988a9821bf5a",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/28",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1\nhttps://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2\nhttps://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3\nhttps://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+      {
+        "@value": "absolute or external accuracy"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/ogc-na/status": [
+      {
+        "@id": "http://www.opengis.net/def/status/superseded"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "28"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "mean value of positional uncertainties (1D, 2D and 3D)"
       }
     ]
   },
@@ -302,165 +1037,6 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "ISO19157-3 quality measures"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/28",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1\nhttps://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2\nhttps://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3\nhttps://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
-      {
-        "@value": "absolute or external accuracy"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/superseded"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "28"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "mean value of positional uncertainties (1D, 2D and 3D)"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://purl.org/dc/terms/source": [
-      {
-        "@value": "ISO/TS 19138 (modified)"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
-      {
-        "@value": "commission"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/valid"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "total number of exact duplications of feature instances within the data"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other\nD13288RZ.EPS two (or more) curves collected on top of each other\nD13288SZ.EPS two (or more) surfaces collected on top of each other."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "4"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "number of duplicate feature instances"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/47",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "The true values of the observed coordinates X and Y are known as xt and yt. From this the estimator"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "2.0"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
-      {
-        "@value": "absolute or external accuracy"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/superseded"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "RMSEP"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "radius of a circle around the given point, in which the true value lies with probability P"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "47"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "root mean square error of planimetry"
-      }
-    ]
-  },
-  {
     "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/102",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -493,90 +1069,6 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@value": "data product specification fail count"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b6",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:23:06.622430"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:23:06.529174"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b7"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b8"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b9"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b8",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b9",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "a8c413b2-3e2f-40e1-a522-2298404746d9"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b7",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:e7aa0d5ff243d7a77a541bbbc746f747b7cbb38b"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-master.csv.json"
       }
     ]
   },
@@ -642,13 +1134,13 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/119",
+    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/description": [
       {
-        "@value": "The value true indicates physical structure conflict"
+        "@value": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4"
       }
     ],
     "http://purl.org/dc/terms/hasVersion": [
@@ -656,389 +1148,14 @@
         "@value": "1.0"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
+    "http://purl.org/dc/terms/source": [
       {
-        "@value": "format consistency"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/retired"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "indication that items are stored in conflict with the physical structure of the dataset"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "True (the dataset is stored in wrong file format, a shape file instead of gml)"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "119"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "physical structure conflicts"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.ttl",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:Ned148b6cf6bd4d8aa902677329c1eb0d"
-      },
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b1"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b2"
-      },
-      {
-        "@id": "_:Nba2b3b00cf954aa3adf373bdf5288a12"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b2",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:16.675485"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:16.653410"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b4"
-      },
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b3"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b1"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b5"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b5",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "ad84a10f-ab85-4975-a837-022db3380dc0"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b4",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-master.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b3",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:n9c075cc46cb9481b8578a09fe6db1918b1",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nba2b3b00cf954aa3adf373bdf5288a12",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:17.276784"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:17.252808"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:N46586e91b6bb450f9c41bf73b5a99e13"
-      },
-      {
-        "@id": "_:N23e59ab629db490db8e93687fe2e5319"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:Ned148b6cf6bd4d8aa902677329c1eb0d"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:N8cee95a238af4c97b566f8b7c5ac4499"
-      }
-    ]
-  },
-  {
-    "@id": "_:N46586e91b6bb450f9c41bf73b5a99e13",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N23e59ab629db490db8e93687fe2e5319",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N8cee95a238af4c97b566f8b7c5ac4499",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "ad84a10f-ab85-4975-a837-022db3380dc0"
-      }
-    ]
-  },
-  {
-    "@id": "_:Ned148b6cf6bd4d8aa902677329c1eb0d",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/12",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "1.0"
+        "@value": "ISO/TS 19138 (modified)"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/elementName": [
       {
-        "@value": "conceptual consistency"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/draft"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "12"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "non-compliance rate with respect to the rules of the conceptual schema"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/14",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "The value true indicates that an item is not in conformance with its value domain)"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
-      {
-        "@value": "domain consistency"
+        "@value": "commission"
       }
     ],
     "http://www.opengis.net/def/metamodel/ogc-na/status": [
@@ -1048,12 +1165,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "indication of if an item is not in conformance with its value domain"
+        "@value": "total number of exact duplications of feature instances within the data"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#example": [
       {
-        "@value": "True – a feature with attribute colour has the value ‘blau’, but it does not exist in the specified value domain: red, green, blue, yellow"
+        "@value": "Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other\nD13288RZ.EPS two (or more) curves collected on top of each other\nD13288SZ.EPS two (or more) surfaces collected on top of each other."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1063,258 +1180,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "14"
+        "@value": "4"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "value domain non-conformance"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/59",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "The value indicates the probability for the true value of being within a lower and the upper limit of the interval."
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
-      {
-        "@value": "accuracy of a time measurement"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/valid"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99,8 %"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "59"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "time accuracy at 99,8 % significance level"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.jsonld",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/ld+json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:N06ef1b3fa095412fab66cb862c07addf"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:Naed10d5fdae640f39ddf81559a250d9b"
-      }
-    ]
-  },
-  {
-    "@id": "_:Naed10d5fdae640f39ddf81559a250d9b",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:17.318643"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2023-09-26T04:24:17.252808"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:N0886b7b9050c4c29b7af8a780ff69750"
-      },
-      {
-        "@id": "_:N65b6c9a52567492bb3152cc2ce987011"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:N06ef1b3fa095412fab66cb862c07addf"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:Nf3b3f38c0e1048f883e02c409d6a4346"
-      }
-    ]
-  },
-  {
-    "@id": "_:N0886b7b9050c4c29b7af8a780ff69750",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-master.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N65b6c9a52567492bb3152cc2ce987011",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:a0633b302de253758f3891fe8262cf77f08f9b30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nf3b3f38c0e1048f883e02c409d6a4346",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "ad84a10f-ab85-4975-a837-022db3380dc0"
-      }
-    ]
-  },
-  {
-    "@id": "_:N06ef1b3fa095412fab66cb862c07addf",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.14"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/49",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/elementName": [
-      {
-        "@value": "absolute or external accuracy"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/ogc-na/status": [
-      {
-        "@id": "http://www.opengis.net/def/status/valid"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@value": "ACE"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "absolute horizontal accuracy of the data’s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "49"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "absolute circular error at 90 % significance level of biased data"
+        "@value": "number of duplicate feature instances"
       }
     ]
   }

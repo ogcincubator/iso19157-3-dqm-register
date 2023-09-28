@@ -1,262 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dct="http://purl.org/dc/terms/"
    xmlns:dqm="http://www.opengis.net/def/metamodel/isodqm/"
    xmlns:prov="http://www.w3.org/ns/prov#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl">
-    <prov:wasGeneratedBy rdf:nodeID="n8e4349e82e734774a865733003ecea3cb2"/>
-    <prov:wasGeneratedBy rdf:nodeID="N1391418b6eeb45f590b5ed94b794334d"/>
+  <rdf:Description rdf:nodeID="N03328fa872284a9596b3353d8f6bf6f6">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-formula.csv.ttl"/>
+    <dct:hasVersion>git:8798eb67f55d578aa6f69d0cd42c55797d5e1152</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <prov:wasAttributedTo rdf:nodeID="n8e4349e82e734774a865733003ecea3cb1"/>
-    <prov:wasAttributedTo rdf:nodeID="N07b63fc7a6d8438784835c1fce1f5b08"/>
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dct:format>text/turtle</dct:format>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10">
-    <dqm:formulaKey>Compute absolute CE90</dqm:formulaKey>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl">
+    <dct:format>text/turtle</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="Nd2935355b59f4e37911ee556563b69e5"/>
+    <dct:hasVersion>git:8798eb67f55d578aa6f69d0cd42c55797d5e1152</dct:hasVersion>
+    <prov:wasAttributedTo rdf:nodeID="N6e9538b47cd947de8630675bf6047707"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6989e1683244539ba00624712b50c18">
+    <prov:used rdf:nodeID="N03328fa872284a9596b3353d8f6bf6f6"/>
+    <prov:used rdf:nodeID="N7e7b8b5363f34695b03f78f0f1a685e0"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-28T07:19:18.957922</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-28T07:19:18.990631</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N24aaca77ee7240958170d4abe9e9949f"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="N1606f86ff6e1429f8d6ef68181ef5df2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
+    <dqm:formulaKey>Calculate the standard deviation of the horizontal errors</dqm:formulaKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2935355b59f4e37911ee556563b69e5">
+    <prov:wasInformedBy rdf:nodeID="N11ee518f9df043438de28016e9654abe"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-28T07:19:18.957922</prov:startedAtTime>
+    <prov:used rdf:nodeID="Ncfa6e5edc67540a29181546a3fec38f3"/>
+    <prov:used rdf:nodeID="N0398be08d1254a8383b5c271378f6cc4"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasAssociatedWith rdf:nodeID="N6e9538b47cd947de8630675bf6047707"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-28T07:19:18.974562</prov:endedAtTime>
+    <rdfs:label>Entailment and validation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2">
+    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty.</dqm:formulaKey>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
     <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1">
+    <dqm:formulaKey>For i=1..N calculate the absolute error in the horizontal dimension at each point.</dqm:formulaKey>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
     <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N0100530e1189461f88c6930633b74406">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl"/>
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.rdf">
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
+    <dct:hasVersion>git:8798eb67f55d578aa6f69d0cd42c55797d5e1152</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-    <prov:wasGeneratedBy rdf:nodeID="N08b9bf379e654f3f9f734decc2f65092"/>
-    <prov:wasAttributedTo rdf:nodeID="Nd37fd1623164492295e581c578db1a3f"/>
+    <dct:format>application/rdf+xml</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="Nd6989e1683244539ba00624712b50c18"/>
+    <prov:wasAttributedTo rdf:nodeID="N1606f86ff6e1429f8d6ef68181ef5df2"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb7">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-formula.csv.json"/>
-    <dcterms:format>application/json</dcterms:format>
-    <dcterms:hasVersion>git:e7aa0d5ff243d7a77a541bbbc746f747b7cbb38b</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb2">
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:24:15.740666</prov:endedAtTime>
-    <prov:used rdf:nodeID="n8e4349e82e734774a865733003ecea3cb4"/>
-    <prov:used rdf:nodeID="n8e4349e82e734774a865733003ecea3cb3"/>
-    <prov:wasAssociatedWith rdf:nodeID="n8e4349e82e734774a865733003ecea3cb1"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:24:15.722434</prov:startedAtTime>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasInformedBy rdf:nodeID="n8e4349e82e734774a865733003ecea3cb5"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9ef121cb3c4746faa0e37a088e7418f3">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd37fd1623164492295e581c578db1a3f">
+  <rdf:Description rdf:nodeID="N1606f86ff6e1429f8d6ef68181ef5df2">
     <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
     <rdfs:label>OGC-NA tools</rdfs:label>
     <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
-    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+    <dct:hasVersion>0.3.14</dct:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47">
     <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <dqm:formulaKey>If ratio</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <dqm:formulaKey>s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y</dqm:formulaKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb3">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-formula.csv.ttl"/>
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
+  <rdf:Description rdf:nodeID="N7e7b8b5363f34695b03f78f0f1a685e0">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dct:hasVersion>git:8798eb67f55d578aa6f69d0cd42c55797d5e1152</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dct:format>text/turtle</dct:format>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb8">
-    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
+  <rdf:Description rdf:nodeID="N11ee518f9df043438de28016e9654abe">
+    <dct:identifier>02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0</dct:identifier>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1">
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty.</dqm:formulaKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2">
     <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
+    <dqm:formulaKey>Calculate the mean horizontal error</dqm:formulaKey>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <dqm:formulaKey>For i=1..N calculate the absolute error in the horizontal dimension at each point.</dqm:formulaKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N07b63fc7a6d8438784835c1fce1f5b08">
-    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+  <rdf:Description rdf:nodeID="N6e9538b47cd947de8630675bf6047707">
     <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N08b9bf379e654f3f9f734decc2f65092">
-    <prov:used rdf:nodeID="N0100530e1189461f88c6930633b74406"/>
-    <prov:used rdf:nodeID="Nc402212a13e843c89820e327030d86cc"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:24:16.958487</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:24:16.998032</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="N1721e93001c847b098b0b94e07155ecb"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="Nd37fd1623164492295e581c578db1a3f"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb1">
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
-    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+    <dct:hasVersion>0.3.14</dct:hasVersion>
     <rdfs:label>OGC-NA tools</rdfs:label>
     <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_9">
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
     <dqm:formulaKey>Compute CE90 for the source</dqm:formulaKey>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47">
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaKey>s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y</dqm:formulaKey>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8">
-    <dqm:formulaKey>then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)</dqm:formulaKey>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc402212a13e843c89820e327030d86cc">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
+  <rdf:Description rdf:nodeID="N0398be08d1254a8383b5c271378f6cc4">
+    <dct:hasVersion>git:8798eb67f55d578aa6f69d0cd42c55797d5e1152</dct:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-formula.csv.ttl"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dct:format>text/turtle</dct:format>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty.</dqm:formulaKey>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <dqm:formulaKey>Compute absolute CE90</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
     <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb4">
-    <dcterms:format>text/turtle</dcterms:format>
+  <rdf:Description rdf:nodeID="Ncfa6e5edc67540a29181546a3fec38f3">
     <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
+    <dct:format>text/turtle</dct:format>
+    <dct:hasVersion>git:8798eb67f55d578aa6f69d0cd42c55797d5e1152</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3">
+    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing                               for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result.
+A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty.</dqm:formulaKey>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b1">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasAssociatedWith rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b3"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-28T07:18:13.963097</prov:startedAtTime>
+    <prov:used rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b2"/>
+    <prov:wasInformedBy rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b4"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-28T07:18:14.062158</prov:endedAtTime>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
     <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:formulaKey>Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions.</dqm:formulaKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb6">
-    <prov:wasInformedBy rdf:nodeID="n8e4349e82e734774a865733003ecea3cb9"/>
-    <prov:used rdf:nodeID="n8e4349e82e734774a865733003ecea3cb7"/>
-    <prov:wasAssociatedWith rdf:nodeID="n8e4349e82e734774a865733003ecea3cb8"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:23:06.523835</prov:endedAtTime>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:23:06.443269</prov:startedAtTime>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb2b3920785154b77897366969a400877">
-    <dcterms:hasVersion>git:a0633b302de253758f3891fe8262cf77f08f9b30</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaKey>Calculate the mean horizontal error</dqm:formulaKey>
-    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
-    <dqm:formulaKey>then</dqm:formulaKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8a197c20d31e46499af66dce4a1649a2">
-    <dcterms:identifier>ad84a10f-ab85-4975-a837-022db3380dc0</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3">
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
-    <dqm:formulaKey>Calculate the standard deviation of the horizontal errors</dqm:formulaKey>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5">
-    <dqm:formulaKey>If ratio</dqm:formulaKey>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
     <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>If ratio</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
     <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:formulaKey>Calculate the ratio of the absolute value of the mean error to the standard deviation</dqm:formulaKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1391418b6eeb45f590b5ed94b794334d">
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:24:16.958487</prov:startedAtTime>
-    <prov:wasAssociatedWith rdf:nodeID="N07b63fc7a6d8438784835c1fce1f5b08"/>
-    <prov:wasInformedBy rdf:nodeID="N8a197c20d31e46499af66dce4a1649a2"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-26T04:24:16.979056</prov:endedAtTime>
-    <prov:used rdf:nodeID="N9ef121cb3c4746faa0e37a088e7418f3"/>
-    <prov:used rdf:nodeID="Nb2b3920785154b77897366969a400877"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
-    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty.</dqm:formulaKey>
-    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
     <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
-    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing                               for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result.
-A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty.</dqm:formulaKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/req/content/formulaType">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <skos:prefLabel>ISO19157-3 quality measures Formulas</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1721e93001c847b098b0b94e07155ecb">
-    <dcterms:identifier>ad84a10f-ab85-4975-a837-022db3380dc0</dcterms:identifier>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8">
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+    <dqm:formulaKey>then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)</dqm:formulaKey>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb9">
-    <dcterms:identifier>a8c413b2-3e2f-40e1-a522-2298404746d9</dcterms:identifier>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>If ratio</dqm:formulaKey>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n8e4349e82e734774a865733003ecea3cb5">
-    <dcterms:identifier>ad84a10f-ab85-4975-a837-022db3380dc0</dcterms:identifier>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/req/content/formulaType"/>
+    <dqm:formulaKey>then</dqm:formulaKey>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b3">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dct:hasVersion>0.3.14</dct:hasVersion>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b2">
+    <dct:hasVersion>git:5e0e1e821491ba97070e6d580443b88caee70298</dct:hasVersion>
+    <dct:format>application/json</dct:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-formula.csv.json"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24aaca77ee7240958170d4abe9e9949f">
+    <dct:identifier>02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4d2e0d03dab341a9af1399719f975b46b4">
+    <dct:identifier>d10e5479-eb34-44e6-b025-be0c8bd53e66</dct:identifier>
   </rdf:Description>
 </rdf:RDF>

@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -7,87 +7,71 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/28> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-1>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-2>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-3>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-4> .
-
-<https://standards.isotc211.org/19157/-3/1/req/content/4> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4> .
-
-<https://standards.isotc211.org/19157/-3/1/req/content/49> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/49-0> .
-
-<https://standards.isotc211.org/19157/-3/1/req/content/5> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5>,
-        <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-1> .
-
-<https://standards.isotc211.org/19157/-3/1/req/content/62> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62> .
-
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-desc.csv.ttl> a prov:Entity ;
-    dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:a0633b302de253758f3891fe8262cf77f08f9b30" ;
-    prov:wasAttributedTo _:Nff80c765e1f54d968cda996cfa85a9a3,
-        _:n910e4b818121452f8af17f4da6baef3ab1 ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152" ;
+    prov:wasAttributedTo _:Ncf36a3a9597341c3836f06f24a06f924 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2023-09-26T04:24:16.426828"^^xsd:dateTime ;
-            prov:startedAtTime "2023-09-26T04:24:16.407859"^^xsd:dateTime ;
+            prov:endedAtTime "2023-09-28T07:19:19.844978"^^xsd:dateTime ;
+            prov:startedAtTime "2023-09-28T07:19:19.827356"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:a0633b302de253758f3891fe8262cf77f08f9b30" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-desc.csv.ttl> ],
-                [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:a0633b302de253758f3891fe8262cf77f08f9b30" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:Nff80c765e1f54d968cda996cfa85a9a3 ;
-            prov:wasInformedBy [ dcterms:identifier "ad84a10f-ab85-4975-a837-022db3380dc0" ] ],
-        [ a prov:Activity ;
-            rdfs:label "Entailment and validation" ;
-            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2023-09-26T04:24:15.425890"^^xsd:dateTime ;
-            prov:startedAtTime "2023-09-26T04:24:15.407377"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:a0633b302de253758f3891fe8262cf77f08f9b30" ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-desc.csv.ttl> ],
                 [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:a0633b302de253758f3891fe8262cf77f08f9b30" ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:n910e4b818121452f8af17f4da6baef3ab1 ;
-            prov:wasInformedBy [ dcterms:identifier "ad84a10f-ab85-4975-a837-022db3380dc0" ] ] .
+            prov:wasAssociatedWith _:Ncf36a3a9597341c3836f06f24a06f924 ;
+            prov:wasInformedBy [ dct:identifier "02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0" ] ] .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/28> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-1>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-2>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-3>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-4> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/4> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/4> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/49> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/49-0> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/5> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/5>,
+        <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/5-1> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/62> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/62> .
+
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28> a skos:Concept ;
     skos:definition "0,054 meter" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "28" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-1> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
     dqm:sequence "1" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "28-1" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-2> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> ;
     dqm:sequence "2" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "28-2" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-3> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> ;
     dqm:sequence "3" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "28-3" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/28-4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/28-4> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> ;
     dqm:sequence "4" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "28-4" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/4> a skos:Concept ;
     skos:definition "count of all items in the data that are incorrectly extracted with duplicate geometries" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "4" ;
@@ -95,7 +79,7 @@
         <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.png>,
         <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.png> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/49-0> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/49-0> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2>,
@@ -111,19 +95,19 @@
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "49-0" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/5> a skos:Concept ;
     skos:definition "The value true indicates that an item is missing." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "5" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/5-1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/5-1> a skos:Concept ;
     dqm:sequence "1" ;
     skos:definition """A data product specification requires all towers higher than 300 m to be captured. The data quality measure “missing item” allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type “tower” (name depends on the application schema), is missing.
 Data quality scope: all towers with height > 300Example result of a completeness evaluation of a particular dataset:missing item = true fortower.name = “Eiffel Tower, Paris, France”tower.name = “Beijing Tower, Beijing, China”""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/measureDescription> ;
     skos:prefLabel "5-1" .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasureDescription/62> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/62> a skos:Concept ;
     skos:definition """The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""" ;
@@ -135,30 +119,23 @@ MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements
     skos:prefLabel "ISO19157-3 quality measures extended Description" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-09-26T04:23:06.437839"^^xsd:dateTime ;
-    prov:startedAtTime "2023-09-26T04:23:06.322586"^^xsd:dateTime ;
+    prov:endedAtTime "2023-09-28T07:18:13.956472"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-28T07:18:13.852957"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dcterms:format "application/json" ;
-            dcterms:hasVersion "git:e7aa0d5ff243d7a77a541bbbc746f747b7cbb38b" ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:5e0e1e821491ba97070e6d580443b88caee70298" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-desc.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dcterms:hasVersion "0.3.14" ;
+            dct:hasVersion "0.3.14" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "a8c413b2-3e2f-40e1-a522-2298404746d9" ] .
+    prov:wasInformedBy [ dct:identifier "d10e5479-eb34-44e6-b025-be0c8bd53e66" ] .
 
-_:Nff80c765e1f54d968cda996cfa85a9a3 a prov:Agent,
+_:Ncf36a3a9597341c3836f06f24a06f924 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.14" ;
-    rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
-    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
-
-_:n910e4b818121452f8af17f4da6baef3ab1 a prov:Agent,
-        schema:SoftwareApplication ;
-    rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.14" ;
+    dct:hasVersion "0.3.14" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
