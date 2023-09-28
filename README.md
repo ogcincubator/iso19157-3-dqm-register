@@ -5,7 +5,9 @@ This repository contains:
 * automation tooling to ingest a draft register from content included as a submodule
 * a original demo pipeline configuration to semantically uplift a Google Spreadsheet containing ISO19157-3 properties.
 
-The content is pushed to a staging/development node of the OGC Rainbow:
+The content is (currently) pushed to a staging/development node of the OGC Rainbow as a set of related vocabularies linked together by identifiers.
+
+[http://defs-dev.opengis.net/vocprez-hosted/vocab/?filter=iso19157]()
 
 e.g. http://defs-dev.opengis.net/vocprez-hosted/object?uri=https%3A//standards.isotc211.org/19157/-3/1/req/content/qualityMeasure
 
