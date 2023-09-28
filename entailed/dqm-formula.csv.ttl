@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -6,138 +6,161 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152" ;
-    prov:wasAttributedTo _:N6e9538b47cd947de8630675bf6047707 ;
-    prov:wasGeneratedBy [ a prov:Activity ;
-            rdfs:label "Entailment and validation" ;
-            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2023-09-28T07:19:18.974562"^^xsd:dateTime ;
-            prov:startedAtTime "2023-09-28T07:19:18.957922"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-formula.csv.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:8798eb67f55d578aa6f69d0cd42c55797d5e1152" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N6e9538b47cd947de8630675bf6047707 ;
-            prov:wasInformedBy [ dct:identifier "02ea1460-b7ed-49dd-ad65-9aa8b2fa95e0" ] ] .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> a skos:Concept ;
     dqm:formulaKey "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty." ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> a skos:Concept ;
     dqm:formulaKey "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty." ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> a skos:Concept ;
     dqm:formulaKey """For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing                               for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result.
 A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty.""" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> a skos:Concept ;
     dqm:formulaKey "Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions." ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47> a skos:Concept ;
     dqm:formulaKey "s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1> a skos:Concept ;
     dqm:formulaKey "For i=1..N calculate the absolute error in the horizontal dimension at each point." ;
     dqm:formulaLanguage "http://www.w3.org/1998/Math/MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10> a skos:Concept ;
     dqm:formulaKey "Compute absolute CE90" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2> a skos:Concept ;
     dqm:formulaKey "Calculate the mean horizontal error" ;
     dqm:formulaLanguage "http://www.w3.org/1998/Math/MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3> a skos:Concept ;
     dqm:formulaKey "Calculate the standard deviation of the horizontal errors" ;
     dqm:formulaLanguage "http://www.w3.org/1998/Math/MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4> a skos:Concept ;
     dqm:formulaKey "Calculate the ratio of the absolute value of the mean error to the standard deviation" ;
     dqm:formulaLanguage "http://www.w3.org/1998/Math/MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5> a skos:Concept ;
     dqm:formulaKey "If ratio" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6> a skos:Concept ;
     dqm:formulaKey "then" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7> a skos:Concept ;
     dqm:formulaKey "If ratio" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8> a skos:Concept ;
     dqm:formulaKey "then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_9> a skos:Concept ;
     dqm:formulaKey "Compute CE90 for the source" ;
     dqm:formulaLanguage "MathML" ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/req/content/formulaType> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
 
-<https://standards.isotc211.org/19157/-3/1/req/content/formulaType> a skos:ConceptScheme ;
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl> a prov:Entity ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:6645fc2eea5a10fa221d42b8449b95ee62930123" ;
+    prov:wasAttributedTo _:Nc19fb1f231fb4b5689da1707bcbd07f6,
+        _:n40f4ea46a0f54ca594d8cf41668ab6e4b1 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-09-28T07:31:32.025536"^^xsd:dateTime ;
+            prov:startedAtTime "2023-09-28T07:31:32.008083"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:6645fc2eea5a10fa221d42b8449b95ee62930123" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:6645fc2eea5a10fa221d42b8449b95ee62930123" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:Nc19fb1f231fb4b5689da1707bcbd07f6 ;
+            prov:wasInformedBy [ dcterms:identifier "c735c65f-113e-47b6-8efc-788a1fa1776c" ] ],
+        [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-09-28T07:31:30.855536"^^xsd:dateTime ;
+            prov:startedAtTime "2023-09-28T07:31:30.839229"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:6645fc2eea5a10fa221d42b8449b95ee62930123" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-formula.csv.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:6645fc2eea5a10fa221d42b8449b95ee62930123" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:n40f4ea46a0f54ca594d8cf41668ab6e4b1 ;
+            prov:wasInformedBy [ dcterms:identifier "c735c65f-113e-47b6-8efc-788a1fa1776c" ] ] .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> a skos:ConceptScheme ;
     skos:prefLabel "ISO19157-3 quality measures Formulas" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-09-28T07:18:14.062158"^^xsd:dateTime ;
-    prov:startedAtTime "2023-09-28T07:18:13.963097"^^xsd:dateTime ;
+    prov:endedAtTime "2023-09-28T07:30:41.334213"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-28T07:30:41.229774"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:5e0e1e821491ba97070e6d580443b88caee70298" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:449e22bc8e490b62b2f87f6dbbe5cd13e32da92a" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-formula.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.14" ;
+            dcterms:hasVersion "0.3.14" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "d10e5479-eb34-44e6-b025-be0c8bd53e66" ] .
+    prov:wasInformedBy [ dcterms:identifier "9caafc25-3ff1-47a7-a6d1-d6db8af12ab9" ] .
 
-_:N6e9538b47cd947de8630675bf6047707 a prov:Agent,
+_:Nc19fb1f231fb4b5689da1707bcbd07f6 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.14" ;
+    dcterms:hasVersion "0.3.14" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
+_:n40f4ea46a0f54ca594d8cf41668ab6e4b1 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dcterms:hasVersion "0.3.14" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
