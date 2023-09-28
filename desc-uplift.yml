@@ -20,9 +20,9 @@ transform:
   # Add ConceptScheme
   - |
     {
-      "@id": "https://standards.isotc211.org/19157/-3/1/req/content/measureDescription",
+      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription",
       "@type": "skos:ConceptScheme",
-      "skos:prefLabel": "ISO19157-3 quality measures extended Description",
+      "skos:prefLabel": "ISO19157-3 Data Quality Measures (Extended Description Components)",
       "concepts": .
     }
 
@@ -37,14 +37,14 @@ context:
     policy: http://www.opengis.net/def/metamodel/ogc-na/
     dqm: http://www.opengis.net/def/metamodel/isodqm/
     foaf: http://xmlns.com/foaf/0.1/
-    '@base': 'https://standards.isotc211.org/19157/-3/1/req/content/measureDescription/'
+    '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49'
     measureDescriptionID: '@id'
     measureID:
       '@type': '@id'
       '@id': dqm:describes
       '@reverse': dqm:hasDescription
       '@context':
-        '@base': 'https://standards.isotc211.org/19157/-3/1/req/content/qualityMeasure'
+        '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure'
     textDescription: skos:definition
     prefLabel: skos:prefLabel
     sequence: dqm:sequence
