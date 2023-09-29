@@ -5,6 +5,26 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:2632d2ba62ebaa9c9ce79707db6f70c5a85daaee" ;
+    prov:wasAttributedTo _:N6f01fd7639984f37bdeacc2788cc6c75 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-09-29T01:45:41.330601"^^xsd:dateTime ;
+            prov:startedAtTime "2023-09-29T01:45:41.317420"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:2632d2ba62ebaa9c9ce79707db6f70c5a85daaee" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-basic.csv.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:2632d2ba62ebaa9c9ce79707db6f70c5a85daaee" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N6f01fd7639984f37bdeacc2788cc6c75 ;
+            prov:wasInformedBy [ dct:identifier "4807f08e-29d0-49af-b0a9-75a6efc57a08" ] ] .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/basicMeasure/1> a skos:Concept ;
     skos:definition "indicator that an item is in error" ;
     skos:example "if the value is true the item is not correct" ;
@@ -12,67 +32,24 @@
     skos:prefLabel "error indicator" ;
     skos:scopeNote "counting related basic measure" .
 
-<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:a983ac6b5ac7a112bf01ecfe31343b852986bbd0" ;
-    prov:wasAttributedTo _:Nd18b6e4e876a458b94fa8ae95b168039,
-        _:n7b6e5aa1cb7e4da982609849e92fe7aeb1 ;
-    prov:wasGeneratedBy [ a prov:Activity ;
-            rdfs:label "Entailment and validation" ;
-            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2023-09-28T07:50:39.399515"^^xsd:dateTime ;
-            prov:startedAtTime "2023-09-28T07:50:39.384280"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:a983ac6b5ac7a112bf01ecfe31343b852986bbd0" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-basic.csv.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:a983ac6b5ac7a112bf01ecfe31343b852986bbd0" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:Nd18b6e4e876a458b94fa8ae95b168039 ;
-            prov:wasInformedBy [ dct:identifier "a9120d8f-9db1-4b21-8a7a-32d9a971d594" ] ],
-        [ a prov:Activity ;
-            rdfs:label "Entailment and validation" ;
-            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2023-09-28T07:50:38.661783"^^xsd:dateTime ;
-            prov:startedAtTime "2023-09-28T07:50:38.648126"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:a983ac6b5ac7a112bf01ecfe31343b852986bbd0" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:a983ac6b5ac7a112bf01ecfe31343b852986bbd0" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-basic.csv.ttl> ] ;
-            prov:wasAssociatedWith _:n7b6e5aa1cb7e4da982609849e92fe7aeb1 ;
-            prov:wasInformedBy [ dct:identifier "a9120d8f-9db1-4b21-8a7a-32d9a971d594" ] ] .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> a skos:ConceptScheme ;
     skos:prefLabel "ISO19157-3 basic quality measures" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-09-28T07:49:35.852943"^^xsd:dateTime ;
-    prov:startedAtTime "2023-09-28T07:49:35.787575"^^xsd:dateTime ;
+    prov:endedAtTime "2023-09-29T01:44:28.158373"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-29T01:44:28.074314"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:d29d3099024a0cbc063e265b4d0cfe02b7749cd1" ;
+            dct:hasVersion "git:8359e372c527e6318340bfae26f3f6fd33d82e14" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-basic.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.14" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "ab91556b-336f-45c2-8ab5-45006022e25c" ] .
+    prov:wasInformedBy [ dct:identifier "79ddd152-bb41-4ca9-bee8-d7958b55a832" ] .
 
-_:Nd18b6e4e876a458b94fa8ae95b168039 a prov:Agent,
-        schema:SoftwareApplication ;
-    rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.14" ;
-    rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
-    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
-
-_:n7b6e5aa1cb7e4da982609849e92fe7aeb1 a prov:Agent,
+_:N6f01fd7639984f37bdeacc2788cc6c75 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.3.14" ;
