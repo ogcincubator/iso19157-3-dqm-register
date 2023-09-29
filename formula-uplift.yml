@@ -6,9 +6,7 @@ transform:
   # Remove colons in field names with spaces
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
   # turn known fields with space separated lists into arrays
-  - |
-        walk(if (type == "object" and (.formula)) then ( .formula |= split("\n") ) else . end)
-         # generate an id for the description object from measure and sequence information
+  # add prefLabel
   - |
       walk(if (type == "object") then
         .prefLabel = .formulaID
@@ -18,7 +16,7 @@ transform:
     {
       "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType",
       "@type": "skos:ConceptScheme",
-      "skos:prefLabel": "ISO19157-3 quality measures Formulas",
+      "skos:prefLabel": "ISO19157-3 Quality Measures Formulas",
       "concepts": .
     }
 
@@ -33,7 +31,9 @@ context:
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
     dqm: http://www.opengis.net/def/metamodel/isodqm/
+    '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/
     formulaID: '@id'
+    prefLabel: skos:prefLabel
     formulaTypeID: '@id'
     mathematicalFormula: skos:definition
     language:
