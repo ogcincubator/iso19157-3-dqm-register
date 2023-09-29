@@ -8,8 +8,8 @@ transform:
   # generate an id for the description object from measure and sequence information
   - |
       walk(if (type == "object") then
-        ( if .sequence then .measureDescriptionID = "MD\(.measureID)-\(.sequence)" else .measureDescriptionID = .measureID end ) |
-        .prefLabel = "MD\(.measureDescriptionID)"
+        ( if .sequence then .measureDescriptionID = "MD\(.measureID)-\(.sequence)" else .measureDescriptionID = "MD\(.measureID)" end ) |
+        .prefLabel = .measureDescriptionID
         else . end)
   # turn known fields with space separated lists into arrays
   - |
