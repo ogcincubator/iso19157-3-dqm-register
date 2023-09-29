@@ -6,7 +6,7 @@
 
 _:iso19157-3-register a dcat:Catalog ;
   dct:title "ISO register components uplift" ;
-  dcat:dataset _:master-uplift , _:desc-uplift, _:param-uplift, _:formula-uplift , _:basic-uplift, _:sheets;
+  dcat:dataset _:master-uplift , _:desc-uplift, _:param-uplift, _:formula-uplift , _:basic-uplift, _:sheets ,_:tbox;
   # dcat:dataset  _:param-uplift;
 #  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
 #    ".ogc/profiles.ttl" ;
@@ -66,4 +66,10 @@ _:sheets a dcat:Dataset, dcfg:DomainConfiguration ;
   dct:description "Publish sheets as linked RDF" ;
   dcfg:glob "**/dqm-*.csv.ttl" ;
   dct:conformsTo profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc, profiles:vocprez_ogc ;
+.
+
+_:sheets a dcat:Dataset, dcfg:DomainConfiguration ;
+  dct:identifier "TBOX" ;
+  dct:description "Tbox labels for register" ;
+  dcfg:glob "**/model.ttl" ;
 .
