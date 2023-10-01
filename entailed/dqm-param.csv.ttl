@@ -6,26 +6,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:a59a8f61fcaab10c4e06387f20a1c7f8014f8204" ;
-    prov:wasAttributedTo _:N38d6dea6709140c1b64805aac8bdcf5f ;
-    prov:wasGeneratedBy [ a prov:Activity ;
-            rdfs:label "Entailment and validation" ;
-            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2023-09-29T12:55:13.642399"^^xsd:dateTime ;
-            prov:startedAtTime "2023-09-29T12:55:13.624954"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:a59a8f61fcaab10c4e06387f20a1c7f8014f8204" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:a59a8f61fcaab10c4e06387f20a1c7f8014f8204" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-param.csv.ttl> ] ;
-            prov:wasAssociatedWith _:N38d6dea6709140c1b64805aac8bdcf5f ;
-            prov:wasInformedBy [ dct:identifier "7cdf27b2-c826-486b-bf2b-43d5243110cf" ] ] .
-
 <https://standards.isotc211.org/19157/-1/1/dqc/content/measureParameter/MP1> a skos:Concept ;
     dqm:valueType "Real" ;
     skos:definition "minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population." ;
@@ -37,6 +17,42 @@
     skos:definition "number of classes under consideration" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter> ;
     skos:prefLabel "n" .
+
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+    prov:wasAttributedTo _:N5d714f8d0b744837a2bf74917fa2335a,
+        _:n3d754d66f7fa410693f741f1064e3ce5b1 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-10-01T07:58:00.988628"^^xsd:dateTime ;
+            prov:startedAtTime "2023-10-01T07:58:00.974904"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-param.csv.ttl> ] ;
+            prov:wasAssociatedWith _:N5d714f8d0b744837a2bf74917fa2335a ;
+            prov:wasInformedBy [ dct:identifier "e911eaa9-9aea-4ede-92d7-199b5054b2ad" ] ],
+        [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-10-01T07:57:59.439903"^^xsd:dateTime ;
+            prov:startedAtTime "2023-10-01T07:57:59.425801"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-param.csv.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:n3d754d66f7fa410693f741f1064e3ce5b1 ;
+            prov:wasInformedBy [ dct:identifier "e911eaa9-9aea-4ede-92d7-199b5054b2ad" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter> a skos:ConceptScheme ;
     skos:prefLabel "ISO19157-3 quality measure Parameters" .
@@ -55,7 +71,14 @@
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
     prov:wasInformedBy [ dct:identifier "744d179b-e5c7-47fb-927c-da35b4cdb274" ] .
 
-_:N38d6dea6709140c1b64805aac8bdcf5f a prov:Agent,
+_:N5d714f8d0b744837a2bf74917fa2335a a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.3.14" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
+_:n3d754d66f7fa410693f741f1064e3ce5b1 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.3.14" ;
