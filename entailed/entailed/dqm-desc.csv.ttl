@@ -1,0 +1,189 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/entailed/dqm-desc.csv.ttl> a prov:Entity ;
+    dcterms:format "text/turtle" ;
+    prov:wasAttributedTo _:N9791e9a4a42a4968a97d07b3c0bf3bf7 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2024-05-09T05:55:03.864201"^^xsd:dateTime ;
+            prov:startedAtTime "2024-05-09T05:55:03.849607"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:ae46bb85690b3e128bc96ec59b0fe3edb531ddac" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:ae46bb85690b3e128bc96ec59b0fe3edb531ddac" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-desc.csv.ttl> ] ;
+            prov:wasAssociatedWith _:N9791e9a4a42a4968a97d07b3c0bf3bf7 ;
+            prov:wasInformedBy [ dcterms:identifier "07872ac3-8851-40cd-8cdf-d04992877618" ] ] .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/28> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/4> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/49> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/5> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5-1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/62> dqm:hasDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD62> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> a skos:Concept ;
+    skos:definition "0,054 meter" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD28" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-1> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
+    dqm:sequence "1" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD28-1" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-2> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> ;
+    dqm:sequence "2" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD28-2" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-3> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> ;
+    dqm:sequence "3" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD28-3" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28-4> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> ;
+    dqm:sequence "4" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD28-4" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4> a skos:Concept ;
+    skos:definition "count of all items in the data that are incorrectly extracted with duplicate geometries" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD4" ;
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.png> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_9> ;
+    skos:definition "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A comparison of the data (source) and the control (reference) is calculated in the following manner:" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD49" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5> a skos:Concept ;
+    skos:definition "The value true indicates that an item is missing." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD5" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5-1> a skos:Concept ;
+    dqm:sequence "1" ;
+    skos:definition """A data product specification requires all towers higher than 300 m to be captured. The data quality measure “missing item” allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type “tower” (name depends on the application schema), is missing.
+Data quality scope: all towers with height > 300Example result of a completeness evaluation of a particular dataset:missing item = true fortower.name = “Eiffel Tower, Paris, France”tower.name = “Beijing Tower, Beijing, China”""" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD5-1" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD62> a skos:Concept ;
+    skos:definition """The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+
+MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MD62" ;
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.png> .
+
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-desc.csv.ttl> a prov:Entity ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+    prov:wasAttributedTo _:nbea2b6e94d32493abe56eb4467dd417eb1,
+        _:nbea2b6e94d32493abe56eb4467dd417eb2 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-10-01T07:58:00.707758"^^xsd:dateTime ;
+            prov:startedAtTime "2023-10-01T07:58:00.690807"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-desc.csv.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:nbea2b6e94d32493abe56eb4467dd417eb1 ;
+            prov:wasInformedBy [ dcterms:identifier "e911eaa9-9aea-4ede-92d7-199b5054b2ad" ] ],
+        [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2023-10-01T07:57:58.965962"^^xsd:dateTime ;
+            prov:startedAtTime "2023-10-01T07:57:58.950736"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:551a12d2398dad51a829a05cbb51d65f86bc74fa" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-desc.csv.ttl> ] ;
+            prov:wasAssociatedWith _:nbea2b6e94d32493abe56eb4467dd417eb2 ;
+            prov:wasInformedBy [ dcterms:identifier "e911eaa9-9aea-4ede-92d7-199b5054b2ad" ] ] .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> a skos:ConceptScheme ;
+    skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2023-09-29T12:53:03.591057"^^xsd:dateTime ;
+    prov:startedAtTime "2023-09-29T12:53:03.504613"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:64cd1c4cad8cbac4166de7abbc029b8bd1ef68a3" ;
+            rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-desc.csv.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dcterms:hasVersion "0.3.14" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dcterms:identifier "744d179b-e5c7-47fb-927c-da35b4cdb274" ] .
+
+_:N9791e9a4a42a4968a97d07b3c0bf3bf7 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dcterms:hasVersion "0.3.44" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.44" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
+_:nbea2b6e94d32493abe56eb4467dd417eb1 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dcterms:hasVersion "0.3.14" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
+_:nbea2b6e94d32493abe56eb4467dd417eb2 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dcterms:hasVersion "0.3.14" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.14" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

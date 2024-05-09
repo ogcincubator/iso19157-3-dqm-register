@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dqm="http://www.opengis.net/def/metamodel/isodqm/"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N780f02420d4a43bf81ef7cc99a6f6111">
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.44</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <dcterms:hasVersion>0.3.44</dcterms:hasVersion>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a867e318db94fe3945ab34be3da6f7b">
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:used rdf:nodeID="Na850b271aafd44bd8b4e0d4f88b1b480"/>
+    <prov:used rdf:nodeID="N69a6c79707da4c60b83b3ed4de583e5c"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-09T05:55:04.220025</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-09T05:55:04.237158</prov:endedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="N780f02420d4a43bf81ef7cc99a6f6111"/>
+    <prov:wasInformedBy rdf:nodeID="N5a2c21fc71824c468d2aabca6b87da6e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N131e04e4730e4e268bbdce0bbf3a7037">
+    <prov:used rdf:nodeID="Neab831518579428997738d7044a3475a"/>
+    <prov:used rdf:nodeID="N0bd79b6e24f0400eb77c61282ebd63de"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-09T05:55:04.220025</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-09T05:55:04.252253</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N89140ed8691f49328e5b622bb58afcef"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="N05f02bdddc944f7b8ff7b373b28ce340"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5">
+    <dqm:formulaKey>If ratio</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>FT49_5</skos:prefLabel>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2">
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty.</dqm:formulaKey>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;msub&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/msqrt&gt;&lt;/math&gt;</skos:definition>
+    <skos:prefLabel>FT28_2</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8">
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:prefLabel>FT49_8</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <dqm:formulaKey>then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)</dqm:formulaKey>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;6435&lt;/mn&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;999556&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;mi&gt;ratio&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;923237&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;ratio&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;282533&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;ratio&lt;/mi&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mo&gt;≤&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;</skos:definition>
+    <skos:prefLabel>FT49_7</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <dqm:formulaKey>If ratio</dqm:formulaKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b1">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b4">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl"/>
+    <dcterms:hasVersion>git:551a12d2398dad51a829a05cbb51d65f86bc74fa</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/entailed/dqm-formula.csv.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+    <prov:wasAttributedTo rdf:nodeID="N780f02420d4a43bf81ef7cc99a6f6111"/>
+    <prov:wasGeneratedBy rdf:nodeID="N0a867e318db94fe3945ab34be3da6f7b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0bd79b6e24f0400eb77c61282ebd63de">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:ae46bb85690b3e128bc96ec59b0fe3edb531ddac</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:prefLabel>FT49_2</skos:prefLabel>
+    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
+    <dqm:formulaKey>Calculate the mean horizontal error</dqm:formulaKey>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;msub&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac bevelled="true"&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;mo mathvariant="italic"&gt;∆&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/mfrac&gt;&lt;/math&gt;</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;msub&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfenced close="|" open="|"&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;/math&gt;</skos:definition>
+    <skos:prefLabel>FT28_1</skos:prefLabel>
+    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty.</dqm:formulaKey>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <prov:wasGeneratedBy rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b3"/>
+    <prov:wasGeneratedBy rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b7"/>
+    <prov:wasAttributedTo rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b1"/>
+    <prov:wasAttributedTo rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b2"/>
+    <dcterms:hasVersion>git:551a12d2398dad51a829a05cbb51d65f86bc74fa</dcterms:hasVersion>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <dqm:formulaKey>Compute absolute CE90</dqm:formulaKey>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mi&gt;CE&lt;/mi&gt;&lt;msub&gt;&lt;mn&gt;90&lt;/mn&gt;&lt;mi&gt;abs&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;mi&gt;CE&lt;/mi&gt;&lt;msup&gt;&lt;msub&gt;&lt;mn&gt;90&lt;/mn&gt;&lt;mi&gt;reference&lt;/mi&gt;&lt;/msub&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;CE&lt;/mi&gt;&lt;msup&gt;&lt;msub&gt;&lt;mn&gt;90&lt;/mn&gt;&lt;mi&gt;source&lt;/mi&gt;&lt;/msub&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/msqrt&gt;&lt;/math&gt;</skos:definition>
+    <skos:prefLabel>FT49_10</skos:prefLabel>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b7">
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-01T07:57:52.289095</prov:startedAtTime>
+    <prov:used rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b9"/>
+    <prov:used rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b8"/>
+    <prov:wasInformedBy rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b10"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-01T07:57:52.315407</prov:endedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b2"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b2">
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.14</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1">
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
+    <skos:prefLabel>FT49_1</skos:prefLabel>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mi&gt;∆&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;msup&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mi&gt;source&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;X&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mi&gt;reference&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;X&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mi&gt;source&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;Y&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mi&gt;reference&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;Y&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/msqrt&gt;&lt;/math&gt;</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>For i=1..N calculate the absolute error in the horizontal dimension at each point.</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6">
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:prefLabel>FT49_6</skos:prefLabel>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;2815&lt;/mn&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <dqm:formulaKey>then</dqm:formulaKey>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_9">
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <skos:prefLabel>FT49_9</skos:prefLabel>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mi&gt;CE&lt;/mi&gt;&lt;msub&gt;&lt;mn&gt;90&lt;/mn&gt;&lt;mi&gt;source&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfenced close="|" open="|"&gt;&lt;msub&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;/mfenced&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;/math&gt;</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>Compute CE90 for the source</dqm:formulaKey>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89140ed8691f49328e5b622bb58afcef">
+    <dcterms:identifier>07872ac3-8851-40cd-8cdf-d04992877618</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <skos:prefLabel>FT47</skos:prefLabel>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mfrac&gt;&lt;munderover&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/munderover&gt;&lt;mfenced close="]" open="["&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;/msqrt&gt;&lt;/math&gt;</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaKey>s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y</dqm:formulaKey>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b8">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/ISO19157-3/dqm-formula.csv.ttl"/>
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:hasVersion>git:551a12d2398dad51a829a05cbb51d65f86bc74fa</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05f02bdddc944f7b8ff7b373b28ce340">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.44</rdfs:comment>
+    <dcterms:hasVersion>0.3.44</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3">
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;msub&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/msqrt&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaKey>For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing                               for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result.
+A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty.</dqm:formulaKey>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:prefLabel>FT28_3</skos:prefLabel>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b3">
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-01T07:58:00.310217</prov:startedAtTime>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:used rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b4"/>
+    <prov:used rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b5"/>
+    <prov:wasAssociatedWith rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b1"/>
+    <prov:wasInformedBy rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b6"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-01T07:58:00.330147</prov:endedAtTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na850b271aafd44bd8b4e0d4f88b1b480">
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:hasVersion>git:ae46bb85690b3e128bc96ec59b0fe3edb531ddac</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b11">
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-29T12:53:03.382051</prov:startedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b13"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:used rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b12"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-29T12:53:03.498382</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3">
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;msub&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;mfrac bevelled="true"&gt;&lt;mrow&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;msup&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mo mathvariant="italic"&gt;∆&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;mfenced&gt;&lt;mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/mfenced&gt;&lt;/mfrac&gt;&lt;/msqrt&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaKey>Calculate the standard deviation of the horizontal errors</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:prefLabel>FT49_3</skos:prefLabel>
+    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b12">
+    <dcterms:hasVersion>git:64cd1c4cad8cbac4166de7abbc029b8bd1ef68a3</dcterms:hasVersion>
+    <dcterms:format>application/json</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/ISO19157-3/dqm-formula.csv.json"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b5">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:551a12d2398dad51a829a05cbb51d65f86bc74fa</dcterms:hasVersion>
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b9">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:551a12d2398dad51a829a05cbb51d65f86bc74fa</dcterms:hasVersion>
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b13">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dcterms:hasVersion>0.3.14</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69a6c79707da4c60b83b3ed4de583e5c">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl"/>
+    <dcterms:hasVersion>git:ae46bb85690b3e128bc96ec59b0fe3edb531ddac</dcterms:hasVersion>
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neab831518579428997738d7044a3475a">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/dqm-formula.csv.ttl"/>
+    <dcterms:hasVersion>git:ae46bb85690b3e128bc96ec59b0fe3edb531ddac</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b6">
+    <dcterms:identifier>e911eaa9-9aea-4ede-92d7-199b5054b2ad</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4">
+    <skos:prefLabel>FT28_4</skos:prefLabel>
+    <dqm:formulaLanguage>MathML</dqm:formulaLanguage>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;menclose notation="top"&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/menclose&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/mfrac&gt;&lt;munderover&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/munderover&gt;&lt;msub&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaKey>Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions.</dqm:formulaKey>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/entailed/dqm-formula.csv.rdf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+    <prov:wasGeneratedBy rdf:nodeID="N131e04e4730e4e268bbdce0bbf3a7037"/>
+    <prov:wasAttributedTo rdf:nodeID="N05f02bdddc944f7b8ff7b373b28ce340"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4">
+    <dqm:formulaLanguage>http://www.w3.org/1998/Math/MathML</dqm:formulaLanguage>
+    <skos:definition>&lt;math xmlns="http://www.w3.org/1998/Math?MathML"&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac bevelled="true"&gt;&lt;mfenced close="|" open="|"&gt;&lt;msub&gt;&lt;mi&gt;μ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;/mfenced&gt;&lt;msub&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;/mfrac&gt;&lt;/math&gt;</skos:definition>
+    <dqm:formulaKey>Calculate the ratio of the absolute value of the mean error to the standard deviation</dqm:formulaKey>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:formulaLanguageVersion>1.0</dqm:formulaLanguageVersion>
+    <skos:prefLabel>FT49_4</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b10">
+    <dcterms:identifier>e911eaa9-9aea-4ede-92d7-199b5054b2ad</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:prefLabel>ISO19157-3 Quality Measures Formulas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a2c21fc71824c468d2aabca6b87da6e">
+    <dcterms:identifier>07872ac3-8851-40cd-8cdf-d04992877618</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n088a4b6f9fbc44a794ce96031aa79c72b14">
+    <dcterms:identifier>744d179b-e5c7-47fb-927c-da35b4cdb274</dcterms:identifier>
+  </rdf:Description>
+</rdf:RDF>
