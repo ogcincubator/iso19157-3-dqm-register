@@ -1,0 +1,39 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/1> a skos:Concept ;
+    skos:definition "Indicator that an item is in error" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> ;
+    skos:prefLabel "error indicator" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/2> a skos:Concept ;
+    skos:definition "Number of the erroneous items with respect to the total number of items that should have been present" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> ;
+    skos:prefLabel "error rate" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/3> a skos:Concept ;
+    skos:definition "Total number of items that are subject to an error of a specified type" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> ;
+    skos:prefLabel "error count" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> a skos:ConceptScheme ;
+    skos:prefLabel "ISO19157-3 basic quality measures" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2024-05-09T15:47:54.655769"^^xsd:dateTime ;
+    prov:startedAtTime "2024-05-09T15:47:54.357673"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:c1c1421467ad3576dd4e94f5ba647cc2ed611a6c" ;
+            rdfs:seeAlso <file:///C:/repos/ogc/iso1957-3-dqm-register/sources/dataQualityBasicMeasures.csv.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.3.15" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "2a829788-10f0-43e7-99f5-df4e17c9284f" ] .
+

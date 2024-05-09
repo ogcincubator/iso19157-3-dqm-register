@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "filter": {
+      "name": "csv",
+      "conf": {
+        "rows": "dict",
+        "header-row": 0,
+        "skip-rows": 0,
+        "delimiter": ",",
+        "quotechar": "\"",
+        "skip-empty-rows": true,
+        "trim-values": false
+      }
+    },
+    "filename": "sources\\FormulaType.csv",
+    "headers": [
+      "formulaType ID",
+      "mathematicalFormula ",
+      "language",
+      "languageVersion",
+      "key"
+    ]
+  },
+  "data": [
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>\u2206</mi><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><msqrt><msup><mfenced><mrow><mi>source</mi><msub><mi>X</mi><mi>i</mi></msub><mo>-</mo><mi>reference</mi><msub><mi>X</mi><mi>i</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mi>source</mi><msub><mi>Y</mi><mi>i</mi></msub><mo>-</mo><mi>reference</mi><msub><mi>Y</mi><mi>i</mi></msub></mrow></mfenced><mn>2</mn></msup></msqrt></math>",
+      "language": "http://www.w3.org/1998/Math/MathML",
+      "languageVersion": "1.0",
+      "key": "For i=1..N calculate the absolute error in the horizontal dimension at each point."
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>\u03bc</mi><mi>H</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><mfenced><mrow><mo>\u2211</mo><mo mathvariant=\"italic\">\u2206</mo><msub><mi>H</mi><mi>i</mi></msub></mrow></mfenced><mi>N</mi></mfrac></math>",
+      "language": "http://www.w3.org/1998/Math/MathML",
+      "languageVersion": "1.0",
+      "key": "Calculate the mean horizontal error"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>\u03c3</mi><mi>H</mi></msub><mo>=</mo><msqrt><mfrac bevelled=\"true\"><mrow><mo>\u2211</mo><msup><mfenced><mrow><mo mathvariant=\"italic\">\u2206</mo><msub><mi>H</mi><mi>i</mi></msub><mo>-</mo><msub><mi>\u03bc</mi><mi>H</mi></msub></mrow></mfenced><mn>2</mn></msup></mrow><mfenced><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfenced></mfrac></msqrt></math>",
+      "language": "http://www.w3.org/1998/Math/MathML",
+      "languageVersion": "1.0",
+      "key": "Calculate the standard deviation of the horizontal errors"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math?MathML\"><mo>=</mo><mfrac bevelled=\"true\"><mfenced close=\"|\" open=\"|\"><msub><mi>\u03bc</mi><mi>H</mi></msub></mfenced><msub><mi>\u03c3</mi><mi>H</mi></msub></mfrac></math>",
+      "language": "http://www.w3.org/1998/Math/MathML",
+      "languageVersion": "1.0",
+      "key": "Calculate the ratio of the absolute value of the mean error to the standard deviation"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&gt;</mo><mn>1</mn><mo>,</mo><mn>4</mn></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "If ratio"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2815</mn></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "then"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>\u2264</mo><mn>1</mn><mo>,</mo><mn>4</mn></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "If ratio"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>6435</mn><mo>-</mo><mfenced><mrow><mn>0</mn><mo>,</mo><mn>999556</mn><mo>\u00d7</mo><mi>ratio</mi></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>0</mn><mo>,</mo><mn>923237</mn><mo>\u00d7</mo><msup><mi>ratio</mi><mn>2</mn></msup></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>0</mn><mo>,</mo><mn>282533</mn><mo>\u00d7</mo><msup><mi>ratio</mi><mn>3</mn></msup></mrow></mfenced></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_9",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CE</mi><msub><mn>90</mn><mi>source</mi></msub><mo>=</mo><mfenced close=\"|\" open=\"|\"><msub><mi>\u03bc</mi><mi>H</mi></msub></mfenced><mo>+</mo><mfenced><mrow><mi>k</mi><mo>\u00d7</mo><msub><mi>\u03c3</mi><mi>H</mi></msub></mrow></mfenced></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "Compute CE90 for the source"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_10",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CE</mi><msub><mn>90</mn><mi>abs</mi></msub><mo>=</mo><msqrt><mi>CE</mi><msup><msub><mn>90</mn><mi>reference</mi></msub><mn>2</mn></msup><mo>+</mo><mi>CE</mi><msup><msub><mn>90</mn><mi>source</mi></msub><mn>2</mn></msup></msqrt></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "Compute absolute CE90"
+    },
+    {
+      "formulaType ID": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><mfenced close=\"|\" open=\"|\"><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub></mrow></mfenced></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty."
+    },
+    {
+      "formulaType ID": "FT28_2",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><msqrt><msup><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty."
+    },
+    {
+      "formulaType ID": "FT28_3",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><msqrt><msup><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing                               for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result.\nA corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty."
+    },
+    {
+      "formulaType ID": "FT28_4",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><menclose notation=\"top\"><mi>e</mi></menclose><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>e</mi><mi>i</mi></msub></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions."
+    },
+    {
+      "formulaType ID": "FT47",
+      "mathematicalFormula ": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>\u03c3</mi><mo>=</mo><msqrt><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfenced close=\"]\" open=\"[\"><mrow><msup><mfenced><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>t</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mfenced><mn>2</mn></msup></mrow></mfenced></msqrt></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y"
+    }
+  ]
+}

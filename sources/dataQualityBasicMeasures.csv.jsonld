@@ -30,12 +30,27 @@
   "skos:prefLabel": "ISO19157-3 basic quality measures",
   "concepts": [
     {
-      "basicMeasureID": "https://standards.isotc211.org/19157/-3/1/dqc/basicMeasure/1",
+      "basicMeasureID": "1",
       "Name": "error indicator",
-      "Concept": "counting related basic measure",
-      "Definition": "indicator that an item is in error",
-      "example": "if the value is true the item is not correct",
-      "ValueType": null,
+      "Definition": "Indicator that an item is in error",
+      "example (MeasureDescription)": "False",
+      "ValueType": "Boolean",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "2",
+      "Name": "error rate",
+      "Definition": "Number of the erroneous items with respect to the total number of items that should have been present",
+      "example (MeasureDescription)": "0,0189",
+      "ValueType": "Real",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "3",
+      "Name": "error count",
+      "Definition": "Total number of items that are subject to an error of a specified type",
+      "example (MeasureDescription)": "11",
+      "ValueType": "Integer",
       "@type": "skos:Concept"
     }
   ]

@@ -16,7 +16,7 @@ _:iso19157-3-register a dcat:Catalog ;
 
 _:basic-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dct:description "Basic Measure sheet uplift" ;
-  dcfg:glob "**/dqm-basic.csv.json" ;
+  dcfg:glob "**/*Basic*.csv.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
     dcfg:file "basic-uplift.yml" ;
@@ -26,7 +26,7 @@ _:basic-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
 
 _:master-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dct:description "Master sheet uplift" ;
-  dcfg:glob "**/dqm-master.csv.json" ;
+  dcfg:glob "**/dataQualityMeasures.csv.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
     dcfg:file "master-uplift.yml" ;
@@ -35,7 +35,7 @@ _:master-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
 
 _:desc-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dct:description "Description sheet uplift" ;
-  dcfg:glob "**/dqm-desc.csv.json" ;
+  dcfg:glob "**/*Description.csv.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
     dcfg:file "desc-uplift.yml" ;
@@ -44,7 +44,7 @@ _:desc-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
 
 _:param-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dct:description "Master sheet uplift" ;
-  dcfg:glob "**/dqm-param.csv.json" ;
+  dcfg:glob "**/*Parameter.csv.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
     dcfg:file "param-uplift.yml" ;
@@ -53,7 +53,7 @@ _:param-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
 
 _:formula-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
   dct:description "Master sheet uplift" ;
-  dcfg:glob "**/dqm-formula.csv.json" ;
+  dcfg:glob "**/*Formula*.csv.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
     dcfg:file "formula-uplift.yml" ;
@@ -64,7 +64,7 @@ _:formula-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
 _:sheets a dcat:Dataset, dcfg:DomainConfiguration ;
   dct:identifier "sheets" ;
   dct:description "Publish sheets as linked RDF" ;
-  dcfg:glob "**/dqm-*.csv.ttl" ;
+  dcfg:glob "entailed/*.csv.ttl" ;
   dct:conformsTo profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc, profiles:vocprez_ogc ;
 .
 
