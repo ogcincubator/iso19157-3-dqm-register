@@ -1,0 +1,221 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.ttl> a prov:Entity ;
+    dcterms:format "text/turtle" ;
+    prov:wasAttributedTo _:N84b0290046f5464f840476aa2ae1c4da ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2024-06-22T18:24:41.673201"^^xsd:dateTime ;
+            prov:startedAtTime "2024-06-22T18:24:41.657976"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:a9a73818873072358d2554833363eada0866e291" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:a9a73818873072358d2554833363eada0866e291" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl> ] ;
+            prov:wasAssociatedWith _:N84b0290046f5464f840476aa2ae1c4da ;
+            prov:wasInformedBy [ dcterms:identifier "8af20e43-3b8f-44a7-ad3c-724441d3f242" ] ] .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1> a skos:Concept ;
+    dqm:formulaKey "Calculation of single deviations." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_2> a skos:Concept ;
+    dqm:formulaKey "Calculation of biases." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28> a skos:Concept ;
+    dqm:formulaKey "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty.",
+        "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty.",
+        "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty.",
+        "Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29> a skos:Concept ;
+    dqm:formulaKey "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti  are considered to represent the true positions. All positional uncertainties above a defined threshold emax are then removed from the set. An outlier (emax) can be considered as blunders or gross errors or use the principle . ",
+        "Formula for calculation of the mean of the horizontal absolute positions of the remaining number of errors (NR)." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT30> a skos:Concept ;
+    dqm:formulaKey """For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti are considered to represent the true positions. 
+All positional uncertainties above a defined threshold are then counted as error.""" ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT31> a skos:Concept ;
+    dqm:formulaKey """For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti are considered to represent the true positions. 
+All positional uncertainties above a defined threshold are then counted as error.""" ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32> a skos:Concept ;
+    dqm:formulaKey " 1D coordinates (e.g. height data). Formula for vector-valued random variable.",
+        """1D coordinates (e.g. height data). Formula for the correlation between two elements.
+""",
+        """1D coordinates (e.g. height data). Formula for the covariance matrix of the vector-valued random variable.
+""",
+        """2D coordinates. Formula for the covariance matrix of the vector-valued random variable.
+""",
+        """3D coordinates. Formula for the covariance matrix of the vector-valued random variable.
+""",
+        "Arbitrary observables.   Formula for the covariance matrix of the vector-valued random variable.",
+        "Arbitrary observables.  Formula for the covariance matrix of the vector-valued random variable." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT39> a skos:Concept ;
+    dqm:formulaKey "s is the Root Mean Squeare Error and zt is the true values of the observable Z. Formula for the Root Mean Square Error (RMSE) of the observable." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40> a skos:Concept ;
+    dqm:formulaKey "Calculate the absolute error in the vertical dimension at each point.",
+        "Calculate the absolute value of the bias.",
+        "Calculate the linear standard deviation of errors in the reference source.",
+        "Calculate the linear standard deviation of errors in the tested product.",
+        "Calculate the linear standard deviation of measured differences between the tested product and the reference source.",
+        "Calculate the ratio of the absolute value of the mean error to the standard deviation.",
+        "If ratio > 1,4",
+        "If ratio ≤ 1,4" ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41> a skos:Concept ;
+    dqm:formulaKey "Calculate the absolute error in the vertical dimension at each point.",
+        "Calculate the mean vertical error.",
+        "Calculate the ratio of the absolute value of the mean error to the standard deviation.",
+        "Calculate the standard deviation of the vertical errors.",
+        "Compute LE90 for the source.",
+        "Compute absolute LE90.",
+        "If ratio > 1,4",
+        "If ratio ≤ 1,4 then calculate k based on the ratio of the vertical bias to the standard deviation of the heights using a cubic polynomial fit through the tabular values as defined in CRC Handbook of Tables for Probability and Statistics (ISBN 9781315894027)." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47> a skos:Concept ;
+    dqm:formulaKey "s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y" ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48> a skos:Concept ;
+    dqm:formulaKey "Calculate the absolute error in the horizontal dimension at each point and each coordinate Xi and Yi",
+        "Calculate the circular standard deviation of errors in the reference source.",
+        "Calculate the circular standard deviation of errors in the tested product.",
+        "Calculate the circular standard deviation of measured differences between the tested product and the reference source.",
+        "Calculate the mean horizontal error for each coordinate.",
+        "Compute abolute circular error at 90% confidence level of biased data (CMAS)." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49> a skos:Concept ;
+    dqm:formulaKey "Calculate the mean horizontal error",
+        "Calculate the ratio of the absolute value of the mean error to the standard deviation",
+        "Calculate the standard deviation of the horizontal errors",
+        "Compute CE90 for the source",
+        "Compute absolute CE90",
+        "For i=1..N calculate the absolute error in the horizontal dimension at each point.",
+        "If ratio > 1,4",
+        "If ratio ≤ 1,4 then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)" ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50> a skos:Concept ;
+    dqm:formulaKey "Calculate the direction (bearing) of the major semi-axis of the uncertainty ellipse.",
+        "Calculation of the uncertainty ellipse's major semi-axis length.",
+        "Calculation of the uncertainty ellipse's minor semi-axis length." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51> a skos:Concept ;
+    dqm:formulaKey "Calculate the direction (bearing) of the major semi-axis of the confidence ellipse.",
+        "Calculation of the confidence ellipse's major semi-axis length.",
+        "Calculation of the confidence ellipse's minor semi-axis length." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52> a skos:Concept ;
+    dqm:formulaKey "Calculate the Relative LE by converting the sigma to a 90% statistics.",
+        "Calculate the absolute vertical error at each point.",
+        "Calculate the relative standard deviation.",
+        "Calculate the relative vertical error for all point pair combinations.",
+        "Determine all possible point pair combinations." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53> a skos:Concept ;
+    dqm:formulaKey "Calculate the absolute error in the X and Y dimensions at each point.",
+        "Calculate the relative CE by converting the sigma to a 90% significance level.",
+        "Calculate the relative error in X and Y for all point pair combinations.",
+        "Calculate the relative horizontal standard deviation.",
+        "Calculate the relative standard deviations in each axis.",
+        "Determine all possible point pair combinations." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT64> a skos:Concept ;
+    dqm:formulaKey "N is the number of classified items in a misclassification matrix." ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> a skos:ConceptScheme ;
+    skos:prefLabel "ISO19157-3 Quality Measures Formulas" .
+
+[] a skos:Concept ;
+    dqm:formulaKey """1D coordinates (e.g. height data). Formula for the standard deviation of an element, e.g. x1
+""" ;
+    dqm:formulaLanguage "MathML" ;
+    dqm:formulaLanguageVersion "1.0" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2024-06-22T15:46:39.022153"^^xsd:dateTime ;
+    prov:startedAtTime "2024-06-22T15:46:38.872120"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:60f015dba383152b2ec30a4279e7fce359e6c910" ;
+            rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/FormulaType.csv.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dcterms:identifier "b44ca163-8d51-46fe-8e83-3635ee5ee1cd" ] .
+
+_:N84b0290046f5464f840476aa2ae1c4da a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

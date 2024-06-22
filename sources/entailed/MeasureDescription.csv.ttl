@@ -1,0 +1,274 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
+    dcterms:format "text/turtle" ;
+    prov:wasAttributedTo _:Nca711b00a7264db4b504d3d61362f8c5 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            rdfs:label "Entailment and validation" ;
+            rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
+            prov:endedAtTime "2024-06-22T18:24:40.958252"^^xsd:dateTime ;
+            prov:startedAtTime "2024-06-22T18:24:40.943095"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:a9a73818873072358d2554833363eada0866e291" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:a9a73818873072358d2554833363eada0866e291" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ] ;
+            prov:wasAssociatedWith _:Nca711b00a7264db4b504d3d61362f8c5 ;
+            prov:wasInformedBy [ dcterms:identifier "8af20e43-3b8f-44a7-ad3c-724441d3f242" ] ] .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDnull> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT128_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT128_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT30>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT31>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT39>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_7>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT40_8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_7>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT41_8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT47>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT48_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT48_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT48_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT48_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT48_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT48_6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_7>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT49_8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT50_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT50_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT50_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT51_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT51_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT51_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT52_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT52_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT52_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT52_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT52_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT53_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT53_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT53_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT53_4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT53_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT53_6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT64> ;
+    skos:definition "0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)",
+        "0,054 meter",
+        "0.0189",
+        "10% (Domain of a ‘buildingType’ attribute is defined as the following set of values {1,2,0}; 10 out of 100 ‘building’ objects contain value ‘X’ in ‘buildingType’ attribute)",
+        "100 % (scope: attributes road width and speed limit for roads, are within the value domain)",
+        "10 % (The data set has 10 % more houses than the universe of discourse)",
+        "2 (10 houses are in the data set although 12 exist within the universe of discourse)",
+        "2 (12 houses are in the data set although only 10 exist within the universe of discourse)",
+        "25 % of the nodes within the data quality scope have error distance greater than 1 m",
+        """324 (count road segment with overlap by other road segment)
+Key: a) vertices""",
+        """48 (count double line drain and slivers that do not fulfil the threshold values set by thinness ratio and maximum sliver area)
+Key: 1) Single line drain
+2) Double line drain
+a) Maximum area parameter prevents correct double line drain portrayal from being flagged as an error""",
+        "5 (5 geographical names are misspelled)",
+        "5 (5 living quarters type code is coded on more than 3 characters although the requirement in data product specification is 3)",
+        "99,8 % (in the dataset there is 1005 items of 1007 items correct stored in compliance with the conceptual schema)",
+        """A data product specification requires all towers higher than 300 m to be captured. The data quality measure “missing item” allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type “tower” (name depends on the application schema), is missing.
+Data quality scope: all towers with height > 300
+Example result of a completeness evaluation of a particular data set:
+missing item = true for
+tower.name = “Eiffel Tower, Paris, France"
+tower.name = “Beijing Tower, Beijing, China”""",
+        "A manner of calculating the comparison of the data (measured) and the control (true).",
+        "A manner of calculating the comparison of the data (source) and the control (reference).",
+        "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. The data quality measure counts the number of errors of this kind.",
+        "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections.",
+        "A road must have a length at least 3 meters. Key: 1) search distance = 3 m",
+        "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference).",
+        "Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates.",
+        """Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates. 
+With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msubsup> <mi>χ</mi> <mrow> <mn>1</mn> <mo>-</mo> <mi>α</mi> </mrow> <mn>2</mn> </msubsup> <mfenced> <mn>2</mn> </mfenced></math></span>-distribution of a 2D-confidence ellipse</div> <div class="sts-p "><span class="inline-formula"><math id="id-870f1e92-7dac-44c3-964d-aaca5be575df"> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>α</mi> <mo>=</mo> <mn>95</mn> <mo></mo> <mo>%</mo></math></span>5,99</div> <div class="sts-p "><span class="inline-formula"><math id="id-297effe3-a0bb-4b80-ab4c-cf739b483a55"> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>α</mi> <mo>=</mo> <mn>99</mn> <mo></mo> <mo>%</mo></math></span>9,21""",
+        "Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular",
+        """Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists).
+""",
+        "Estimator of the true value of observable Z.",
+        """Example 1: 10 % (The data set has 10 % less houses than the universe of discourse)
+Example 2: 6,6% of all pixels in the scene is clouded with no ground information""",
+        """Example 1: Towers with identical attribution and within search tolerance (search tolerance = 10 m)
+D13288TZ.EPS
+Example 2: Bridge has invalid Transportation. Use Category of Road
+D13288UZ.EPS
+Example 3: Invalid placement of Airport inside a Lake
+D13288VZ.EPS
+Example 4: Invalid overlap of area feature Lake within line feature Railroad
+D13288WZ.EPS
+Key: 1. Bridge 2.  Railroad 3. Lake 4. Airport""",
+        """Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other
+D13288RZ.EPS two (or more) curves collected on top of each other
+D13288SZ.EPS two (or more) surfaces collected on top of each other.""",
+        "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result.",
+        "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99.8 %",
+        "If the conceptual schema explicitly or implicitly describes rules, these rules shall be followed. Violations against such rules can be, for example, invalid placement of features within a defined tolerance, duplication of features and invalid overlap of features.",
+        "It is ‘true’ if the value for an address has been updated in the database within user defined AQL (e.g. 5 days) since the decision on its change.",
+        """Key: 1) Buliding 1
+2) illegal intersection (loop)""",
+        """Key: 1) Sand
+2) Sliver
+3) Double line drain
+b) The sliver is less than the maximum parameter and is flagged for evaluation of possible error.""",
+        "Key: 1) search distance = 3 m",
+        "Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons",
+        "Radius desctribing a circle, in which the true point location lies with the propability of 39.4%.",
+        """Rate of objects not in conformity to the tolerance.
+In a common area for two datasets the coordinates compare to each other, an error is outside the tolerance.
+Key: 1 Search tolerance 0,3 meter""",
+        "Root mean squere error of planimetry.",
+        """Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap
+D13288XZ.EPS""",
+        "Tests if a particular quality scope is updated according to its given maintenance and update frequency e.g. “Annually”. Value: yes or no",
+        """The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions.
+A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result.""",
+        "The measure will take the  value true if all the requirements in the referred data product specification are fulfilled",
+        """The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+
+MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""",
+        "The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification",
+        """The relative misclassification matrix (RMCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+RMCM (i,j ) = [# items of class (i ) classified as class (j )] / (# items of class (i )] × 100 %""",
+        "The thickness quotient is independent of the size of the surface, and the closer the value is to 0, the thinner the selected silver surfaces shall be.",
+        "The timetable of a railway station shall be updated with the frequency required to allow passengers to take a train even if the scheduled time or platform change.",
+        "The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset",
+        "The value true indicates physical structure conflict.",
+        "The value true indicates that an item is missing.",
+        "The value true indicates that an item is not in conformance with its value domain)",
+        "The value true indicates that there are events incorrectly ordered",
+        "True (5 historical events are present in the dataset but are not ordered correctly)",
+        "True (In a data set, more items are classified as houses than in the universe of discourse)",
+        "True (One feature relationship exists which is not defined in the conceptual schema)",
+        "True (the dataset is stored in wrong file format, a shape file instead of gml)",
+        "True – a feature with attribute colour has the value ‘blau’, but it does not exist in the specified value domain: red, green, blue, yellow",
+        """Which surfaces may overlap and which shall not is application dependent. Not all overlapping surfaces are necessarily erroneous. When reporting this data quality measure, the types of feature classes corresponding to the illegal overlapping surfaces shall be reported as well. 
+See also Complete tessellation id 204""",
+        "With the elements of the misclassification matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/62)",
+        "all dates are correct according to their month rules of probable number of days e.g.  no February 29:th non leap year, no April 31:th",
+        "count of all attribute values where the value is incorrect",
+        "count of all items in the data that are incorrectly extracted with duplicate geometries",
+        "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50 %" ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MDnull" ;
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_1.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_2.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_3.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_4.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/11e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/201e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/202e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/204e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/21e_1.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/21e_2.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/23e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/24e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/25e_1.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/25e_2.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/26e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/27e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4e_1.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4e_2.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62e.PNG>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/63e.PNG> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDnull-1.0> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT28_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT29_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_4> ;
+    dqm:sequence "1.0" ;
+    skos:definition "The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions. ",
+        "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MDnull-1.0" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDnull-2.0> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT28_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT29_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_6> ;
+    dqm:sequence "2.0" ;
+    skos:definition "A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criteria for finding the corresponding points shall be reported with the data quality evaluation result.",
+        "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MDnull-2.0" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDnull-3.0> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT28_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_7>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_8> ;
+    dqm:sequence "3.0" ;
+    skos:definition "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MDnull-3.0" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDnull-4.0> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/FT32_9> ;
+    dqm:sequence "4.0" ;
+    skos:definition "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> ;
+    skos:prefLabel "MDnull-4.0" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription> a skos:ConceptScheme ;
+    skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2024-06-22T15:46:39.175774"^^xsd:dateTime ;
+    prov:startedAtTime "2024-06-22T15:46:39.028880"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:60f015dba383152b2ec30a4279e7fce359e6c910" ;
+            rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureDescription.csv.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dcterms:identifier "b44ca163-8d51-46fe-8e83-3635ee5ee1cd" ] .
+
+_:Nca711b00a7264db4b504d3d61362f8c5 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
