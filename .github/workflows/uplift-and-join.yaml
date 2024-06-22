@@ -21,19 +21,26 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install git+https://github.com/opengeospatial/ogc-na-tools.git
+          pip install pandas
       - name: Process files
-        env:
-          DB_USERNAME: admin
-          DB_PASSWORD: ${{ secrets.UPLOAD_GRAPH_STORE_PASSWORD }}
         run: |
-          find . -wholename '**/sources/*.csv' | while read CSV_FILE; do python -m ogc.na.ingest_json \
-            --skip-on-missing-context --json-ld --context csv2python.yml "${CSV_FILE}" > "${CSV_FILE}.json"
-          done
-          python -m ogc.na.ingest_json --batch --skip-on-missing-context --all \
-            --json-ld --ttl --work-dir . --domain-config .ogc/catalog.ttl
-          # python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
-          #  --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
-          #  --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data
+        cd sources
+        python excel2csv.py
+
+      - name: Process files
+          env:
+            DB_USERNAME: admin
+            DB_PASSWORD: ${{ secrets.UPLOAD_GRAPH_STORE_PASSWORD }}
+          run: |
+            find . -wholename '**/sources/*.csv' | while read CSV_FILE; do python -m ogc.na.ingest_json \
+              --skip-on-missing-context --json-ld --context csv2python.yml "${CSV_FILE}" > "${CSV_FILE}.json"
+            done
+
+            python -m ogc.na.ingest_json --batch --skip-on-missing-context --all \
+              --json-ld --ttl --work-dir . --domain-config .ogc/catalog.ttl
+            # python -m ogc.na.update_vocabs -w . .ogc/catalog.ttl --use-git-status \
+            #  --base-uri https://raw.githubusercontent.com/${{github.repository}}/${{github.ref_name}} \
+            #  --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data
       - name: Add and commit
         uses: EndBug/add-and-commit@v9
         with:
