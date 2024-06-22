@@ -8,8 +8,8 @@ _:iso19157-3-register a dcat:Catalog ;
   dct:title "ISO register components uplift" ;
   dcat:dataset _:master-uplift , _:desc-uplift, _:param-uplift, _:formula-uplift , _:basic-uplift, _:sheets ,_:tbox;
   # dcat:dataset  _:param-uplift;
-#  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
-#    ".ogc/profiles.ttl" ;
+  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
+   ".ogc/profiles.ttl" ;
   dcfg:ignoreProfileArtifactErrors true ;
 .
 
@@ -64,7 +64,7 @@ _:formula-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
 _:sheets a dcat:Dataset, dcfg:DomainConfiguration ;
   dct:identifier "sheets" ;
   dct:description "Publish sheets as linked RDF" ;
-  dcfg:glob "entailed/entailed/*.csv.ttl" ;
+  dcfg:glob "sources/*.csv.ttl" ;
   dct:conformsTo profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc, profiles:vocprez_ogc ;
 .
 
