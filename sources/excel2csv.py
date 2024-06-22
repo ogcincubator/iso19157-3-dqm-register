@@ -13,5 +13,5 @@ def excel_to_csv(excel_file):
         print(f"Converted '{sheet_name}' to '{csv_filename}'")
 
 if __name__ == "__main__":
-    excel_file = "ISO19157-3_DQM_010524.xlsx"  # Replace with the path to your Excel file
+    excel_file = "../ISO19157-3/ISO19157-3_DQM.xlsx"  # Replace with the path to your Excel file
     excel_to_csv(excel_file)
