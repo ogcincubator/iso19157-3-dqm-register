@@ -30,7 +30,7 @@
   "skos:prefLabel": "ISO19157-3 basic quality measures",
   "concepts": [
     {
-      "basicMeasureID": "1",
+      "basicMeasureID": "BM1",
       "Name": "error indicator",
       "Definition": "Indicator that an item is in error",
       "example (MeasureDescription)": "False",
@@ -38,19 +38,187 @@
       "@type": "skos:Concept"
     },
     {
-      "basicMeasureID": "2",
+      "basicMeasureID": "BM2",
       "Name": "error rate",
       "Definition": "Number of the erroneous items with respect to the total number of items that should have been present",
-      "example (MeasureDescription)": "0,0189",
+      "example (MeasureDescription)": "MD2bm",
       "ValueType": "Real",
       "@type": "skos:Concept"
     },
     {
-      "basicMeasureID": "3",
+      "basicMeasureID": "BM3",
       "Name": "error count",
       "Definition": "Total number of items that are subject to an error of a specified type",
       "example (MeasureDescription)": "11",
       "ValueType": "Integer",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "BM4",
+      "Name": "correctness indicator",
+      "Definition": "Indicator that an item is correct",
+      "example (MeasureDescription)": "True",
+      "ValueType": "Boolean",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "BM5",
+      "Name": "correct items count",
+      "Definition": "Total number of items that are free of errors of a specified type",
+      "example (MeasureDescription)": "571",
+      "ValueType": "Integer",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "BM6",
+      "Name": "correct items rate",
+      "Definition": "Number of the correct items with respect to the total number of items that should have been present",
+      "example (MeasureDescription)": "0.9811",
+      "ValueType": "Real",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE50",
+      "Name": "One dimensional variable 50 % probability",
+      "Definition": "confidence interval given by the probability P=50 % of the true value being between the lower and upper limit",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE50r",
+      "Name": "One dimensional variable 50 % probability redundancy",
+      "Definition": "confidence interval for probability P=50 % derived from t-distribution by redundant measurements",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE68.3",
+      "Name": "One dimensional variable 68,3 % probability",
+      "Definition": "confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE68.3r",
+      "Name": "One dimensional variable 68,3 % probability redundancy",
+      "Definition": "confidence interval for probability P=68,3 % derived from t-distribution by redundant measurements",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE90",
+      "Name": "One dimensional variable 90 % probability",
+      "Definition": "confidence interval given by the probability P=90 % of the true value being between the lower and upper limit",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE90r",
+      "Name": "One dimensional variable 90 % probability redundancy",
+      "Definition": "confidence interval for probability P=90 % derived from t-distribution by redundant measurements",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE95",
+      "Name": "One dimensional variable 95 % probability",
+      "Definition": "confidence interval given by the probability P=95 % of the true value being between the lower and upper limit",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE95r",
+      "Name": "One dimensional variable 95 % probability redundancy",
+      "Definition": "confidence interval for probability P=95 % derived from t-distribution by redundant measurements",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE99",
+      "Name": "One dimensional variable 99 % probability",
+      "Definition": "confidence interval given by the probability P=99 % of the true value being between the lower and upper limit",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE99r",
+      "Name": "One dimensional variable 99 % probability reundancy",
+      "Definition": "confidence interval for probability P=99 % derived from t-distribution by redundant measurements",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE99,8",
+      "Name": "One dimensional variable 99,8 % probability",
+      "Definition": "confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "LE99,8r",
+      "Name": "One dimensional variable 99,8 % probability redundancy",
+      "Definition": "confidence interval for probability P=99,8 % derived from t-distribution by redundant measurements",
+      "example (MeasureDescription)": null,
+      "ValueType": null,
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "CE39,4",
+      "Name": "Two dimensional random variable 39,4 %",
+      "Definition": "confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area",
+      "example (MeasureDescription)": null,
+      "ValueType": "Measure",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "CE50",
+      "Name": "Two dimensional random variable 50 %",
+      "Definition": null,
+      "example (MeasureDescription)": null,
+      "ValueType": "Measure",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "CE90",
+      "Name": "Two dimensional random variable 90 %",
+      "Definition": null,
+      "example (MeasureDescription)": null,
+      "ValueType": "Measure",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "CE95",
+      "Name": "Two dimensional random variable 95 %",
+      "Definition": null,
+      "example (MeasureDescription)": null,
+      "ValueType": "Measure",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "CE99",
+      "Name": "Two dimensional random variable 99 %",
+      "Definition": null,
+      "example (MeasureDescription)": null,
+      "ValueType": "Measure",
+      "@type": "skos:Concept"
+    },
+    {
+      "basicMeasureID": "CE99,8",
+      "Name": "Two dimensional random variable 99,8 %",
+      "Definition": null,
+      "example (MeasureDescription)": null,
+      "ValueType": "Measure",
       "@type": "skos:Concept"
     }
   ]

@@ -15,7 +15,7 @@
     },
     "filename": "sources/MeasureDescription.csv",
     "headers": [
-      "measureID",
+      "measureDescriptionID",
       "sequence",
       "extendedDescription",
       "formula",
@@ -24,74 +24,571 @@
   },
   "data": [
     {
-      "measureID": "49",
-      "sequence": "0.0",
-      "extendedDescription": "-",
-      "formula": "FT49_1\nFT49_2\nFT49_3\nFT49_4\nFT49_5\nFT49_6\nFT49_7\nFT49_8\nFT49_9\nFT49_10",
-      "textDescription": "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A comparison of the data (source) and the control (reference) is calculated in the following manner:"
-    },
-    {
-      "measureID": "28",
-      "sequence": "1.0",
-      "extendedDescription": "-",
-      "formula": "FT28_1",
-      "textDescription": ""
-    },
-    {
-      "measureID": "28",
-      "sequence": "2.0",
-      "extendedDescription": "",
-      "formula": "FT28_2",
-      "textDescription": ""
-    },
-    {
-      "measureID": "28",
-      "sequence": "3.0",
-      "extendedDescription": "",
-      "formula": "FT28_3",
-      "textDescription": ""
-    },
-    {
-      "measureID": "28",
-      "sequence": "4.0",
-      "extendedDescription": "",
-      "formula": "FT28_4",
-      "textDescription": ""
-    },
-    {
-      "measureID": "28",
+      "measureDescriptionID": "MD1",
       "sequence": "",
-      "extendedDescription": "-",
-      "formula": "-",
-      "textDescription": "0,054 meter"
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True (In a data set, more items are classified as houses than in the universe of discourse)"
     },
     {
-      "measureID": "5",
+      "measureDescriptionID": "MD1e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True (In a data set, more items are classified as houses than in the universe of discourse)"
+    },
+    {
+      "measureDescriptionID": "MD2e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "2 (12 houses are in the data set although only 10 exist within the universe of discourse)"
+    },
+    {
+      "measureDescriptionID": "MD2bm",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "0.0189"
+    },
+    {
+      "measureDescriptionID": "MD3e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "10\u00a0% (The data set has 10\u00a0% more houses than the universe of discourse)"
+    },
+    {
+      "measureDescriptionID": "MD4",
+      "sequence": "",
+      "extendedDescription": "4_1.PNG\n4_2.PNG\n4_3.PNG",
+      "formula": "",
+      "textDescription": "count of all items in the data that are incorrectly extracted with duplicate geometries"
+    },
+    {
+      "measureDescriptionID": "MD4e",
+      "sequence": "",
+      "extendedDescription": "4e_1.PNG\n4e_2.PNG",
+      "formula": "",
+      "textDescription": "Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other\nD13288RZ.EPS two (or more) curves collected on top of each other\nD13288SZ.EPS two (or more) surfaces collected on top of each other."
+    },
+    {
+      "measureDescriptionID": "MD5",
       "sequence": "",
       "extendedDescription": "-",
       "formula": "-",
       "textDescription": "The value true indicates that an item is missing."
     },
     {
-      "measureID": "5",
-      "sequence": "1.0",
+      "measureDescriptionID": "MD5e",
+      "sequence": "",
       "extendedDescription": "-",
       "formula": "-",
-      "textDescription": "A data product specification requires all towers higher than 300 m to be captured. The data quality measure \u201cmissing item\u201d allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type \u201ctower\u201d (name depends on the application schema), is missing.\nData quality scope: all towers with height > 300Example result of a completeness evaluation of a particular dataset:missing item = true fortower.name = \u201cEiffel Tower, Paris, France\u201dtower.name = \u201cBeijing Tower, Beijing, China\u201d"
+      "textDescription": "A data product specification requires all towers higher than 300\u00a0m to be captured. The data quality measure \u201cmissing item\u201d allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type \u201ctower\u201d (name depends on the application schema), is missing.\nData quality scope: all towers with height > 300\nExample result of a completeness evaluation of a particular data set:\nmissing item = true for\ntower.name = \u201cEiffel Tower, Paris, France\"\ntower.name = \u201cBeijing Tower, Beijing, China\u201d"
     },
     {
-      "measureID": "62",
+      "measureDescriptionID": "MD6e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "2 (10 houses are in the data set although 12 exist within the universe of discourse)"
+    },
+    {
+      "measureDescriptionID": "MD7e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Example 1: 10\u00a0% (The data set has 10\u00a0% less houses than the universe of discourse)\nExample 2: 6,6% of all pixels in the scene is clouded with no ground information"
+    },
+    {
+      "measureDescriptionID": "MD8e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True (One feature relationship exists which is not defined in the conceptual schema)"
+    },
+    {
+      "measureDescriptionID": "MD10e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "If the conceptual schema explicitly or implicitly describes rules, these rules shall be followed. Violations against such rules can be, for example, invalid placement of features within a defined tolerance, duplication of features and invalid overlap of features."
+    },
+    {
+      "measureDescriptionID": "MD10e",
+      "sequence": "",
+      "extendedDescription": "10e_1.PNG\n10e_2.PNG\n10e_3.PNG\n10e_4.PNG",
+      "formula": "",
+      "textDescription": "Example 1: Towers with identical attribution and within search tolerance (search tolerance\u00a0=\u00a010\u00a0m)\nD13288TZ.EPS\nExample 2: Bridge has invalid Transportation. Use Category of Road\nD13288UZ.EPS\nExample 3: Invalid placement of Airport inside a Lake\nD13288VZ.EPS\nExample 4: Invalid overlap of area feature Lake within line feature Railroad\nD13288WZ.EPS\nKey: 1. Bridge 2.  Railroad 3. Lake 4. Airport"
+    },
+    {
+      "measureDescriptionID": "MD11",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Which surfaces may overlap and which shall not is application dependent. Not all overlapping surfaces are necessarily erroneous. When reporting this data quality measure, the types of feature classes corresponding to the illegal overlapping surfaces shall be reported as well. \nSee also Complete tessellation id 204"
+    },
+    {
+      "measureDescriptionID": "MD11e",
+      "sequence": "",
+      "extendedDescription": "11e.PNG",
+      "formula": "",
+      "textDescription": "Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap\nD13288XZ.EPS"
+    },
+    {
+      "measureDescriptionID": "MD12",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset"
+    },
+    {
+      "measureDescriptionID": "MD12e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)"
+    },
+    {
+      "measureDescriptionID": "MD13e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "99,8 % (in the dataset there is 1005 items of 1007 items correct stored in compliance with the conceptual schema)"
+    },
+    {
+      "measureDescriptionID": "MD14",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The value true indicates that an item is not in conformance with its value domain)"
+    },
+    {
+      "measureDescriptionID": "MD14e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True \u2013 a feature with attribute colour has the value \u2018blau\u2019, but it does not exist in the specified value domain: red, green, blue, yellow"
+    },
+    {
+      "measureDescriptionID": "MD15e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "all dates are correct according to their month rules of probable number of days e.g.  no February 29:th non leap year, no April 31:th"
+    },
+    {
+      "measureDescriptionID": "MD17e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "100 % (scope: attributes road width and speed limit for roads, are within the value domain)"
+    },
+    {
+      "measureDescriptionID": "MD18e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "10% (Domain of a \u2018buildingType\u2019 attribute is defined as the following set of values {1,2,0}; 10 out of 100 \u2018building\u2019 objects contain value \u2018X\u2019 in \u2018buildingType\u2019 attribute)"
+    },
+    {
+      "measureDescriptionID": "MD19e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "5 (5 living quarters type code is coded on more than 3 characters although the requirement in data product specification is 3)"
+    },
+    {
+      "measureDescriptionID": "MD21",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. The data quality measure counts the number of errors of this kind."
+    },
+    {
+      "measureDescriptionID": "MD21e",
+      "sequence": "",
+      "extendedDescription": "21e_1.PNG\n21e_2.PNG",
+      "formula": "",
+      "textDescription": "Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists).\n"
+    },
+    {
+      "measureDescriptionID": "MD22",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections."
+    },
+    {
+      "measureDescriptionID": "MD23e",
+      "sequence": "",
+      "extendedDescription": "23e.PNG",
+      "formula": "",
+      "textDescription": "Key: 1) search distance = 3 m"
+    },
+    {
+      "measureDescriptionID": "MD24e",
+      "sequence": "",
+      "extendedDescription": "24e.PNG",
+      "formula": "",
+      "textDescription": "A road must have a length at least 3 meters. Key: 1) search distance = 3 m"
+    },
+    {
+      "measureDescriptionID": "MD25",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The thickness quotient is independent of the size of the surface, and the closer the value is to 0, the thinner the selected silver surfaces shall be."
+    },
+    {
+      "measureDescriptionID": "MD25e_1",
+      "sequence": "",
+      "extendedDescription": "25e_1.PNG",
+      "formula": "",
+      "textDescription": "48 (count double line drain and slivers that do not fulfil the threshold values set by thinness ratio and maximum sliver area)\nKey: 1) Single line drain\n2) Double line drain\na) Maximum area parameter prevents correct double line drain portrayal from being flagged as an error"
+    },
+    {
+      "measureDescriptionID": "MD25e_2",
+      "sequence": "",
+      "extendedDescription": "25e_2.PNG",
+      "formula": "",
+      "textDescription": "Key: 1) Sand\n2) Sliver\n3) Double line drain\nb) The sliver is less than the maximum parameter and is flagged for evaluation of possible error."
+    },
+    {
+      "measureDescriptionID": "MD26e",
+      "sequence": "",
+      "extendedDescription": "26e.PNG",
+      "formula": "",
+      "textDescription": "Key: 1) Buliding 1\n2) illegal intersection (loop)"
+    },
+    {
+      "measureDescriptionID": "MD27e",
+      "sequence": "",
+      "extendedDescription": "27e.PNG",
+      "formula": "",
+      "textDescription": "324 (count road segment with overlap by other road segment)\nKey: a) vertices"
+    },
+    {
+      "measureDescriptionID": "MD28",
+      "sequence": "1.0",
+      "extendedDescription": "-",
+      "formula": "FT28_1",
+      "textDescription": ""
+    },
+    {
+      "measureDescriptionID": "MD28",
+      "sequence": "2.0",
+      "extendedDescription": "",
+      "formula": "FT28_2",
+      "textDescription": ""
+    },
+    {
+      "measureDescriptionID": "MD28",
+      "sequence": "3.0",
+      "extendedDescription": "",
+      "formula": "FT28_3",
+      "textDescription": ""
+    },
+    {
+      "measureDescriptionID": "MD28e",
+      "sequence": "",
+      "extendedDescription": "-",
+      "formula": "-",
+      "textDescription": "0,054 meter"
+    },
+    {
+      "measureDescriptionID": "MD29",
+      "sequence": "1.0",
+      "extendedDescription": "-",
+      "formula": "FT29_1",
+      "textDescription": "The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions. "
+    },
+    {
+      "measureDescriptionID": "MD29",
+      "sequence": "2.0",
+      "extendedDescription": "",
+      "formula": "FT29_2",
+      "textDescription": "A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+    },
+    {
+      "measureDescriptionID": "MD30",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT30",
+      "textDescription": "The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions.\nA criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+    },
+    {
+      "measureDescriptionID": "MD31e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT31",
+      "textDescription": "The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions.\nA criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+    },
+    {
+      "measureDescriptionID": "MD31e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "25\u00a0% of the nodes within the data quality scope have error distance greater than 1\u00a0m"
+    },
+    {
+      "measureDescriptionID": "MD32",
+      "sequence": "1.0",
+      "extendedDescription": "",
+      "formula": "FT32_1\nFT32_2\nFT32_3\nFT32_4",
+      "textDescription": "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+    },
+    {
+      "measureDescriptionID": "MD32",
+      "sequence": "2.0",
+      "extendedDescription": "",
+      "formula": "FT32_5\nFT32_6",
+      "textDescription": "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+    },
+    {
+      "measureDescriptionID": "MD32",
+      "sequence": "3.0",
+      "extendedDescription": "",
+      "formula": "FT32_7\nFT32_8",
+      "textDescription": "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+    },
+    {
+      "measureDescriptionID": "MD32",
+      "sequence": "4.0",
+      "extendedDescription": "",
+      "formula": "FT32_9\nFT32_10",
+      "textDescription": "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+    },
+    {
+      "measureDescriptionID": "MD33",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50\u00a0%"
+    },
+    {
+      "measureDescriptionID": "MD39",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT39",
+      "textDescription": "Estimator of the true value of observable Z."
+    },
+    {
+      "measureDescriptionID": "MD40",
+      "sequence": "",
+      "extendedDescription": "-",
+      "formula": "FT40_1\nFT40_2\nFT40_3\nFT40_4\nFT40_5\nFT40_6\nFT40_7\nFT40_8",
+      "textDescription": "A manner of calculating the comparison of the data (source) and the control (reference)."
+    },
+    {
+      "measureDescriptionID": "MD41",
+      "sequence": "",
+      "extendedDescription": "-",
+      "formula": "FT41_1\nFT41_2\nFT41_3\nFT41_4\nFT41_5\nFT41_6\nFT41_7\nFT41_8",
+      "textDescription": "A manner of calculating the comparison of the data (source) and the control (reference)."
+    },
+    {
+      "measureDescriptionID": "MD42",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Radius desctribing a circle, in which the true point location lies with the propability of 39.4%."
+    },
+    {
+      "measureDescriptionID": "MD47",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT47",
+      "textDescription": "Root mean squere error of planimetry."
+    },
+    {
+      "measureDescriptionID": "MD48",
+      "sequence": "",
+      "extendedDescription": "-",
+      "formula": "FT48_1\nFT48_2\nFT48_3\nFT48_4\nFT48_5\nFT48_6",
+      "textDescription": "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference)."
+    },
+    {
+      "measureDescriptionID": "MD49",
+      "sequence": "",
+      "extendedDescription": "-",
+      "formula": "FT49_1\nFT49_2\nFT49_3\nFT49_4\nFT49_5\nFT49_6\nFT49_7\nFT49_8",
+      "textDescription": "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference)."
+    },
+    {
+      "measureDescriptionID": "MD50",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT50_1\nFT50_2\nFT50_3",
+      "textDescription": "Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates."
+    },
+    {
+      "measureDescriptionID": "MD51",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT51_1\nFT51_2\nFT51_3",
+      "textDescription": "Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates. \nWith values for the <span class=\"inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <msubsup> <mi>\u03c7</mi> <mrow> <mn>1</mn> <mo>-</mo> <mi>\u03b1</mi> </mrow> <mn>2</mn> </msubsup> <mfenced> <mn>2</mn> </mfenced></math></span>-distribution of a 2D-confidence ellipse</div> <div class=\"sts-p \"><span class=\"inline-formula\"><math id=\"id-870f1e92-7dac-44c3-964d-aaca5be575df\"> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>\u03b1</mi> <mo>=</mo> <mn>95</mn> <mo></mo> <mo>%</mo></math></span>5,99</div> <div class=\"sts-p \"><span class=\"inline-formula\"><math id=\"id-297effe3-a0bb-4b80-ab4c-cf739b483a55\"> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>\u03b1</mi> <mo>=</mo> <mn>99</mn> <mo></mo> <mo>%</mo></math></span>9,21"
+    },
+    {
+      "measureDescriptionID": "MD52",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT52_1\nFT52_2\nFT52_3\nFT52_4\nFT52_5",
+      "textDescription": "A manner of calculating the comparison of the data (measured) and the control (true)."
+    },
+    {
+      "measureDescriptionID": "MD53",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT53_1\nFT53_2\nFT53_3\nFT53_4\nFT53_5\nFT53_6",
+      "textDescription": "A manner of calculating the comparison of the data (measured) and the control (true)."
+    },
+    {
+      "measureDescriptionID": "MD59",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99.8\u00a0%"
+    },
+    {
+      "measureDescriptionID": "MD62",
       "sequence": "",
       "extendedDescription": "62.PNG",
       "formula": "",
       "textDescription": "The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.\n\nMCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors."
     },
     {
-      "measureID": "4",
+      "measureDescriptionID": "MD62e",
       "sequence": "",
-      "extendedDescription": "4_1.PNG\n4_2.PNG\n4_3.PNG",
+      "extendedDescription": "62e.PNG",
       "formula": "",
-      "textDescription": "count of all items in the data that are incorrectly extracted with duplicate geometries"
+      "textDescription": ""
+    },
+    {
+      "measureDescriptionID": "MD63",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The relative misclassification matrix (RMCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.\nRMCM (i,j )\u00a0=\u00a0[# items of class (i ) classified as class (j )] / (# items of class (i )]\u00a0\u00d7\u00a0100\u00a0%"
+    },
+    {
+      "measureDescriptionID": "MD63e",
+      "sequence": "",
+      "extendedDescription": "63e.PNG",
+      "formula": "",
+      "textDescription": ""
+    },
+    {
+      "measureDescriptionID": "MD64",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT64",
+      "textDescription": "With the elements of the misclassification matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/62)"
+    },
+    {
+      "measureDescriptionID": "MD65",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "count of all attribute values where the value is incorrect"
+    },
+    {
+      "measureDescriptionID": "MD65e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "5 (5 geographical names are misspelled)"
+    },
+    {
+      "measureDescriptionID": "MD101",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The measure will take the  value true if all the requirements in the referred data product specification are fulfilled"
+    },
+    {
+      "measureDescriptionID": "MD119e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True (the dataset is stored in wrong file format, a shape file instead of gml)"
+    },
+    {
+      "measureDescriptionID": "MD128",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT128_1\nFT128_2",
+      "textDescription": "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+    },
+    {
+      "measureDescriptionID": "MD119",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The value true indicates physical structure conflict."
+    },
+    {
+      "measureDescriptionID": "MD159",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The value true indicates that there are events incorrectly ordered"
+    },
+    {
+      "measureDescriptionID": "MD159e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True (5 historical events are present in the dataset but are not ordered correctly)"
+    },
+    {
+      "measureDescriptionID": "MD201e",
+      "sequence": "",
+      "extendedDescription": "201e.PNG",
+      "formula": "",
+      "textDescription": "Rate of objects not in conformity to the tolerance.\nIn a common area for two datasets the coordinates compare to each other, an error is outside the tolerance.\nKey: 1 Search tolerance 0,3 meter"
+    },
+    {
+      "measureDescriptionID": "MD202e",
+      "sequence": "",
+      "extendedDescription": "202e.PNG",
+      "formula": "",
+      "textDescription": "Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular"
+    },
+    {
+      "measureDescriptionID": "MD203",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification"
+    },
+    {
+      "measureDescriptionID": "MD204e",
+      "sequence": "",
+      "extendedDescription": "204e.PNG",
+      "formula": "",
+      "textDescription": "Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons"
+    },
+    {
+      "measureDescriptionID": "MD205e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "It is \u2018true\u2019 if the value for an address has been updated in the database within user defined AQL (e.g. 5 days) since the decision on its change."
+    },
+    {
+      "measureDescriptionID": "MD206e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Tests if a particular quality scope is updated according to its given maintenance and update frequency e.g. \u201cAnnually\u201d. Value: yes or no"
+    },
+    {
+      "measureDescriptionID": "MD207e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The timetable of a railway station shall be updated with the frequency required to allow passengers to take a train even if the scheduled time or platform change."
     }
   ]
 }

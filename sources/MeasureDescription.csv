@@ -1,25 +1,170 @@
-measureID,sequence,extendedDescription,formula,textDescription
-49,0.0,-,"FT49_1
+measureDescriptionID,sequence,extendedDescription,formula,textDescription
+MD1,,,,"True (In a data set, more items are classified as houses than in the universe of discourse)"
+MD1e,,,,"True (In a data set, more items are classified as houses than in the universe of discourse)"
+MD2e,,,,2 (12 houses are in the data set although only 10 exist within the universe of discourse)
+MD2bm,,,,0.0189
+MD3e,,,,10 % (The data set has 10 % more houses than the universe of discourse)
+MD4,,"4_1.PNG
+4_2.PNG
+4_3.PNG",,count of all items in the data that are incorrectly extracted with duplicate geometries
+MD4e,,"4e_1.PNG
+4e_2.PNG",,"Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other
+D13288RZ.EPS two (or more) curves collected on top of each other
+D13288SZ.EPS two (or more) surfaces collected on top of each other."
+MD5,,-,-,The value true indicates that an item is missing.
+MD5e,,-,-,"A data product specification requires all towers higher than 300 m to be captured. The data quality measure “missing item” allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type “tower” (name depends on the application schema), is missing.
+Data quality scope: all towers with height > 300
+Example result of a completeness evaluation of a particular data set:
+missing item = true for
+tower.name = “Eiffel Tower, Paris, France""
+tower.name = “Beijing Tower, Beijing, China”"
+MD6e,,,,2 (10 houses are in the data set although 12 exist within the universe of discourse)
+MD7e,,,,"Example 1: 10 % (The data set has 10 % less houses than the universe of discourse)
+Example 2: 6,6% of all pixels in the scene is clouded with no ground information"
+MD8e,,,,True (One feature relationship exists which is not defined in the conceptual schema)
+MD10e,,,,"If the conceptual schema explicitly or implicitly describes rules, these rules shall be followed. Violations against such rules can be, for example, invalid placement of features within a defined tolerance, duplication of features and invalid overlap of features."
+MD10e,,"10e_1.PNG
+10e_2.PNG
+10e_3.PNG
+10e_4.PNG",,"Example 1: Towers with identical attribution and within search tolerance (search tolerance = 10 m)
+D13288TZ.EPS
+Example 2: Bridge has invalid Transportation. Use Category of Road
+D13288UZ.EPS
+Example 3: Invalid placement of Airport inside a Lake
+D13288VZ.EPS
+Example 4: Invalid overlap of area feature Lake within line feature Railroad
+D13288WZ.EPS
+Key: 1. Bridge 2.  Railroad 3. Lake 4. Airport"
+MD11,,,,"Which surfaces may overlap and which shall not is application dependent. Not all overlapping surfaces are necessarily erroneous. When reporting this data quality measure, the types of feature classes corresponding to the illegal overlapping surfaces shall be reported as well. 
+See also Complete tessellation id 204"
+MD11e,,11e.PNG,,"Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap
+D13288XZ.EPS"
+MD12,,,,The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset
+MD12e,,,,"0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)"
+MD13e,,,,"99,8 % (in the dataset there is 1005 items of 1007 items correct stored in compliance with the conceptual schema)"
+MD14,,,,The value true indicates that an item is not in conformance with its value domain)
+MD14e,,,,"True – a feature with attribute colour has the value ‘blau’, but it does not exist in the specified value domain: red, green, blue, yellow"
+MD15e,,,,"all dates are correct according to their month rules of probable number of days e.g.  no February 29:th non leap year, no April 31:th"
+MD17e,,,,"100 % (scope: attributes road width and speed limit for roads, are within the value domain)"
+MD18e,,,,"10% (Domain of a ‘buildingType’ attribute is defined as the following set of values {1,2,0}; 10 out of 100 ‘building’ objects contain value ‘X’ in ‘buildingType’ attribute)"
+MD19e,,,,5 (5 living quarters type code is coded on more than 3 characters although the requirement in data product specification is 3)
+MD21,,,,"A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. The data quality measure counts the number of errors of this kind."
+MD21e,,"21e_1.PNG
+21e_2.PNG",,"Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists).
+"
+MD22,,,,"A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections."
+MD23e,,23e.PNG,,Key: 1) search distance = 3 m
+MD24e,,24e.PNG,,A road must have a length at least 3 meters. Key: 1) search distance = 3 m
+MD25,,,,"The thickness quotient is independent of the size of the surface, and the closer the value is to 0, the thinner the selected silver surfaces shall be."
+MD25e_1,,25e_1.PNG,,"48 (count double line drain and slivers that do not fulfil the threshold values set by thinness ratio and maximum sliver area)
+Key: 1) Single line drain
+2) Double line drain
+a) Maximum area parameter prevents correct double line drain portrayal from being flagged as an error"
+MD25e_2,,25e_2.PNG,,"Key: 1) Sand
+2) Sliver
+3) Double line drain
+b) The sliver is less than the maximum parameter and is flagged for evaluation of possible error."
+MD26e,,26e.PNG,,"Key: 1) Buliding 1
+2) illegal intersection (loop)"
+MD27e,,27e.PNG,,"324 (count road segment with overlap by other road segment)
+Key: a) vertices"
+MD28,1.0,-,FT28_1,
+MD28,2.0,,FT28_2,
+MD28,3.0,,FT28_3,
+MD28e,,-,-,"0,054 meter"
+MD29,1.0,-,FT29_1,"The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions. "
+MD29,2.0,,FT29_2,"A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+MD30,,,FT30,"The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions.
+A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+MD31e,,,FT31,"The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions.
+A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+MD31e,,,,25 % of the nodes within the data quality scope have error distance greater than 1 m
+MD32,1.0,,"FT32_1
+FT32_2
+FT32_3
+FT32_4","The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+MD32,2.0,,"FT32_5
+FT32_6","The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+MD32,3.0,,"FT32_7
+FT32_8","The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+MD32,4.0,,"FT32_9
+FT32_10","The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
+MD33,,,,"half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50 %"
+MD39,,,FT39,Estimator of the true value of observable Z.
+MD40,,-,"FT40_1
+FT40_2
+FT40_3
+FT40_4
+FT40_5
+FT40_6
+FT40_7
+FT40_8",A manner of calculating the comparison of the data (source) and the control (reference).
+MD41,,-,"FT41_1
+FT41_2
+FT41_3
+FT41_4
+FT41_5
+FT41_6
+FT41_7
+FT41_8",A manner of calculating the comparison of the data (source) and the control (reference).
+MD42,,,,"Radius desctribing a circle, in which the true point location lies with the propability of 39.4%."
+MD47,,,FT47,Root mean squere error of planimetry.
+MD48,,-,"FT48_1
+FT48_2
+FT48_3
+FT48_4
+FT48_5
+FT48_6","Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference)."
+MD49,,-,"FT49_1
 FT49_2
 FT49_3
 FT49_4
 FT49_5
 FT49_6
 FT49_7
-FT49_8
-FT49_9
-FT49_10","Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A comparison of the data (source) and the control (reference) is calculated in the following manner:"
-28,1.0,-,FT28_1,
-28,2.0,,FT28_2,
-28,3.0,,FT28_3,
-28,4.0,,FT28_4,
-28,,-,-,"0,054 meter"
-5,,-,-,The value true indicates that an item is missing.
-5,1.0,-,-,"A data product specification requires all towers higher than 300 m to be captured. The data quality measure “missing item” allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type “tower” (name depends on the application schema), is missing.
-Data quality scope: all towers with height > 300Example result of a completeness evaluation of a particular dataset:missing item = true fortower.name = “Eiffel Tower, Paris, France”tower.name = “Beijing Tower, Beijing, China”"
-62,,62.PNG,,"The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+FT49_8","Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference)."
+MD50,,,"FT50_1
+FT50_2
+FT50_3",Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates.
+MD51,,,"FT51_1
+FT51_2
+FT51_3","Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates. 
+With values for the <span class=""inline-formula""><math xmlns=""http://www.w3.org/1998/Math/MathML""> <msubsup> <mi>χ</mi> <mrow> <mn>1</mn> <mo>-</mo> <mi>α</mi> </mrow> <mn>2</mn> </msubsup> <mfenced> <mn>2</mn> </mfenced></math></span>-distribution of a 2D-confidence ellipse</div> <div class=""sts-p ""><span class=""inline-formula""><math id=""id-870f1e92-7dac-44c3-964d-aaca5be575df""> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>α</mi> <mo>=</mo> <mn>95</mn> <mo></mo> <mo>%</mo></math></span>5,99</div> <div class=""sts-p ""><span class=""inline-formula""><math id=""id-297effe3-a0bb-4b80-ab4c-cf739b483a55""> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>α</mi> <mo>=</mo> <mn>99</mn> <mo></mo> <mo>%</mo></math></span>9,21"
+MD52,,,"FT52_1
+FT52_2
+FT52_3
+FT52_4
+FT52_5",A manner of calculating the comparison of the data (measured) and the control (true).
+MD53,,,"FT53_1
+FT53_2
+FT53_3
+FT53_4
+FT53_5
+FT53_6",A manner of calculating the comparison of the data (measured) and the control (true).
+MD59,,,,"Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99.8 %"
+MD62,,62.PNG,,"The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors."
-4,,"4_1.PNG
-4_2.PNG
-4_3.PNG",,count of all items in the data that are incorrectly extracted with duplicate geometries
+MD62e,,62e.PNG,,
+MD63,,,,"The relative misclassification matrix (RMCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+RMCM (i,j ) = [# items of class (i ) classified as class (j )] / (# items of class (i )] × 100 %"
+MD63e,,63e.PNG,,
+MD64,,,FT64,With the elements of the misclassification matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/62)
+MD65,,,,count of all attribute values where the value is incorrect
+MD65e,,,,5 (5 geographical names are misspelled)
+MD101,,,,The measure will take the  value true if all the requirements in the referred data product specification are fulfilled
+MD119e,,,,"True (the dataset is stored in wrong file format, a shape file instead of gml)"
+MD128,,,"FT128_1
+FT128_2","For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
+MD119,,,,The value true indicates physical structure conflict.
+MD159,,,,The value true indicates that there are events incorrectly ordered
+MD159e,,,,True (5 historical events are present in the dataset but are not ordered correctly)
+MD201e,,201e.PNG,,"Rate of objects not in conformity to the tolerance.
+In a common area for two datasets the coordinates compare to each other, an error is outside the tolerance.
+Key: 1 Search tolerance 0,3 meter"
+MD202e,,202e.PNG,,"Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular"
+MD203,,,,"The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification"
+MD204e,,204e.PNG,,Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons
+MD205e,,,,It is ‘true’ if the value for an address has been updated in the database within user defined AQL (e.g. 5 days) since the decision on its change.
+MD206e,,,,Tests if a particular quality scope is updated according to its given maintenance and update frequency e.g. “Annually”. Value: yes or no
+MD207e,,,,The timetable of a railway station shall be updated with the frequency required to allow passengers to take a train even if the scheduled time or platform change.
