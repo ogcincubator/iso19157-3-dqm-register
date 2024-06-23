@@ -5,6 +5,10 @@ transform:
   - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
   # Remove colons in field names with spaces
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  # turn known fields with space separated lists into arrays
+  - |
+    walk(if (type == "object") then
+      ( if (.description and .description != "-") then .description |= split("\n") else .description = [] end ) else . end )
   # Add ConceptScheme
   - |
     {
@@ -32,10 +36,16 @@ context:
     alias: skos:altLabel
     elementName: dqm:elementName
     definition: skos:definition
-    description: dct:description
-    parameter:
-      '@id': 'https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter'
+    description:
+      '@id': 'http://www.opengis.net/def/metamodel/isodqm/measureDescription'
       '@type': '@id'
+      '@context':
+        '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/
+    parameter:
+      '@id': 'http://www.opengis.net/def/metamodel/isodqm/qualityMeasureParameter'
+      '@type': '@id'
+      '@context':
+        '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/
     Value Type: dqm:valueType
     Value structure: dqm:valueStructure
     Source reference: dct:source

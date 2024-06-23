@@ -44,7 +44,7 @@ context:
       '@id': dqm:describes
       '@reverse': dqm:hasDescription
       '@context':
-        '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure'
+        '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/'
     textDescription: skos:definition
     prefLabel: skos:prefLabel
     sequence: dqm:sequence
@@ -57,5 +57,7 @@ context:
     formula:
         '@id': 'http://www.opengis.net/def/metamodel/isodqm/formula'
         '@type': '@id'
+        '@context':
+          '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/'
     concepts:
       '@reverse': skos:inScheme
