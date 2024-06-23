@@ -1,1057 +1,1058 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dct="http://purl.org/dc/terms/"
    xmlns:dqm="http://www.opengis.net/def/metamodel/isodqm/"
-   xmlns:ns1="https://standards.isotc211.org/19157/-3/1/dqc/content/"
    xmlns:policy="http://www.opengis.net/def/metamodel/ogc-na/"
    xmlns:prov="http://www.w3.org/ns/prov#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/119">
-    <dqm:elementName>format consistency</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>physical structure conflicts</skos:prefLabel>
-    <dcterms:description>MD119</dcterms:description>
-    <skos:definition>indication that items are stored in conflict with the physical structure of the dataset</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/retired"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:example>MD119e</skos:example>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  <rdf:Description rdf:nodeID="Nef44fbf811164be9ae3721b2b8a50423">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
+    <dct:hasVersion>0.3.47.dev1+g5249c1b</dct:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/61">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>classification correctness</dqm:elementName>
-    <skos:prefLabel>misclassification rate</skos:prefLabel>
-    <skos:definition>number of incorrectly classified features relative to the number of features that should be there</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/22">
-    <skos:prefLabel>rate of faulty point-curve connections</skos:prefLabel>
-    <dcterms:description>MD21</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>number of faulty link node connections in relation to the number of link node connections in the universe of discourse</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/26">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:altLabel>loops</skos:altLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>number of invalid self-intersect errors</skos:prefLabel>
-    <skos:definition>count of all items in the data that illegally intersect with themselves</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:example>MD26e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne97c709cf99a4df79425a3f92a2fe984">
-    <prov:used rdf:nodeID="Ne63040fee40a4b00bb4e538c21187512"/>
-    <prov:used rdf:nodeID="N2fb20f345a064c10917661e2fcc8f0ba"/>
-    <prov:wasInformedBy rdf:nodeID="Ne41d04b678b2405ea481cdf4fb3c32bd"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:wasAssociatedWith rdf:nodeID="N15fdfa90d98b4b18b837a80a0f1e53b0"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-22T18:24:40.104425</prov:endedAtTime>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-22T18:24:40.055560</prov:startedAtTime>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/28">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>mean value of positional uncertainties (1D, 2D and 3D)</skos:prefLabel>
-    <dcterms:description>MD28_1
-MD28_2
-MD28_3</dcterms:description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/42">
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:altLabel>circular standard error, Helmert’s point error, CSE</skos:altLabel>
+    <skos:definition>radius describing a circle, in which the true point location lies with the probability of a normal distribution at 39,4 %</skos:definition>
+    <skos:prefLabel>circular standard deviation</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>MD28e</skos:example>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/superseded"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/72">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>attribute value uncertainty at 99 % significance level</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/204">
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP204"/>
+    <skos:definition>Total number of erroneous polygons within the data</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD204"/>
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Complete tessellation</skos:prefLabel>
+    <dct:source>SR3</dct:source>
+    <skos:example>MD204e</skos:example>
+    <dqm:elementName>topological consistency</dqm:elementName>
+    <skos:altLabel>Tessellation complete</skos:altLabel>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/50">
+    <skos:definition>2D ellipse with the two main axes indicating the direction and magnitude of the highest and the lowest uncertainty of a 2D point</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:valueStructure>Sequence
+formula (a, b, φ) </dqm:valueStructure>
+    <skos:prefLabel>uncertainty ellipse</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:altLabel>standard point error ellipse</skos:altLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD50"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/73">
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99,8 %</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Attribute value uncertainty at 99,8 % significance level</skos:prefLabel>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP38"/>
     <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
-    <dcterms:description>MD33</dcterms:description>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99 %</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/202">
+    <skos:definition>Number of differences between registered geometry in the dataset and the actual geometry of the real world object</skos:definition>
+    <skos:example>MD202e</skos:example>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+    <skos:prefLabel>count of geometric fidelity failure</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/"/>
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/11">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP37"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/58">
-    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP35"/>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99 %</skos:definition>
-    <dcterms:description>MD33</dcterms:description>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD11"/>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <skos:example>MD11e</skos:example>
+    <skos:altLabel>overlapping surfaces</skos:altLabel>
+    <skos:prefLabel>number of invalid overlaps of surfaces</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>time accuracy at 99 % significance level</skos:prefLabel>
+    <skos:definition>total number of erroneous overlaps within the data</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/57">
-    <dcterms:description>MD33</dcterms:description>
-    <skos:prefLabel>time accuracy at 95 % significance level</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP35"/>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 95 %</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/44">
-    <dcterms:description>MD42</dcterms:description>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:altLabel>circular map accuracy standard (CMAS)</skos:altLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>circular error at 90 % significant level</skos:prefLabel>
-    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 90 %</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/1">
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>excess item</skos:prefLabel>
-    <dqm:elementName>commission</dqm:elementName>
-    <skos:definition>indication that an item is incorrectly present in the data</skos:definition>
-    <skos:example>MD1e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd1cee95acee241ab8f655f156d1aab6e">
-    <prov:used rdf:nodeID="Nb574fe813c864f8c8ed2a8d449aae3c1"/>
-    <prov:used rdf:nodeID="N6d3e640fe6f4431ab28115e5acdf58e7"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-22T18:24:40.055560</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-22T18:24:40.142652</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="Nb190f21615dd4f3c923065a4f6f47dde"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="N94f3374ef16c440aa1b900d33aa11266"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/31">
-    <skos:example>MD31e</skos:example>
-    <skos:definition>number of positional discrepancies above a given threshold for a set of positions in relation to the total number of measured positions.
-The discrepancies are defined as the distance between a measured position and what is accepted as the corresponding true position.</skos:definition>
-    <dcterms:description>MD31</dcterms:description>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP31"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>rate of positional uncertainties above a given threshold</skos:prefLabel>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/37">
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99 %</skos:definition>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:altLabel>LMAS 99 %</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>linear map accuracy at 99 % significance level</skos:prefLabel>
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP37"/>
+  <rdf:Description rdf:nodeID="Na303eaa545b546239b75bfa140406c75">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <dct:hasVersion>0.3.47.dev1+g5249c1b</dct:hasVersion>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/70">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP35"/>
     <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 90 %</skos:definition>
-    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:description>MD33</dcterms:description>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
     <skos:prefLabel>attribute value uncertainty at 90 % significance level</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/41">
-    <skos:definition>absolute vertical accuracy of the data’s coordinates, expressed in terms of linear error at 90 % probability given that a bias is present</skos:definition>
-    <skos:prefLabel>absolute linear error at 90 % significance level of biased vertical data (Alternative 2)</skos:prefLabel>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/14">
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:example>MD14e</skos:example>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD14"/>
+    <skos:prefLabel>value domain non-conformance</skos:prefLabel>
+    <dqm:elementName>domain consistency</dqm:elementName>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel>ALE</skos:altLabel>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <dcterms:description>MD40</dcterms:description>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
+    <skos:definition>indication of if an item is not in conformance with its value domain</skos:definition>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP41"/>
-    <dcterms:source>SR1</dcterms:source>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/103">
     <skos:prefLabel>data product specification pass count</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
     <skos:definition>number of the data product specification requirements that are fulfilled by the current product/dataset</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/53">
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP2"/>
-    <skos:definition>evaluation of the random errors in the horizontal position of one feature to another in the same dataset or on the same map/chart</skos:definition>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>relative horizontal error</skos:prefLabel>
-    <skos:altLabel>Rel CE90</skos:altLabel>
-    <dqm:elementName>relative or internal accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dcterms:source>SR1</dcterms:source>
-    <dcterms:description>MD53</dcterms:description>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/48">
+    <skos:prefLabel>absolute circular error at 90 % significance level of biased data</skos:prefLabel>
+    <skos:definition>absolute horizontal accuracy of the data’s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD48"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:source>SR1</dct:source>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:altLabel>CMAS</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/28">
+    <skos:prefLabel>mean value of positional uncertainties (1D, 2D and 3D)</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/superseded"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:example>MD28e</skos:example>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/36">
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP36"/>
+    <skos:altLabel>LMAS 95 %</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>linear map accuracy at 95 % significance level</skos:prefLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 95 %</skos:definition>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/6">
+    <skos:example>MD6e</skos:example>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>count of all items that should have been in the data set or sample and are missing</skos:definition>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dqm:elementName>omission</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>number of missing items</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/71">
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 95 %</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>attribute value uncertainty at 95 % significance level</skos:prefLabel>
+    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP36"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityMeasures.csv.ttl">
+    <dct:format>text/turtle</dct:format>
+    <prov:wasAttributedTo rdf:nodeID="Na303eaa545b546239b75bfa140406c75"/>
+    <dct:hasVersion>git:87331847a0091a62858f2e688bd12aabfbb06fc8</dct:hasVersion>
+    <prov:wasGeneratedBy rdf:nodeID="N470bdcaf94fd4d9284be88d2669211af"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/101">
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD101"/>
+    <skos:prefLabel>data product specification passed</skos:prefLabel>
+    <skos:definition>indication that all requirements in the referred data product specification are fulfilled</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/59">
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD59"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>time accuracy at 99,8 % significance level</skos:prefLabel>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99,8 %</skos:definition>
+    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/39">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>radius of a circle around a given point, in which the true value lies with probability P</skos:definition>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD39"/>
+    <skos:altLabel>RMSE</skos:altLabel>
+    <skos:prefLabel>root mean square error</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/119">
+    <dqm:elementName>format consistency</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD119"/>
+    <skos:example>MD119e</skos:example>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/retired"/>
+    <skos:definition>indication that items are stored in conflict with the physical structure of the dataset</skos:definition>
+    <skos:prefLabel>physical structure conflicts</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na23db87882da4c779f955c00710216f8b2">
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/dataQualityMeasures.csv.json"/>
+    <dct:hasVersion>git:cccf675a5899e6be839b2d0aeb63f4a700b62003</dct:hasVersion>
+    <dct:format>application/json</dct:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/56">
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>time accuracy at 90 % significance level</skos:prefLabel>
-    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP35"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 90 %</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/8">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <skos:prefLabel>conceptual schema non-compliance</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>indication that an item is not compliant to the rules of the relevant conceptual schema</skos:definition>
+    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
+    <skos:prefLabel>time accuracy at 90 % significance level</skos:prefLabel>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:example>MD8e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/68">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP68"/>
-    <skos:prefLabel>attribute value uncertainty at 68,3 % significance level</skos:prefLabel>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 68,3 %</skos:definition>
-    <dcterms:description>MD33</dcterms:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/69">
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP69"/>
-    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 50 %</skos:definition>
-    <skos:prefLabel>attribute value uncertainty at 50 % significance level</skos:prefLabel>
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6d3e640fe6f4431ab28115e5acdf58e7">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:a9a73818873072358d2554833363eada0866e291</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/38">
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
     <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99,8 %</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP38"/>
-    <dcterms:description>MD33</dcterms:description>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP38"/>
     <skos:prefLabel>near certainty linear error</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/60">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/18">
+    <skos:prefLabel>value domain non-conformance rate</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>number of incorrectly classified features</skos:prefLabel>
+    <skos:example>MD18e</skos:example>
+    <skos:definition>number of items in the data set that are not in conformance with their value domain in relation to the total number of items</skos:definition>
+    <dqm:elementName>domain consistency</dqm:elementName>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>classification correctness</dqm:elementName>
-    <skos:definition>number of incorrectly classified features</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/19">
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>number of physical structure conflicts</skos:prefLabel>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/44">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:example>MD19e</skos:example>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>format consistency</dqm:elementName>
-    <skos:definition>count of all items in the data set that are stored in conflict with the physical structure of the data set</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>circular error at 90 % significant level</skos:prefLabel>
+    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 90 %</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42"/>
+    <skos:altLabel>circular map accuracy standard (CMAS)</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/13">
-    <dqm:elementName>conceptual consistency</dqm:elementName>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>number of items in the data set in compliance with the rules of the conceptual schema in relation to the total number of items supposed to be in the data set</skos:definition>
     <skos:example>MD13e</skos:example>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
     <skos:prefLabel>compliance rate with the rules of the conceptual schema</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>number of items in the data set in compliance with the rules of the conceptual schema in relation to the total number of items supposed to be in the data set</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/102">
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>number of data product specification requirements that are not fulfilled by the current product/dataset</skos:definition>
+    <skos:prefLabel>data product specification fail count</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/55">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 50 %</skos:definition>
+    <skos:prefLabel>time accuracy at 50 % significance level</skos:prefLabel>
+    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/63">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:example>MD63e</skos:example>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>matrix that indicates the number of items of class (i ) classified as class (j ) divided by the number of items of class (i )</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD63"/>
+    <dqm:valueStructure>Matrix (n × n)</dqm:valueStructure>
+    <dqm:elementName>classification correctness</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP63_1MP63_2MP63_3"/>
+    <skos:prefLabel>relative misclassification matrix</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/2">
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>number of items within the data set or sample that should not have been present</skos:definition>
+    <dqm:elementName>commission</dqm:elementName>
+    <skos:example>MD2e</skos:example>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>number of excess items</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/22">
+    <dqm:elementName>topological consistency</dqm:elementName>
+    <skos:prefLabel>rate of faulty point-curve connections</skos:prefLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>number of faulty link node connections in relation to the number of link node connections in the universe of discourse</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/30">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD30"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:prefLabel>number of positional uncertainties above a given threshold</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>number of positional discrepancies above a given threshold for a set of positions.
+The discrepancies are defined as the distance between a measured position and what is accepted as the corresponding true position.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP30"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/49">
+    <skos:prefLabel>absolute circular error at 90 % significance level of biased data</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>absolute horizontal accuracy of the data’s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present</skos:definition>
+    <skos:altLabel>ACE</skos:altLabel>
+    <dct:source>SR1</dct:source>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP49"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/23">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel>undershoots</skos:altLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP23"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>topological consistency</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:example>MD23e</skos:example>
+    <skos:definition>count of items in the dataset, within the parameter tolerance, that are mismatched due to undershoots</skos:definition>
+    <skos:prefLabel>number of missing connections due to undershoot</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/32">
+    <skos:definition>symmetrical square matrix with variances of point discrepancies on the main diagonal and covariance between these discrepancies as off-diagonal elements</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:prefLabel>covariance matrix</skos:prefLabel>
+    <skos:altLabel>variance-covariance matrix</skos:altLabel>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_4"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_2"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_3"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_1"/>
+    <dqm:valueStructure>Matrix</dqm:valueStructure>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/5">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>indicator that shows a specific item is missing in the data</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>missing item</skos:prefLabel>
+    <skos:example>MD5e</skos:example>
+    <dqm:elementName>omission</dqm:elementName>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/8">
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>conceptual schema non-compliance</skos:prefLabel>
+    <skos:example>MD8e</skos:example>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>indication that an item is not compliant to the rules of the relevant conceptual schema</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/52">
+    <skos:prefLabel>relative vertical error</skos:prefLabel>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2"/>
+    <dqm:elementName>relative or internal accuracy</dqm:elementName>
+    <skos:definition>evaluation of the random errors of one relief feature to another in the same dataset or on the same map/chart.
+It is a function of the random errors in the two elevations with respect to a common vertical datum.</skos:definition>
+    <skos:altLabel>Rel LE90</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:source>SR1</dct:source>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD52"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/60">
+    <dqm:elementName>classification correctness</dqm:elementName>
+    <skos:definition>number of incorrectly classified features</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>number of incorrectly classified features</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/45">
+    <skos:altLabel>navigation accuracy</skos:altLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42"/>
+    <skos:prefLabel>circular error at 95 % significance level</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 95 %</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/68">
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 68,3 %</skos:definition>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP68"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <skos:prefLabel>attribute value uncertainty at 68,3 % significance level</skos:prefLabel>
+    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N470bdcaf94fd4d9284be88d2669211af">
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T15:19:12.545911</prov:startedAtTime>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T15:19:12.596470</prov:endedAtTime>
+    <prov:used rdf:nodeID="Na791d83f908c4f119c7f2d5af565d4e5"/>
+    <prov:used rdf:nodeID="Nc2965ef372d249cfa573d653ad736fa7"/>
+    <prov:wasInformedBy rdf:nodeID="N80738fe5d0a24ce98a3e7561d9360caa"/>
+    <prov:wasAssociatedWith rdf:nodeID="Na303eaa545b546239b75bfa140406c75"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/64">
+    <skos:definition>coefficient to quantify the proportion of agreement of assignments to classes by removing misclassifications</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD64"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>kappa coefficient</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>classification correctness</dqm:elementName>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/57">
+    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 95 %</skos:definition>
+    <skos:prefLabel>time accuracy at 95 % significance level</skos:prefLabel>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/35">
+    <skos:prefLabel>linear map accuracy at 90 % significance level</skos:prefLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 90 %</skos:definition>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35"/>
+    <skos:altLabel>LMAS 90 %</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>commission</dqm:elementName>
+    <skos:definition>number of excess items in the data set or sample in relation to the number of items that should have been present</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:example>MD3e</skos:example>
+    <skos:prefLabel>rate of excess items</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/7">
+    <dqm:elementName>omission</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>rate of missing items</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:example>MD7e</skos:example>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>number of missing items in the data set or sample in relation to the number of items that should have been present</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/62">
+    <skos:altLabel>confusion matrix</skos:altLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD62"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:example>MD62e</skos:example>
+    <dqm:elementName>classification correctness</dqm:elementName>
+    <skos:prefLabel>misclassification matrix</skos:prefLabel>
+    <skos:definition>matrix that indicates the number of items of class (i) classified as class (j)</skos:definition>
+    <dqm:valueStructure>Matrix (n × n)</dqm:valueStructure>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/51">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel>confidence point error ellipse</skos:altLabel>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP51"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD51"/>
+    <skos:prefLabel>confidence ellipse</skos:prefLabel>
+    <dqm:valueStructure>Sequence
+formula (a, b, φ) </dqm:valueStructure>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>D ellipse with the two main axes indicating the direction and magnitude of the highest and the lowest uncertainty of a 2D point</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/65">
+    <skos:definition>total number of erroneous attribute values within the relevant part of the dataset</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>number of incorrect attribute values</skos:prefLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD65"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:elementName>non-quantitative attribute correctness</dqm:elementName>
+    <skos:example>MD65e</skos:example>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/105">
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>data product specification pass rate</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>number of the data product specification requirements that are fulfilled by the current product/dataset in relation to the total number of data product specification requirements</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b1e201fb55d4a119601e0b92593fde1">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityMeasures.csv.ttl"/>
+    <dct:hasVersion>git:87331847a0091a62858f2e688bd12aabfbb06fc8</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/17">
+    <skos:definition>number of items in the data set that are in conformance with their value domain in relation to the total number of items in the data set</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>value domain conformance rate</skos:prefLabel>
+    <dqm:elementName>domain consistency</dqm:elementName>
+    <skos:example>MD17e</skos:example>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/21">
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>number of faulty point-curve connections in the dataset</skos:definition>
+    <skos:prefLabel>number of faulty point-curve connections</skos:prefLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD21"/>
+    <skos:altLabel>extraneous nodes</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:example>MD21e</skos:example>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>topological consistency</dqm:elementName>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/54">
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 68,3 %</skos:definition>
+    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
+    <skos:prefLabel>time accuracy at 68,3 % significance level</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31f63b7ec7e346c89589a95983e125c3">
+    <prov:used rdf:nodeID="N1b1e201fb55d4a119601e0b92593fde1"/>
+    <prov:used rdf:nodeID="N12431632b3a1496da2f4ff4dd751b098"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T15:19:12.545911</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T15:19:12.640024</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N9a30a2148f8d44b196808ee27527af81"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="Nef44fbf811164be9ae3721b2b8a50423"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="na23db87882da4c779f955c00710216f8b1">
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T15:17:26.018488</prov:endedAtTime>
+    <prov:used rdf:nodeID="na23db87882da4c779f955c00710216f8b2"/>
+    <prov:wasInformedBy rdf:nodeID="na23db87882da4c779f955c00710216f8b4"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T15:17:25.807233</prov:startedAtTime>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasAssociatedWith rdf:nodeID="na23db87882da4c779f955c00710216f8b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/203">
+    <dct:source>SR2</dct:source>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>rate of geometric fidelity failure</skos:prefLabel>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/"/>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+    <skos:definition>error rate of difference between registered geometry in the dataset and the actual geometry of the real world object</skos:definition>
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/25">
+    <skos:example>MD25e_1
+MD25e_2</skos:example>
+    <dct:source>Source reference Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide</dct:source>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel>slivers</skos:altLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dqm:elementName>topological consistency</dqm:elementName>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP25_1MP25_2"/>
+    <skos:definition>count of all items in the dataset that are invalid sliver surfaces</skos:definition>
+    <skos:prefLabel>number of invalid slivers</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/9">
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>indication that an item complies with the rules of the relevant conceptual schema</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <skos:prefLabel>conceptual schema compliance</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/159">
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>indication that events is incorrectly ordered against the other events</skos:definition>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <skos:example>MD159e</skos:example>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD159"/>
+    <skos:prefLabel>chronological disorder</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/201">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP201"/>
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>rate of geometric inconsistency</skos:prefLabel>
+    <skos:definition>rate of items in a common area representing the same real world object with different coordinates in two different datasets according to a tolerance</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80738fe5d0a24ce98a3e7561d9360caa">
+    <dct:identifier>43ea6442-0efa-46f4-8023-1ccac7926747</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/12">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:example>MD12e</skos:example>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>non-compliance rate with respect to the rules of the conceptual schema</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/10">
+    <skos:definition>count of all items in the data set that are not compliant with the rules of the conceptual schema</skos:definition>
+    <skos:example>MD10e</skos:example>
+    <skos:prefLabel>Number of items not compliant with the rules of the conceptual schema</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD10"/>
+    <dqm:elementName>conceptual consistency</dqm:elementName>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/72">
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP37"/>
+    <skos:prefLabel>attribute value uncertainty at 99 % significance level</skos:prefLabel>
+    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99 %</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/205">
+    <skos:prefLabel>user defined maintenance frequency</skos:prefLabel>
+    <dqm:elementName>temporal validity</dqm:elementName>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:example>MD205e</skos:example>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP205"/>
+    <skos:definition>evaluation of acceptance quality limit, AQL for user defined maintenance frequency from a feature has changed in the real world until it is updated in the database</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/24">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>topological consistency</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:example>MD24e</skos:example>
+    <skos:definition>count of items in the dataset, within the parameter tolerance, that are mismatched due to overshoots</skos:definition>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP24"/>
+    <skos:altLabel>overshoots</skos:altLabel>
+    <skos:prefLabel>number of missing connections due to overshoots</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/31">
+    <skos:example>MD31e</skos:example>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD31"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP31"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:prefLabel>rate of positional uncertainties above a given threshold</skos:prefLabel>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:definition>number of positional discrepancies above a given threshold for a set of positions in relation to the total number of measured positions.
+The discrepancies are defined as the distance between a measured position and what is accepted as the corresponding true position.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/61">
+    <skos:definition>number of incorrectly classified features relative to the number of features that should be there</skos:definition>
+    <dqm:elementName>classification correctness</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>misclassification rate</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/1">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:example>MD1e</skos:example>
+    <skos:definition>indication that an item is incorrectly present in the data</skos:definition>
+    <skos:prefLabel>excess item</skos:prefLabel>
+    <dqm:elementName>commission</dqm:elementName>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/27">
     <skos:altLabel>kickbacks</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
     <skos:definition>count of all items in the data that illegally self-overlap</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>number of invalid self-overlap errors</skos:prefLabel>
-    <dqm:elementName>topological consistency</dqm:elementName>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>topological consistency</dqm:elementName>
     <skos:example>MD27e</skos:example>
+    <skos:prefLabel>number of invalid self-overlap errors</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/6">
-    <dqm:elementName>omission</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>count of all items that should have been in the data set or sample and are missing</skos:definition>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/26">
+    <dqm:elementName>topological consistency</dqm:elementName>
+    <skos:prefLabel>number of invalid self-intersect errors</skos:prefLabel>
+    <skos:altLabel>loops</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>count of all items in the data that illegally intersect with themselves</skos:definition>
+    <skos:example>MD26e</skos:example>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD6e</skos:example>
-    <skos:prefLabel>number of missing items</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/62">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/41">
+    <skos:altLabel>ALE</skos:altLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD40"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel>confusion matrix</skos:altLabel>
-    <dcterms:description>MD62</dcterms:description>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP2"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:example>MD62e</skos:example>
-    <dqm:valueStructure>Matrix (n × n)</dqm:valueStructure>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>classification correctness</dqm:elementName>
-    <skos:prefLabel>misclassification matrix</skos:prefLabel>
-    <skos:definition>matrix that indicates the number of items of class (i) classified as class (j)</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/45">
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel>navigation accuracy</skos:altLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>circular error at 95 % significance level</skos:prefLabel>
-    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 95 %</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dcterms:description>MD42</dcterms:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/40">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <dcterms:description>MD40</dcterms:description>
-    <skos:prefLabel>absolute linear error at 90 % significance level of biased vertical data (Alternative 1)</skos:prefLabel>
-    <dcterms:source>SR1</dcterms:source>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:source>SR1</dct:source>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP41"/>
     <skos:definition>absolute vertical accuracy of the data’s coordinates, expressed in terms of linear error at 90 % probability given that a bias is present</skos:definition>
-    <skos:altLabel>LMAS</skos:altLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/10">
-    <dcterms:description>MD10</dcterms:description>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <skos:prefLabel>Number of items not compliant with the rules of the conceptual schema</skos:prefLabel>
-    <skos:definition>count of all items in the data set that are not compliant with the rules of the conceptual schema</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>MD10e</skos:example>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/30">
-    <dcterms:description>MD30</dcterms:description>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:prefLabel>absolute linear error at 90 % significance level of biased vertical data (Alternative 2)</skos:prefLabel>
     <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP30"/>
-    <skos:prefLabel>number of positional uncertainties above a given threshold</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:definition>number of positional discrepancies above a given threshold for a set of positions.
-The discrepancies are defined as the distance between a measured position and what is accepted as the corresponding true position.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/101">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:description>MD101</dcterms:description>
-    <skos:prefLabel>data product specification passed</skos:prefLabel>
-    <skos:definition>indication that all requirements in the referred data product specification are fulfilled</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb3">
-    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
-    <rdfs:label>OGC-NA tools</rdfs:label>
+  <rdf:Description rdf:nodeID="na23db87882da4c779f955c00710216f8b3">
     <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <dct:hasVersion>0.3.47.dev1+g5249c1b</dct:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/47">
-    <dcterms:description>MD47</dcterms:description>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/superseded"/>
-    <skos:prefLabel>root mean square error of planimetry</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:altLabel>RMSEP</skos:altLabel>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/53">
+    <skos:definition>evaluation of the random errors in the horizontal position of one feature to another in the same dataset or on the same map/chart</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>2.0</dcterms:hasVersion>
-    <skos:definition>radius of a circle around the given point, in which the true value lies with probability P</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/48">
-    <skos:altLabel>CMAS</skos:altLabel>
-    <dcterms:source>SR1</dcterms:source>
-    <dcterms:description>MD48</dcterms:description>
-    <skos:definition>absolute horizontal accuracy of the data’s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present</skos:definition>
+    <dct:source>SR1</dct:source>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:prefLabel>absolute circular error at 90 % significance level of biased data</skos:prefLabel>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/55">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 50 %</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:prefLabel>time accuracy at 50 % significance level</skos:prefLabel>
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/204">
-    <dcterms:source>SR3</dcterms:source>
-    <dcterms:description>MD204</dcterms:description>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:altLabel>Tessellation complete</skos:altLabel>
-    <skos:example>MD204e</skos:example>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <skos:prefLabel>Complete tessellation</skos:prefLabel>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <skos:definition>Total number of erroneous polygons within the data</skos:definition>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP204"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/5">
-    <skos:definition>indicator that shows a specific item is missing in the data</skos:definition>
-    <dqm:elementName>omission</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>missing item</skos:prefLabel>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD5e</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb574fe813c864f8c8ed2a8d449aae3c1">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityMeasures.csv.ttl"/>
-    <dcterms:hasVersion>git:a9a73818873072358d2554833363eada0866e291</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb2">
-    <dcterms:format>application/json</dcterms:format>
-    <dcterms:hasVersion>git:60f015dba383152b2ec30a4279e7fce359e6c910</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/dataQualityMeasures.csv.json"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/15">
-    <skos:prefLabel>value domain conformance</skos:prefLabel>
-    <skos:definition>indication that an item is conforming to its value domain</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>domain consistency</dqm:elementName>
-    <skos:example>MD15e</skos:example>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/43">
-    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 50 %</skos:definition>
-    <dcterms:description>MD42</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:prefLabel>circular error probable</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:altLabel>CEP</skos:altLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/21">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <skos:definition>number of faulty point-curve connections in the dataset</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>number of faulty point-curve connections</skos:prefLabel>
-    <skos:example>MD21e</skos:example>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:description>MD21</dcterms:description>
-    <skos:altLabel>extraneous nodes</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/207">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>degree to which data has attributes that are of the right age in a specific context of use [25012:2008]</skos:definition>
-    <dqm:elementName>temporal validity</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-    <skos:prefLabel>currentness</skos:prefLabel>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP207"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <skos:example>M207e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/35">
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP35"/>
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel>LMAS 90 %</skos:altLabel>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:prefLabel>linear map accuracy at 90 % significance level</skos:prefLabel>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 90 %</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/65">
-    <skos:example>MD65e</skos:example>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:definition>total number of erroneous attribute values within the relevant part of the dataset</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>number of incorrect attribute values</skos:prefLabel>
-    <dcterms:description>MD65</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>non-quantitative attribute correctness</dqm:elementName>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/7">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:definition>number of missing items in the data set or sample in relation to the number of items that should have been present</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>MD7e</skos:example>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dqm:elementName>omission</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>rate of missing items</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/159">
-    <skos:definition>indication that events is incorrectly ordered against the other events</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>chronological disorder</skos:prefLabel>
-    <dcterms:description>MD159</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:example>MD159e</skos:example>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/4">
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD4e</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:description>MD4</dcterms:description>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>total number of exact duplications of feature instances within the data</skos:definition>
-    <skos:prefLabel>number of duplicate feature instances</skos:prefLabel>
-    <dqm:elementName>commission</dqm:elementName>
-    <dcterms:source>ISO/TS 19138 (modified)</dcterms:source>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/201">
-    <skos:definition>rate of items in a common area representing the same real world object with different coordinates in two different datasets according to a tolerance</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP201"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <skos:prefLabel>rate of geometric inconsistency</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/9">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>indication that an item complies with the rules of the relevant conceptual schema</skos:definition>
-    <skos:prefLabel>conceptual schema compliance</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/14">
-    <dcterms:description>MD14</dcterms:description>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>value domain non-conformance</skos:prefLabel>
-    <skos:example>MD14e</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>domain consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>indication of if an item is not in conformance with its value domain</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/64">
-    <dqm:elementName>classification correctness</dqm:elementName>
-    <skos:prefLabel>kappa coefficient</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:description>MD64</dcterms:description>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP2"/>
-    <skos:definition>coefficient to quantify the proportion of agreement of assignments to classes by removing misclassifications</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/39">
-    <skos:prefLabel>root mean square error</skos:prefLabel>
-    <dcterms:description>MD39</dcterms:description>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:definition>radius of a circle around a given point, in which the true value lies with probability P</skos:definition>
-    <skos:altLabel>RMSE</skos:altLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/205">
-    <skos:prefLabel>user defined maintenance frequency</skos:prefLabel>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP205"/>
-    <skos:definition>evaluation of acceptance quality limit, AQL for user defined maintenance frequency from a feature has changed in the real world until it is updated in the database</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-    <skos:example>MD205e</skos:example>
-    <dqm:elementName>temporal validity</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/2">
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD2e</skos:example>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:prefLabel>number of excess items</skos:prefLabel>
-    <skos:definition>number of items within the data set or sample that should not have been present</skos:definition>
-    <dqm:elementName>commission</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/49">
-    <skos:definition>absolute horizontal accuracy of the data’s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:altLabel>ACE</skos:altLabel>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dcterms:source>SR1</dcterms:source>
-    <dcterms:description>MD49</dcterms:description>
-    <skos:prefLabel>absolute circular error at 90 % significance level of biased data</skos:prefLabel>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP49"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/20">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>physical structure conflict rate</skos:prefLabel>
-    <skos:definition>number of items in the data set that are stored in conflict with the physical structure of the data set divided by the total number of items</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>format consistency</dqm:elementName>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/51">
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:altLabel>confidence point error ellipse</skos:altLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>confidence ellipse</skos:prefLabel>
-    <dcterms:description>MD51</dcterms:description>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP51"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:valueStructure>Sequence
-formula (a, b, φ) </dqm:valueStructure>
-    <skos:definition>D ellipse with the two main axes indicating the direction and magnitude of the highest and the lowest uncertainty of a 2D point</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/54">
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 68,3 %</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:description>MD33</dcterms:description>
-    <skos:prefLabel>time accuracy at 68,3 % significance level</skos:prefLabel>
-    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/52">
-    <skos:definition>evaluation of the random errors of one relief feature to another in the same dataset or on the same map/chart.
-It is a function of the random errors in the two elevations with respect to a common vertical datum.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:description>MD52</dcterms:description>
-    <dcterms:source>SR1</dcterms:source>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP2"/>
-    <skos:prefLabel>relative vertical error</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:altLabel>Rel LE90</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:altLabel>Rel CE90</skos:altLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD53"/>
+    <skos:prefLabel>relative horizontal error</skos:prefLabel>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2"/>
     <dqm:elementName>relative or internal accuracy</dqm:elementName>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/63">
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP63_1MP63_2MP63_3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>classification correctness</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dqm:valueStructure>Matrix (n × n)</dqm:valueStructure>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:prefLabel>relative misclassification matrix</skos:prefLabel>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/19">
+    <skos:prefLabel>number of physical structure conflicts</skos:prefLabel>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>matrix that indicates the number of items of class (i ) classified as class (j ) divided by the number of items of class (i )</skos:definition>
-    <dcterms:description>MD63</dcterms:description>
-    <skos:example>MD63e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb1">
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-22T15:46:39.254316</prov:startedAtTime>
-    <prov:used rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb2"/>
-    <prov:wasAssociatedWith rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb3"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-22T15:46:39.443327</prov:endedAtTime>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasInformedBy rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/104">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:elementName>format consistency</dqm:elementName>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>number of the data product specification requirements that are not fulfilled by the current product/dataset in relation to the total number of data product specification requirements</skos:definition>
+    <skos:definition>count of all items in the data set that are stored in conflict with the physical structure of the data set</skos:definition>
+    <skos:example>MD19e</skos:example>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>data product specification fail rate</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/16">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>number of items not in conformance with their value domain</skos:prefLabel>
+  <rdf:Description rdf:nodeID="Nc2965ef372d249cfa573d653ad736fa7">
+    <dct:hasVersion>git:87331847a0091a62858f2e688bd12aabfbb06fc8</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/43">
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>count of all items in the data set that are not in conformance with their value domain</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>domain consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/24">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP24"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>number of missing connections due to overshoots</skos:prefLabel>
-    <skos:definition>count of items in the dataset, within the parameter tolerance, that are mismatched due to overshoots</skos:definition>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD24e</skos:example>
-    <skos:altLabel>overshoots</skos:altLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/32">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:altLabel>variance-covariance matrix</skos:altLabel>
-    <dcterms:description>MD32_1
-MD32_2
-MD32_3
-MD32_4</dcterms:description>
-    <dqm:valueStructure>Matrix</dqm:valueStructure>
-    <skos:definition>symmetrical square matrix with variances of point discrepancies on the main diagonal and covariance between these discrepancies as off-diagonal elements</skos:definition>
-    <skos:prefLabel>covariance matrix</skos:prefLabel>
     <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 50 %</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:altLabel>CEP</skos:altLabel>
+    <skos:prefLabel>circular error probable</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/128">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/40">
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD40"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:source>SR1</dct:source>
+    <skos:prefLabel>absolute linear error at 90 % significance level of biased vertical data (Alternative 1)</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>absolute vertical accuracy of the data’s coordinates, expressed in terms of linear error at 90 % probability given that a bias is present</skos:definition>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>bias of the positions for a set of positions where the positional uncertainties are defined as the deviation between a measured position and what is accepted as the corresponding true position</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dcterms:description>MD128</dcterms:description>
-    <skos:prefLabel>bias of positions (1D, 2D and 3D)</skos:prefLabel>
     <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/3">
-    <dqm:elementName>commission</dqm:elementName>
-    <skos:definition>number of excess items in the data set or sample in relation to the number of items that should have been present</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>rate of excess items</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>MD3e</skos:example>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/203">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-    <dcterms:source>SR2</dcterms:source>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <skos:prefLabel>rate of geometric fidelity failure</skos:prefLabel>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <skos:definition>error rate of difference between registered geometry in the dataset and the actual geometry of the real world object</skos:definition>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/202">
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>MD202e</skos:example>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-    <skos:prefLabel>count of geometric fidelity failure</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <skos:definition>Number of differences between registered geometry in the dataset and the actual geometry of the real world object</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/29">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:description>MD29_1
-MD29_2</dcterms:description>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:definition>for a set of points where the discrepancy does not exceed a defined threshold, the arithmetical average of discrepancies between their measured positions and what is accepted as the corresponding true positions</skos:definition>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP29"/>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>mean value of positional uncertainties excluding outliers (1D, 2D, 3D)</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/59">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>time accuracy at 99,8 % significance level</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99,8 %</skos:definition>
-    <dcterms:description>MD59</dcterms:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/33">
-    <dcterms:description>MD33</dcterms:description>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50 %</skos:definition>
-    <skos:altLabel>LEP</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:prefLabel>linear error probable</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N15fdfa90d98b4b18b837a80a0f1e53b0">
-    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/23">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP23"/>
-    <skos:definition>count of items in the dataset, within the parameter tolerance, that are mismatched due to undershoots</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD23e</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <skos:prefLabel>number of missing connections due to undershoot</skos:prefLabel>
-    <skos:altLabel>undershoots</skos:altLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N94f3374ef16c440aa1b900d33aa11266">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
-    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/73">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP38"/>
-    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99,8 %</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Attribute value uncertainty at 99,8 % significance level</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/102">
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>number of data product specification requirements that are not fulfilled by the current product/dataset</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>data product specification fail count</skos:prefLabel>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/36">
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP36"/>
-    <skos:prefLabel>linear map accuracy at 95 % significance level</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:altLabel>LMAS 95 %</skos:altLabel>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 95 %</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/105">
-    <skos:prefLabel>data product specification pass rate</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>number of the data product specification requirements that are fulfilled by the current product/dataset in relation to the total number of data product specification requirements</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel>LMAS</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/34">
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 68,3 %</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
     <skos:prefLabel>standard linear error</skos:prefLabel>
     <skos:altLabel>SLE</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 68,3 %</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/11">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/47">
+    <skos:altLabel>RMSEP</skos:altLabel>
+    <dct:hasVersion>2.0</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dcterms:description>MD11</dcterms:description>
+    <skos:definition>radius of a circle around the given point, in which the true value lies with probability P</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD47"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>number of invalid overlaps of surfaces</skos:prefLabel>
-    <skos:definition>total number of erroneous overlaps within the data</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:altLabel>overlapping surfaces</skos:altLabel>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <skos:example>MD11e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/46">
-    <dcterms:description>MD42</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>circular near certainty error</skos:prefLabel>
-    <skos:altLabel>CNCE</skos:altLabel>
     <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 99,8 %</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/superseded"/>
+    <skos:prefLabel>root mean square error of planimetry</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/25">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>number of invalid slivers</skos:prefLabel>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/15">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>indication that an item is conforming to its value domain</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <dcterms:source>Source reference Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide</dcterms:source>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:example>MD25e_1
-MD25e_2</skos:example>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP25_1MP25_2"/>
-    <skos:altLabel>slivers</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>topological consistency</dqm:elementName>
-    <skos:definition>count of all items in the dataset that are invalid sliver surfaces</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/50">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <dcterms:description>MD50</dcterms:description>
-    <skos:definition>2D ellipse with the two main axes indicating the direction and magnitude of the highest and the lowest uncertainty of a 2D point</skos:definition>
-    <skos:altLabel>standard point error ellipse</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>uncertainty ellipse</skos:prefLabel>
-    <dqm:valueStructure>Sequence
-formula (a, b, φ) </dqm:valueStructure>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne63040fee40a4b00bb4e538c21187512">
-    <dcterms:format>text/turtle</dcterms:format>
-    <dcterms:hasVersion>git:a9a73818873072358d2554833363eada0866e291</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityMeasures.csv.ttl"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/12">
-    <skos:prefLabel>non-compliance rate with respect to the rules of the conceptual schema</skos:prefLabel>
-    <skos:definition>number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset</skos:definition>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:example>MD12e</skos:example>
-    <dqm:elementName>conceptual consistency</dqm:elementName>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <dcterms:description>MD12</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/17">
-    <skos:example>MD17e</skos:example>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <dqm:elementName>domain consistency</dqm:elementName>
-    <skos:prefLabel>value domain conformance rate</skos:prefLabel>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>number of items in the data set that are in conformance with their value domain in relation to the total number of items in the data set</skos:definition>
+    <skos:example>MD15e</skos:example>
+    <skos:prefLabel>value domain conformance</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure">
-    <skos:prefLabel>ISO19157-3 quality measures</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:prefLabel>ISO19157-3 quality measures</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>total number of exact duplications of feature instances within the data</skos:definition>
+    <dqm:elementName>commission</dqm:elementName>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:source>ISO/TS 19138 (modified)</dct:source>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:prefLabel>number of duplicate feature instances</skos:prefLabel>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4"/>
+    <skos:example>MD4e</skos:example>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/33">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50 %</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:altLabel>LEP</skos:altLabel>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:prefLabel>linear error probable</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityMeasures.csv.rdf">
+    <dct:hasVersion>git:87331847a0091a62858f2e688bd12aabfbb06fc8</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>application/rdf+xml</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="N31f63b7ec7e346c89589a95983e125c3"/>
+    <prov:wasAttributedTo rdf:nodeID="Nef44fbf811164be9ae3721b2b8a50423"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/58">
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35"/>
+    <skos:prefLabel>time accuracy at 99 % significance level</skos:prefLabel>
+    <dqm:elementName>accuracy of a time measurement</dqm:elementName>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99 %</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/37">
+    <skos:prefLabel>linear map accuracy at 99 % significance level</skos:prefLabel>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99 %</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP37"/>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:altLabel>LMAS 99 %</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/128">
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD128"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>bias of the positions for a set of positions where the positional uncertainties are defined as the deviation between a measured position and what is accepted as the corresponding true position</skos:definition>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:prefLabel>bias of positions (1D, 2D and 3D)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/69">
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP69"/>
+    <skos:prefLabel>attribute value uncertainty at 50 % significance level</skos:prefLabel>
+    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
+    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 50 %</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/207">
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>currentness</skos:prefLabel>
+    <skos:example>M207e</skos:example>
+    <dqm:elementName>temporal validity</dqm:elementName>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>degree to which data has attributes that are of the right age in a specific context of use [25012:2008]</skos:definition>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP207"/>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/206">
+    <skos:definition>evaluation if a dataset is maintained as set by maintenance frequency</skos:definition>
+    <dct:source>SR4</dct:source>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP206"/>
+    <dct:hasVersion>0.1</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
+    <skos:prefLabel>maintenance frequency</skos:prefLabel>
+    <dqm:elementName>temporal validity</dqm:elementName>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:example>MD206e</skos:example>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/46">
+    <skos:altLabel>CNCE</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42"/>
+    <skos:prefLabel>circular near certainty error</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
+    <skos:definition>radius describing a circle, in which the true point location lies with the probability of 99,8 %</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na791d83f908c4f119c7f2d5af565d4e5">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityMeasures.csv.ttl"/>
+    <dct:hasVersion>git:87331847a0091a62858f2e688bd12aabfbb06fc8</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/16">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>count of all items in the data set that are not in conformance with their value domain</skos:definition>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dqm:elementName>domain consistency</dqm:elementName>
+    <skos:prefLabel>number of items not in conformance with their value domain</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/29">
+    <skos:definition>for a set of points where the discrepancy does not exceed a defined threshold, the arithmetical average of discrepancies between their measured positions and what is accepted as the corresponding true positions</skos:definition>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_2"/>
+    <dqm:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_1"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP29"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>mean value of positional uncertainties excluding outliers (1D, 2D, 3D)</skos:prefLabel>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <dqm:elementName>absolute or external accuracy</dqm:elementName>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/66">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>number of correct attribute values in relation to the total number of attribute values</skos:definition>
-    <dqm:elementName>non-quantitative attribute correctness</dqm:elementName>
     <skos:prefLabel>rate of correct attribute values</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/42">
-    <dcterms:description>MD42</dcterms:description>
-    <skos:definition>radius describing a circle, in which the true point location lies with the probability of a normal distribution at 39,4 %</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:elementName>absolute or external accuracy</dqm:elementName>
-    <skos:prefLabel>circular standard deviation</skos:prefLabel>
-    <skos:altLabel>circular standard error, Helmert’s point error, CSE</skos:altLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/71">
-    <dcterms:description>MD33</dcterms:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:elementName>non-quantitative attribute correctness</dqm:elementName>
     <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:definition>half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 95 %</skos:definition>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP36"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>attribute value uncertainty at 95 % significance level</skos:prefLabel>
-    <dqm:elementName>quantitative attribute accuracy</dqm:elementName>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:definition>number of correct attribute values in relation to the total number of attribute values</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityMeasures.csv.ttl">
-    <prov:wasGeneratedBy rdf:nodeID="Ne97c709cf99a4df79425a3f92a2fe984"/>
-    <dcterms:format>text/turtle</dcterms:format>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <prov:wasAttributedTo rdf:nodeID="N15fdfa90d98b4b18b837a80a0f1e53b0"/>
+  <rdf:Description rdf:nodeID="N9a30a2148f8d44b196808ee27527af81">
+    <dct:identifier>43ea6442-0efa-46f4-8023-1ccac7926747</dct:identifier>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/18">
-    <dqm:elementName>domain consistency</dqm:elementName>
-    <skos:definition>number of items in the data set that are not in conformance with their value domain in relation to the total number of items</skos:definition>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:example>MD18e</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>value domain non-conformance rate</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2fb20f345a064c10917661e2fcc8f0ba">
-    <dcterms:format>text/turtle</dcterms:format>
+  <rdf:Description rdf:nodeID="N12431632b3a1496da2f4ff4dd751b098">
     <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:a9a73818873072358d2554833363eada0866e291</dcterms:hasVersion>
+    <dct:hasVersion>git:87331847a0091a62858f2e688bd12aabfbb06fc8</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/206">
-    <dqm:elementName>temporal validity</dqm:elementName>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>maintenance frequency</skos:prefLabel>
-    <dcterms:hasVersion>0.1</dcterms:hasVersion>
-    <dcterms:source>SR4</dcterms:source>
-    <skos:definition>evaluation if a dataset is maintained as set by maintenance frequency</skos:definition>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/104">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <ns1:qualityMeasureParameter rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/MP206"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/draft"/>
-    <skos:example>MD206e</skos:example>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb190f21615dd4f3c923065a4f6f47dde">
-    <dcterms:identifier>8af20e43-3b8f-44a7-ad3c-724441d3f242</dcterms:identifier>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <skos:definition>number of the data product specification requirements that are not fulfilled by the current product/dataset in relation to the total number of data product specification requirements</skos:definition>
+    <skos:prefLabel>data product specification fail rate</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/67">
-    <skos:definition>number of attribute values where incorrect values are assigned in relation to the total number of attribute values</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
-    <skos:prefLabel>rate of incorrect attribute values</skos:prefLabel>
-    <dcterms:hasVersion>1.0</dcterms:hasVersion>
-    <dqm:elementName>non-quantitative attribute correctness</dqm:elementName>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dqm:elementName>non-quantitative attribute correctness</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
+    <skos:prefLabel>rate of incorrect attribute values</skos:prefLabel>
+    <skos:definition>number of attribute values where incorrect values are assigned in relation to the total number of attribute values</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityMeasures.csv.rdf">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-    <prov:wasGeneratedBy rdf:nodeID="Nd1cee95acee241ab8f655f156d1aab6e"/>
-    <prov:wasAttributedTo rdf:nodeID="N94f3374ef16c440aa1b900d33aa11266"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/20">
+    <skos:prefLabel>physical structure conflict rate</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>number of items in the data set that are stored in conflict with the physical structure of the data set divided by the total number of items</skos:definition>
+    <dqm:elementName>format consistency</dqm:elementName>
+    <policy:status rdf:resource="http://www.opengis.net/def/status/valid"/>
+    <dct:hasVersion>1.0</dct:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9f6ee7d58b0c4d098a7258db394bc4abb4">
-    <dcterms:identifier>b44ca163-8d51-46fe-8e83-3635ee5ee1cd</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne41d04b678b2405ea481cdf4fb3c32bd">
-    <dcterms:identifier>8af20e43-3b8f-44a7-ad3c-724441d3f242</dcterms:identifier>
+  <rdf:Description rdf:nodeID="na23db87882da4c779f955c00710216f8b4">
+    <dct:identifier>6c88aff1-6919-4b91-97af-76d30fb724c8</dct:identifier>
   </rdf:Description>
 </rdf:RDF>
