@@ -1,69 +1,17 @@
 [
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP30",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@value": "Ratio"
+        "@value": "Integer"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "number of classes under consideration"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "n"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP49",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Definition: minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Sample size"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP31",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "number"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "is the threshold above which the positional discrepancies are counted"
+        "@value": "is the threshold for accepted positional discrepancy"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -78,18 +26,13 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP206",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP205",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "MD_MaintenanceFrequencyCode"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Frequency with which modifications and deletions are made to the data after it is first produced."
+        "@value": "TM_PeriodDuration described with at least one of the parameters described in ISO 19108:2005"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -99,260 +42,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Maintenance and update frequency"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/measureParameter.csv.ttl",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:Ncda89f5067b0481fbf63e5296c4920c7"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:N3ce83b142525408382427d100ff87f9b"
-      }
-    ]
-  },
-  {
-    "@id": "_:Ncda89f5067b0481fbf63e5296c4920c7",
-    "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.47.dev1+g5249c1b"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:N3ce83b142525408382427d100ff87f9b",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:23:25.165894"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:23:25.141478"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:N09b1bfcb8b92495eb9f87874ff81d0c7"
-      },
-      {
-        "@id": "_:N26e2d8544ed84ac1977dfe3314c3662a"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:Ncda89f5067b0481fbf63e5296c4920c7"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:N8265f0145bcc4a0fbb43785c151ed751"
-      }
-    ]
-  },
-  {
-    "@id": "_:N8265f0145bcc4a0fbb43785c151ed751",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "7d6b7869-08da-49db-a31e-ff46d90f1437"
-      }
-    ]
-  },
-  {
-    "@id": "_:N09b1bfcb8b92495eb9f87874ff81d0c7",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N26e2d8544ed84ac1977dfe3314c3662a",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/measureParameter.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "sample size"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "number of classes under consideration"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "n"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP68",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Percentage"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Measure 68,3%"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Significance level"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP24",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "search tolerance of minimum allowable length in the dataset"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "search tolerance "
+        "@value": "User defined maintenance"
       }
     ]
   },
@@ -369,6 +59,37 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@value": "maximum permitted age"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "99.8"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "percentage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Measure 99,8%"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "significance level"
       }
     ]
   },
@@ -399,6 +120,32 @@
     ]
   },
   {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP41",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Sample size"
+      }
+    ]
+  },
+  {
     "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/measureParameter.csv.jsonld",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
@@ -410,22 +157,22 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
       }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "_:N42ab0435202a4b5c91575a10f12dd9bd"
+        "@id": "_:Na9338a4ebc6c40179cd8e1c73587b271"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "_:N1d7ae315bbda4597b2451941ebd16965"
+        "@id": "_:Nd05ef327a5a94f188f3d5b86b8f1e115"
       }
     ]
   },
   {
-    "@id": "_:N1d7ae315bbda4597b2451941ebd16965",
+    "@id": "_:Nd05ef327a5a94f188f3d5b86b8f1e115",
     "@type": [
       "http://www.w3.org/ns/prov#Activity"
     ],
@@ -442,36 +189,36 @@
     "http://www.w3.org/ns/prov#endedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:23:25.198781"
+        "@value": "2024-06-23T16:28:56.485372"
       }
     ],
     "http://www.w3.org/ns/prov#startedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:23:25.141478"
+        "@value": "2024-06-23T16:28:56.429218"
       }
     ],
     "http://www.w3.org/ns/prov#used": [
       {
-        "@id": "_:N16ed391e235844a496226d22b3a65dc9"
+        "@id": "_:Nd3325feaf628454a8a3dbd082f43b287"
       },
       {
-        "@id": "_:Neef6f6ff13d7445ebc85237fa4e454fc"
+        "@id": "_:N1f55645428b4452d8c5435b702200257"
       }
     ],
     "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "_:N42ab0435202a4b5c91575a10f12dd9bd"
+        "@id": "_:Na9338a4ebc6c40179cd8e1c73587b271"
       }
     ],
     "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@id": "_:N2de243730a1d4e25b033a1133a685a3b"
+        "@id": "_:Nb101de0395e347648c763b643e3d97ef"
       }
     ]
   },
   {
-    "@id": "_:N16ed391e235844a496226d22b3a65dc9",
+    "@id": "_:Nd3325feaf628454a8a3dbd082f43b287",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -482,7 +229,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -492,7 +239,7 @@
     ]
   },
   {
-    "@id": "_:Neef6f6ff13d7445ebc85237fa4e454fc",
+    "@id": "_:N1f55645428b4452d8c5435b702200257",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -503,7 +250,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -513,15 +260,15 @@
     ]
   },
   {
-    "@id": "_:N2de243730a1d4e25b033a1133a685a3b",
+    "@id": "_:Nb101de0395e347648c763b643e3d97ef",
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "7d6b7869-08da-49db-a31e-ff46d90f1437"
+        "@value": "6ffe640c-a5f5-4b86-a748-546858187bbb"
       }
     ]
   },
   {
-    "@id": "_:N42ab0435202a4b5c91575a10f12dd9bd",
+    "@id": "_:Na9338a4ebc6c40179cd8e1c73587b271",
     "@type": [
       "http://www.w3.org/ns/prov#Agent",
       "https://schema.org/SoftwareApplication"
@@ -548,13 +295,86 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP31",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "number"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "is the threshold above which the positional discrepancies are counted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "emax"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP201",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Tolerance of differences in the coordinates for two datasets"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Tolerance"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP24",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "search tolerance of minimum allowable length in the dataset"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "search tolerance "
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/description": [
       {
-        "@value": "90"
+        "@value": "95"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -564,7 +384,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Measure 90%"
+        "@value": "Measure 95%"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -610,426 +430,6 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP51",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Number"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "1α"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "significance level"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/measureParameter.csv.rdf",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/rdf+xml"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:N003c86c046664bfa8720965266480415"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:N49c605966eb6461faa39c6f03bfc1c1f"
-      }
-    ]
-  },
-  {
-    "@id": "_:N003c86c046664bfa8720965266480415",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.47.dev1+g5249c1b"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:N49c605966eb6461faa39c6f03bfc1c1f",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:23:25.184042"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:23:25.141478"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:Ncc432e25ead04736b3ba5c638c1d8827"
-      },
-      {
-        "@id": "_:Nc3419363661e457fbc48d50cbb20cd05"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:N003c86c046664bfa8720965266480415"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:N51b1a27788cf49bf9984c3054e17f743"
-      }
-    ]
-  },
-  {
-    "@id": "_:Ncc432e25ead04736b3ba5c638c1d8827",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/measureParameter.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nc3419363661e457fbc48d50cbb20cd05",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:8ad6fb45cfb42dd277ded76731ffaaa235e62875"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N51b1a27788cf49bf9984c3054e17f743",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "7d6b7869-08da-49db-a31e-ff46d90f1437"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "99.8"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "percentage"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Measure 99,8%"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "significance level"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "The maximum area determines the upper limit of a sliver. This is to prevent surfaces with sinuous perimeters and large areas from being mistaken as slivers."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "maximum sliver area size"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP41",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Sample size"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP23",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "search distance from the end of a dangling line"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "search distance"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP29",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Real"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "is the threshold for accepted positional uncertainties"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "emax"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP201",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Tolerance of differences in the coordinates for two datasets"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Tolerance"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP205",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "TM_PeriodDuration described with at least one of the parameters described in ISO 19108:2005"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "User defined maintenance"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP30",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Integer"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "is the threshold for accepted positional discrepancy"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "emax"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "ISO19157-3 quality measure Parameters"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "95"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "percentage"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Measure 95%"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "significance level"
-      }
-    ]
-  },
-  {
     "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -1056,18 +456,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP69",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@value": "Percentage"
+        "@value": "Ratio"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Measure 50%"
+        "@value": "number of classes under consideration"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1077,117 +477,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Significance level"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP204",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@value": "Percentage"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Identification of child polygons"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "namn"
-      }
-    ]
-  },
-  {
-    "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb1",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:22:21.200499"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-23T16:22:21.129109"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb2"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb3"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb4"
-      }
-    ]
-  },
-  {
-    "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb4",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "b3e83e09-cd3b-4af8-9081-6c80c264fe48"
-      }
-    ]
-  },
-  {
-    "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb2",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:6ed9c01225f3990100b0187d06fb964223fcbd7d"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/measureParameter.csv.json"
-      }
-    ]
-  },
-  {
-    "@id": "_:n880fe5c327494b3ab3d669d9653d9f8fb3",
-    "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.47.dev1+g5249c1b"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+        "@value": "n"
       }
     ]
   },
@@ -1219,6 +509,716 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@value": "thickness quotient"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP206",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "MD_MaintenanceFrequencyCode"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Frequency with which modifications and deletions are made to the data after it is first produced."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Maintenance and update frequency"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "90"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "percentage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Measure 90%"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "significance level"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "number of classes under consideration"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "n"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP49",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Definition: minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Sample size"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/measureParameter.csv.rdf",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/rdf+xml"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:Ndb36b6d06c044096b6502848006c9233"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:N826bc5a121bb47b19f88c67c30ea8551"
+      }
+    ]
+  },
+  {
+    "@id": "_:N826bc5a121bb47b19f88c67c30ea8551",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-23T16:28:56.470705"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-23T16:28:56.429218"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:Ne4789b30025a446a9c681c472f4332d7"
+      },
+      {
+        "@id": "_:N77d48a77d23148ffb3274bf2c8dcb851"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:Ndb36b6d06c044096b6502848006c9233"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:Na1de210ff7224aa7bf76c6bc3bbd185d"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndb36b6d06c044096b6502848006c9233",
+    "@type": [
+      "https://schema.org/SoftwareApplication",
+      "http://www.w3.org/ns/prov#Agent"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.47.dev1+g5249c1b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne4789b30025a446a9c681c472f4332d7",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N77d48a77d23148ffb3274bf2c8dcb851",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/measureParameter.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na1de210ff7224aa7bf76c6bc3bbd185d",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "6ffe640c-a5f5-4b86-a748-546858187bbb"
+      }
+    ]
+  },
+  {
+    "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-23T16:22:21.200499"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-23T16:22:21.129109"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b2"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b3"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b4"
+      }
+    ]
+  },
+  {
+    "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b2",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/json"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:6ed9c01225f3990100b0187d06fb964223fcbd7d"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/measureParameter.csv.json"
+      }
+    ]
+  },
+  {
+    "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b3",
+    "@type": [
+      "https://schema.org/SoftwareApplication",
+      "http://www.w3.org/ns/prov#Agent"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.47.dev1+g5249c1b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:n2ac40912a64f4928bc37dcc9b09157d2b4",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "b3e83e09-cd3b-4af8-9081-6c80c264fe48"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP69",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Percentage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Measure 50%"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Significance level"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "sample size"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP204",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Percentage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Identification of child polygons"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "namn"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/measureParameter.csv.ttl",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:Ndb09c30d15b346738ae746c5aefcee48"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:N61b3291037354f36aef40b16cb6a918b"
+      }
+    ]
+  },
+  {
+    "@id": "_:N61b3291037354f36aef40b16cb6a918b",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-23T16:28:56.453039"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-23T16:28:56.429218"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N6fa208e6dc7b4deaad73740d83ab8719"
+      },
+      {
+        "@id": "_:N02d3013aa56846b99b7787004f143b30"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:Ndb09c30d15b346738ae746c5aefcee48"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:Nc437124fd03e4718b7ce6d7ab4c0011f"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6fa208e6dc7b4deaad73740d83ab8719",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N02d3013aa56846b99b7787004f143b30",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:b715ea4a41159946c7006feb96125290e848f3f8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/measureParameter.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc437124fd03e4718b7ce6d7ab4c0011f",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "6ffe640c-a5f5-4b86-a748-546858187bbb"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndb09c30d15b346738ae746c5aefcee48",
+    "@type": [
+      "https://schema.org/SoftwareApplication",
+      "http://www.w3.org/ns/prov#Agent"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.47.dev1+g5249c1b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP29",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "is the threshold for accepted positional uncertainties"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "emax"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "The maximum area determines the upper limit of a sliver. This is to prevent surfaces with sinuous perimeters and large areas from being mistaken as slivers."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "maximum sliver area size"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP23",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Real"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "search distance from the end of a dangling line"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "search distance"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP68",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Percentage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Measure 68,3%"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Significance level"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ISO19157-3 quality measure Parameters"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP51",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@value": "Number"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "1α"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "significance level"
       }
     ]
   }
