@@ -6,32 +6,142 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityBasicMeasures.csv.ttl">
-    <prov:wasAttributedTo rdf:nodeID="N4adace5e26964d5e8dee9ecb58972ea0"/>
-    <dcterms:hasVersion>git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <prov:wasGeneratedBy rdf:nodeID="N871d3f6bdf69440cafacbf1ca7c388a5"/>
+  <rdf:Description rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb3">
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>confidence interval for probability P=68,3 % derived from t-distribution by redundant measurements</skos:definition>
+    <skos:prefLabel>One dimensional variable 68,3 % probability redundancy</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>confidence interval given by the probability P=95 % of the true value being between the lower and upper limit</skos:definition>
+    <skos:prefLabel>One dimensional variable 95 % probability</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>error count</skos:prefLabel>
+    <skos:definition>Total number of items that are subject to an error of a specified type</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>confidence interval for probability P=99 % derived from t-distribution by redundant measurements</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>One dimensional variable 99 % probability reundancy</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM6">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>correct items rate</skos:prefLabel>
+    <skos:definition>Number of the correct items with respect to the total number of items that should have been present</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r">
+    <skos:definition>confidence interval for probability P=50 % derived from t-distribution by redundant measurements</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>One dimensional variable 50 % probability redundancy</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99,8">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit</skos:definition>
+    <skos:prefLabel>One dimensional variable 99,8 % probability</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8bb703b4765148a8945c1b4590eaab84">
     <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:f65687548f05b11c068f9997a34ac79de0d1bb85</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>One dimensional variable 90 % probability</skos:prefLabel>
+    <skos:definition>confidence interval given by the probability P=90 % of the true value being between the lower and upper limit</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99,8r">
+    <skos:prefLabel>One dimensional variable 99,8 % probability redundancy</skos:prefLabel>
+    <skos:definition>confidence interval for probability P=99,8 % derived from t-distribution by redundant measurements</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb2">
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/dataQualityBasicMeasures.csv.json"/>
+    <dcterms:hasVersion>git:6ed9c01225f3990100b0187d06fb964223fcbd7d</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>application/json</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityBasicMeasures.csv.ttl">
+    <prov:wasGeneratedBy rdf:nodeID="N3699d7bcc3a44f06a156a626cb71012f"/>
+    <prov:wasAttributedTo rdf:nodeID="N8c37e19fed164baa8c713f883b64d2e0"/>
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:hasVersion>git:f65687548f05b11c068f9997a34ac79de0d1bb85</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3699d7bcc3a44f06a156a626cb71012f">
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="N8c37e19fed164baa8c713f883b64d2e0"/>
+    <prov:wasInformedBy rdf:nodeID="N533cab4e5686430b8424cbbb328cf452"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T19:38:03.717976</prov:endedAtTime>
+    <prov:used rdf:nodeID="N6e21a8ec9bfa42349753f9a1f31b3b03"/>
+    <prov:used rdf:nodeID="N8bb703b4765148a8945c1b4590eaab84"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T19:38:03.703288</prov:startedAtTime>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3">
+    <skos:prefLabel>One dimensional variable 68,3 % probability</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb1">
+    <prov:wasInformedBy rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb4"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:used rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb2"/>
+    <prov:wasAssociatedWith rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb3"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:22:21.123963</prov:endedAtTime>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:22:21.055040</prov:startedAtTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1b3ff2d8790484faa25694d5ca03967">
+    <prov:used rdf:nodeID="N778701604957462894e4d12534de6b95"/>
+    <prov:used rdf:nodeID="N36484503f4824bfa92f659350cc950cc"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T19:38:03.703288</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T19:38:03.735212</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N0cba6dc5ec974f78a862e4ff38f31303"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="N51d0edfbd8e24d66a03d3cc2174b3938"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50">
+    <skos:definition>confidence interval given by the probability P=50 % of the true value being between the lower and upper limit</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>One dimensional variable 50 % probability</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition>confidence interval given by the probability P=99 % of the true value being between the lower and upper limit</skos:definition>
     <skos:prefLabel>One dimensional variable 99 % probability</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM4">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Indicator that an item is correct</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>correctness indicator</skos:prefLabel>
+  <rdf:Description rdf:nodeID="N533cab4e5686430b8424cbbb328cf452">
+    <dcterms:identifier>658e8d9f-5792-490a-9bff-ccc1072d28c4</dcterms:identifier>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n855009884602414bb983f54d8085aa3cb1">
-    <prov:wasInformedBy rdf:nodeID="n855009884602414bb983f54d8085aa3cb4"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:22:21.055040</prov:startedAtTime>
-    <prov:used rdf:nodeID="n855009884602414bb983f54d8085aa3cb2"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:22:21.123963</prov:endedAtTime>
-    <prov:wasAssociatedWith rdf:nodeID="n855009884602414bb983f54d8085aa3cb3"/>
+  <rdf:Description rdf:nodeID="N36484503f4824bfa92f659350cc950cc">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:f65687548f05b11c068f9997a34ac79de0d1bb85</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
@@ -39,220 +149,110 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel>One dimensional variable 90 % probability redundancy</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>One dimensional variable 95 % probability</skos:prefLabel>
-    <skos:definition>confidence interval given by the probability P=95 % of the true value being between the lower and upper limit</skos:definition>
+    <skos:definition>Number of the erroneous items with respect to the total number of items that should have been present</skos:definition>
+    <skos:prefLabel>error rate</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE39,4">
+    <skos:definition>confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>Two dimensional random variable 39,4 %</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51d0edfbd8e24d66a03d3cc2174b3938">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
+    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c37e19fed164baa8c713f883b64d2e0">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e21a8ec9bfa42349753f9a1f31b3b03">
+    <dcterms:hasVersion>git:f65687548f05b11c068f9997a34ac79de0d1bb85</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityBasicMeasures.csv.ttl"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityBasicMeasures.csv.rdf">
+    <dcterms:hasVersion>git:f65687548f05b11c068f9997a34ac79de0d1bb85</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>application/rdf+xml</dcterms:format>
+    <prov:wasGeneratedBy rdf:nodeID="Nf1b3ff2d8790484faa25694d5ca03967"/>
+    <prov:wasAttributedTo rdf:nodeID="N51d0edfbd8e24d66a03d3cc2174b3938"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>One dimensional variable 95 % probability redundancy</skos:prefLabel>
+    <skos:definition>confidence interval for probability P=95 % derived from t-distribution by redundant measurements</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE90">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>Two dimensional random variable 90 %</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM4">
+    <skos:prefLabel>correctness indicator</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Indicator that an item is correct</skos:definition>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="N778701604957462894e4d12534de6b95">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityBasicMeasures.csv.ttl"/>
+    <dcterms:hasVersion>git:f65687548f05b11c068f9997a34ac79de0d1bb85</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0cba6dc5ec974f78a862e4ff38f31303">
+    <dcterms:identifier>658e8d9f-5792-490a-9bff-ccc1072d28c4</dcterms:identifier>
+  </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM5">
+    <skos:definition>Total number of items that are free of errors of a specified type</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <skos:prefLabel>correct items count</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE95">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Total number of items that are free of errors of a specified type</skos:definition>
+    <skos:prefLabel>Two dimensional random variable 95 %</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:prefLabel>ISO19157-3 basic quality measures</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM1">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>error indicator</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Indicator that an item is in error</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:prefLabel>Two dimensional random variable 99 %</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99,8">
+    <skos:prefLabel>Two dimensional random variable 99,8 %</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE50">
     <skos:prefLabel>Two dimensional random variable 50 %</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>confidence interval for probability P=50 % derived from t-distribution by redundant measurements</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>One dimensional variable 50 % probability redundancy</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n855009884602414bb983f54d8085aa3cb3">
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N871d3f6bdf69440cafacbf1ca7c388a5">
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:31:23.356441</prov:startedAtTime>
-    <prov:wasInformedBy rdf:nodeID="Nb3963d82ec4a486da3b3703f348989dd"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:31:23.371511</prov:endedAtTime>
-    <prov:used rdf:nodeID="Nb1489fb6e8df4247a9acc0deb9962534"/>
-    <prov:used rdf:nodeID="Nbb3cf64597cd4556905b491de60c78eb"/>
-    <prov:wasAssociatedWith rdf:nodeID="N4adace5e26964d5e8dee9ecb58972ea0"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM6">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>correct items rate</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Number of the correct items with respect to the total number of items that should have been present</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb1489fb6e8df4247a9acc0deb9962534">
-    <dcterms:hasVersion>git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityBasicMeasures.csv.ttl"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N63bab31aceb04146b4cf1b9989692360">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99,8">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Two dimensional random variable 99,8 %</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc1c08f6dd355401885dc7d344b709566">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityBasicMeasures.csv.ttl"/>
-    <dcterms:hasVersion>git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE39,4">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area</skos:definition>
-    <skos:prefLabel>Two dimensional random variable 39,4 %</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE95">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Two dimensional random variable 95 %</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM2">
-    <skos:definition>Number of the erroneous items with respect to the total number of items that should have been present</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>error rate</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>One dimensional variable 50 % probability</skos:prefLabel>
-    <skos:definition>confidence interval given by the probability P=50 % of the true value being between the lower and upper limit</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99,8r">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>One dimensional variable 99,8 % probability redundancy</skos:prefLabel>
-    <skos:definition>confidence interval for probability P=99,8 % derived from t-distribution by redundant measurements</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90">
-    <skos:definition>confidence interval given by the probability P=90 % of the true value being between the lower and upper limit</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>One dimensional variable 90 % probability</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure">
-    <skos:prefLabel>ISO19157-3 basic quality measures</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb2d99353c7564b8ca854aaf6a1532009">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
-    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM3">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Total number of items that are subject to an error of a specified type</skos:definition>
-    <skos:prefLabel>error count</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4adace5e26964d5e8dee9ecb58972ea0">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b</rdfs:comment>
-    <dcterms:hasVersion>0.3.47.dev1+g5249c1b</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>One dimensional variable 68,3 % probability redundancy</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>confidence interval for probability P=68,3 % derived from t-distribution by redundant measurements</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n855009884602414bb983f54d8085aa3cb2">
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/dataQualityBasicMeasures.csv.json"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:hasVersion>git:6ed9c01225f3990100b0187d06fb964223fcbd7d</dcterms:hasVersion>
-    <dcterms:format>application/json</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>One dimensional variable 68,3 % probability</skos:prefLabel>
-    <skos:definition>confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb3963d82ec4a486da3b3703f348989dd">
-    <dcterms:identifier>e7d01caf-d1a7-4323-b347-652856c3de3b</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityBasicMeasures.csv.rdf">
-    <dcterms:hasVersion>git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-    <prov:wasGeneratedBy rdf:nodeID="N46d79f28141c47c481ddf859da51073f"/>
-    <prov:wasAttributedTo rdf:nodeID="Nb2d99353c7564b8ca854aaf6a1532009"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbb3cf64597cd4556905b491de60c78eb">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:hasVersion>git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99">
-    <skos:prefLabel>Two dimensional random variable 99 %</skos:prefLabel>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N46d79f28141c47c481ddf859da51073f">
-    <prov:used rdf:nodeID="Nc1c08f6dd355401885dc7d344b709566"/>
-    <prov:used rdf:nodeID="N63bab31aceb04146b4cf1b9989692360"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:31:23.356441</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-23T16:31:23.387196</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="Na4aed597bc6b4075846bf9d15fbff23d"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="Nb2d99353c7564b8ca854aaf6a1532009"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99,8">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>One dimensional variable 99,8 % probability</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n855009884602414bb983f54d8085aa3cb4">
+  <rdf:Description rdf:nodeID="n5113cae502d54edbb8567905381dd4ddb4">
     <dcterms:identifier>b3e83e09-cd3b-4af8-9081-6c80c264fe48</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM1">
-    <skos:prefLabel>error indicator</skos:prefLabel>
-    <skos:definition>Indicator that an item is in error</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE90">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:prefLabel>Two dimensional random variable 90 %</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r">
-    <skos:prefLabel>One dimensional variable 95 % probability redundancy</skos:prefLabel>
-    <skos:definition>confidence interval for probability P=95 % derived from t-distribution by redundant measurements</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r">
-    <skos:definition>confidence interval for probability P=99 % derived from t-distribution by redundant measurements</skos:definition>
-    <skos:prefLabel>One dimensional variable 99 % probability reundancy</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Na4aed597bc6b4075846bf9d15fbff23d">
-    <dcterms:identifier>e7d01caf-d1a7-4323-b347-652856c3de3b</dcterms:identifier>
   </rdf:Description>
 </rdf:RDF>
