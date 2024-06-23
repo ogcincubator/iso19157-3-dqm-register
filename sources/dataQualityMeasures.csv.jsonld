@@ -11,10 +11,19 @@
     "alias": "skos:altLabel",
     "elementName": "dqm:elementName",
     "definition": "skos:definition",
-    "description": "dct:description",
+    "description": {
+      "@id": "http://www.opengis.net/def/metamodel/isodqm/measureDescription",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/"
+      }
+    },
     "parameter": {
-      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter",
-      "@type": "@id"
+      "@id": "http://www.opengis.net/def/metamodel/isodqm/qualityMeasureParameter",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/"
+      }
     },
     "Value Type": "dqm:valueType",
     "Value structure": "dqm:valueStructure",
@@ -43,7 +52,7 @@
       "elementName": "commission",
       "basicMeasure": "BM1",
       "definition": "indication that an item is incorrectly present in the data",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -60,7 +69,7 @@
       "elementName": "commission",
       "basicMeasure": "BM3",
       "definition": "number of items within the data set or sample that should not have been present",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -77,7 +86,7 @@
       "elementName": "commission",
       "basicMeasure": "BM2",
       "definition": "number of excess items in the data set or sample in relation to the number of items that should have been present",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -94,7 +103,9 @@
       "elementName": "commission",
       "basicMeasure": "BM3",
       "definition": "total number of exact duplications of feature instances within the data",
-      "description": "MD4",
+      "description": [
+        "MD4"
+      ],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -111,7 +122,7 @@
       "elementName": "omission",
       "basicMeasure": "BM1",
       "definition": "indicator that shows a specific item is missing in the data",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -128,7 +139,7 @@
       "elementName": "omission",
       "basicMeasure": "BM3",
       "definition": "count of all items that should have been in the data set or sample and are missing",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -145,7 +156,7 @@
       "elementName": "omission",
       "basicMeasure": "BM2",
       "definition": "number of missing items in the data set or sample in relation to the number of items that should have been present",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -162,7 +173,7 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM1",
       "definition": "indication that an item is not compliant to the rules of the relevant conceptual schema",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -179,7 +190,7 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM4",
       "definition": "indication that an item complies with the rules of the relevant conceptual schema",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -196,7 +207,9 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM3",
       "definition": "count of all items in the data set that are not compliant with the rules of the conceptual schema",
-      "description": "MD10",
+      "description": [
+        "MD10"
+      ],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -213,7 +226,9 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM3",
       "definition": "total number of erroneous overlaps within the data",
-      "description": "MD11",
+      "description": [
+        "MD11"
+      ],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -230,7 +245,9 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM2",
       "definition": "number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset",
-      "description": "MD12",
+      "description": [
+        "MD12"
+      ],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -247,7 +264,7 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM6",
       "definition": "number of items in the data set in compliance with the rules of the conceptual schema in relation to the total number of items supposed to be in the data set",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -264,7 +281,9 @@
       "elementName": "domain consistency",
       "basicMeasure": "BM1",
       "definition": "indication of if an item is not in conformance with its value domain",
-      "description": "MD14",
+      "description": [
+        "MD14"
+      ],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -281,7 +300,7 @@
       "elementName": "domain consistency",
       "basicMeasure": "BM4",
       "definition": "indication that an item is conforming to its value domain",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -298,7 +317,7 @@
       "elementName": "domain consistency",
       "basicMeasure": "BM3",
       "definition": "count of all items in the data set that are not in conformance with their value domain",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -315,7 +334,7 @@
       "elementName": "domain consistency",
       "basicMeasure": "BM6",
       "definition": "number of items in the data set that are in conformance with their value domain in relation to the total number of items in the data set",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -332,7 +351,7 @@
       "elementName": "domain consistency",
       "basicMeasure": "BM2",
       "definition": "number of items in the data set that are not in conformance with their value domain in relation to the total number of items",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -349,7 +368,7 @@
       "elementName": "format consistency",
       "basicMeasure": "BM3",
       "definition": "count of all items in the data set that are stored in conflict with the physical structure of the data set",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -366,7 +385,7 @@
       "elementName": "format consistency",
       "basicMeasure": "BM2",
       "definition": "number of items in the data set that are stored in conflict with the physical structure of the data set divided by the total number of items",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -383,7 +402,9 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM3",
       "definition": "number of faulty point-curve connections in the dataset",
-      "description": "MD21",
+      "description": [
+        "MD21"
+      ],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -400,7 +421,9 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM2",
       "definition": "number of faulty link node connections in relation to the number of link node connections in the universe of discourse",
-      "description": "MD21",
+      "description": [
+        "MD21"
+      ],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -417,7 +440,7 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM3",
       "definition": "count of items in the dataset, within the parameter tolerance, that are mismatched due to undershoots",
-      "description": null,
+      "description": [],
       "parameter": "MP23",
       "Value type": "Integer",
       "Value structure": null,
@@ -434,7 +457,7 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM3",
       "definition": "count of items in the dataset, within the parameter tolerance, that are mismatched due to overshoots",
-      "description": null,
+      "description": [],
       "parameter": "MP24",
       "Value type": "Integer",
       "Value structure": null,
@@ -451,7 +474,7 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM3",
       "definition": "count of all items in the dataset that are invalid sliver surfaces",
-      "description": null,
+      "description": [],
       "parameter": "MP25_1\nMP25_2",
       "Value type": "Integer",
       "Value structure": null,
@@ -468,7 +491,7 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM3",
       "definition": "count of all items in the data that illegally intersect with themselves",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -485,7 +508,7 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM3",
       "definition": "count of all items in the data that illegally self-overlap",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -502,7 +525,11 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": null,
-      "description": "MD28_1\nMD28_2\nMD28_3",
+      "description": [
+        "MD28_1",
+        "MD28_2",
+        "MD28_3"
+      ],
       "parameter": null,
       "Value type": null,
       "Value structure": null,
@@ -519,7 +546,10 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "for a set of points where the discrepancy does not exceed a defined threshold, the arithmetical average of discrepancies between their measured positions and what is accepted as the corresponding true positions",
-      "description": "MD29_1\nMD29_2",
+      "description": [
+        "MD29_1",
+        "MD29_2"
+      ],
       "parameter": "MP29",
       "Value type": "Real",
       "Value structure": null,
@@ -536,7 +566,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "BM3",
       "definition": "number of positional discrepancies above a given threshold for a set of positions.\nThe discrepancies are defined as the distance between a measured position and what is accepted as the corresponding true position.",
-      "description": "MD30",
+      "description": [
+        "MD30"
+      ],
       "parameter": "MP30",
       "Value type": "Integer",
       "Value structure": null,
@@ -553,7 +585,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "number of positional discrepancies above a given threshold for a set of positions in relation to the total number of measured positions.\nThe discrepancies are defined as the distance between a measured position and what is accepted as the corresponding true position.",
-      "description": "MD31",
+      "description": [
+        "MD31"
+      ],
       "parameter": "MP31",
       "Value type": "Number",
       "Value structure": null,
@@ -570,7 +604,12 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "symmetrical square matrix with variances of point discrepancies on the main diagonal and covariance between these discrepancies as off-diagonal elements",
-      "description": "MD32_1\nMD32_2\nMD32_3\nMD32_4",
+      "description": [
+        "MD32_1",
+        "MD32_2",
+        "MD32_3",
+        "MD32_4"
+      ],
       "parameter": null,
       "Value type": "Real",
       "Value structure": "Matrix",
@@ -587,7 +626,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "LE50\nLE50r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -604,7 +645,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "LE63\nLE63r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 68,3\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -621,7 +664,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "LE 90\nLE 90r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 90\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP35",
       "Value type": "Measure",
       "Value structure": null,
@@ -638,7 +683,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "LE 95\nLE 95r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 95\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP36",
       "Value type": "Measure",
       "Value structure": null,
@@ -655,7 +702,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "LE 99\nLE 99r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP37",
       "Value type": "Measure",
       "Value structure": null,
@@ -672,7 +721,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "LE 99,8\nLE 99.8r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99,8\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP38",
       "Value type": "Measure",
       "Value structure": null,
@@ -689,7 +740,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "radius of a circle around a given point, in which the true value lies with probability P",
-      "description": "MD39",
+      "description": [
+        "MD39"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -706,7 +759,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "absolute vertical accuracy of the data\u2019s coordinates, expressed in terms of linear error at 90\u00a0% probability given that a bias is present",
-      "description": "MD40",
+      "description": [
+        "MD40"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -723,7 +778,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "absolute vertical accuracy of the data\u2019s coordinates, expressed in terms of linear error at 90\u00a0% probability given that a bias is present",
-      "description": "MD40",
+      "description": [
+        "MD40"
+      ],
       "parameter": "MP41",
       "Value type": "Measure",
       "Value structure": null,
@@ -740,7 +797,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "CE39.4",
       "definition": "radius describing a circle, in which the true point location lies with the probability of a normal distribution at 39,4\u00a0%",
-      "description": "MD42",
+      "description": [
+        "MD42"
+      ],
       "parameter": null,
       "Value type": "measure",
       "Value structure": null,
@@ -757,7 +816,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "CE50",
       "definition": "radius describing a circle, in which the true point location lies with the probability of 50\u00a0%",
-      "description": "MD42",
+      "description": [
+        "MD42"
+      ],
       "parameter": null,
       "Value type": "measure",
       "Value structure": null,
@@ -774,7 +835,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "CE90",
       "definition": "radius describing a circle, in which the true point location lies with the probability of 90\u00a0%",
-      "description": "MD42",
+      "description": [
+        "MD42"
+      ],
       "parameter": null,
       "Value type": "measure",
       "Value structure": null,
@@ -791,7 +854,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "CE95",
       "definition": "radius describing a circle, in which the true point location lies with the probability of 95\u00a0%",
-      "description": "MD42",
+      "description": [
+        "MD42"
+      ],
       "parameter": null,
       "Value type": "measure",
       "Value structure": null,
@@ -808,7 +873,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "CE99,8",
       "definition": "radius describing a circle, in which the true point location lies with the probability of 99,8\u00a0%",
-      "description": "MD42",
+      "description": [
+        "MD42"
+      ],
       "parameter": null,
       "Value type": "measure",
       "Value structure": null,
@@ -825,7 +892,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "radius of a circle around the given point, in which the true value lies with probability\u00a0P",
-      "description": "MD47",
+      "description": [
+        "MD47"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -842,7 +911,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "absolute horizontal accuracy of the data\u2019s coordinates, expressed in terms of circular error at 90\u00a0% probability given that a bias is present",
-      "description": "MD48",
+      "description": [
+        "MD48"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -859,7 +930,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "absolute horizontal accuracy of the data\u2019s coordinates, expressed in terms of circular error at 90 % probability given that a bias is present",
-      "description": "MD49",
+      "description": [
+        "MD49"
+      ],
       "parameter": "MP49",
       "Value type": "Measure",
       "Value structure": null,
@@ -876,7 +949,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "2D ellipse with the two main axes indicating the direction and magnitude of the highest and the lowest uncertainty of a 2D point",
-      "description": "MD50",
+      "description": [
+        "MD50"
+      ],
       "parameter": null,
       "Value type": "Real",
       "Value structure": "Sequence\nformula (a, b, \u03c6) ",
@@ -893,7 +968,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "D ellipse with the two main axes indicating the direction and magnitude of the highest and the lowest uncertainty of a 2D point",
-      "description": "MD51",
+      "description": [
+        "MD51"
+      ],
       "parameter": "MP51",
       "Value type": "Measure",
       "Value structure": "Sequence\nformula (a, b, \u03c6) ",
@@ -910,7 +987,9 @@
       "elementName": "relative or internal accuracy",
       "basicMeasure": "not applicable",
       "definition": "evaluation of the random errors of one relief feature to another in the same dataset or on the same map/chart.\nIt is a function of the random errors in the two elevations with respect to a common vertical datum.",
-      "description": "MD52",
+      "description": [
+        "MD52"
+      ],
       "parameter": "MP2",
       "Value type": "Measure",
       "Value structure": null,
@@ -927,7 +1006,9 @@
       "elementName": "relative or internal accuracy",
       "basicMeasure": "not applicable",
       "definition": "evaluation of the random errors in the horizontal position of one feature to another in the same dataset or on the same map/chart",
-      "description": "MD53",
+      "description": [
+        "MD53"
+      ],
       "parameter": "MP2",
       "Value type": "Measure",
       "Value structure": null,
@@ -944,7 +1025,9 @@
       "elementName": "accuracy of a time measurement",
       "basicMeasure": "LE68.3\nLE68.3r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 68,3\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -961,7 +1044,9 @@
       "elementName": "accuracy of a time measurement",
       "basicMeasure": "LE50\nLE50r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 50\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -978,7 +1063,9 @@
       "elementName": "accuracy of a time measurement",
       "basicMeasure": "LE90\nLE90r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 90\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP35",
       "Value type": "Measure",
       "Value structure": null,
@@ -995,7 +1082,9 @@
       "elementName": "accuracy of a time measurement",
       "basicMeasure": "LE95\nLE95r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 95\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP35",
       "Value type": "Measure",
       "Value structure": null,
@@ -1012,7 +1101,9 @@
       "elementName": "accuracy of a time measurement",
       "basicMeasure": "LE99\nLE99r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP35",
       "Value type": "Measure",
       "Value structure": null,
@@ -1029,7 +1120,9 @@
       "elementName": "accuracy of a time measurement",
       "basicMeasure": "LE99.8 LE99.8r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99,8\u00a0%",
-      "description": "MD59",
+      "description": [
+        "MD59"
+      ],
       "parameter": null,
       "Value type": "Measure",
       "Value structure": null,
@@ -1046,7 +1139,7 @@
       "elementName": "classification correctness",
       "basicMeasure": "BM3",
       "definition": "number of incorrectly classified features",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -1063,7 +1156,7 @@
       "elementName": "classification correctness",
       "basicMeasure": "BM2",
       "definition": "number of incorrectly classified features relative to the number of features that should be there",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -1080,7 +1173,9 @@
       "elementName": "classification correctness",
       "basicMeasure": null,
       "definition": "matrix that indicates the number of items of class (i) classified as class (j)",
-      "description": "MD62",
+      "description": [
+        "MD62"
+      ],
       "parameter": "MP2",
       "Value type": "Integer",
       "Value structure": "Matrix (n \u00d7 n)",
@@ -1097,7 +1192,9 @@
       "elementName": "classification correctness",
       "basicMeasure": null,
       "definition": "matrix that indicates the number of items of class (i ) classified as class (j ) divided by the number of items of class (i )",
-      "description": "MD63",
+      "description": [
+        "MD63"
+      ],
       "parameter": "MP63_1\nMP63_2\nMP63_3",
       "Value type": "Real",
       "Value structure": "Matrix (n \u00d7 n)",
@@ -1114,7 +1211,9 @@
       "elementName": "classification correctness",
       "basicMeasure": null,
       "definition": "coefficient to quantify the proportion of agreement of assignments to classes by removing misclassifications",
-      "description": "MD64",
+      "description": [
+        "MD64"
+      ],
       "parameter": "MP2",
       "Value type": "Real",
       "Value structure": null,
@@ -1131,7 +1230,9 @@
       "elementName": "non-quantitative attribute correctness",
       "basicMeasure": "BM3",
       "definition": "total number of erroneous attribute values within the relevant part of the dataset",
-      "description": "MD65",
+      "description": [
+        "MD65"
+      ],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -1148,7 +1249,7 @@
       "elementName": "non-quantitative attribute correctness",
       "basicMeasure": "BM6",
       "definition": "number of correct attribute values in relation to the total number of attribute values",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -1165,7 +1266,7 @@
       "elementName": "non-quantitative attribute correctness",
       "basicMeasure": "BM2",
       "definition": "number of attribute values where incorrect values are assigned in relation to the total number of attribute values",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -1182,7 +1283,9 @@
       "elementName": "quantitative attribute accuracy",
       "basicMeasure": "LE68.3\nLE68.3r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 68,3\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP68",
       "Value type": "Measure",
       "Value structure": null,
@@ -1199,7 +1302,9 @@
       "elementName": "quantitative attribute accuracy",
       "basicMeasure": "LE50\nLE50r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 50\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP69",
       "Value type": "Measure",
       "Value structure": null,
@@ -1216,7 +1321,9 @@
       "elementName": "quantitative attribute accuracy",
       "basicMeasure": "LE90\nLE90r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 90\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP35",
       "Value type": "Measure",
       "Value structure": null,
@@ -1233,7 +1340,9 @@
       "elementName": "quantitative attribute accuracy",
       "basicMeasure": "LE95\nLE95r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 95\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP36",
       "Value type": "Measure",
       "Value structure": null,
@@ -1250,7 +1359,9 @@
       "elementName": "quantitative attribute accuracy",
       "basicMeasure": "LE99\nLE99r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP37",
       "Value type": "Measure",
       "Value structure": null,
@@ -1267,7 +1378,9 @@
       "elementName": "quantitative attribute accuracy",
       "basicMeasure": "LE99.8 LE99.8r",
       "definition": "half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99,8\u00a0%",
-      "description": "MD33",
+      "description": [
+        "MD33"
+      ],
       "parameter": "MP38",
       "Value type": "Measure",
       "Value structure": null,
@@ -1284,7 +1397,9 @@
       "elementName": null,
       "basicMeasure": "BM4",
       "definition": "indication that all requirements in the referred data product specification are fulfilled",
-      "description": "MD101",
+      "description": [
+        "MD101"
+      ],
       "parameter": null,
       "Value type": "Boolean ",
       "Value structure": null,
@@ -1301,7 +1416,7 @@
       "elementName": null,
       "basicMeasure": "BM3",
       "definition": "number of data product specification requirements that are not fulfilled by the current product/dataset",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -1318,7 +1433,7 @@
       "elementName": null,
       "basicMeasure": "BM5",
       "definition": "number of the data product specification requirements that are fulfilled by the current product/dataset",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Integer",
       "Value structure": null,
@@ -1335,7 +1450,7 @@
       "elementName": null,
       "basicMeasure": "BM2",
       "definition": "number of the data product specification requirements that are not fulfilled by the current product/dataset in relation to the total number of data product specification requirements",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -1352,7 +1467,7 @@
       "elementName": null,
       "basicMeasure": "BM6",
       "definition": "number of the data product specification requirements that are fulfilled by the current product/dataset in relation to the total number of data product specification requirements",
-      "description": null,
+      "description": [],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -1369,7 +1484,9 @@
       "elementName": "format consistency",
       "basicMeasure": "BM1",
       "definition": "indication that items are stored in conflict with the physical structure of the dataset",
-      "description": "MD119",
+      "description": [
+        "MD119"
+      ],
       "parameter": null,
       "Value type": "Boolean",
       "Value structure": null,
@@ -1386,7 +1503,9 @@
       "elementName": "absolute or external accuracy",
       "basicMeasure": "not applicable",
       "definition": "bias of the positions for a set of positions where the positional uncertainties are defined as the deviation between a measured position and what is accepted as the corresponding true position",
-      "description": "MD128",
+      "description": [
+        "MD128"
+      ],
       "parameter": null,
       "Value type": "Real",
       "Value structure": null,
@@ -1403,7 +1522,9 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM1",
       "definition": "indication that events is incorrectly ordered against the other events",
-      "description": "MD159",
+      "description": [
+        "MD159"
+      ],
       "parameter": null,
       "Value type": "Boolean ",
       "Value structure": null,
@@ -1420,7 +1541,7 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM2",
       "definition": "rate of items in a common area representing the same real world object with different coordinates in two different datasets according to a tolerance",
-      "description": null,
+      "description": [],
       "parameter": "MP201",
       "Value type": "Real",
       "Value structure": null,
@@ -1437,7 +1558,7 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM3",
       "definition": "Number of differences between registered geometry in the dataset and the actual geometry of the real world object",
-      "description": null,
+      "description": [],
       "parameter": "geometry rules",
       "Value type": "Integer",
       "Value structure": null,
@@ -1454,7 +1575,7 @@
       "elementName": "conceptual consistency",
       "basicMeasure": "BM2",
       "definition": "error rate of difference between registered geometry in the dataset and the actual geometry of the real world object",
-      "description": null,
+      "description": [],
       "parameter": "geometry rules",
       "Value type": "Rate",
       "Value structure": null,
@@ -1471,7 +1592,9 @@
       "elementName": "topological consistency",
       "basicMeasure": "BM2",
       "definition": "Total number of erroneous polygons within the data",
-      "description": "MD204",
+      "description": [
+        "MD204"
+      ],
       "parameter": "MP204",
       "Value type": "Real",
       "Value structure": null,
@@ -1488,7 +1611,7 @@
       "elementName": "temporal validity",
       "basicMeasure": "BM4",
       "definition": "evaluation of acceptance quality limit, AQL for user defined maintenance frequency from a feature has changed in the real world until it is updated in the database",
-      "description": null,
+      "description": [],
       "parameter": "MP205",
       "Value type": "Boolean",
       "Value structure": null,
@@ -1505,7 +1628,7 @@
       "elementName": "temporal validity",
       "basicMeasure": "BM4",
       "definition": "evaluation if a dataset is maintained as set by maintenance frequency",
-      "description": null,
+      "description": [],
       "parameter": "MP206",
       "Value type": "Boolean",
       "Value structure": null,
@@ -1522,7 +1645,7 @@
       "elementName": "temporal validity",
       "basicMeasure": "BM6",
       "definition": "degree to which data has attributes that are of the right age in a specific context of use [25012:2008]",
-      "description": null,
+      "description": [],
       "parameter": "MP207",
       "Value type": "Real",
       "Value structure": null,
