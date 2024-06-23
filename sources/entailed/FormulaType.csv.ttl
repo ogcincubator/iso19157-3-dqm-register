@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,24 +7,24 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:b715ea4a41159946c7006feb96125290e848f3f8" ;
-    prov:wasAttributedTo _:Nc92cf5aebf284efd97c66f5e8cab9b06 ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da" ;
+    prov:wasAttributedTo _:Nb0308c2351cf4a0ea4b50bf6c80df8d2 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-06-23T16:28:57.083458"^^xsd:dateTime ;
-            prov:startedAtTime "2024-06-23T16:28:57.053417"^^xsd:dateTime ;
+            prov:endedAtTime "2024-06-23T16:31:22.565012"^^xsd:dateTime ;
+            prov:startedAtTime "2024-06-23T16:31:22.525705"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:b715ea4a41159946c7006feb96125290e848f3f8" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl> ],
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:b715ea4a41159946c7006feb96125290e848f3f8" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:Nc92cf5aebf284efd97c66f5e8cab9b06 ;
-            prov:wasInformedBy [ dct:identifier "6ffe640c-a5f5-4b86-a748-546858187bbb" ] ] .
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl> ] ;
+            prov:wasAssociatedWith _:Nb0308c2351cf4a0ea4b50bf6c80df8d2 ;
+            prov:wasInformedBy [ dcterms:identifier "e7d01caf-d1a7-4323-b347-652856c3de3b" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1> a skos:Concept ;
     dqm:formulaKey "Calculation of single deviations." ;
@@ -532,20 +532,20 @@ All positional uncertainties above a defined threshold are then counted as error
     prov:endedAtTime "2024-06-23T16:22:21.039147"^^xsd:dateTime ;
     prov:startedAtTime "2024-06-23T16:22:20.855367"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:6ed9c01225f3990100b0187d06fb964223fcbd7d" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:6ed9c01225f3990100b0187d06fb964223fcbd7d" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/FormulaType.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.47.dev1+g5249c1b" ;
+            dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "b3e83e09-cd3b-4af8-9081-6c80c264fe48" ] .
+    prov:wasInformedBy [ dcterms:identifier "b3e83e09-cd3b-4af8-9081-6c80c264fe48" ] .
 
-_:Nc92cf5aebf284efd97c66f5e8cab9b06 a prov:Agent,
+_:Nb0308c2351cf4a0ea4b50bf6c80df8d2 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.47.dev1+g5249c1b" ;
+    dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

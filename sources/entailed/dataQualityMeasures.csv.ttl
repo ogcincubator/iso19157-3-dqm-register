@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix policy: <http://www.opengis.net/def/metamodel/ogc-na/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,27 +8,27 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/dataQualityMeasures.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:b715ea4a41159946c7006feb96125290e848f3f8" ;
-    prov:wasAttributedTo _:N39f98b1bacc74c9b98d2ecf12876849d ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da" ;
+    prov:wasAttributedTo _:N26b4d27e886f445998b308cfbc4b5be1 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-06-23T16:28:57.773965"^^xsd:dateTime ;
-            prov:startedAtTime "2024-06-23T16:28:57.731145"^^xsd:dateTime ;
+            prov:endedAtTime "2024-06-23T16:31:22.877146"^^xsd:dateTime ;
+            prov:startedAtTime "2024-06-23T16:31:22.833379"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:b715ea4a41159946c7006feb96125290e848f3f8" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityMeasures.csv.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:b715ea4a41159946c7006feb96125290e848f3f8" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/dataQualityMeasures.csv.ttl> ] ;
-            prov:wasAssociatedWith _:N39f98b1bacc74c9b98d2ecf12876849d ;
-            prov:wasInformedBy [ dct:identifier "6ffe640c-a5f5-4b86-a748-546858187bbb" ] ] .
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:3a4e53a2670ad4478f05279a2c8da78e8c44e6da" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N26b4d27e886f445998b308cfbc4b5be1 ;
+            prov:wasInformedBy [ dcterms:identifier "e7d01caf-d1a7-4323-b347-652856c3de3b" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/1> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "commission" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "indication that an item is incorrectly present in the data" ;
@@ -37,7 +37,7 @@
     skos:prefLabel "excess item" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/10> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD10> ;
     skos:definition "count of all items in the data set that are not compliant with the rules of the conceptual schema" ;
@@ -46,7 +46,7 @@
     skos:prefLabel "Number of items not compliant with the rules of the conceptual schema" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/101> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD101> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "indication that all requirements in the referred data product specification are fulfilled" ;
@@ -54,35 +54,35 @@
     skos:prefLabel "data product specification passed" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/102> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of data product specification requirements that are not fulfilled by the current product/dataset" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "data product specification fail count" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/103> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of the data product specification requirements that are fulfilled by the current product/dataset" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "data product specification pass count" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/104> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of the data product specification requirements that are not fulfilled by the current product/dataset in relation to the total number of data product specification requirements" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "data product specification fail rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/105> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of the data product specification requirements that are fulfilled by the current product/dataset in relation to the total number of data product specification requirements" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "data product specification pass rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/11> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD11> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -93,7 +93,7 @@
     skos:prefLabel "number of invalid overlaps of surfaces" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/119> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "format consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD119> ;
     policy:status <http://www.opengis.net/def/status/retired> ;
@@ -103,7 +103,7 @@
     skos:prefLabel "physical structure conflicts" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/12> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD12> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -113,7 +113,7 @@
     skos:prefLabel "non-compliance rate with respect to the rules of the conceptual schema" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/128> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD128> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -122,7 +122,7 @@
     skos:prefLabel "bias of positions (1D, 2D and 3D)" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/13> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of items in the data set in compliance with the rules of the conceptual schema in relation to the total number of items supposed to be in the data set" ;
@@ -131,7 +131,7 @@
     skos:prefLabel "compliance rate with the rules of the conceptual schema" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/14> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "domain consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD14> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -141,7 +141,7 @@
     skos:prefLabel "value domain non-conformance" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/15> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "domain consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "indication that an item is conforming to its value domain" ;
@@ -150,7 +150,7 @@
     skos:prefLabel "value domain conformance" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/159> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD159> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -160,7 +160,7 @@
     skos:prefLabel "chronological disorder" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/16> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "domain consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "count of all items in the data set that are not in conformance with their value domain" ;
@@ -168,7 +168,7 @@
     skos:prefLabel "number of items not in conformance with their value domain" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/17> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "domain consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of items in the data set that are in conformance with their value domain in relation to the total number of items in the data set" ;
@@ -177,7 +177,7 @@
     skos:prefLabel "value domain conformance rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/18> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "domain consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of items in the data set that are not in conformance with their value domain in relation to the total number of items" ;
@@ -186,7 +186,7 @@
     skos:prefLabel "value domain non-conformance rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/19> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "format consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "count of all items in the data set that are stored in conflict with the physical structure of the data set" ;
@@ -195,7 +195,7 @@
     skos:prefLabel "number of physical structure conflicts" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/2> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "commission" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of items within the data set or sample that should not have been present" ;
@@ -204,7 +204,7 @@
     skos:prefLabel "number of excess items" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/20> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "format consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of items in the data set that are stored in conflict with the physical structure of the data set divided by the total number of items" ;
@@ -212,7 +212,7 @@
     skos:prefLabel "physical structure conflict rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/201> a skos:Concept ;
-    dct:hasVersion "0.1" ;
+    dcterms:hasVersion "0.1" ;
     dqm:elementName "conceptual consistency" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP201> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -221,7 +221,7 @@
     skos:prefLabel "rate of geometric inconsistency" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/202> a skos:Concept ;
-    dct:hasVersion "0.1" ;
+    dcterms:hasVersion "0.1" ;
     dqm:elementName "conceptual consistency" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -231,8 +231,8 @@
     skos:prefLabel "count of geometric fidelity failure" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/203> a skos:Concept ;
-    dct:hasVersion "0.1" ;
-    dct:source "SR2" ;
+    dcterms:hasVersion "0.1" ;
+    dcterms:source "SR2" ;
     dqm:elementName "conceptual consistency" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -241,8 +241,8 @@
     skos:prefLabel "rate of geometric fidelity failure" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/204> a skos:Concept ;
-    dct:hasVersion "0.1" ;
-    dct:source "SR3" ;
+    dcterms:hasVersion "0.1" ;
+    dcterms:source "SR3" ;
     dqm:elementName "topological consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD204> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP204> ;
@@ -254,7 +254,7 @@
     skos:prefLabel "Complete tessellation" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/205> a skos:Concept ;
-    dct:hasVersion "0.1" ;
+    dcterms:hasVersion "0.1" ;
     dqm:elementName "temporal validity" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP205> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -264,8 +264,8 @@
     skos:prefLabel "user defined maintenance frequency" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/206> a skos:Concept ;
-    dct:hasVersion "0.1" ;
-    dct:source "SR4" ;
+    dcterms:hasVersion "0.1" ;
+    dcterms:source "SR4" ;
     dqm:elementName "temporal validity" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP206> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -275,7 +275,7 @@
     skos:prefLabel "maintenance frequency" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/207> a skos:Concept ;
-    dct:hasVersion "0.1" ;
+    dcterms:hasVersion "0.1" ;
     dqm:elementName "temporal validity" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP207> ;
     policy:status <http://www.opengis.net/def/status/draft> ;
@@ -285,7 +285,7 @@
     skos:prefLabel "currentness" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/21> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "topological consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD21> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -296,7 +296,7 @@
     skos:prefLabel "number of faulty point-curve connections" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/22> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "topological consistency" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD21> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -305,7 +305,7 @@
     skos:prefLabel "rate of faulty point-curve connections" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/23> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "topological consistency" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP23> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -316,7 +316,7 @@
     skos:prefLabel "number of missing connections due to undershoot" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/24> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "topological consistency" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP24> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -327,8 +327,8 @@
     skos:prefLabel "number of missing connections due to overshoots" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/25> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "Source reference Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "Source reference Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide" ;
     dqm:elementName "topological consistency" ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP25_1MP25_2> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -340,7 +340,7 @@ MD25e_2""" ;
     skos:prefLabel "number of invalid slivers" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/26> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "topological consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:altLabel "loops" ;
@@ -350,7 +350,7 @@ MD25e_2""" ;
     skos:prefLabel "number of invalid self-intersect errors" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/27> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "topological consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:altLabel "kickbacks" ;
@@ -360,7 +360,7 @@ MD25e_2""" ;
     skos:prefLabel "number of invalid self-overlap errors" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/28> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2>,
@@ -371,7 +371,7 @@ MD25e_2""" ;
     skos:prefLabel "mean value of positional uncertainties (1D, 2D and 3D)" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/29> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_2> ;
@@ -381,7 +381,7 @@ MD25e_2""" ;
     skos:prefLabel "mean value of positional uncertainties excluding outliers (1D, 2D, 3D)" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/3> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "commission" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of excess items in the data set or sample in relation to the number of items that should have been present" ;
@@ -390,7 +390,7 @@ MD25e_2""" ;
     skos:prefLabel "rate of excess items" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/30> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD30> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP30> ;
@@ -400,7 +400,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "number of positional uncertainties above a given threshold" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/31> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD31> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP31> ;
@@ -411,7 +411,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "rate of positional uncertainties above a given threshold" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/32> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_2>,
@@ -424,7 +424,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "covariance matrix" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/33> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     skos:altLabel "LEP" ;
@@ -433,7 +433,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "linear error probable" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/34> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     skos:altLabel "SLE" ;
@@ -442,7 +442,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "standard linear error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/35> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35> ;
@@ -452,7 +452,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "linear map accuracy at 90 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/36> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP36> ;
@@ -462,7 +462,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "linear map accuracy at 95 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/37> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP37> ;
@@ -472,7 +472,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "linear map accuracy at 99 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/38> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP38> ;
@@ -481,7 +481,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "near certainty linear error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/39> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD39> ;
     skos:altLabel "RMSE" ;
@@ -490,8 +490,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "root mean square error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/4> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "ISO/TS 19138 (modified)" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "ISO/TS 19138 (modified)" ;
     dqm:elementName "commission" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD4> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -501,8 +501,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "number of duplicate feature instances" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/40> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "SR1" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "SR1" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD40> ;
     skos:altLabel "LMAS" ;
@@ -511,8 +511,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "absolute linear error at 90 % significance level of biased vertical data (Alternative 1)" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/41> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "SR1" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "SR1" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD40> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP41> ;
@@ -522,7 +522,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "absolute linear error at 90 % significance level of biased vertical data (Alternative 2)" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/42> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42> ;
     skos:altLabel "circular standard error, Helmert’s point error, CSE" ;
@@ -531,7 +531,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "circular standard deviation" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/43> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42> ;
     skos:altLabel "CEP" ;
@@ -540,7 +540,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "circular error probable" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/44> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42> ;
     skos:altLabel "circular map accuracy standard (CMAS)" ;
@@ -549,7 +549,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "circular error at 90 % significant level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/45> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42> ;
     skos:altLabel "navigation accuracy" ;
@@ -558,7 +558,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "circular error at 95 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/46> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD42> ;
     skos:altLabel "CNCE" ;
@@ -567,7 +567,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "circular near certainty error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/47> a skos:Concept ;
-    dct:hasVersion "2.0" ;
+    dcterms:hasVersion "2.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD47> ;
     policy:status <http://www.opengis.net/def/status/superseded> ;
@@ -577,8 +577,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "root mean square error of planimetry" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/48> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "SR1" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "SR1" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD48> ;
     skos:altLabel "CMAS" ;
@@ -587,8 +587,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "absolute circular error at 90 % significance level of biased data" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/49> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "SR1" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "SR1" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP49> ;
@@ -599,7 +599,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "absolute circular error at 90 % significance level of biased data" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/5> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "omission" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "indicator that shows a specific item is missing in the data" ;
@@ -608,7 +608,7 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:prefLabel "missing item" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/50> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD50> ;
     dqm:valueStructure """Sequence
@@ -619,7 +619,7 @@ formula (a, b, φ) """ ;
     skos:prefLabel "uncertainty ellipse" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/51> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "absolute or external accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD51> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP51> ;
@@ -631,8 +631,8 @@ formula (a, b, φ) """ ;
     skos:prefLabel "confidence ellipse" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/52> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "SR1" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "SR1" ;
     dqm:elementName "relative or internal accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD52> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2> ;
@@ -643,8 +643,8 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "relative vertical error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/53> a skos:Concept ;
-    dct:hasVersion "1.0" ;
-    dct:source "SR1" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:source "SR1" ;
     dqm:elementName "relative or internal accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD53> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2> ;
@@ -654,7 +654,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "relative horizontal error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/54> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "accuracy of a time measurement" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     skos:definition "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 68,3 %" ;
@@ -662,7 +662,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "time accuracy at 68,3 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/55> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "accuracy of a time measurement" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     skos:definition "half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 50 %" ;
@@ -670,7 +670,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "time accuracy at 50 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/56> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "accuracy of a time measurement" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35> ;
@@ -679,7 +679,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "time accuracy at 90 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/57> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "accuracy of a time measurement" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35> ;
@@ -688,7 +688,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "time accuracy at 95 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/58> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "accuracy of a time measurement" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35> ;
@@ -697,7 +697,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "time accuracy at 99 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/59> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "accuracy of a time measurement" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD59> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -706,7 +706,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "time accuracy at 99,8 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/6> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "omission" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "count of all items that should have been in the data set or sample and are missing" ;
@@ -715,7 +715,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "number of missing items" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/60> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "classification correctness" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of incorrectly classified features" ;
@@ -723,7 +723,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "number of incorrectly classified features" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/61> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "classification correctness" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of incorrectly classified features relative to the number of features that should be there" ;
@@ -731,7 +731,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "misclassification rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/62> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "classification correctness" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD62> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2> ;
@@ -744,7 +744,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "misclassification matrix" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/63> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "classification correctness" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD63> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP63_1MP63_2MP63_3> ;
@@ -756,7 +756,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "relative misclassification matrix" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/64> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "classification correctness" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD64> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP2> ;
@@ -765,7 +765,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "kappa coefficient" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/65> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "non-quantitative attribute correctness" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD65> ;
     policy:status <http://www.opengis.net/def/status/valid> ;
@@ -775,7 +775,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "number of incorrect attribute values" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/66> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "non-quantitative attribute correctness" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of correct attribute values in relation to the total number of attribute values" ;
@@ -783,7 +783,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "rate of correct attribute values" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/67> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "non-quantitative attribute correctness" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of attribute values where incorrect values are assigned in relation to the total number of attribute values" ;
@@ -791,7 +791,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "rate of incorrect attribute values" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/68> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "quantitative attribute accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP68> ;
@@ -801,7 +801,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "attribute value uncertainty at 68,3 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/69> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "quantitative attribute accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP69> ;
@@ -811,7 +811,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "attribute value uncertainty at 50 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/7> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "omission" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "number of missing items in the data set or sample in relation to the number of items that should have been present" ;
@@ -820,7 +820,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "rate of missing items" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/70> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "quantitative attribute accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP35> ;
@@ -830,7 +830,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "attribute value uncertainty at 90 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/71> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "quantitative attribute accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP36> ;
@@ -840,7 +840,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "attribute value uncertainty at 95 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/72> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "quantitative attribute accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP37> ;
@@ -850,7 +850,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "attribute value uncertainty at 99 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/73> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "quantitative attribute accuracy" ;
     dqm:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD33> ;
     dqm:qualityMeasureParameter <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/MP38> ;
@@ -860,7 +860,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "Attribute value uncertainty at 99,8 % significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/8> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "indication that an item is not compliant to the rules of the relevant conceptual schema" ;
@@ -869,7 +869,7 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:prefLabel "conceptual schema non-compliance" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/9> a skos:Concept ;
-    dct:hasVersion "1.0" ;
+    dcterms:hasVersion "1.0" ;
     dqm:elementName "conceptual consistency" ;
     policy:status <http://www.opengis.net/def/status/valid> ;
     skos:definition "indication that an item complies with the rules of the relevant conceptual schema" ;
@@ -883,20 +883,20 @@ It is a function of the random errors in the two elevations with respect to a co
     prov:endedAtTime "2024-06-23T16:22:21.425097"^^xsd:dateTime ;
     prov:startedAtTime "2024-06-23T16:22:21.206133"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:6ed9c01225f3990100b0187d06fb964223fcbd7d" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:6ed9c01225f3990100b0187d06fb964223fcbd7d" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/dataQualityMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.47.dev1+g5249c1b" ;
+            dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "b3e83e09-cd3b-4af8-9081-6c80c264fe48" ] .
+    prov:wasInformedBy [ dcterms:identifier "b3e83e09-cd3b-4af8-9081-6c80c264fe48" ] .
 
-_:N39f98b1bacc74c9b98d2ecf12876849d a prov:Agent,
+_:N26b4d27e886f445998b308cfbc4b5be1 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.47.dev1+g5249c1b" ;
+    dcterms:hasVersion "0.3.47.dev1+g5249c1b" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.47.dev1+g5249c1b" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
