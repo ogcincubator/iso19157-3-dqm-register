@@ -12,32 +12,41 @@ dct:hasVersion skos:prefLabel "Version" .
 
 :formula skos:prefLabel "Formula" .
 
+:formulaKey skos:prefLabel "Formula Key" .
+
+:formulaLanguage skos:prefLabel "Language" .
+
+:formulaLanguageVersion skos:prefLabel "Lang. Version" .
+
 :measureDescription skos:prefLabel "Description" .
 
 :qualityMeasureParameter skos:prefLabel "Parameter" .
+
+:sequence skos:prefLabel "Sequence" .
 
 :valueStructure skos:prefLabel "Value Structure" .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/entailed/model.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N140a16a864a5423084e07f40d9613670 ;
+    dct:hasVersion "git:2b88054efc9ec7e1c56209a27dae0fdea1ef582d" ;
+    prov:wasAttributedTo _:N1947e711034d4a1f85174599e55fbf23 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-06-24T10:56:44.251771"^^xsd:dateTime ;
-            prov:startedAtTime "2024-06-24T10:56:44.243398"^^xsd:dateTime ;
+            prov:endedAtTime "2024-06-24T13:06:56.818206"^^xsd:dateTime ;
+            prov:startedAtTime "2024-06-24T13:06:56.807176"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:6aea711aa89032e89f5512be036cc9d31ba56957" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/model.ttl> ],
+                    dct:hasVersion "git:2b88054efc9ec7e1c56209a27dae0fdea1ef582d" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:6aea711aa89032e89f5512be036cc9d31ba56957" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N140a16a864a5423084e07f40d9613670 ;
-            prov:wasInformedBy [ dct:identifier "d06276ed-1c27-48ad-bee1-2cd37ff67c95" ] ] .
+                    dct:hasVersion "git:2b88054efc9ec7e1c56209a27dae0fdea1ef582d" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/model.ttl> ] ;
+            prov:wasAssociatedWith _:N1947e711034d4a1f85174599e55fbf23 ;
+            prov:wasInformedBy [ dct:identifier "003a4e02-369b-439a-a4bb-9d4317572c14" ] ] .
 
-_:N140a16a864a5423084e07f40d9613670 a prov:Agent,
+_:N1947e711034d4a1f85174599e55fbf23 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.3.47" ;
