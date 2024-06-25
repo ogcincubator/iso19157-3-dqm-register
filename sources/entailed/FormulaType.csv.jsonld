@@ -1,12 +1,12 @@
 [
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_1",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Calculate the absolute error in the vertical dimension at each point."
+        "@value": "Determine all possible point pair combinations."
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -19,35 +19,9 @@
         "@value": "1.0"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT41_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the absolute error in the vertical dimension at each point."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Point Pair Combinations</mi> <mo>=</mo> <mi>m</mi> <mo>=</mo> <mi>n</mi> <mfenced> <mrow> <mi>n</mi> <mn>1</mn> </mrow> </mfenced> <mo>/</mo> <mn>2</mn></math>"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -57,984 +31,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT40_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Formula for calculation of the mean of the horizontal absolute positions of the remaining number of errors (NR)."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT29_2"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.ttl",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:Nb3a482f27b904d9893402d13cea47ce6"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:N4c0980463b734065afd429cfd735cfd8"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nb3a482f27b904d9893402d13cea47ce6",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.47"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.47"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:N4c0980463b734065afd429cfd735cfd8",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-25T08:07:52.636295"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-25T08:07:52.598344"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:Na7a7ade892464971ba36b95ef4dccb32"
-      },
-      {
-        "@id": "_:Nabb8a30e2be648ddacc7647af9ca99bb"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:Nb3a482f27b904d9893402d13cea47ce6"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:N3d28b9e4d599485087bc576bafe86d56"
-      }
-    ]
-  },
-  {
-    "@id": "_:N3d28b9e4d599485087bc576bafe86d56",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "bf3b3eeb-3504-45a1-94b3-52d324b7622e"
-      }
-    ]
-  },
-  {
-    "@id": "_:Na7a7ade892464971ba36b95ef4dccb32",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nabb8a30e2be648ddacc7647af9ca99bb",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the Relative LE by converting the sigma to a 90% statistics."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT52_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the relative standard deviation."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT52_4"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti  are considered to represent the true positions. All positional uncertainties above a defined threshold emax are then removed from the set. An outlier (emax) can be considered as blunders or gross errors or use the principle . "
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT29_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT30",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti are considered to represent the true positions. \nAll positional uncertainties above a defined threshold are then counted as error."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT30"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculation of the confidence ellipse's minor semi-axis length."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT51_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_6",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Compute abolute circular error at 90% confidence level of biased data (CMAS)."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT48_6"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the relative horizontal standard deviation."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT53_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_7",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Compute LE90 for the source."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT41_7"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_6",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "2D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_6"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_6",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "If ratio ≤ 1,4 then calculate k based on the ratio of the vertical bias to the standard deviation of the heights using a cubic polynomial fit through the tabular values as defined in CRC Handbook of Tables for Probability and Statistics (ISBN 9781315894027)."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT41_6"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the mean horizontal error for each coordinate."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT48_2"
-      }
-    ]
-  },
-  {
-    "@id": "_:n43fbed76169749648cb28ed35f9bcaefb1",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-24T10:54:43.682834"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-24T10:54:43.535388"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:n43fbed76169749648cb28ed35f9bcaefb2"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:n43fbed76169749648cb28ed35f9bcaefb3"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:n43fbed76169749648cb28ed35f9bcaefb4"
-      }
-    ]
-  },
-  {
-    "@id": "_:n43fbed76169749648cb28ed35f9bcaefb4",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "688a9ba9-e2e3-46da-9b17-e832c52bc52e"
-      }
-    ]
-  },
-  {
-    "@id": "_:n43fbed76169749648cb28ed35f9bcaefb2",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:860b107781b6643ccb8f180e2e9133d3f621f778"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/FormulaType.csv.json"
-      }
-    ]
-  },
-  {
-    "@id": "_:n43fbed76169749648cb28ed35f9bcaefb3",
-    "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.47"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the circular standard deviation of errors in the tested product."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT48_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": " 1D coordinates (e.g. height data). Formula for vector-valued random variable."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculation of biases."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT128_2"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the standard deviation of the vertical errors."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT41_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "1D coordinates (e.g. height data). Formula for the correlation between two elements.\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_4"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT47"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "2D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_7",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "If ratio > 1,4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT40_7"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the direction (bearing) of the major semi-axis of the confidence ellipse."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT51_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "1D coordinates (e.g. height data). Formula for the covariance matrix of the vector-valued random variable.\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_2"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the direction (bearing) of the major semi-axis of the uncertainty ellipse."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT50_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculation of the uncertainty ellipse's minor semi-axis length."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT50_3"
+        "@value": "FT53_1"
       }
     ]
   },
@@ -1058,6 +55,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>+</mo> <msqrt> <msup> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> </mrow> </mfenced> <mn>2</mn> </msup> <mo>+</mo> <mn>4</mn> <msubsup> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>k</mi> </msub> <msub> <mi>x</mi> <mi>k</mi> </msub> </mrow> <mn>2</mn> </msubsup> </msqrt> </mrow> </mfenced> </msqrt></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -1070,137 +72,97 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_8",
+    "@id": "_:nccbd78a2f6f14d379407082086631fdcb1",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/prov#Activity"
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+    "http://www.w3.org/ns/prov#endedAtTime": [
       {
-        "@value": "Compute absolute LE90."
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-25T08:08:45.716071"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+    "http://www.w3.org/ns/prov#startedAtTime": [
       {
-        "@value": "MathML"
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-25T08:08:45.533458"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+    "http://www.w3.org/ns/prov#used": [
       {
-        "@value": "1.0"
+        "@id": "_:nccbd78a2f6f14d379407082086631fdcb2"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+        "@id": "_:nccbd78a2f6f14d379407082086631fdcb3"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+    "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@value": "FT41_8"
+        "@id": "_:nccbd78a2f6f14d379407082086631fdcb4"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_3",
+    "@id": "_:nccbd78a2f6f14d379407082086631fdcb2",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/prov#Entity"
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+    "http://purl.org/dc/terms/format": [
       {
-        "@value": "Calculate the linear standard deviation of measured differences between the tested product and the reference source."
+        "@value": "application/json"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+    "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "MathML"
+        "@value": "git:692cba2ffa90a936d83e814c08618ea914c14b54"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT40_3"
+        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/FormulaType.csv.json"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+    "@id": "_:nccbd78a2f6f14d379407082086631fdcb4",
+    "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "Determine all possible point pair combinations."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT53_1"
+        "@value": "1cc8832f-2cef-4629-97c9-f109cce60131"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_3",
+    "@id": "_:nccbd78a2f6f14d379407082086631fdcb3",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+    "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "Calculate the circular standard deviation of measured differences between the tested product and the reference source."
+        "@value": "0.3.47"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "MathML"
+        "@value": "OGC-NA tools"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT48_3"
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Calculate the absolute error in the X and Y dimensions at each point."
+        "@value": "Calculate the direction (bearing) of the major semi-axis of the uncertainty ellipse."
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -1213,6 +175,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ϕ</mi> <mo>=</mo> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <mi>arctan</mi> <mfrac> <mrow> <mn>2</mn> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>k</mi> </msub> <msub> <mi>y</mi> <mi>k</mi> </msub> </mrow> </msub> </mrow> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> </mrow> </mfrac></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -1220,18 +187,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT53_2"
+        "@value": "FT50_1"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_6",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Compute CE90 for the source"
+        "@value": "2D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -1244,35 +211,9 @@
         "@value": "1.0"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT49_7"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/null_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "1D coordinates (e.g. height data). Formula for the standard deviation of an element, e.g. x1\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"false\"> <munder> <mo>∑</mo> <mrow> <mi>x</mi> <mi>x</mi> </mrow> </munder> </mstyle> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>x</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋱</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mi>n</mi> </msub> <msub> <mi>x</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mi>n</mi> </msub> <msub> <mi>y</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>n</mi> </msub> <mn>2</mn> </msubsup> </mtd> </mtr> </mtable> </mfenced></math>"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1282,100 +223,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "null_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the relative standard deviations in each axis."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT53_4"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_8",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "If ratio ≤ 1,4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT40_8"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the circular standard deviation of errors in the reference source."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT48_4"
+        "@value": "FT32_6"
       }
     ]
   },
@@ -1399,6 +247,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>∆</mi><msub><mi>H</mi><mi>i</mi></msub><mo>=</mo><msqrt><msup><mfenced><mrow><mi>source</mi><msub><mi>X</mi><mi>i</mi></msub><mo>-</mo><mi>reference</mi><msub><mi>X</mi><mi>i</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mi>source</mi><msub><mi>Y</mi><mi>i</mi></msub><mo>-</mo><mi>reference</mi><msub><mi>Y</mi><mi>i</mi></msub></mrow></mfenced><mn>2</mn></msup></msqrt></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -1411,13 +264,13 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_5",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Calculate the linear standard deviation of errors in the tested product."
+        "@value": "Calculate the circular standard deviation of errors in the reference source."
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -1430,35 +283,9 @@
         "@value": "1.0"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT40_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <mi>C</mi> <mi>R</mi> </mrow> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mn>2</mn> <mfenced> <mrow> <mi>N</mi> <mo>-</mo> <mn>1</mn> </mrow> </mfenced> </mrow> </mfrac> <mfenced> <mrow> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <msup> <mfenced> <mrow> <mi>δ</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>-</mo> <menclose notation=\"top\"> <mi>δ</mi> <mi>X</mi> </menclose> </mrow> </mfenced> <mn>2</mn> </msup> <mo>+</mo> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <msup> <mfenced> <mrow> <mi>δ</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>-</mo> <menclose notation=\"top\"> <mi>δ</mi> <mi>X</mi> </menclose> </mrow> </mfenced> <mn>2</mn> </msup> </mrow> </mfenced> </msqrt></math>"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1468,638 +295,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT28_2"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the absolute error in the horizontal dimension at each point and each coordinate Xi and Yi"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT48_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculation of the confidence ellipse's major semi-axis length."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT51_2"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_7",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "3D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_7"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the standard deviation of the horizontal errors"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT49_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT31",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti are considered to represent the true positions. \nAll positional uncertainties above a defined threshold are then counted as error."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT31"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_6",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the relative CE by converting the sigma to a 90% significance level."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT53_6"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the relative error in X and Y for all point pair combinations."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT53_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_8",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "3D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_8"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the absolute vertical error at each point."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT52_2"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the ratio of the absolute value of the mean error to the standard deviation"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT49_4"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "ISO19157-3 Quality Measures Formulas"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculation of single deviations."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT128_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Compute absolute CE90"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT49_8"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "If ratio > 1,4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT49_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT28_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_9",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Arbitrary observables.  Formula for the covariance matrix of the vector-valued random variable."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT32_9"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "If ratio > 1,4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT41_5"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Determine all possible point pair combinations."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT52_1"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the relative vertical error for all point pair combinations."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT52_3"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Calculate the ratio of the absolute value of the mean error to the standard deviation."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT41_4"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "If ratio ≤ 1,4 then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT49_6"
+        "@value": "FT48_4"
       }
     ]
   },
@@ -2123,6 +319,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>κ</mi> <mo>=</mo> <mfrac> <mrow> <mi>N</mi> <mo>·</mo> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mi>M</mi> <mi>C</mi> <mi>M</mi> <mfenced> <mrow> <mi>i</mi> <mo>,</mo> <mi>i</mi> </mrow> </mfenced> <mo>-</mo> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mfenced> <mrow> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mi>M</mi> <mi>C</mi> <mi>M</mi> <mfenced> <mrow> <mi>i</mi> <mo>,</mo> <mi>j</mi> </mrow> </mfenced> <mo>·</mo> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mi>M</mi> <mi>C</mi> <mi>M</mi> <mfenced> <mrow> <mi>j</mi> <mo>,</mo> <mi>i</mi> </mrow> </mfenced> </mrow> </mfenced> </mrow> <mrow> <msup> <mi>N</mi> <mn>2</mn> </msup> <mo>-</mo> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mfenced> <mrow> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mi>M</mi> <mi>C</mi> <mi>M</mi> <mfenced> <mrow> <mi>i</mi> <mo>,</mo> <mi>j</mi> </mrow> </mfenced> <mo>·</mo> <mstyle displaystyle=\"true\"> <munderover> <mo>∑</mo> <mrow> <mi>j</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>r</mi> </munderover> </mstyle> <mi>M</mi> <mi>C</mi> <mi>M</mi> <mfenced> <mrow> <mi>j</mi> <mo>,</mo> <mi>i</mi> </mrow> </mfenced> </mrow> </mfenced> </mrow> </mfrac></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2135,13 +336,13 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Calculate the absolute value of the bias."
+        "@value": "Calculate the ratio of the absolute value of the mean error to the standard deviation."
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -2154,6 +355,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ratio</mi><mo>=</mo> <mfrac> <mfenced close=\"|\" open=\"|\"> <menclose notation=\"top\"> <mi>δ</mi> <mi>V</mi> </menclose> </mfenced> <msub> <mi>σ</mi> <mi>V</mi> </msub> </mfrac></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2161,7 +367,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT40_2"
+        "@value": "FT41_4"
       }
     ]
   },
@@ -2177,22 +383,22 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
       }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "_:N0583e83722f5476b8739b103de43efe7"
+        "@id": "_:N88a85256210c4a4196e6325fcb38120d"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "_:N8c1987b446a1431aad702dd32af72cfe"
+        "@id": "_:N56f1dfe289134614a321965ea376a5b5"
       }
     ]
   },
   {
-    "@id": "_:N8c1987b446a1431aad702dd32af72cfe",
+    "@id": "_:N56f1dfe289134614a321965ea376a5b5",
     "@type": [
       "http://www.w3.org/ns/prov#Activity"
     ],
@@ -2209,36 +415,36 @@
     "http://www.w3.org/ns/prov#endedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-25T08:07:52.689009"
+        "@value": "2024-06-25T08:14:03.409705"
       }
     ],
     "http://www.w3.org/ns/prov#startedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-25T08:07:52.598344"
+        "@value": "2024-06-25T08:14:03.320735"
       }
     ],
     "http://www.w3.org/ns/prov#used": [
       {
-        "@id": "_:Nded955edb17b4b59a58650af26b101be"
+        "@id": "_:Nb4996ccc154d4727b340cb677cb2f06c"
       },
       {
-        "@id": "_:N59ea1da0dd054161a2207812dfeb3580"
+        "@id": "_:N7714175c4ae24e2eb21822d024c073b0"
       }
     ],
     "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "_:N0583e83722f5476b8739b103de43efe7"
+        "@id": "_:N88a85256210c4a4196e6325fcb38120d"
       }
     ],
     "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@id": "_:Na6aa19c716014e838294c5e5e44fe5d4"
+        "@id": "_:Ncc7349094351459f835c29fb2392dfa3"
       }
     ]
   },
   {
-    "@id": "_:Nded955edb17b4b59a58650af26b101be",
+    "@id": "_:Nb4996ccc154d4727b340cb677cb2f06c",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -2249,7 +455,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -2259,7 +465,7 @@
     ]
   },
   {
-    "@id": "_:N59ea1da0dd054161a2207812dfeb3580",
+    "@id": "_:N7714175c4ae24e2eb21822d024c073b0",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -2270,7 +476,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -2280,15 +486,15 @@
     ]
   },
   {
-    "@id": "_:Na6aa19c716014e838294c5e5e44fe5d4",
+    "@id": "_:Ncc7349094351459f835c29fb2392dfa3",
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "bf3b3eeb-3504-45a1-94b3-52d324b7622e"
+        "@value": "6b8364cc-92f0-476d-b4d6-0b975378cdd9"
       }
     ]
   },
   {
-    "@id": "_:N0583e83722f5476b8739b103de43efe7",
+    "@id": "_:N88a85256210c4a4196e6325fcb38120d",
     "@type": [
       "http://www.w3.org/ns/prov#Agent",
       "https://schema.org/SoftwareApplication"
@@ -2315,13 +521,13 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Calculate the mean horizontal error"
+        "@value": "Calculate the ratio of the absolute value of the mean error to the standard deviation"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -2334,6 +540,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math?MathML\"><mo>=</mo><mfrac bevelled=\"true\"><mfenced close=\"|\" open=\"|\"><msub><mi>μ</mi><mi>H</mi></msub></mfenced><msub><mi>σ</mi><mi>H</mi></msub></mfrac></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2341,41 +552,113 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT49_2"
+        "@value": "FT49_4"
       }
     ]
   },
   {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.rdf",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the relative error in X and Y for all point pair combinations."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathvariant=\"italic\">∆</mo> <msub> <mi>X</mi> <mi>rel</mi> </msub> <msub> <mo></mo> <mrow> <mi>k</mi> <mi>j</mi> </mrow> </msub> <mo>=</mo> <mo mathvariant=\"italic\">∆</mo> <msub> <mi>X</mi> <mi>k</mi> </msub> <mo></mo> <mo mathvariant=\"italic\">∆</mo> <msub> <mi>X</mi> <mi>j</mi> </msub></math>\nfor\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>m</mi> <mo></mo> <mn>1</mn></math>, for\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <mi>j</mi> <mo>=</mo> <mi>k</mi> <mo>+</mo> <mn>1</mn></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mi>m</mi></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathvariant=\"italic\">∆</mo> <msub> <mi>Y</mi> <mi>rel</mi> </msub> <msub> <mo></mo> <mrow> <mi>k</mi> <mi>j</mi> </mrow> </msub> <mo>=</mo> <mo mathvariant=\"italic\">∆</mo> <msub> <mi>Y</mi> <mi>k</mi> </msub> <mo></mo> <mo mathvariant=\"italic\">∆</mo> <msub> <mi>Y</mi> <mi>j</mi> </msub></math>\nfor\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>m</mi> <mo></mo> <mn>1</mn></math> , <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>j</mi> <mo>=</mo> <mi>k</mi> <mo>+</mo> <mn>1</mn></math> , <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>m</mi></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT53_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the absolute error in the X and Y dimensions at each point."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathvariant=\"italic\">∆</mo> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>=</mo> <mi>Measured</mi> <mo></mo> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo></mo> <mi>True</mi> <mo></mo> <msub> <mi>X</mi> <mn>1</mn> </msub></math>\nfor\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>i</mi> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>n</mi></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathvariant=\"italic\">∆</mo> <msub> <mi>Y</mi> <mi>i</mi> </msub> <mo>=</mo> <mi>Measured</mi> <mo></mo> <msub> <mi>Y</mi> <mi>i</mi> </msub> <mo></mo> <mi>True</mi> <mo></mo> <msub> <mi>Y</mi> <mn>1</mn> </msub></math>\nfor\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>i</mi> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>n</mi></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT53_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.ttl",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
     "http://purl.org/dc/terms/format": [
       {
-        "@value": "application/rdf+xml"
+        "@value": "text/turtle"
       }
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
       }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "_:Na4402ceff1f64af3b87e077c0f3c94fe"
+        "@id": "_:N7942f0415ab74153b55ed2661300e48c"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "_:N303ebedaedde4414a3ac535071ff27eb"
+        "@id": "_:N9c188fd394524c9083119c8719103883"
       }
     ]
   },
   {
-    "@id": "_:Na4402ceff1f64af3b87e077c0f3c94fe",
+    "@id": "_:N7942f0415ab74153b55ed2661300e48c",
     "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
@@ -2399,7 +682,7 @@
     ]
   },
   {
-    "@id": "_:N303ebedaedde4414a3ac535071ff27eb",
+    "@id": "_:N9c188fd394524c9083119c8719103883",
     "@type": [
       "http://www.w3.org/ns/prov#Activity"
     ],
@@ -2416,36 +699,44 @@
     "http://www.w3.org/ns/prov#endedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-25T08:07:52.667275"
+        "@value": "2024-06-25T08:14:03.355114"
       }
     ],
     "http://www.w3.org/ns/prov#startedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-06-25T08:07:52.598344"
+        "@value": "2024-06-25T08:14:03.320735"
       }
     ],
     "http://www.w3.org/ns/prov#used": [
       {
-        "@id": "_:N811249541c9848a58337a11d0cb902dc"
+        "@id": "_:N3cd2b6a314ce4775b56de5756cb89817"
       },
       {
-        "@id": "_:Nba44f034da824b7cbc694ca8ec0f6993"
+        "@id": "_:Nad28b136368b4a99bacd31029a166ba7"
       }
     ],
     "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "_:Na4402ceff1f64af3b87e077c0f3c94fe"
+        "@id": "_:N7942f0415ab74153b55ed2661300e48c"
       }
     ],
     "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@id": "_:N4e5b5cd5fb6d46debb9b74c35cb38867"
+        "@id": "_:N63395a07a21f43f88c4215f9c8a65018"
       }
     ]
   },
   {
-    "@id": "_:N811249541c9848a58337a11d0cb902dc",
+    "@id": "_:N63395a07a21f43f88c4215f9c8a65018",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "6b8364cc-92f0-476d-b4d6-0b975378cdd9"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3cd2b6a314ce4775b56de5756cb89817",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -2456,7 +747,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -2466,7 +757,7 @@
     ]
   },
   {
-    "@id": "_:Nba44f034da824b7cbc694ca8ec0f6993",
+    "@id": "_:Nad28b136368b4a99bacd31029a166ba7",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -2477,7 +768,7 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:9fa2847536141d3d63e6366637dde23449408285"
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -2487,21 +778,13 @@
     ]
   },
   {
-    "@id": "_:N4e5b5cd5fb6d46debb9b74c35cb38867",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "bf3b3eeb-3504-45a1-94b3-52d324b7622e"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_4",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Calculate the linear standard deviation of errors in the reference source."
+        "@value": "Calculate the mean horizontal error"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -2514,6 +797,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>μ</mi><mi>H</mi></msub><mo>=</mo><mfrac bevelled=\"true\"><mfenced><mrow><mo>∑</mo><mo mathvariant=\"italic\">∆</mo><msub><mi>H</mi><mi>i</mi></msub></mrow></mfenced><mi>N</mi></mfrac></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2521,18 +809,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT40_4"
+        "@value": "FT49_2"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty."
+        "@value": "Calculate the absolute error in the vertical dimension at each point."
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -2545,6 +833,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>δ</mi> <msub> <mi>V</mi> <mi>i</mi></msub> <mo>=</mo> <msub> <mi>V</mi> <mi>i</mi> </msub> <mo>-</mo> <msub> <mi>V</mi></math>\n for \n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <mi>i</mi> </msub> <mi>i</mi> <mo>=</mo> <mn>1</mn> <mi>N</mi></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2552,18 +845,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT28_1"
+        "@value": "FT41_1"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_7",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions."
+        "@value": "3D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -2576,6 +869,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <msub> <mi>x</mi> <mn>1</mn> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>y</mi> <mn>1</mn> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>z</mi> <mn>1</mn> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>y</mi> <mi>n</mi> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>z</mi> <mi>n</mi> </msub> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2583,18 +881,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT28_4"
+        "@value": "FT32_7"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT39",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/null_3",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
       {
-        "@value": "s is the Root Mean Squeare Error and zt is the true values of the observable Z. Formula for the Root Mean Square Error (RMSE) of the observable."
+        "@value": "1D coordinates (e.g. height data). Formula for the standard deviation of an element, e.g. x1\n"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
@@ -2607,35 +905,9 @@
         "@value": "1.0"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "FT39"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_10",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
-      {
-        "@value": "Arbitrary observables.   Formula for the covariance matrix of the vector-valued random variable."
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
-      {
-        "@value": "MathML"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
-      {
-        "@value": "1.0"
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </msqrt></math>"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -2645,7 +917,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "FT32_10"
+        "@value": "null_3"
       }
     ]
   },
@@ -2669,6 +941,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\"> <menclose notation=\"top\"> <mi>δ</mi> <mi>V</mi> </menclose> </mfenced> <mo>=</mo> <mfenced close=\"|\" open=\"|\"> <mrow> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <mi>δ</mi> <msub> <mi>V</mi> <mn>1</mn> </msub> </mrow> </mfenced></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2677,6 +954,330 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@value": "FT41_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the relative standard deviations in each axis."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <mi>X</mi> <mi>rel</mi> </mrow> </msub> <mo>=</mo> <msqrt> <mfrac> <mrow> <mo>∑</mo> <mo mathvariant=\"italic\">∆</mo> <msup> <msub> <mi>X</mi> <mi>rel</mi> </msub> <mn>2</mn> </msup> </mrow> <mrow> <mi>m</mi> <mo>-</mo> <mn>1</mn> </mrow> </mfrac> </msqrt></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <mi>Y</mi> <mi>rel</mi> </mrow> </msub> <mo>=</mo> <msqrt> <mfrac> <mrow> <mo>∑</mo> <mo mathvariant=\"italic\">∆</mo> <msup> <msub> <mi>Y</mi> <mi>rel</mi> </msub> <mn>2</mn> </msup> </mrow> <mrow> <mi>m</mi> <mo>-</mo> <mn>1</mn> </mrow> </mfrac> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT53_4"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT39",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "s is the Root Mean Squeare Error and zt is the true values of the observable Z. Formula for the Root Mean Square Error (RMSE) of the observable."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mi>z</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <msup> <mfenced> <mrow> <msub> <mi>z</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>z</mi> <mi>t</mi> </msub> </mrow> </mfenced> <mn>2</mn> </msup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT39"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the Relative LE by converting the sigma to a 90% statistics."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Rel LE90</mi><mo>=</mo> <mn>1</mn> <mo>,</mo> <mn>645</mn> <mo></mo> <msub> <mi>σ</mi> <mrow> <mi>Z</mi> <mi>rel</mi> </mrow> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT52_5"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculation of the uncertainty ellipse's minor semi-axis length."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msqrt> <msup> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> </mrow> </mfenced> <mn>2</mn> </msup> <mo>+</mo> <mn>4</mn> <msubsup> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>k</mi> </msub> <msub> <mi>x</mi> <mi>k</mi> </msub> </mrow> <mn>2</mn> </msubsup> </msqrt> </mrow> </mfenced> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT50_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti  are considered to represent the true positions. All positional uncertainties above a defined threshold emax are then removed from the set. An outlier (emax) can be considered as blunders or gross errors or use the principle . "
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mi>i</mi> </msub> <mo>=</mo> <mfenced close=\"\" open=\"{\"> <mtable columnalign=\"left\"> <mtr> <mtd> <msub> <mi>e</mi> <mi>i</mi> </msub> <mo>,</mo> <mo></mo> <mi>i</mi> <mi>f</mi> <mo></mo> <msub> <mi>e</mi> <mi>i</mi> </msub> <mo>≤</mo> <msub> <mi>e</mi> <mrow> <mi>m</mi> <mi>a</mi> <mi>x</mi> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <mn>0</mn> <mo>,</mo> <mo></mo> <mi>i</mi> <mi>f</mi> <mo></mo> <msub> <mi>e</mi> <mi>i</mi> </msub> <mo>&gt;</mo> <msub> <mi>e</mi> <mrow> <mi>m</mi> <mi>a</mi> <mi>x</mi> </mrow> </msub> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT29_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculation of the confidence ellipse's major semi-axis length."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <msubsup> <mi>χ</mi> <mrow> <mn>1</mn> <mo>-</mo> <mi>α</mi> </mrow> <mn>2</mn> </msubsup> <mfenced> <mn>2</mn> </mfenced> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>+</mo> <msqrt> <msup> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> </mrow> </mfenced> <mn>2</mn> </msup> <mo>+</mo> <mn>4</mn> <msubsup> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>k</mi> </msub> <msub> <mi>x</mi> <mi>k</mi> </msub> </mrow> <mn>2</mn> </msubsup> </msqrt> </mrow> </mfenced> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT51_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the absolute vertical error at each point."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathvariant=\"italic\">∆</mo> <msub> <mi>Z</mi> <mi>i</mi> </msub> <mo>=</mo> <mi>Measured</mi> <mo></mo> <msub> <mi>Height</mi> <mi>i</mi> </msub> <mo></mo> <mi>True</mi> <mo></mo> <msub> <mi>Height</mi> <mn>1</mn> </msub></math>\nfor\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>n</mi></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT52_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 1D positional uncertainty."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><mfenced close=\"|\" open=\"|\"><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub></mrow></mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT28_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "If ratio > 1,4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi> <mo>=</mo> <mn>1</mn> <mo>,</mo> <mn>2815</mn></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT41_5"
       }
     ]
   },
@@ -2700,6 +1301,11 @@
         "@value": "1.0"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo> <mfrac> <mfenced close=\"|\" open=\"|\"> <menclose notation=\"top\"> <mi>δ</mi> <mi>V</mi> </menclose> </mfenced> <msub> <mi>σ</mi> <mi>V</mi> </msub> </mfrac></math>"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
@@ -2708,6 +1314,1750 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@value": "FT40_6"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the circular standard deviation of errors in the tested product."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mi>C</mi> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>σ</mi> <mrow> <mi>C</mi> <mi>M</mi> </mrow> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>σ</mi> <mrow> <mi>C</mi> <mi>R</mi> </mrow> <mn>2</mn> </msubsup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT48_5"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_10",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Arbitrary observables.   Formula for the covariance matrix of the vector-valued random variable."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"false\"> <munder> <mo>∑</mo> <mrow> <mi>x</mi> <mi>x</mi> </mrow> </munder> </mstyle> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <mi>σ</mi> <mfrac> <mn>2</mn> <mi>a</mi> </mfrac> </mtd> <mtd> <msub> <mi>σ</mi> <msub> <mi>b</mi> <mi>a</mi> </msub> </msub> </mtd> <mtd> <mo>…</mo> </mtd> <mtd> <msub> <mi>σ</mi> <msub> <mi>z</mi> <mi>a</mi> </msub> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>a</mi> <mi>b</mi> </msub> <mo>=</mo> </mrow> </msub> <msub> <mi>σ</mi> <msub> <mi>b</mi> <mi>a</mi> </msub> </msub> </mtd> <mtd> <mi>σ</mi> <mfrac> <mn>2</mn> <mi>b</mi> </mfrac> </mtd> <mtd> <mo>…</mo> </mtd> <mtd> <msub> <mi>σ</mi> <msub> <mi>z</mi> <mi>b</mi> </msub> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋱</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>a</mi> <mi>z</mi> </msub> <mo>=</mo> </mrow> </msub> <msub> <mi>σ</mi> <msub> <mi>z</mi> <mi>a</mi> </msub> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>b</mi> <mi>z</mi> </msub> <mo>=</mo> </mrow> </msub> <msub> <mi>σ</mi> <msub> <mi>z</mi> <mi>b</mi> </msub> </msub> </mtd> <mtd> <mo>…</mo> </mtd> <mtd> <mi>σ</mi> <mfrac> <mn>2</mn> <mi>z</mi> </mfrac> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_10"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_6",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the relative CE by converting the sigma to a 90% significance level."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Rel CE90</mi><mo>=</mo> <mn>2</mn> <mo>,</mo> <mn>146</mn> <msub> <mi>σ</mi> <mrow> <mi>H</mi> <mi>rel</mi> </mrow> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT53_6"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": " 1D coordinates (e.g. height data). Formula for vector-valued random variable."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <msub> <mi>x</mi> <mn>1</mn> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>x</mi> <mi>n</mi> </msub> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculation of the confidence ellipse's minor semi-axis length."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <msubsup> <mi>χ</mi> <mrow> <mn>1</mn> <mo>-</mo> <mi>α</mi> </mrow> <mn>2</mn> </msubsup> <mfenced> <mn>2</mn> </mfenced> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msqrt> <msup> <mfenced> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> </mrow> </mfenced> <mn>2</mn> </msup> <mo>+</mo> <mn>4</mn> <msubsup> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>k</mi> </msub> <msub> <mi>x</mi> <mi>k</mi> </msub> </mrow> <mn>2</mn> </msubsup> </msqrt> </mrow> </mfenced> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT51_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_8",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Compute absolute LE90."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>LE</mi> <msub> <mn>90</mn> <mi>abs</mi> </msub> <mo>=</mo> <msqrt> <mi>LE</mi> <msub> <mn>90</mn> <msup> <mi>reference</mi> <mn>2</mn> </msup> </msub> <mo>+</mo> <mi>LE</mi> <msub> <mn>90</mn> <msup> <mi>source</mi> <mn>2</mn> </msup> </msub> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT41_8"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the circular standard deviation of measured differences between the tested product and the reference source."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <mi>C</mi> <mi>M</mi> </mrow> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mn>2</mn> <mfenced> <mrow> <mi>N</mi> <mo>-</mo> <mn>1</mn> </mrow> </mfenced> </mrow> </mfrac> <mfenced> <mrow> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <msup> <mfenced> <mrow> <mi>δ</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>-</mo> <menclose notation=\"top\"> <mi>δ</mi> <mi>X</mi> </menclose> </mrow> </mfenced> <mn>2</mn> </msup> <mo>+</mo> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <msup> <mfenced> <mrow> <mi>δ</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>-</mo> <menclose notation=\"top\"> <mi>δ</mi> <mi>X</mi> </menclose> </mrow> </mfenced> <mn>2</mn> </msup> </mrow> </mfenced> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT48_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_8",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "3D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"false\"> <munder> <mo>∑</mo> <mrow> <mi>x</mi> <mi>x</mi> </mrow> </munder> </mstyle> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>z</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>z</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>z</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋱</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>z</mi> <mn>1</mn> </msub> <msub> <mi>y</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>n</mi> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mi>n</mi> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>z</mi> <mn>1</mn> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>y</mi> <mi>n</mi> </msub> <msub> <mi>z</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>z</mi> <mi>n</mi> </msub> <mn>2</mn> </msubsup> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_8"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "1D coordinates (e.g. height data). Formula for the covariance matrix of the vector-valued random variable.\n"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"false\"> <munder> <mo>∑</mo> <mrow> <mi>x</mi> <mi>x</mi> </mrow> </munder> </mstyle> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>x</mi> <mi>n</mi> </msub> </mrow> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> <mtd> <mo>⋱</mo> </mtd> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>n</mi> </msub> <msub> <mi>x</mi> <mn>1</mn> </msub> </mrow> </msub> </mtd> <mtd> <mo>⋯</mo> </mtd> <mtd> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>n</mi> </msub> <mn>2</mn> </msubsup> </mtd> </mtr> </mtable> </mfenced></math>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mn>1</mn> </msub> <msub> <mi>x</mi> <mi>n</mi> </msub> </mrow> </msub> <mo>=</mo> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>n</mi> </msub> <msub> <mi>x</mi> <mn>1</mn> </msub> </mrow> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the absolute error in the horizontal dimension at each point and each coordinate Xi and Yi"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>δ</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>=</mo> <mfenced> <mrow> <mi>source</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> <mo>-</mo> <mi>reference</mi> <msub> <mi>X</mi> <mi>i</mi> </msub> </mrow> </mfenced></math></span>and <span class=\"inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <mi>δ</mi> <msub> <mi>Y</mi> <mi>i</mi> </msub> <mo>=</mo> <mfenced> <mrow> <mi>source</mi> <msub> <mi>Y</mi> <mi>i</mi> </msub> <mo>-</mo> <mi>reference</mi> <msub> <mi>Y</mi> <mi>i</mi> </msub> </mrow> </mfenced></math></span>for <span class=\"inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <mi>i</mi> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>N</mi></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT48_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_9",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Arbitrary observables.  Formula for the covariance matrix of the vector-valued random variable."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <mi>a</mi> </mtd> </mtr> <mtr> <mtd> <mi>b</mi> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <mi>z</mi> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_9"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the linear standard deviation of measured differences between the tested product and the reference source."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mi>M</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <mi>δ</mi> <msubsup> <mi>V</mi> <mi>i</mi> <mn>2</mn> </msubsup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the mean horizontal error for each coordinate."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><menclose notation=\"top\"> <mi>δ</mi> <mi>X</mi> </menclose> <mo>=</mo> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mn>1</mn> <mi>N</mi> </munderover> <mi>δ</mi> <mi>X</mi> <mi>i</mi></math></span>and <span class=\"inline-formula\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <menclose notation=\"top\"> <mi>δ</mi> <mi>Y</mi> </menclose> <mo>=</mo> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mn>1</mn> <mi>N</mi> </munderover> <mi>δ</mi> <msub> <mi>Y</mi> <mi>i</mi> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT48_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT30",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti are considered to represent the true positions. \nAll positional uncertainties above a defined threshold are then counted as error."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>m</mi> <mi>a</mi> <mi>x</mi> </mrow> </msub><msub> <mi>e</mi> <mi>i</mi> </msub> <mo>&gt;</mo> <msub> <mi>e</mi> <mrow> <mi>m</mi> <mi>a</mi><mi>x</mi> </mrow> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT30"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_7",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Compute CE90 for the source"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CE</mi><msub><mn>90</mn><mi>source</mi></msub><mo>=</mo><mfenced close=\"|\" open=\"|\"><msub><mi>μ</mi><mi>H</mi></msub></mfenced><mo>+</mo><mfenced><mrow><mi>k</mi><mo>×</mo><msub><mi>σ</mi><mi>H</mi></msub></mrow></mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT49_7"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT47",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "s is the Root Mean Squeare Error and xt and yt are the true values of the observed coordinates X and Y"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>σ</mi><mo>=</mo><msqrt><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfenced close=\"]\" open=\"[\"><mrow><msup><mfenced><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>t</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mfenced><mn>2</mn></msup></mrow></mfenced></msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT47"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the absolute value of the bias."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\"> <menclose notation=\"top\"> <mi>δ</mi> <mi>V</mi> </menclose> </mfenced> <mo>=</mo> <mfenced close=\"|\" open=\"|\"> <mrow> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> </mrow> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Formula for calculation of the mean of the horizontal absolute positions of the remaining number of errors (NR)."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <menclose notation=\"top\"> <mi>e</mi> </menclose> <mrow> <mi>e</mi> <mi>x</mi> <mi>l</mi> <mi>u</mi> <mi>d</mi> <mi>i</mi> <mi>n</mi> <mi>g</mi> <mo></mo> <mi>o</mi> <mi>u</mi> <mi>t</mi> <mi>l</mi> <mi>i</mi> <mi>e</mi> <mi>r</mi> <mi>s</mi> </mrow> </msub> <mo>=</mo> <mfrac> <mn>1</mn> <msub> <mi>N</mi> <mi>R</mi> </msub> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <msubsup> <mi>e</mi> <mi>i</mi> <mo>,</mo> </msubsup></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT29_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "1D coordinates (e.g. height data). Formula for the correlation between two elements.\n"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>ρ</mi> <mrow> <msub> <mi>x</mi> <mi>i</mi> </msub> <msub> <mi>x</mi> <mi>j</mi> </msub> </mrow> </msub> <mo>=</mo> <mfrac> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>i</mi> </msub> <msub> <mi>x</mi> <mi>j</mi> </msub> </mrow> </msub> <mrow> <msub> <mi>σ</mi> <msub> <mi>x</mi> <mi>i</mi> </msub> </msub> <msub> <mi>σ</mi> <msub> <mi>x</mi> <mi>j</mi> </msub> </msub> </mrow> </mfrac></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_4"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the standard deviation of the horizontal errors"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>σ</mi><mi>H</mi></msub><mo>=</mo><msqrt><mfrac bevelled=\"true\"><mrow><mo>∑</mo><msup><mfenced><mrow><mo mathvariant=\"italic\">∆</mo><msub><mi>H</mi><mi>i</mi></msub><mo>-</mo><msub><mi>μ</mi><mi>H</mi></msub></mrow></mfenced><mn>2</mn></msup></mrow><mfenced><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfenced></mfrac></msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT49_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ISO19157-3 Quality Measures Formulas"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the linear standard deviation of errors in the tested product."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mi>V</mi> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>σ</mi> <mi>M</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>σ</mi> <mi>R</mi> <mn>2</mn> </msubsup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_5"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT31",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "For a number of points (N), the measured positions are given as as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti are considered to represent the true positions. \nAll positional uncertainties above a defined threshold are then counted as error."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>m</mi> <mi>a</mi> <mi>x</mi> </mrow> </msub><msub> <mi>e</mi> <mi>i</mi> </msub> <mo>&gt;</mo> <msub> <mi>e</mi> <mrow> <mi>m</mi> <mi>a</mi><mi>x</mi> </mrow> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT31"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_6",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "If ratio ≤ 1,4 then calculate k, the ratio of the mean to the standard deviation, using a cubic polynomial fit through the tabular values as defined in the CRC Handbook of Tables for Probability and Statistics (ISBN 13: 9780849306921)"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>6435</mn><mo>-</mo><mfenced><mrow><mn>0</mn><mo>,</mo><mn>999556</mn><mo>×</mo><mi>ratio</mi></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>0</mn><mo>,</mo><mn>923237</mn><mo>×</mo><msup><mi>ratio</mi><mn>2</mn></msup></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>0</mn><mo>,</mo><mn>282533</mn><mo>×</mo><msup><mi>ratio</mi><mn>3</mn></msup></mrow></mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT49_6"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the relative vertical error for all point pair combinations."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo mathvariant=\"italic\">∆</mo> <msub> <mi>Z</mi> <mi>rel</mi> </msub> <msub> <mo></mo> <mrow> <mi>k</mi> <mi>j</mi> </mrow> </msub> <mo>=</mo> <mo mathvariant=\"italic\">∆</mo> <msub> <mi>Z</mi> <mi>k</mi> </msub> <mo></mo> <mo mathvariant=\"italic\">∆</mo> <msub> <mi>Z</mi> <mi>j</mi> </msub></math>\nfor\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi> <mo>=</mo> <mn>1</mn> <mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>m</mi> <mo></mo> <mn>1</mn></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">j</mi> <mo>=</mo> <mi>k</mi> <mo>+</mo> <mn>1</mn></math>,<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo> <mo>.</mo> <mo>.</mo> <mi>m</mi></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT52_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_6",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "If ratio ≤ 1,4 then calculate k based on the ratio of the vertical bias to the standard deviation of the heights using a cubic polynomial fit through the tabular values as defined in CRC Handbook of Tables for Probability and Statistics (ISBN 9781315894027)."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi> <mo>=</mo> <mn>1</mn> <mo>,</mo> <mn>6435</mn> <mo>-</mo> <mfenced> <mrow> <mn>0</mn> <mo>,</mo> <mn>999556</mn> <mo>×</mo> <mi>r</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <mi>o</mi> </mrow> </mfenced> <mo>+</mo> <mfenced> <mrow> <mn>0</mn> <mo>,</mo> <mn>923237</mn> <mo>×</mo> <mi>r</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <msup> <mi>o</mi> <mn>2</mn> </msup> </mrow> </mfenced> <mo>-</mo> <mfenced> <mrow> <mn>0</mn> <mo>,</mo> <mn>282533</mn> <mo>×</mo> <mi>r</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <msup> <mi>o</mi> <mn>3</mn> </msup> </mrow> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT41_6"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines).  The criterion/criteria for finding the corresponding points shall be reported with  the data quality evaluation result. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 3D positional uncertainty."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><msqrt><msup><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT28_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the standard deviation of the vertical errors."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mi>V</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <mi>δ</mi> <msubsup> <mi>V</mi> <mi>i</mi> <mn>2</mn> </msubsup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT41_3"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "If ratio > 1,4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2815</mn></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT49_5"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.rdf",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/rdf+xml"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:N32b699e254614a52a311708336fe2225"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:Nd4c69d6764a64a5a9d48c60b2117b3f3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N32b699e254614a52a311708336fe2225",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.47"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.47"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd4c69d6764a64a5a9d48c60b2117b3f3",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-25T08:14:03.387345"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-06-25T08:14:03.320735"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N2cfbac6961b74d63b179b3411ea31480"
+      },
+      {
+        "@id": "_:Nec695df7ac654415bb84d6a33b325dfe"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:N32b699e254614a52a311708336fe2225"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:N1d5c10c3567246b7bb633b3d62e22b51"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2cfbac6961b74d63b179b3411ea31480",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nec695df7ac654415bb84d6a33b325dfe",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:3329c7f3b2f49e6e3c5010c75be91446aeab7b2d"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1d5c10c3567246b7bb633b3d62e22b51",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "6b8364cc-92f0-476d-b4d6-0b975378cdd9"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "2D coordinates. Formula for the covariance matrix of the vector-valued random variable.\n"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi> <mo>=</mo> <mfenced close=\"]\" open=\"[\"> <mtable> <mtr> <mtd> <msub> <mi>x</mi> <mn>1</mn> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>y</mi> <mn>1</mn> </msub> </mtd> </mtr> <mtr> <mtd> <mo>⋮</mo> </mtd> </mtr> <mtr> <mtd> <msub> <mi>x</mi> <mi>n</mi> </msub> </mtd> </mtr> <mtr> <mtd> <msub> <mi>y</mi> <mi>n</mi> </msub> </mtd> </mtr> </mtable> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT32_5"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculation of biases."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>x</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>∑</mo> <msub> <mi>e</mi> <mrow> <mi>x</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>x</mi> </msub> </mfrac></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>y</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>∑</mo> <msub> <mi>e</mi> <mrow> <mi>y</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>y</mi> </msub> </mfrac></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>z</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>∑</mo> <msub> <mi>e</mi> <mrow> <mi>z</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>z</mi> </msub>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mrow> <mn>2</mn> <mi>D</mi> </mrow> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>a</mi> <mi>x</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>y</mi> <mn>2</mn> </msubsup> </msqrt></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mrow> <mn>3</mn> <mi>D</mi> </mrow> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>a</mi> <mi>x</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>y</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>z</mi> <mn>2</mn> </msubsup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT128_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_7",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "If ratio > 1,4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>LMAS</mi><mo>=</mo> <msub> <mi>σ</mi> <mi>V</mi> </msub> <mo>·</mo> <mfenced close=\"]\" open=\"[\"> <mrow> <mn>1</mn> <mo>,</mo> <mn>282</mn> <mo>+</mo> <mi>r</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <mi>o</mi> </mrow> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_7"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "For a number of points (N), the measured positions are given as xmi , ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, xti , yti and zti , are considered to represent the true positions. Formula for 2D positional uncertainty."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><msqrt><msup><mrow><mo>(</mo><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT28_2"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the linear standard deviation of errors in the reference source."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mi>R</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> <munderover> <mo>∑</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <mi>δ</mi> <msubsup> <mi>V</mi> <mi>i</mi> <mn>2</mn> </msubsup> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_4"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the direction (bearing) of the major semi-axis of the confidence ellipse."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ϕ</mi> <mo>=</mo> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> <mi>arctan</mi> <mfrac> <mrow> <mn>2</mn> <msub> <mi>σ</mi> <mrow> <msub> <mi>x</mi> <mi>k</mi> </msub> <msub> <mi>y</mi> <mi>k</mi> </msub> </mrow> </msub> </mrow> <mrow> <msubsup> <mi>σ</mi> <msub> <mi>x</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> <mo>-</mo> <msubsup> <mi>σ</mi> <msub> <mi>y</mi> <mi>k</mi> </msub> <mn>2</mn> </msubsup> </mrow> </mfrac></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT51_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Formula for calculating the mean positional uncertainties of the horizontal absolute or external positions."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><menclose notation=\"top\"><mi>e</mi></menclose><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>e</mi><mi>i</mi></msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT28_4"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_6",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Compute abolute circular error at 90% confidence level of biased data (CMAS)."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CMAS</mi><mo>=</mo> <msub> <mi>σ</mi> <mi>C</mi> </msub> <mo>·</mo> <mfenced close=\"]\" open=\"[\"> <mrow> <mn>1</mn> <mo>,</mo> <mn>2943</mn> <mo>+</mo> <msqrt> <mfenced> <mfrac> <mrow> <msup> <menclose notation=\"top\"> <mi>δ</mi> <mi>X</mi> </menclose> <mn>2</mn> </msup> <mo>+</mo> <msup> <menclose notation=\"top\"> <mi>δ</mi> <mi>Y</mi> </menclose> <mn>2</mn> </msup> </mrow> <msub> <mi>σ</mi> <mi>C</mi> </msub> </mfrac> </mfenced> <mo>+</mo> <mn>0</mn> <mo>,</mo> <mn>7254</mn> </msqrt> </mrow> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT48_6"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculation of single deviations."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>x</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>x</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>x</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>y</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>y</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>y</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <msub> <mi>e</mi> <mrow> <mi>z</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>z</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>z</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT128_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the relative standard deviation."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <mi>Z</mi> <mi>rel</mi> </mrow> </msub> <mo>=</mo> <msqrt> <mfrac> <mrow> <mo>∑</mo> <mo mathvariant=\"italic\">∆</mo> <msup> <msub> <mi>Z</mi> <mi>rel</mi> </msub> <mn>2</mn> </msup> </mrow> <mrow> <mi>m</mi> <mo>-</mo> <mn>1</mn> </mrow> </mfrac> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT52_4"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the relative horizontal standard deviation."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>σ</mi> <mrow> <mi>H</mi> <mi>rel</mi> </mrow> </msub> <mo>=</mo> <msqrt> <mfrac> <mrow> <msup> <msub> <mi>σ</mi> <mrow> <mi>X</mi> <mi>rel</mi> </mrow> </msub> <mn>2</mn> </msup> <mo>+</mo> <msup> <msub> <mi>σ</mi> <mrow> <mi>Y</mi> <mi>rel</mi> </mrow> </msub> <mn>2</mn> </msup> </mrow> <mn>2</mn> </mfrac> </msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT53_5"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Determine all possible point pair combinations."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Point Pair Combinations</mi> <mo>=</mo> <mi>m</mi> <mo>=</mo> <mi>n</mi> <mfenced> <mrow> <mi>n</mi> <mn>1</mn> </mrow> </mfenced> <mo>/</mo> <mn>2</mn></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT52_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_8",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Compute absolute CE90"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CE</mi><msub><mn>90</mn><mi>abs</mi></msub><mo>=</mo><msqrt><mi>CE</mi><msup><msub><mn>90</mn><mi>reference</mi></msub><mn>2</mn></msup><mo>+</mo><mi>CE</mi><msup><msub><mn>90</mn><mi>source</mi></msub><mn>2</mn></msup></msqrt></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT49_8"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Calculate the absolute error in the vertical dimension at each point."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>δ</mi> <msub> <mi>V</mi> <mi>i</mi></msub> <mo>=</mo> <msub> <mi>V</mi> <mi>i</mi> </msub> <mo>-</mo> <msub> <mi>V</mi></math>\n for \n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <mi>i</mi> </msub> <mi>i</mi> <mo>=</mo> <mn>1</mn> <mi>N</mi></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_1"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_8",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "If ratio ≤ 1,4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>LMAS</mi><mo>=</mo> <msub> <mi>σ</mi> <mi>V</mi> </msub> <mo>·</mo> <mfenced close=\"]\" open=\"[\"> <mrow> <mn>1</mn> <mo>,</mo> <mn>6435</mn> <mo>+</mo> <mn>0</mn> <mo>,</mo> <mn>92</mn> <mo>+</mo> <mi>r</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <msup> <mi>o</mi> <mn>2</mn> </msup> <mo>-</mo> <mn>0</mn> <mo>,</mo> <mn>28</mn> <mo>×</mo> <mi>r</mi> <mi>a</mi> <mi>t</mi> <mi>i</mi> <msup> <mi>o</mi> <mn>3</mn> </msup> </mrow> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT40_8"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_7",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaKey": [
+      {
+        "@value": "Compute LE90 for the source."
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguage": [
+      {
+        "@value": "MathML"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/formulaLanguageVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>LE</mi> <msub> <mn>90</mn> <mi>source</mi> </msub> <mo>=</mo> <mfenced close=\"|\" open=\"|\"> <mover> <mrow> <mi>δ</mi> <mi>V</mi> </mrow> <mo>¯</mo> </mover> </mfenced> <mo>+</mo> <mfenced> <mrow> <mi>k</mi> <mo>×</mo> <msub> <mi>σ</mi> <mi>V</mi> </msub> </mrow> </mfenced></math>"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "FT41_7"
       }
     ]
   }
