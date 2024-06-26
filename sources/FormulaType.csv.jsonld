@@ -24,6 +24,26 @@
   "skos:prefLabel": "ISO19157-3 Quality Measures Formulas",
   "concepts": [
     {
+      "formulaType ID": "FT128_1",
+      "sequence": null,
+      "mathematicalFormula": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>x</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>x</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>x</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>y</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>y</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>y</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <msub> <mi>e</mi> <mrow> <mi>z</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>z</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>z</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "Calculation of single deviations.",
+      "prefLabel": "FT128_1",
+      "@type": "skos:Concept"
+    },
+    {
+      "formulaType ID": "FT128_2",
+      "sequence": null,
+      "mathematicalFormula": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>x</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>\u2211</mo> <msub> <mi>e</mi> <mrow> <mi>x</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>x</mi> </msub> </mfrac></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>y</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>\u2211</mo> <msub> <mi>e</mi> <mrow> <mi>y</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>y</mi> </msub> </mfrac></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>z</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>\u2211</mo> <msub> <mi>e</mi> <mrow> <mi>z</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>z</mi> </msub>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mrow> <mn>2</mn> <mi>D</mi> </mrow> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>a</mi> <mi>x</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>y</mi> <mn>2</mn> </msubsup> </msqrt></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mrow> <mn>3</mn> <mi>D</mi> </mrow> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>a</mi> <mi>x</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>y</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>z</mi> <mn>2</mn> </msubsup> </msqrt></math>",
+      "language": "MathML",
+      "languageVersion": "1.0",
+      "key": "Calculation of biases.",
+      "prefLabel": "FT128_2",
+      "@type": "skos:Concept"
+    },
+    {
       "formulaType ID": "FT28_1",
       "sequence": "1",
       "mathematicalFormula": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><mfenced close=\"|\" open=\"|\"><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mrow><mi>t</mi><mi>i</mi></mrow></msub></mrow></mfenced></math>",
@@ -124,13 +144,13 @@
       "@type": "skos:Concept"
     },
     {
-      "formulaType ID": "null_3",
+      "formulaType ID": "FT32_3",
       "sequence": "3",
       "mathematicalFormula": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>\u03c3</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>\u03c3</mi> <msub> <mi>x</mi> <mn>1</mn> </msub> <mn>2</mn> </msubsup> </msqrt></math>",
       "language": "MathML",
       "languageVersion": "1.0",
       "key": "1D coordinates (e.g. height data). Formula for the standard deviation of an element, e.g. x1\n",
-      "prefLabel": "null_3",
+      "prefLabel": "FT32_3",
       "@type": "skos:Concept"
     },
     {
@@ -701,26 +721,6 @@
       "languageVersion": "1.0",
       "key": "N is the number of classified items in a misclassification matrix.",
       "prefLabel": "FT64",
-      "@type": "skos:Concept"
-    },
-    {
-      "formulaType ID": "FT128_1",
-      "sequence": null,
-      "mathematicalFormula": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>x</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>x</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>x</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>e</mi> <mrow> <mi>y</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>y</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>y</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"> <msub> <mi>e</mi> <mrow> <mi>z</mi> <mi>i</mi> </mrow> </msub> <mo>=</mo> <msub> <mi>z</mi> <mrow> <mi>m</mi> <mi>i</mi> </mrow> </msub> <mo>-</mo> <msub> <mi>z</mi> <mrow> <mi>t</mi> <mi>i</mi> </mrow> </msub></math>",
-      "language": "MathML",
-      "languageVersion": "1.0",
-      "key": "Calculation of single deviations.",
-      "prefLabel": "FT128_1",
-      "@type": "skos:Concept"
-    },
-    {
-      "formulaType ID": "FT128_2",
-      "sequence": null,
-      "mathematicalFormula": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>x</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>\u2211</mo> <msub> <mi>e</mi> <mrow> <mi>x</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>x</mi> </msub> </mfrac></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>y</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>\u2211</mo> <msub> <mi>e</mi> <mrow> <mi>y</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>y</mi> </msub> </mfrac></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mi>z</mi> </msub> <mo>=</mo> <mfrac> <munder> <mo>\u2211</mo> <msub> <mi>e</mi> <mrow> <mi>z</mi> <mi>i</mi> </mrow> </msub> </munder> <msub> <mi>N</mi> <mi>z</mi> </msub>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mrow> <mn>2</mn> <mi>D</mi> </mrow> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>a</mi> <mi>x</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>y</mi> <mn>2</mn> </msubsup> </msqrt></math>\n\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub> <mi>a</mi> <mrow> <mn>3</mn> <mi>D</mi> </mrow> </msub> <mo>=</mo> <msqrt> <msubsup> <mi>a</mi> <mi>x</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>y</mi> <mn>2</mn> </msubsup> <mo>+</mo> <msubsup> <mi>a</mi> <mi>z</mi> <mn>2</mn> </msubsup> </msqrt></math>",
-      "language": "MathML",
-      "languageVersion": "1.0",
-      "key": "Calculation of biases.",
-      "prefLabel": "FT128_2",
       "@type": "skos:Concept"
     }
   ]
