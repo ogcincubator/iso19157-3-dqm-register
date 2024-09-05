@@ -1,4 +1,4 @@
-name: Process sheets
+name: Process sheets (uplift-and-join.yaml)
 
 on:
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install git+https://github.com/opengeospatial/ogc-na-tools.git
           pip3 install pandas openpyxl
-      - name: Process files
+      - name: Extract CSV from XLS
         run: |
           cd sources
           python excel2csv.py
