@@ -1,8 +1,10 @@
 measureDescriptionID,sequence,extendedDescription,formula,textDescription
-MD1,,,,"True (In a data set, more items are classified as houses than in the universe of discourse)"
-MD1e,,,,"True (In a data set, more items are classified as houses than in the universe of discourse)"
+MD1,,,,The value true indicates that the item is in excess.
+MD1e,,,,"True (a house is present in the dataset, but does not exists in the universe of discourse)"
+MD2,,,,Count number of item present in the dataset which does not excists in the unverce of discourse
 MD2e,,,,2 (12 houses are in the data set although only 10 exist within the universe of discourse)
-MD2bm,,,,0.0189
+MD2bme,,,,0.0189
+MD3,,,,Divide exess items in relation to number of items in the universe of discourse
 MD3e,,,,10 % (The data set has 10 % more houses than the universe of discourse)
 MD4,,"4_1.PNG
 4_2.PNG
@@ -18,10 +20,15 @@ Example result of a completeness evaluation of a particular data set:
 missing item = true for
 tower.name = “Eiffel Tower, Paris, France""
 tower.name = “Beijing Tower, Beijing, China”"
+MD6,,,,Count number of item not present in the dataset which excists in the unverce of discourse
 MD6e,,,,2 (10 houses are in the data set although 12 exist within the universe of discourse)
+MD7,,,,Divide number of item not present in the dataset in relation to number of items in the universe of discourse
 MD7e,,,,"Example 1: 10 % (The data set has 10 % less houses than the universe of discourse)
 Example 2: 6,6% of all pixels in the scene is clouded with no ground information"
+MD8,,,,The value true indicates that an item is not compliant with the rules of the conceptual schema
 MD8e,,,,True (One feature relationship exists which is not defined in the conceptual schema)
+MDbm4,,,,Boolean value expressing the item is not indicated as an error
+MD9,,,,True indicates that an item is in compliance with the rules of the conceptual schema
 MD10e,,,,"If the conceptual schema explicitly or implicitly describes rules, these rules shall be followed. Violations against such rules can be, for example, invalid placement of features within a defined tolerance, duplication of features and invalid overlap of features."
 MD10e,,"10e_1.PNG
 10e_2.PNG
@@ -41,20 +48,30 @@ MD11e,,11e.PNG,,"Search for surfaces that are not allowed to overlap according t
 D13288XZ.EPS"
 MD12,,,,The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset
 MD12e,,,,"0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)"
+MD13,,,,the conceptual schema describes the rules and content of the dataset
 MD13e,,,,"99,8 % (in the dataset there is 1005 items of 1007 items correct stored in compliance with the conceptual schema)"
-MD14,,,,The value true indicates that an item is not in conformance with its value domain)
+MD14,,,,The value true indicates that an item is not in conformance with its value domain
 MD14e,,,,"True – a feature with attribute colour has the value ‘blau’, but it does not exist in the specified value domain: red, green, blue, yellow"
+MD 15,,,,True indicates that all items is in conformance with its value domain
 MD15e,,,,"all dates are correct according to their month rules of probable number of days e.g.  no February 29:th non leap year, no April 31:th"
+MD16,,,,The conceptual schema describes valid values in the domain
+MD17,,,,The conceptual schema describes valid values in the domain
 MD17e,,,,"100 % (scope: attributes road width and speed limit for roads, are within the value domain)"
+MD18,,,,The conceptual schema describes valid values in the domain
 MD18e,,,,"10% (Domain of a ‘buildingType’ attribute is defined as the following set of values {1,2,0}; 10 out of 100 ‘building’ objects contain value ‘X’ in ‘buildingType’ attribute)"
+MD19,,,,The conceptual schema describes the physical structure
 MD19e,,,,5 (5 living quarters type code is coded on more than 3 characters although the requirement in data product specification is 3)
+MD20,,,,The conceptual schema describes the physical structure
 MD21,,,,"A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. The data quality measure counts the number of errors of this kind."
 MD21e,,"21e_1.PNG
 21e_2.PNG",,"Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists).
 "
 MD22,,,,"A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections."
+MD23,,,,Search distance as defined in the specification
 MD23e,,23e.PNG,,Key: 1) search distance = 3 m
+MD24,,,,Search distance as defined in the specification
 MD24e,,24e.PNG,,A road must have a length at least 3 meters. Key: 1) search distance = 3 m
+MD25_2,,,,A sliver is an unintended area that occurs when adjacent surfaces are not digitized properly. The borders of the adjacent surfaces may unintentionally gap or overlap by small amounts to cause a topological error
 MD25,,,,"The thickness quotient is independent of the size of the surface, and the closer the value is to 0, the thinner the selected silver surfaces shall be."
 MD25e_1,,25e_1.PNG,,"48 (count double line drain and slivers that do not fulfil the threshold values set by thinness ratio and maximum sliver area)
 Key: 1) Single line drain
@@ -64,8 +81,10 @@ MD25e_2,,25e_2.PNG,,"Key: 1) Sand
 2) Sliver
 3) Double line drain
 b) The sliver is less than the maximum parameter and is flagged for evaluation of possible error."
+MD26,,,,Topological rules as defined in the specification
 MD26e,,26e.PNG,,"Key: 1) Buliding 1
 2) illegal intersection (loop)"
+MD27,,,,Topological rules as defined in the specification
 MD27e,,27e.PNG,,"324 (count road segment with overlap by other road segment)
 Key: a) vertices"
 MD28,1.0,-,FT28_1,
@@ -89,7 +108,6 @@ MD32,3.0,,"FT32_7
 FT32_8","The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
 MD32,4.0,,"FT32_9
 FT32_10","The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
-MD33,,,,"half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50 %"
 MD39,,,FT39,Estimator of the true value of observable Z.
 MD40,,-,"FT40_1
 FT40_2
@@ -141,7 +159,8 @@ FT53_3
 FT53_4
 FT53_5
 FT53_6",A manner of calculating the comparison of the data (measured) and the control (true).
-MD59,,,,"Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99.8 %"
+MD60,,,,Number of incorrectly classified features compared to the specification. Features and the classification method as defined in the specification.
+MD61,,,,Number of incorrectly classified features compared to the specification. Features and the classification method as defined in the specification.
 MD62,,62.PNG,,"The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors."
@@ -152,19 +171,121 @@ MD63e,,63e.PNG,,
 MD64,,,FT64,With the elements of the misclassification matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/62)
 MD65,,,,count of all attribute values where the value is incorrect
 MD65e,,,,5 (5 geographical names are misspelled)
-MD101,,,,The measure will take the  value true if all the requirements in the referred data product specification are fulfilled
+MD66,,,,Number of correct attribute values in relation to the total number of attribute values as described in the specification.
+MD67,,,,Number of correct attribute values in relation to the total number of attribute values as described in the specification.
+MD101,,,,The measure will take the value true if all the requirements in the referred data product specification are fulfilled
+MD102,,,,Indicator of the compliance with the data product specification
+MD103,,,,Indicator of the compliance with the data product specification
+MD104,,,,Indicator of the compliance with the data product specification
+MD105,,,,Indicator of the compliance with the data product specification
+MD119,,,,Indicator of the compliance with the data product specification
 MD119e,,,,"True (the dataset is stored in wrong file format, a shape file instead of gml)"
 MD128,,,"FT128_1
 FT128_2","For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result."
 MD119,,,,The value true indicates physical structure conflict.
 MD159,,,,The value true indicates that there are events incorrectly ordered
 MD159e,,,,True (5 historical events are present in the dataset but are not ordered correctly)
+MD201,,,,Rate of items in a common area representing the same real world object with different coordinates in two different datasets according to a specified tolerance
 MD201e,,201e.PNG,,"Rate of objects not in conformity to the tolerance.
 In a common area for two datasets the coordinates compare to each other, an error is outside the tolerance.
 Key: 1 Search tolerance 0,3 meter"
+MD202,,,,"The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification"
 MD202e,,202e.PNG,,"Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular"
 MD203,,,,"The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification"
+MD204,,,,"All child polygons must be located inside the parent polygon. Reports the number of child polygons not inside the parent polygon. A set of features instances (set of child’s) which completely, covers the testbed feature"
 MD204e,,204e.PNG,,Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons
+MD205,,,,The uppdate frequency shall be shown in metadata
 MD205e,,,,It is ‘true’ if the value for an address has been updated in the database within user defined AQL (e.g. 5 days) since the decision on its change.
+MD206,,,,Mean time from when an object has been changed until its updated in the data base
 MD206e,,,,Tests if a particular quality scope is updated according to its given maintenance and update frequency e.g. “Annually”. Value: yes or no
+MD207,,,,User defined acceptance quality level
 MD207e,,,,The timetable of a railway station shall be updated with the frequency required to allow passengers to take a train even if the scheduled time or platform change.
+MDsd1,,,FTsd1,Standard deviation - true value known.
+MDsd2,,,FTsd2,Standard deviation - true value unknown and it is estimated as the arithmetic mean of the observations.
+MDsd1_LE50,,,FTsd1_LE50,Standard deviation - true value known; significance level 50% 
+MDsd1_LE68.3,,,FTsd1_LE68.3,Standard deviation - true value known; significance level 68.3% 
+MDsd1_LE90,,,FTsd1_LE90,Standard deviation - true value known; significance level 90% 
+MDsd1_LE95,,,FTsd1_LE95,Standard deviation - true value known; significance level 95% 
+MDsd1_LE99,,,FTsd1_LE99,Standard deviation - true value known; significance level 99% 
+MDsd1_CE99.8,,,FTsd1_LE99.8,Standard deviation - true value known; significance level 99.8% 
+MDsd2_LE50r1,,,FTsd2_LE50r1,Standard deviation - true value unknown; significance level 50%; 1 redundant measurement.
+MDsd2_LE50r2,,,FTsd2_LE50r2,Standard deviation - true value unknown; significance level 50%; 2 redundant measurements.
+MDsd2_LE50r3,,,FTsd2_LE50r3,Standard deviation - true value unknown; significance level 50%; 3 redundant measurements.
+MDsd2_LE50r4,,,FTsd2_LE50r4,Standard deviation - true value unknown; significance level 50%; 4 redundant measurements.
+MDsd2_LE50r5,,,FTsd2_LE50r5,Standard deviation - true value unknown; significance level 50%; 5 redundant measurements.
+MDsd2_LE50r10,,,FTsd2_LE50r10,Standard deviation - true value unknown; significance level 50%; 10 redundant measurements.
+MDsd2_LE68.3r1,,,FTsd2_LE68.3r1,Standard deviation - true value unknown; significance level 68.3%; 1 redundant measurement.
+MDsd2_LE68.3r2,,,FTsd2_LE68.3r2,Standard deviation - true value unknown; significance level 68.3%; 2 redundant measurements.
+MDsd2_LE68.3r3,,,FTsd2_LE68.3r3,Standard deviation - true value unknown; significance level 68.3%; 3 redundant measurements.
+MDsd2_LE68.3r4,,,FTsd2_LE68.3r4,Standard deviation - true value unknown; significance level 68.3%; 4 redundant measurements.
+MDsd2_LE68.3r5,,,FTsd2_LE68.3r5,Standard deviation - true value unknown; significance level 68.3%; 5 redundant measurements.
+MDsd2_LE68.3r10,,,FTsd2_LE68.3r10,Standard deviation - true value unknown; significance level 68.3%; 10 redundant measurements.
+MDsd2_LE90r1,,,FTsd2_LE90r1,Standard deviation - true value unknown; significance level 90%; 1 redundant measurement.
+MDsd2_LE90r2,,,FTsd2_LE90r2,Standard deviation - true value unknown; significance level 90%; 2 redundant measurements.
+MDsd2_LE90r3,,,FTsd2_LE90r3,Standard deviation - true value unknown; significance level 90%; 3 redundant measurements.
+MDsd2_LE90r4,,,FTsd2_LE90r4,Standard deviation - true value unknown; significance level 90%; 4 redundant measurements.
+MDsd2_LE90r5,,,FTsd2_LE90r5,Standard deviation - true value unknown; significance level 90%; 5 redundant measurements.
+MDsd2_LE90r10,,,FTsd2_LE90r10,Standard deviation - true value unknown; significance level 90%; 10 redundant measurements.
+MDsd2_LE95r1,,,FTsd2_LE95r1,Standard deviation - true value unknown; significance level 95%; 1 redundant measurement.
+MDsd2_LE95r2,,,FTsd2_LE95r2,Standard deviation - true value unknown; significance level 95%; 2 redundant measurements.
+MDsd2_LE95r3,,,FTsd2_LE95r3,Standard deviation - true value unknown; significance level 95%; 3 redundant measurements.
+MDsd2_LE95r4,,,FTsd2_LE95r4,Standard deviation - true value unknown; significance level 95%; 4 redundant measurements.
+MDsd2_LE95r5,,,FTsd2_LE95r5,Standard deviation - true value unknown; significance level 95%; 5 redundant measurements.
+MDsd2_LE95r10,,,FTsd2_LE95r10,Standard deviation - true value unknown; significance level 95%; 10 redundant measurements.
+MDsd2_LE99r1,,,FTsd2_LE99r1,Standard deviation - true value unknown; significance level 99%; 1 redundant measurement.
+MDsd2_LE99r,,,FTsd2_LE99r2,Standard deviation - true value unknown; significance level 99%; 2 redundant measurements.
+MDsd2_LE99r3,,,FTsd2_LE99r3,Standard deviation - true value unknown; significance level 99%; 3 redundant measurements.
+MDsd2_LE99r4,,,FTsd2_LE99r4,Standard deviation - true value unknown; significance level 99%; 4 redundant measurements.
+MDsd2_LE99r5,,,FTsd2_LE99r5,Standard deviation - true value unknown; significance level 99%; 5 redundant measurements.
+MDsd2_LE99r10,,,FTsd2_LE99r10,Standard deviation - true value unknown; significance level 99%; 10 redundant measurements.
+MDsd2_LE99.8r1,,,FTsd2_LE99.8r1,Standard deviation - true value unknown; significance level 99.8%; 1 redundant measurement.
+MDsd2_LE99.8r2,,,FTsd2_LE99.8r2,Standard deviation - true value unknown; significance level 99.8%; 2 redundant measurements.
+MDsd2_LE99.8r3,,,FTsd2_LE99.8r3,Standard deviation - true value unknown; significance level 99.8%; 3 redundant measurements.
+MDsd2_LE99.8r4,,,FTsd2_LE99.8r4,Standard deviation - true value unknown; significance level 99.8%; 4 redundant measurements.
+MDsd2_LE99.8r5,,,FTsd2_LE99.8r5,Standard deviation - true value unknown; significance level 99.8%; 5 redundant measurements.
+MDsd2_LE99.8r10,,,FTsd2_LE99.8r10,Standard deviation - true value unknown; significance level 99.8%; 10 redundant measurements.
+MDsd1x,,,FTsd1x,Standard deviation 2D - true value known; direction x
+MDsd1y,,,FTsd1y,Standard deviation 2D - true value known; direction y
+MDs1z,,,FTsd1z,Standard deviation 2D - true value known; direction z
+MDsd1xy_CE39.4,,,FTsd1xy_CE39.4,Standard deviation 2D - true value known; significance level 39.4%
+MDsd1xy_CE50,,,FTsd1xy_CE50,Standard deviation 2D - true value known; significance level 50%
+MDsd1xy_CE90,,,FTsd1xy_CE90,Standard deviation 2D - true value known; significance level 90%
+MDsd1xy_CE95,,,FTsd1xy_CE95,Standard deviation 2D - true value known; significance level 95%
+MDsd1xy_CE99.8,,,FTsd1xy_CE99.8,Standard deviation 2D - true value known; significance level 99.8%
+MDsd1xyz_SEP,,,FTsd1xyz_SEP,Standard deviation 3D - true value known; Spherical error probable; significance level 50%
+MDsd1xyz_MRSE,,,FTsd1xyz_MRSE,Standard deviation 3D - true value known; Mean spherical error; significance level 61%
+MDsd1xyz_SAS90,,,FTsd1xyz_SAS90,Standard deviation 3D - true value known; spherical accuracy standard; significance level 90%
+,,,,
+MDsd1xyz_SAS99,,,FTsd1xyz_SAS99,Standard deviation 3D - true value known; spherical accuracy standard; significance level 99%
+MD208,1.0,,FT208_P,"If reference data is in point geometry:
+where n is the total number of reference point features that are not captured by the coverage of source data, and N is the total number of reference point features"
+MD208,2.0,,FT208_L,"If reference data is in line geometry:
+where l’ is the length of each segment of reference data that is not captured by the coverage of the source data, n is the total number of uncovered segments, and L is the total length of all reference line features. "
+MD208,3.0,,FT208_A,"If reference data is in polygon geometry:
+where a is the area of each segment of reference data that is not captured by the coverage of the source data, n is the total number of uncovered segments, and A is the total area of all reference polygon features."
+MD208e,,MD208e.png,,"Calculate the rate of omission of street view imagery (SVI) coverage using street network as the reference data. In the example, street view imagery is represented as points (circular dots in the figure), and the reference street network consists of seven line features of length L1, L2, … L7. 
+Step 1: Snap each point to the nearest location on the street it is closest to. Snapped locations are marked by red crosses in the figure
+Step 2: Split the lines at the snapped locations and calculate the length of each split segment. Segments with a length longer than a certain threshold (e.g. 50 m) where no SVI is found are deemed as uncovered. In this example, we identify four segments with lengths l 1, l 2, l 3, and l 4 as uncovered segments
+Step 3: Rate of omission is thus calculated as the sum of lengths of uncovered segments, divided by the sum of lengths of all segments.
+The example demonstrates a way to calculate the omission rate for the whole dataset. Besides, the omission rate can also be calculated at a finer spatial scale, i.e. for each geometry unit. For instance, it can be calculated at the street level, where the omission rate is calculated for each street segment"
+MD208e2,,MD208e2.png,,"Calculate the rate of omission of street view imagery coverage against a reference area. The street view imagery is represented as costructed buffers of imagery points with a radius, and the reference area is a rectangular grid cell of area A1
+Note: rewrited from original example 2"
+MD209,,MD209e,,"The number of intervals with a distance longer than a certain threshold, divided by the total number of intervals present in the data. "
+MD209e,,,FT208_P,"In this example, there are three sequences of data, S1, S2, and S3. There are eight points in S1 and the interval distance between each pair of consecutive points is measured as d1, d2, … d7. Similarly, d8 and d9 are measured for S2 and d10, d11, and d12 for S3. Among these distances, d3, d5, and d6 are above a specified threshold (e.g. 50 m) indicating lack of continuity in spatial coverage.
+The rate of spatial discontinuity in this example is thus calculated as:
+where n is the number of intervals with a distance above the threshold, and N is the total number of intervals in the data."
+MD210,,,,"The amount of time (e.g. number of years, number of months, number of days, number of hours etc.) during which no data is present, divided by the total amount of time during which data is supposed to be present."
+MD211,,,,"The quantity of data that suffers from imperfect coverage, divided by the total quantity of data."
+MD211e,,MD211e.png,,"There are 15 street view images in the data. After running a computer vision algorithm to detect blurriness in images, three have been detected as blurry images. "
+MD212,,,,"The number of records with data present, divided by the total number of records that are supposed to be present"
+MD212e,,MD212e.png,,"there are five instances in the data, and each of them is supposed to have three metadata attributes – Attributes A, B, and C. The symbol ‘x’ in the table indicates a certain metadata is available for the instance
+In total, there are 5 empty records, out of 15 (5 × 3) records that are supposed to be available. The rate of metadata omission is thus calculated as 5/15 = 0.333
+The rate of omission can also be calculated for each metadata attribute A, B and C"
+MD213,,,,"The quantity of data where sensitive information is present, divided by the total quantity of data"
+MD213e,,MD213e.png,,"There are five street view images in the data. It is found in Image 3 that there is one unmasked human face, and in Image 2 that there are two unmasked car plate licences. The rate of occurrence of sensitive information in this data is thus calculated as n/N where n is the number of data instances with sensitive information found, and N is the total number of data instances."
+MDBM1,,,,Boolean value expressing the item is indicated an error.
+MDBM2,,,,The dataproduct specification shall describe the features and which items shall be collected
+MDBM3,,,,The dataproduct specification shall describe the features and how items shall be typed
+MDBM4,,,,Boolean value expressing the item is correct
+MDBM5,,,,The dataproduct specification shall describe the features and how items shall be typed
+MDBM6,,,,The dataproduct specification shall describe the features and which items shall be collected

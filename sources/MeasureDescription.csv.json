@@ -28,14 +28,21 @@
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
-      "textDescription": "True (In a data set, more items are classified as houses than in the universe of discourse)"
+      "textDescription": "The value true indicates that the item is in excess."
     },
     {
       "measureDescriptionID": "MD1e",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
-      "textDescription": "True (In a data set, more items are classified as houses than in the universe of discourse)"
+      "textDescription": "True (a house is present in the dataset, but does not exists in the universe of discourse)"
+    },
+    {
+      "measureDescriptionID": "MD2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Count number of item present in the dataset which does not excists in the unverce of discourse"
     },
     {
       "measureDescriptionID": "MD2e",
@@ -45,11 +52,18 @@
       "textDescription": "2 (12 houses are in the data set although only 10 exist within the universe of discourse)"
     },
     {
-      "measureDescriptionID": "MD2bm",
+      "measureDescriptionID": "MD2bme",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
       "textDescription": "0.0189"
+    },
+    {
+      "measureDescriptionID": "MD3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Divide exess items in relation to number of items in the universe of discourse"
     },
     {
       "measureDescriptionID": "MD3e",
@@ -87,11 +101,25 @@
       "textDescription": "A data product specification requires all towers higher than 300\u00a0m to be captured. The data quality measure \u201cmissing item\u201d allows a data quality evaluator or a data user to report that a specific item, in this case a feature of type \u201ctower\u201d (name depends on the application schema), is missing.\nData quality scope: all towers with height > 300\nExample result of a completeness evaluation of a particular data set:\nmissing item = true for\ntower.name = \u201cEiffel Tower, Paris, France\"\ntower.name = \u201cBeijing Tower, Beijing, China\u201d"
     },
     {
+      "measureDescriptionID": "MD6",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Count number of item not present in the dataset which excists in the unverce of discourse"
+    },
+    {
       "measureDescriptionID": "MD6e",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
       "textDescription": "2 (10 houses are in the data set although 12 exist within the universe of discourse)"
+    },
+    {
+      "measureDescriptionID": "MD7",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Divide number of item not present in the dataset in relation to number of items in the universe of discourse"
     },
     {
       "measureDescriptionID": "MD7e",
@@ -101,11 +129,32 @@
       "textDescription": "Example 1: 10\u00a0% (The data set has 10\u00a0% less houses than the universe of discourse)\nExample 2: 6,6% of all pixels in the scene is clouded with no ground information"
     },
     {
+      "measureDescriptionID": "MD8",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The value true indicates that an item is not compliant with the rules of the conceptual schema"
+    },
+    {
       "measureDescriptionID": "MD8e",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
       "textDescription": "True (One feature relationship exists which is not defined in the conceptual schema)"
+    },
+    {
+      "measureDescriptionID": "MDbm4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Boolean value expressing the item is not indicated as an error"
+    },
+    {
+      "measureDescriptionID": "MD9",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True indicates that an item is in compliance with the rules of the conceptual schema"
     },
     {
       "measureDescriptionID": "MD10e",
@@ -150,6 +199,13 @@
       "textDescription": "0,02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)"
     },
     {
+      "measureDescriptionID": "MD13",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "the conceptual schema describes the rules and content of the dataset"
+    },
+    {
       "measureDescriptionID": "MD13e",
       "sequence": "",
       "extendedDescription": "",
@@ -161,7 +217,7 @@
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
-      "textDescription": "The value true indicates that an item is not in conformance with its value domain)"
+      "textDescription": "The value true indicates that an item is not in conformance with its value domain"
     },
     {
       "measureDescriptionID": "MD14e",
@@ -171,11 +227,32 @@
       "textDescription": "True \u2013 a feature with attribute colour has the value \u2018blau\u2019, but it does not exist in the specified value domain: red, green, blue, yellow"
     },
     {
+      "measureDescriptionID": "MD 15",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "True indicates that all items is in conformance with its value domain"
+    },
+    {
       "measureDescriptionID": "MD15e",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
       "textDescription": "all dates are correct according to their month rules of probable number of days e.g.  no February 29:th non leap year, no April 31:th"
+    },
+    {
+      "measureDescriptionID": "MD16",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The conceptual schema describes valid values in the domain"
+    },
+    {
+      "measureDescriptionID": "MD17",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The conceptual schema describes valid values in the domain"
     },
     {
       "measureDescriptionID": "MD17e",
@@ -185,6 +262,13 @@
       "textDescription": "100 % (scope: attributes road width and speed limit for roads, are within the value domain)"
     },
     {
+      "measureDescriptionID": "MD18",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The conceptual schema describes valid values in the domain"
+    },
+    {
       "measureDescriptionID": "MD18e",
       "sequence": "",
       "extendedDescription": "",
@@ -192,11 +276,25 @@
       "textDescription": "10% (Domain of a \u2018buildingType\u2019 attribute is defined as the following set of values {1,2,0}; 10 out of 100 \u2018building\u2019 objects contain value \u2018X\u2019 in \u2018buildingType\u2019 attribute)"
     },
     {
+      "measureDescriptionID": "MD19",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The conceptual schema describes the physical structure"
+    },
+    {
       "measureDescriptionID": "MD19e",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
       "textDescription": "5 (5 living quarters type code is coded on more than 3 characters although the requirement in data product specification is 3)"
+    },
+    {
+      "measureDescriptionID": "MD20",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The conceptual schema describes the physical structure"
     },
     {
       "measureDescriptionID": "MD21",
@@ -220,6 +318,13 @@
       "textDescription": "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections."
     },
     {
+      "measureDescriptionID": "MD23",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Search distance as defined in the specification"
+    },
+    {
       "measureDescriptionID": "MD23e",
       "sequence": "",
       "extendedDescription": "23e.PNG",
@@ -227,11 +332,25 @@
       "textDescription": "Key: 1) search distance = 3 m"
     },
     {
+      "measureDescriptionID": "MD24",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Search distance as defined in the specification"
+    },
+    {
       "measureDescriptionID": "MD24e",
       "sequence": "",
       "extendedDescription": "24e.PNG",
       "formula": "",
       "textDescription": "A road must have a length at least 3 meters. Key: 1) search distance = 3 m"
+    },
+    {
+      "measureDescriptionID": "MD25_2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "A sliver is an unintended area that occurs when adjacent surfaces are not digitized properly. The borders of the adjacent surfaces may unintentionally gap or overlap by small amounts to cause a topological error"
     },
     {
       "measureDescriptionID": "MD25",
@@ -255,11 +374,25 @@
       "textDescription": "Key: 1) Sand\n2) Sliver\n3) Double line drain\nb) The sliver is less than the maximum parameter and is flagged for evaluation of possible error."
     },
     {
+      "measureDescriptionID": "MD26",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Topological rules as defined in the specification"
+    },
+    {
       "measureDescriptionID": "MD26e",
       "sequence": "",
       "extendedDescription": "26e.PNG",
       "formula": "",
       "textDescription": "Key: 1) Buliding 1\n2) illegal intersection (loop)"
+    },
+    {
+      "measureDescriptionID": "MD27",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Topological rules as defined in the specification"
     },
     {
       "measureDescriptionID": "MD27e",
@@ -360,13 +493,6 @@
       "textDescription": "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)."
     },
     {
-      "measureDescriptionID": "MD33",
-      "sequence": "",
-      "extendedDescription": "",
-      "formula": "",
-      "textDescription": "half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50\u00a0%"
-    },
-    {
       "measureDescriptionID": "MD39",
       "sequence": "",
       "extendedDescription": "",
@@ -444,11 +570,18 @@
       "textDescription": "A manner of calculating the comparison of the data (measured) and the control (true)."
     },
     {
-      "measureDescriptionID": "MD59",
+      "measureDescriptionID": "MD60",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
-      "textDescription": "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99.8\u00a0%"
+      "textDescription": "Number of incorrectly classified features compared to the specification. Features and the classification method as defined in the specification."
+    },
+    {
+      "measureDescriptionID": "MD61",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Number of incorrectly classified features compared to the specification. Features and the classification method as defined in the specification."
     },
     {
       "measureDescriptionID": "MD62",
@@ -500,11 +633,60 @@
       "textDescription": "5 (5 geographical names are misspelled)"
     },
     {
+      "measureDescriptionID": "MD66",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Number of correct attribute values in relation to the total number of attribute values as described in the specification."
+    },
+    {
+      "measureDescriptionID": "MD67",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Number of correct attribute values in relation to the total number of attribute values as described in the specification."
+    },
+    {
       "measureDescriptionID": "MD101",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
-      "textDescription": "The measure will take the  value true if all the requirements in the referred data product specification are fulfilled"
+      "textDescription": "The measure will take the value true if all the requirements in the referred data product specification are fulfilled"
+    },
+    {
+      "measureDescriptionID": "MD102",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Indicator of the compliance with the data product specification"
+    },
+    {
+      "measureDescriptionID": "MD103",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Indicator of the compliance with the data product specification"
+    },
+    {
+      "measureDescriptionID": "MD104",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Indicator of the compliance with the data product specification"
+    },
+    {
+      "measureDescriptionID": "MD105",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Indicator of the compliance with the data product specification"
+    },
+    {
+      "measureDescriptionID": "MD119",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Indicator of the compliance with the data product specification"
     },
     {
       "measureDescriptionID": "MD119e",
@@ -542,11 +724,25 @@
       "textDescription": "True (5 historical events are present in the dataset but are not ordered correctly)"
     },
     {
+      "measureDescriptionID": "MD201",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Rate of items in a common area representing the same real world object with different coordinates in two different datasets according to a specified tolerance"
+    },
+    {
       "measureDescriptionID": "MD201e",
       "sequence": "",
       "extendedDescription": "201e.PNG",
       "formula": "",
       "textDescription": "Rate of objects not in conformity to the tolerance.\nIn a common area for two datasets the coordinates compare to each other, an error is outside the tolerance.\nKey: 1 Search tolerance 0,3 meter"
+    },
+    {
+      "measureDescriptionID": "MD202",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification"
     },
     {
       "measureDescriptionID": "MD202e",
@@ -563,11 +759,25 @@
       "textDescription": "The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification"
     },
     {
+      "measureDescriptionID": "MD204",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "All child polygons must be located inside the parent polygon. Reports the number of child polygons not inside the parent polygon. A set of features instances (set of child\u2019s) which completely, covers the testbed feature"
+    },
+    {
       "measureDescriptionID": "MD204e",
       "sequence": "",
       "extendedDescription": "204e.PNG",
       "formula": "",
       "textDescription": "Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons"
+    },
+    {
+      "measureDescriptionID": "MD205",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The uppdate frequency shall be shown in metadata"
     },
     {
       "measureDescriptionID": "MD205e",
@@ -577,6 +787,13 @@
       "textDescription": "It is \u2018true\u2019 if the value for an address has been updated in the database within user defined AQL (e.g. 5 days) since the decision on its change."
     },
     {
+      "measureDescriptionID": "MD206",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Mean time from when an object has been changed until its updated in the data base"
+    },
+    {
       "measureDescriptionID": "MD206e",
       "sequence": "",
       "extendedDescription": "",
@@ -584,11 +801,557 @@
       "textDescription": "Tests if a particular quality scope is updated according to its given maintenance and update frequency e.g. \u201cAnnually\u201d. Value: yes or no"
     },
     {
+      "measureDescriptionID": "MD207",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "User defined acceptance quality level"
+    },
+    {
       "measureDescriptionID": "MD207e",
       "sequence": "",
       "extendedDescription": "",
       "formula": "",
       "textDescription": "The timetable of a railway station shall be updated with the frequency required to allow passengers to take a train even if the scheduled time or platform change."
+    },
+    {
+      "measureDescriptionID": "MDsd1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1",
+      "textDescription": "Standard deviation - true value known."
+    },
+    {
+      "measureDescriptionID": "MDsd2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2",
+      "textDescription": "Standard deviation - true value unknown and it is estimated as the arithmetic mean of the observations."
+    },
+    {
+      "measureDescriptionID": "MDsd1_LE50",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1_LE50",
+      "textDescription": "Standard deviation - true value known; significance level 50% "
+    },
+    {
+      "measureDescriptionID": "MDsd1_LE68.3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1_LE68.3",
+      "textDescription": "Standard deviation - true value known; significance level 68.3% "
+    },
+    {
+      "measureDescriptionID": "MDsd1_LE90",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1_LE90",
+      "textDescription": "Standard deviation - true value known; significance level 90% "
+    },
+    {
+      "measureDescriptionID": "MDsd1_LE95",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1_LE95",
+      "textDescription": "Standard deviation - true value known; significance level 95% "
+    },
+    {
+      "measureDescriptionID": "MDsd1_LE99",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1_LE99",
+      "textDescription": "Standard deviation - true value known; significance level 99% "
+    },
+    {
+      "measureDescriptionID": "MDsd1_CE99.8",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1_LE99.8",
+      "textDescription": "Standard deviation - true value known; significance level 99.8% "
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE50r1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE50r1",
+      "textDescription": "Standard deviation - true value unknown; significance level 50%; 1 redundant measurement."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE50r2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE50r2",
+      "textDescription": "Standard deviation - true value unknown; significance level 50%; 2 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE50r3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE50r3",
+      "textDescription": "Standard deviation - true value unknown; significance level 50%; 3 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE50r4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE50r4",
+      "textDescription": "Standard deviation - true value unknown; significance level 50%; 4 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE50r5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE50r5",
+      "textDescription": "Standard deviation - true value unknown; significance level 50%; 5 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE50r10",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE50r10",
+      "textDescription": "Standard deviation - true value unknown; significance level 50%; 10 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE68.3r1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE68.3r1",
+      "textDescription": "Standard deviation - true value unknown; significance level 68.3%; 1 redundant measurement."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE68.3r2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE68.3r2",
+      "textDescription": "Standard deviation - true value unknown; significance level 68.3%; 2 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE68.3r3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE68.3r3",
+      "textDescription": "Standard deviation - true value unknown; significance level 68.3%; 3 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE68.3r4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE68.3r4",
+      "textDescription": "Standard deviation - true value unknown; significance level 68.3%; 4 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE68.3r5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE68.3r5",
+      "textDescription": "Standard deviation - true value unknown; significance level 68.3%; 5 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE68.3r10",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE68.3r10",
+      "textDescription": "Standard deviation - true value unknown; significance level 68.3%; 10 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE90r1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE90r1",
+      "textDescription": "Standard deviation - true value unknown; significance level 90%; 1 redundant measurement."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE90r2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE90r2",
+      "textDescription": "Standard deviation - true value unknown; significance level 90%; 2 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE90r3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE90r3",
+      "textDescription": "Standard deviation - true value unknown; significance level 90%; 3 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE90r4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE90r4",
+      "textDescription": "Standard deviation - true value unknown; significance level 90%; 4 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE90r5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE90r5",
+      "textDescription": "Standard deviation - true value unknown; significance level 90%; 5 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE90r10",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE90r10",
+      "textDescription": "Standard deviation - true value unknown; significance level 90%; 10 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE95r1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE95r1",
+      "textDescription": "Standard deviation - true value unknown; significance level 95%; 1 redundant measurement."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE95r2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE95r2",
+      "textDescription": "Standard deviation - true value unknown; significance level 95%; 2 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE95r3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE95r3",
+      "textDescription": "Standard deviation - true value unknown; significance level 95%; 3 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE95r4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE95r4",
+      "textDescription": "Standard deviation - true value unknown; significance level 95%; 4 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE95r5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE95r5",
+      "textDescription": "Standard deviation - true value unknown; significance level 95%; 5 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE95r10",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE95r10",
+      "textDescription": "Standard deviation - true value unknown; significance level 95%; 10 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99r1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99r1",
+      "textDescription": "Standard deviation - true value unknown; significance level 99%; 1 redundant measurement."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99r",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99r2",
+      "textDescription": "Standard deviation - true value unknown; significance level 99%; 2 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99r3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99r3",
+      "textDescription": "Standard deviation - true value unknown; significance level 99%; 3 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99r4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99r4",
+      "textDescription": "Standard deviation - true value unknown; significance level 99%; 4 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99r5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99r5",
+      "textDescription": "Standard deviation - true value unknown; significance level 99%; 5 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99r10",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99r10",
+      "textDescription": "Standard deviation - true value unknown; significance level 99%; 10 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99.8r1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99.8r1",
+      "textDescription": "Standard deviation - true value unknown; significance level 99.8%; 1 redundant measurement."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99.8r2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99.8r2",
+      "textDescription": "Standard deviation - true value unknown; significance level 99.8%; 2 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99.8r3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99.8r3",
+      "textDescription": "Standard deviation - true value unknown; significance level 99.8%; 3 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99.8r4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99.8r4",
+      "textDescription": "Standard deviation - true value unknown; significance level 99.8%; 4 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99.8r5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99.8r5",
+      "textDescription": "Standard deviation - true value unknown; significance level 99.8%; 5 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd2_LE99.8r10",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd2_LE99.8r10",
+      "textDescription": "Standard deviation - true value unknown; significance level 99.8%; 10 redundant measurements."
+    },
+    {
+      "measureDescriptionID": "MDsd1x",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1x",
+      "textDescription": "Standard deviation 2D - true value known; direction x"
+    },
+    {
+      "measureDescriptionID": "MDsd1y",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1y",
+      "textDescription": "Standard deviation 2D - true value known; direction y"
+    },
+    {
+      "measureDescriptionID": "MDs1z",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1z",
+      "textDescription": "Standard deviation 2D - true value known; direction z"
+    },
+    {
+      "measureDescriptionID": "MDsd1xy_CE39.4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xy_CE39.4",
+      "textDescription": "Standard deviation 2D - true value known; significance level 39.4%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xy_CE50",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xy_CE50",
+      "textDescription": "Standard deviation 2D - true value known; significance level 50%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xy_CE90",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xy_CE90",
+      "textDescription": "Standard deviation 2D - true value known; significance level 90%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xy_CE95",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xy_CE95",
+      "textDescription": "Standard deviation 2D - true value known; significance level 95%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xy_CE99.8",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xy_CE99.8",
+      "textDescription": "Standard deviation 2D - true value known; significance level 99.8%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xyz_SEP",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xyz_SEP",
+      "textDescription": "Standard deviation 3D - true value known; Spherical error probable; significance level 50%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xyz_MRSE",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xyz_MRSE",
+      "textDescription": "Standard deviation 3D - true value known; Mean spherical error; significance level 61%"
+    },
+    {
+      "measureDescriptionID": "MDsd1xyz_SAS90",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xyz_SAS90",
+      "textDescription": "Standard deviation 3D - true value known; spherical accuracy standard; significance level 90%"
+    },
+    {
+      "measureDescriptionID": "",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": ""
+    },
+    {
+      "measureDescriptionID": "MDsd1xyz_SAS99",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FTsd1xyz_SAS99",
+      "textDescription": "Standard deviation 3D - true value known; spherical accuracy standard; significance level 99%"
+    },
+    {
+      "measureDescriptionID": "MD208",
+      "sequence": "1.0",
+      "extendedDescription": "",
+      "formula": "FT208_P",
+      "textDescription": "If reference data is in point geometry:\nwhere n is the total number of reference point features that are not captured by the coverage of source data, and N is the total number of reference point features"
+    },
+    {
+      "measureDescriptionID": "MD208",
+      "sequence": "2.0",
+      "extendedDescription": "",
+      "formula": "FT208_L",
+      "textDescription": "If reference data is in line geometry:\nwhere l\u2019 is the length of each segment of reference data that is not captured by the coverage of the source data, n is the total number of uncovered segments, and L is the total length of all reference line features. "
+    },
+    {
+      "measureDescriptionID": "MD208",
+      "sequence": "3.0",
+      "extendedDescription": "",
+      "formula": "FT208_A",
+      "textDescription": "If reference data is in polygon geometry:\nwhere a is the area of each segment of reference data that is not captured by the coverage of the source data, n is the total number of uncovered segments, and A is the total area of all reference polygon features."
+    },
+    {
+      "measureDescriptionID": "MD208e",
+      "sequence": "",
+      "extendedDescription": "MD208e.png",
+      "formula": "",
+      "textDescription": "Calculate the rate of omission of street view imagery (SVI) coverage using street network as the reference data. In the example, street view imagery is represented as points (circular dots in the figure), and the reference street network consists of seven line features of length L1, L2, \u2026 L7. \nStep 1: Snap each point to the nearest location on the street it is closest to. Snapped locations are marked by red crosses in the figure\nStep 2: Split the lines at the snapped locations and calculate the length of each split segment. Segments with a length longer than a certain threshold (e.g. 50 m) where no SVI is found are deemed as uncovered. In this example, we identify four segments with lengths l 1, l 2, l 3, and l 4 as uncovered segments\nStep 3: Rate of omission is thus calculated as the sum of lengths of uncovered segments, divided by the sum of lengths of all segments.\nThe example demonstrates a way to calculate the omission rate for the whole dataset. Besides, the omission rate can also be calculated at a finer spatial scale, i.e. for each geometry unit. For instance, it can be calculated at the street level, where the omission rate is calculated for each street segment"
+    },
+    {
+      "measureDescriptionID": "MD208e2",
+      "sequence": "",
+      "extendedDescription": "MD208e2.png",
+      "formula": "",
+      "textDescription": "Calculate the rate of omission of street view imagery coverage against a reference area. The street view imagery is represented as costructed buffers of imagery points with a radius, and the reference area is a rectangular grid cell of area A1\nNote: rewrited from original example 2"
+    },
+    {
+      "measureDescriptionID": "MD209",
+      "sequence": "",
+      "extendedDescription": "MD209e",
+      "formula": "",
+      "textDescription": "The number of intervals with a distance longer than a certain threshold, divided by the total number of intervals present in the data. "
+    },
+    {
+      "measureDescriptionID": "MD209e",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "FT208_P",
+      "textDescription": "In this example, there are three sequences of data, S1, S2, and S3. There are eight points in S1 and the interval distance between each pair of consecutive points is measured as d1, d2, \u2026 d7. Similarly, d8 and d9 are measured for S2 and d10, d11, and d12 for S3. Among these distances, d3, d5, and d6 are above a specified threshold (e.g. 50 m) indicating lack of continuity in spatial coverage.\nThe rate of spatial discontinuity in this example is thus calculated as:\nwhere n is the number of intervals with a distance above the threshold, and N is the total number of intervals in the data."
+    },
+    {
+      "measureDescriptionID": "MD210",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The amount of time (e.g. number of years, number of months, number of days, number of hours etc.) during which no data is present, divided by the total amount of time during which data is supposed to be present."
+    },
+    {
+      "measureDescriptionID": "MD211",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The quantity of data that suffers from imperfect coverage, divided by the total quantity of data."
+    },
+    {
+      "measureDescriptionID": "MD211e",
+      "sequence": "",
+      "extendedDescription": "MD211e.png",
+      "formula": "",
+      "textDescription": "There are 15 street view images in the data. After running a computer vision algorithm to detect blurriness in images, three have been detected as blurry images. "
+    },
+    {
+      "measureDescriptionID": "MD212",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The number of records with data present, divided by the total number of records that are supposed to be present"
+    },
+    {
+      "measureDescriptionID": "MD212e",
+      "sequence": "",
+      "extendedDescription": "MD212e.png",
+      "formula": "",
+      "textDescription": "there are five instances in the data, and each of them is supposed to have three metadata attributes \u2013 Attributes A, B, and C. The symbol \u2018x\u2019 in the table indicates a certain metadata is available for the instance\nIn total, there are 5 empty records, out of 15 (5 \u00d7 3) records that are supposed to be available. The rate of metadata omission is thus calculated as 5/15 = 0.333\nThe rate of omission can also be calculated for each metadata attribute A, B and C"
+    },
+    {
+      "measureDescriptionID": "MD213",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The quantity of data where sensitive information is present, divided by the total quantity of data"
+    },
+    {
+      "measureDescriptionID": "MD213e",
+      "sequence": "",
+      "extendedDescription": "MD213e.png",
+      "formula": "",
+      "textDescription": "There are five street view images in the data. It is found in Image 3 that there is one unmasked human face, and in Image 2 that there are two unmasked car plate licences. The rate of occurrence of sensitive information in this data is thus calculated as n/N where n is the number of data instances with sensitive information found, and N is the total number of data instances."
+    },
+    {
+      "measureDescriptionID": "MDBM1",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Boolean value expressing the item is indicated an error."
+    },
+    {
+      "measureDescriptionID": "MDBM2",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The dataproduct specification shall describe the features and which items shall be collected"
+    },
+    {
+      "measureDescriptionID": "MDBM3",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The dataproduct specification shall describe the features and how items shall be typed"
+    },
+    {
+      "measureDescriptionID": "MDBM4",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "Boolean value expressing the item is correct"
+    },
+    {
+      "measureDescriptionID": "MDBM5",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The dataproduct specification shall describe the features and how items shall be typed"
+    },
+    {
+      "measureDescriptionID": "MDBM6",
+      "sequence": "",
+      "extendedDescription": "",
+      "formula": "",
+      "textDescription": "The dataproduct specification shall describe the features and which items shall be collected"
     }
   ]
 }
