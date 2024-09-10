@@ -29,7 +29,7 @@ _:basic-uplift
 _:master-uplift
     a                        dcat:Dataset, dcfg:UpliftConfiguration ;
     dct:description          "Master sheet uplift" ;
-    dcfg:glob                "**/dataQualityMeasures.csv.json" ;
+    dcfg:glob                "**/QualityMeasure.csv.json" ;
     dcfg:hasUpliftDefinition [ dcfg:order 1 ;
                                dcfg:file  "master-uplift.yml" ; ] ;
 .
@@ -65,6 +65,15 @@ _:source-uplift
     dcfg:hasUpliftDefinition [ dcfg:order 1 ;
                                dcfg:file  "source-uplift.yml" ; ] ;
 .
+
+_:abstract-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "SourceReference sheet uplift" ;
+    dcfg:glob                "**/*Abstract*.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "source-uplift.yml" ; ] ;
+.
+
 
 _:sheets
     a               dcat:Dataset, dcfg:DomainConfiguration ;

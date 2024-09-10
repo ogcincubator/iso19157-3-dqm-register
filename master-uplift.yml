@@ -42,6 +42,12 @@ context:
       '@reverse': dqm:usedBy
       '@context':
         '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/
+    AbstractQualityElementID:
+      '@id': skos:broader
+      '@type': '@id'
+      '@reverse': skos:narrower
+      '@context':
+        '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/
     description:
       '@id': 'http://www.opengis.net/def/metamodel/isodqm/measureDescription'
       '@type': '@id'
@@ -57,7 +63,7 @@ context:
     valueType: dqm:valueType
     valueStructure: dqm:valueStructure
     SourceReference:
-      '@id':  dct:source
+      '@id': dct:source
       '@type': '@id'
       '@context':
         '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/
