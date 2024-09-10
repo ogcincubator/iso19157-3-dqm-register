@@ -7,116 +7,469 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r3">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r5">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.rdf">
-    <dcterms:hasVersion>git:91d30f39a9fa6cef7d5bf2b53387ebd5e90bcd11</dcterms:hasVersion>
+    <dcterms:hasVersion>git:a83b1454ce11841eec3a63084ad1590ce95c3d07</dcterms:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     <dcterms:format>application/rdf+xml</dcterms:format>
-    <prov:wasGeneratedBy rdf:nodeID="Nc0d3406b89b14176a4bb21d48426769f"/>
-    <prov:wasAttributedTo rdf:nodeID="N8fdba7c6ba074f138b2840d3538ca1f6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE50">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r10">
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM1">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:example>False</skos:example>
-    <skos:definition>Indicator that an item is in error.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r10">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2a9628b5f25e41fa866e51669788287e">
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasInformedBy rdf:nodeID="Ne7daa30fc2664f26a8e38a4de9d44419"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T03:41:58.603071</prov:startedAtTime>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:wasAssociatedWith rdf:nodeID="N1f268d0d64314449bbf89cf848439d4a"/>
-    <prov:used rdf:nodeID="N62801b8cf20f471aa7b1edf091e6aad9"/>
-    <prov:used rdf:nodeID="N4f9a8367f19e40e0adaca54b9a7b2ad9"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T03:41:58.627777</prov:endedAtTime>
+    <prov:wasGeneratedBy rdf:nodeID="N8b2aed354ce14faab505a93f4e7f56f3"/>
+    <prov:wasAttributedTo rdf:nodeID="Nd4414115668242df89f0d935acf724e9"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r10">
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r5">
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r1">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM1">
+    <skos:definition>Indicator that an item is in error.</skos:definition>
+    <skos:example>False</skos:example>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM5">
+    <skos:definition>Total number of items that are free of errors of a specified type.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"/>
+    <skos:example>571</skos:example>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r1">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SEP">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SAS99">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r4">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99.8">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf3c90738cf774496872f362083cec8a9b3">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <dcterms:hasVersion>0.3.51</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r1">
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r3">
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1z">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/MRSE">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1x">
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"/>
+    <skos:definition>confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE90">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r1">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8b2aed354ce14faab505a93f4e7f56f3">
+    <prov:used rdf:nodeID="Nb08a3e3627514e0a8a6b4c244a6239eb"/>
+    <prov:used rdf:nodeID="N67457909645243f8beaeef3a19e3d779"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T04:13:47.347385</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T04:13:47.397426</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N9a09066bff0d4ecfab1d9c1c6e6a21b1"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="Nd4414115668242df89f0d935acf724e9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r2">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1y">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:example>MD2bme</skos:example>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2"/>
+    <skos:definition>Number of the erroneous items with respect to the total number of items that should have been present.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N615528942e6f40379b633bef77ef2b1f">
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T04:13:47.372103</prov:endedAtTime>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:wasInformedBy rdf:nodeID="N3dacefd85be14097ad0abe595623ae80"/>
+    <prov:used rdf:nodeID="N9f28cd444cd948e983f626f8d2a7d155"/>
+    <prov:used rdf:nodeID="N049054daf8ac4d96b4728802ae41fdea"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasAssociatedWith rdf:nodeID="Nfc7d5816f21f4367b2d9018d7fa94aa5"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T04:13:47.347385</prov:startedAtTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r5">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r10">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements.</skos:definition>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r5">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE95">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r4">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD2">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value unknown.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99">
+    <skos:definition>Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r4">
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements.</skos:definition>
     <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r10">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r3">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r4">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf3c90738cf774496872f362083cec8a9b1">
+    <prov:used rdf:nodeID="nf3c90738cf774496872f362083cec8a9b2"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T04:07:18.667141</prov:startedAtTime>
+    <prov:wasInformedBy rdf:nodeID="nf3c90738cf774496872f362083cec8a9b4"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T04:07:18.769244</prov:endedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="nf3c90738cf774496872f362083cec8a9b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM3">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Total number of items that are subject to an error of a specified type.</skos:definition>
+    <skos:example>11</skos:example>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r10">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r5">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SAS90">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r10">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r1">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N8fdba7c6ba074f138b2840d3538ca1f6">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r1">
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r5">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r5">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r10">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM6">
+    <skos:definition>Number of the correct items with respect to the total number of items that should have been present.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
+    <skos:example>0.9811</skos:example>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE50">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc7d5816f21f4367b2d9018d7fa94aa5">
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.51</rdfs:comment>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <dcterms:hasVersion>0.3.51</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r1">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r4">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl">
+    <prov:wasGeneratedBy rdf:nodeID="N615528942e6f40379b633bef77ef2b1f"/>
+    <dcterms:hasVersion>git:a83b1454ce11841eec3a63084ad1590ce95c3d07</dcterms:hasVersion>
+    <dcterms:format>text/turtle</dcterms:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <prov:wasAttributedTo rdf:nodeID="Nfc7d5816f21f4367b2d9018d7fa94aa5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r3">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r5">
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r3">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3dacefd85be14097ad0abe595623ae80">
+    <dcterms:identifier>d990c132-9b3f-4a56-aa6f-8963710fea7f</dcterms:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4414115668242df89f0d935acf724e9">
     <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
@@ -124,433 +477,80 @@
     <rdfs:comment>ogc.na.update_vocabs version 0.3.51</rdfs:comment>
     <dcterms:hasVersion>0.3.51</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r2">
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r3">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r5">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5"/>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE39.4">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM3">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>11</skos:example>
-    <skos:definition>Total number of items that are subject to an error of a specified type.</skos:definition>
+    <skos:definition>confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl">
-    <prov:wasAttributedTo rdf:nodeID="N1f268d0d64314449bbf89cf848439d4a"/>
+  <rdf:Description rdf:nodeID="N049054daf8ac4d96b4728802ae41fdea">
+    <dcterms:hasVersion>git:a83b1454ce11841eec3a63084ad1590ce95c3d07</dcterms:hasVersion>
     <dcterms:format>text/turtle</dcterms:format>
-    <prov:wasGeneratedBy rdf:nodeID="N2a9628b5f25e41fa866e51669788287e"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:hasVersion>git:91d30f39a9fa6cef7d5bf2b53387ebd5e90bcd11</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf3c90738cf774496872f362083cec8a9b4">
+    <dcterms:identifier>aaf3aa84-2dbf-4c90-8658-244b59915f76</dcterms:identifier>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     <skos:prefLabel>ISO19157-3 basic quality measures</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r1">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r4">
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE90">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r10">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM6">
-    <skos:definition>Number of the correct items with respect to the total number of items that should have been present.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6"/>
-    <skos:example>0.9811</skos:example>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"/>
-    <skos:definition>Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r3">
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1x">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N73e69493027e49d898fad81254a0b748">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
-    <dcterms:hasVersion>git:91d30f39a9fa6cef7d5bf2b53387ebd5e90bcd11</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/MRSE">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"/>
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r5">
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1f268d0d64314449bbf89cf848439d4a">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.51</rdfs:comment>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <dcterms:hasVersion>0.3.51</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r5">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r10">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r2">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM2">
-    <skos:definition>Number of the erroneous items with respect to the total number of items that should have been present.</skos:definition>
-    <skos:example>MD2bme</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4f9a8367f19e40e0adaca54b9a7b2ad9">
-    <dcterms:format>text/turtle</dcterms:format>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
-    <dcterms:hasVersion>git:91d30f39a9fa6cef7d5bf2b53387ebd5e90bcd11</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99.8">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r4">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r3">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
     <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SAS99">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r4">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r4">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r1">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE39.4">
-    <skos:definition>confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb3">
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <dcterms:hasVersion>0.3.51</dcterms:hasVersion>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1y">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SAS90">
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb2">
-    <dcterms:format>application/json</dcterms:format>
-    <dcterms:hasVersion>git:2a8a137ebda23ff05e36a20c7aaa517f0f6f0dbd</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json"/>
+  <rdf:Description rdf:nodeID="N67457909645243f8beaeef3a19e3d779">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dcterms:hasVersion>git:a83b1454ce11841eec3a63084ad1590ce95c3d07</dcterms:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc0d3406b89b14176a4bb21d48426769f">
-    <prov:used rdf:nodeID="N73e69493027e49d898fad81254a0b748"/>
-    <prov:used rdf:nodeID="Nbab400bd231940e2979f4727ff48ce12"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T03:41:58.603071</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T03:41:58.654631</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="N632f8b5549124b96bd25fb1cf383ab5b"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="N8fdba7c6ba074f138b2840d3538ca1f6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb1">
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T03:37:03.217506</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb4"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasAssociatedWith rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb3"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-10T03:37:03.090719</prov:startedAtTime>
-    <prov:used rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r1">
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90">
-    <skos:definition>Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r4">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r2">
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit</skos:definition>
+    <dcterms:format>text/turtle</dcterms:format>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM4">
     <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4"/>
     <skos:definition>Indicator that an item is correct.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
     <skos:example>True</skos:example>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r3">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+  <rdf:Description rdf:nodeID="N9a09066bff0d4ecfab1d9c1c6e6a21b1">
+    <dcterms:identifier>d990c132-9b3f-4a56-aa6f-8963710fea7f</dcterms:identifier>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r3">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r10">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM5">
-    <skos:definition>Total number of items that are free of errors of a specified type.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
-    <skos:example>571</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE95">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbab400bd231940e2979f4727ff48ce12">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:91d30f39a9fa6cef7d5bf2b53387ebd5e90bcd11</dcterms:hasVersion>
+  <rdf:Description rdf:nodeID="N9f28cd444cd948e983f626f8d2a7d155">
+    <dcterms:hasVersion>git:a83b1454ce11841eec3a63084ad1590ce95c3d07</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     <dcterms:format>text/turtle</dcterms:format>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r5">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD2">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value unknown.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne7daa30fc2664f26a8e38a4de9d44419">
-    <dcterms:identifier>bc76bed2-c764-4f8d-bb45-247fcfadfbc2</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1z">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <skos:definition>Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N632f8b5549124b96bd25fb1cf383ab5b">
-    <dcterms:identifier>bc76bed2-c764-4f8d-bb45-247fcfadfbc2</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r2">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95">
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N62801b8cf20f471aa7b1edf091e6aad9">
-    <dcterms:format>text/turtle</dcterms:format>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+  <rdf:Description rdf:nodeID="nf3c90738cf774496872f362083cec8a9b2">
+    <dcterms:format>application/json</dcterms:format>
+    <dcterms:hasVersion>git:cc855a87e979f059135ca194cc2c332985aecff2</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:hasVersion>git:91d30f39a9fa6cef7d5bf2b53387ebd5e90bcd11</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r2">
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SEP">
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n5fe81fb64c184b28a7a057400b55f50bb4">
-    <dcterms:identifier>78286a62-0d75-4dad-a10a-f15ab046c11d</dcterms:identifier>
+  <rdf:Description rdf:nodeID="Nb08a3e3627514e0a8a6b4c244a6239eb">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
+    <dcterms:hasVersion>git:a83b1454ce11841eec3a63084ad1590ce95c3d07</dcterms:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dcterms:format>text/turtle</dcterms:format>
   </rdf:Description>
 </rdf:RDF>
