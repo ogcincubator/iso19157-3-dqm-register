@@ -13,13 +13,13 @@ transform:
   # generate an id for the description object from measure and sequence information
   - |
     walk(if (type == "object") then
-      ( if .sequence then ."formulaType ID" = "\(."formulaType ID")_\(.sequence)" else ."formulaType ID" = "\(."formulaType ID")" end ) |
-      .prefLabel = ."formulaType ID"
+      ( if .sequence then .formulaTypeID = "\(.formulaTypeID)_\(.sequence)" else .formulaTypeID = "\(.formulaTypeID)" end ) |
+      .prefLabel = .formulaTypeID
       else . end)
   # add prefLabel
   - |
       walk(if (type == "object") then
-        .prefLabel = ."formulaType ID"
+        .prefLabel = .formulaTypeID
         else . end)
   # Add ConceptScheme
   - |
@@ -44,11 +44,10 @@ context:
     '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/
     sequence: dqm:formulaSequence
     prefLabel: skos:prefLabel
-    formulaTypeID:
-      '@type': '@id'
+    formulaTypeID: '@id'
     mathematicalFormula: skos:definition
     language:
-      'type': '@id'
+      '@type': '@id'
       '@id': dqm:formulaLanguage
     languageVersion: dqm:formulaLanguageVersion
     key: dqm:formulaKey
