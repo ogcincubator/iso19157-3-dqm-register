@@ -11,9 +11,18 @@
     "alias": "skos:altLabel",
     "elementName": "dqm:elementName",
     "definition": "skos:definition",
+    "BasicMeasure": {
+      "@id": "http://www.opengis.net/def/metamodel/isodqm/basicMeasure",
+      "@type": "@id",
+      "@reverse": "dqm:usedBy",
+      "@context": {
+        "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/"
+      }
+    },
     "description": {
       "@id": "http://www.opengis.net/def/metamodel/isodqm/measureDescription",
       "@type": "@id",
+      "@reverse": "dqm:describes",
       "@context": {
         "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/"
       }
@@ -21,16 +30,24 @@
     "parameter": {
       "@id": "http://www.opengis.net/def/metamodel/isodqm/qualityMeasureParameter",
       "@type": "@id",
+      "@reverse": "dqm:hasParameter",
       "@context": {
         "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasureParameter/"
       }
     },
-    "Value Type": "dqm:valueType",
-    "Value structure": "dqm:valueStructure",
-    "Source reference": "dct:source",
+    "valueType": "dqm:valueType",
+    "valueStructure": "dqm:valueStructure",
+    "SourceReference": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/"
+      }
+    },
     "example": "skos:example",
-    "Version": "dct:hasVersion",
-    "Status": {
+    "version": "dct:hasVersion",
+    "versionDateTime": "dct:date",
+    "status": {
       "@id": "policy:status",
       "@type": "@id",
       "@context": {
