@@ -24,7 +24,7 @@
 
 :NodeShape_concept
   a sh:NodeShape ;
-  sh:rule :definition_required;
+  sh:rule :definition_required, :entail_narrower ;
   sh:targetClass skos:Concept ;
 .
 
@@ -56,6 +56,21 @@ WHERE {
 """ ;
 .
 
+:entail_narrower
+  a sh:SPARQLRule ;
+  rdfs:label "Entail narrower" ;
+  sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
+  prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+CONSTRUCT {
+    ?skosdef skos:narrower $this .
+
+}
+WHERE {
+    $this skos:broader ?skosdef
+    }
+""" ;
+.
 
 :definition_required
   a sh:SPARQLRule ;
