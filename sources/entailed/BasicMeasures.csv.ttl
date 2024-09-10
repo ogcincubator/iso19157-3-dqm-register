@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,420 +7,420 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
-    dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:a83b1454ce11841eec3a63084ad1590ce95c3d07" ;
-    prov:wasAttributedTo _:Nfc7d5816f21f4367b2d9018d7fa94aa5 ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:e7f8ebfddad2b0f6a540cd56d1421f6e828506d2" ;
+    prov:wasAttributedTo _:N03de7d1dc01942728d235690808ad414 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-10T04:13:47.372103"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-10T04:13:47.347385"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-10T05:47:12.405794"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-10T05:47:12.382576"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:a83b1454ce11841eec3a63084ad1590ce95c3d07" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:e7f8ebfddad2b0f6a540cd56d1421f6e828506d2" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ],
                 [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:a83b1454ce11841eec3a63084ad1590ce95c3d07" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ] ;
-            prov:wasAssociatedWith _:Nfc7d5816f21f4367b2d9018d7fa94aa5 ;
-            prov:wasInformedBy [ dcterms:identifier "d990c132-9b3f-4a56-aa6f-8963710fea7f" ] ] .
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:e7f8ebfddad2b0f6a540cd56d1421f6e828506d2" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N03de7d1dc01942728d235690808ad414 ;
+            prov:wasInformedBy [ dct:identifier "42bad78b-e176-4138-9ad9-c969938591a8" ] ] .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
     skos:definition "Indicator that an item is in error." ;
     skos:example "False" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
     skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
     skos:example "MD2bme" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
     skos:definition "Total number of items that are subject to an error of a specified type." ;
     skos:example "11" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
     skos:definition "Indicator that an item is correct." ;
     skos:example "True" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
     skos:definition "Total number of items that are free of errors of a specified type." ;
     skos:example "571" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/BM6> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
     skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
     skos:example "0.9811" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE39.4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE50> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE90> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE95> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/CE99.8> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE50r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE68.3r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE90r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE95r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99.8r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/LE99r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/MRSE> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SAS90> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SAS99> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1x> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1y> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD1z> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SD2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value unknown." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure/SEP> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> .
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicQualityMeasure> a skos:ConceptScheme ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> a skos:ConceptScheme ;
     skos:prefLabel "ISO19157-3 basic quality measures" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-10T04:07:18.769244"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-10T04:07:18.667141"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-10T04:30:20.456672"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-10T04:30:20.354404"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dcterms:format "application/json" ;
-            dcterms:hasVersion "git:cc855a87e979f059135ca194cc2c332985aecff2" ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:3caeb19ed4997de2a8f282febd50e8b4005d4e22" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dcterms:hasVersion "0.3.51" ;
+            dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "aaf3aa84-2dbf-4c90-8658-244b59915f76" ] .
+    prov:wasInformedBy [ dct:identifier "2b5f106a-5f80-4c6d-9e93-d86880bac461" ] .
 
-_:Nfc7d5816f21f4367b2d9018d7fa94aa5 a prov:Agent,
+_:N03de7d1dc01942728d235690808ad414 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.51" ;
+    dct:hasVersion "0.3.51" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.51" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
