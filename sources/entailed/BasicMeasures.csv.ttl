@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,24 +7,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
-    dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:f14b0e4eef4ab50a5c84d3160bb360b8b7d15066" ;
-    prov:wasAttributedTo _:N932a7f217d044481a6b7bc50f2b0d1a8 ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:8998e2e7543749d692f850efa7a0d8063c2e5f1f" ;
+    prov:wasAttributedTo _:N03291c0a292d40f4984dbe337119d12e ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-10T13:10:39.372697"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-10T13:10:39.338994"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-10T13:36:36.038957"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-10T13:36:34.816160"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:f14b0e4eef4ab50a5c84d3160bb360b8b7d15066" ;
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:8998e2e7543749d692f850efa7a0d8063c2e5f1f" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:f14b0e4eef4ab50a5c84d3160bb360b8b7d15066" ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:8998e2e7543749d692f850efa7a0d8063c2e5f1f" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ] ;
-            prov:wasAssociatedWith _:N932a7f217d044481a6b7bc50f2b0d1a8 ;
-            prov:wasInformedBy [ dcterms:identifier "5b21c75b-5478-4eea-9d83-d5e9fba86680" ] ] .
+            prov:wasAssociatedWith _:N03291c0a292d40f4984dbe337119d12e ;
+            prov:wasInformedBy [ dct:identifier "d7fb0468-fc5e-4fe2-800a-51c840e1dde0" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
@@ -84,24 +86,28 @@
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:definition "2D random variable 50 % probability" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
     skos:prefLabel "2D random variable 50 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:definition "2D random variable 90 % probability" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
     skos:prefLabel "2D random variable 90 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:definition "2D random variable 95 % probability" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
     skos:prefLabel "2D random variable 95 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> a skos:Concept ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:definition "2D random variable 99.8 % probability" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
     skos:prefLabel "2D random variable 99.8 % probability" .
 
@@ -463,26 +469,27 @@
     skos:prefLabel "Spherical error probable" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> a skos:ConceptScheme ;
+    skos:definition "ISO19157-3 basic quality measures" ;
     skos:prefLabel "ISO19157-3 basic quality measures" .
 
 [] a prov:Activity ;
     prov:endedAtTime "2024-09-10T13:09:32.550934"^^xsd:dateTime ;
     prov:startedAtTime "2024-09-10T13:09:32.445415"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dcterms:format "application/json" ;
-            dcterms:hasVersion "git:57794f311633719a6690d7986204bd7c6f8c06f7" ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:57794f311633719a6690d7986204bd7c6f8c06f7" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dcterms:hasVersion "0.3.51" ;
+            dct:hasVersion "0.3.51" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "8a487b7b-3e4a-4497-9a66-83a6075bf59a" ] .
+    prov:wasInformedBy [ dct:identifier "8a487b7b-3e4a-4497-9a66-83a6075bf59a" ] .
 
-_:N932a7f217d044481a6b7bc50f2b0d1a8 a prov:Agent,
+_:N03291c0a292d40f4984dbe337119d12e a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.51" ;
+    dct:hasVersion "0.3.51" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.51" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
