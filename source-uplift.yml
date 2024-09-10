@@ -7,26 +7,12 @@ transform:
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
   # turn known fields with space separated lists into arrays
   # force sequence to integer
-  - |
-    walk(if (type == "object") then
-      ( if .sequence then .sequence = ( .sequence | tonumber | floor | tostring ) else . end ) else . end )
-  # generate an id for the description object from measure and sequence information
-  - |
-    walk(if (type == "object") then
-      ( if .sequence then ."formulaType ID" = "\(."formulaType ID")_\(.sequence)" else ."formulaType ID" = "\(."formulaType ID")" end ) |
-      .prefLabel = ."formulaType ID"
-      else . end)
-  # add prefLabel
-  - |
-      walk(if (type == "object") then
-        .prefLabel = ."formulaType ID"
-        else . end)
   # Add ConceptScheme
   - |
     {
-      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType",
+      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource",
       "@type": "skos:ConceptScheme",
-      "skos:prefLabel": "ISO19157-3 Quality Measures Formulas",
+      "skos:prefLabel": "ISO19157-3 Quality Source References",
       "concepts": .
     }
 
@@ -41,16 +27,10 @@ context:
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
     dqm: http://www.opengis.net/def/metamodel/isodqm/
-    '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/
-    'formulaType ID': '@id'
-    prefLabel: skos:prefLabel
-    formulaTypeID:
-      '@type': '@id'
-    mathematicalFormula: skos:definition
-    language:
+    '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/
+    title: skos:prefLabel
+    onlineResource:
       'type': '@id'
-      '@id': dqm:formulaLanguage
-    languageVersion: dqm:formulaLanguageVersion
-    key: dqm:formulaKey
+      '@id': dct:source
     concepts:
       '@reverse': skos:inScheme

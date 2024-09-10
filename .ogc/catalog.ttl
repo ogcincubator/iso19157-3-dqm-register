@@ -1,75 +1,83 @@
-@prefix dcfg: <http://www.example.org/ogc/domain-cfg#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcfg:     <http://www.example.org/ogc/domain-cfg#> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix profiles: <http://www.opengis.net/def/metamodel/profiles/> .
 
-_:iso19157-3-register a dcat:Catalog ;
-  dct:title "ISO register components uplift" ;
-  dcat:dataset _:master-uplift , _:desc-uplift, _:param-uplift, _:formula-uplift , _:basic-uplift, _:sheets ,_:tbox;
-  # dcat:dataset  _:param-uplift;
-  dcfg:breakme_hasProfileSource "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
-   ".ogc/profiles.ttl" ;
-  dcfg:ignoreProfileArtifactErrors true ;
+_:iso19157-3-register
+    a                                dcat:Catalog ;
+    dct:title                        "ISO register components uplift" ;
+    dcat:dataset                     _:master-uplift, _:desc-uplift, _:param-uplift, _:formula-uplift,
+                                     _:basic-uplift, _:source-uplift,
+                                     _:sheets, _:tbox ;
+    # dcat:dataset  _:param-uplift;
+    dcfg:breakme_hasProfileSource    "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
+                                     ".ogc/profiles.ttl" ;
+    dcfg:ignoreProfileArtifactErrors true ;
 .
 
 
-_:basic-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
-  dct:description "Basic Measure sheet uplift" ;
-  dcfg:glob "**/*Basic*.csv.json" ;
-  dcfg:hasUpliftDefinition [
-    dcfg:order 1 ;
-    dcfg:file "basic-uplift.yml" ;
-  ] ;
+_:basic-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "Basic Measure sheet uplift" ;
+    dcfg:glob                "**/*Basic*.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "basic-uplift.yml" ; ] ;
 .
 
 
-_:master-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
-  dct:description "Master sheet uplift" ;
-  dcfg:glob "**/dataQualityMeasures.csv.json" ;
-  dcfg:hasUpliftDefinition [
-    dcfg:order 1 ;
-    dcfg:file "master-uplift.yml" ;
-  ] ;
+_:master-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "Master sheet uplift" ;
+    dcfg:glob                "**/dataQualityMeasures.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "master-uplift.yml" ; ] ;
 .
 
-_:desc-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
-  dct:description "Description sheet uplift" ;
-  dcfg:glob "**/*Description.csv.json" ;
-  dcfg:hasUpliftDefinition [
-    dcfg:order 1 ;
-    dcfg:file "desc-uplift.yml" ;
-  ] ;
+_:desc-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "Description sheet uplift" ;
+    dcfg:glob                "**/*Description.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "desc-uplift.yml" ; ] ;
 .
 
-_:param-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
-  dct:description "Master sheet uplift" ;
-  dcfg:glob "**/*Parameter.csv.json" ;
-  dcfg:hasUpliftDefinition [
-    dcfg:order 1 ;
-    dcfg:file "param-uplift.yml" ;
-  ] ;
+_:param-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "Master sheet uplift" ;
+    dcfg:glob                "**/*Parameter.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "param-uplift.yml" ; ] ;
 .
 
-_:formula-uplift a dcat:Dataset, dcfg:UpliftConfiguration ;
-  dct:description "Master sheet uplift" ;
-  dcfg:glob "**/*Formula*.csv.json" ;
-  dcfg:hasUpliftDefinition [
-    dcfg:order 1 ;
-    dcfg:file "formula-uplift.yml" ;
-  ] ;
-
-                .
-
-_:sheets a dcat:Dataset, dcfg:DomainConfiguration ;
-  dct:identifier "sheets" ;
-  dct:description "Publish sheets as linked RDF" ;
-  dcfg:glob "sources/*.csv.ttl" ;
-  dct:conformsTo profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc, profiles:vocprez_ogc ;
+_:formula-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "Master sheet uplift" ;
+    dcfg:glob                "**/*Formula*.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "formula-uplift.yml" ; ] ;
 .
 
-_:tbox a dcat:Dataset, dcfg:DomainConfiguration ;
-  dct:identifier "TBOX" ;
-  dct:description "Tbox labels for register" ;
-  dcfg:glob "model.ttl" ;
+_:source-uplift
+    a                        dcat:Dataset, dcfg:UpliftConfiguration ;
+    dct:description          "SourceReference sheet uplift" ;
+    dcfg:glob                "**/*Source*.csv.json" ;
+    dcfg:hasUpliftDefinition [ dcfg:order 1 ;
+                               dcfg:file  "source-uplift.yml" ; ] ;
+.
+
+_:sheets
+    a               dcat:Dataset, dcfg:DomainConfiguration ;
+    dct:identifier  "sheets" ;
+    dct:description "Publish sheets as linked RDF" ;
+    dcfg:glob       "sources/*.csv.ttl" ;
+    dct:conformsTo  profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc,
+                    profiles:vocprez_ogc ;
+.
+
+_:tbox
+    a               dcat:Dataset, dcfg:DomainConfiguration ;
+    dct:identifier  "TBOX" ;
+    dct:description "Tbox labels for register" ;
+    dcfg:glob       "model.ttl" ;
 .
