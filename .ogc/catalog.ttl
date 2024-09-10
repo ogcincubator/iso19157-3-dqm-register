@@ -11,8 +11,7 @@ _:iso19157-3-register
                                      _:basic-uplift, _:source-uplift, _:abstract-uplift ,
                                      _:sheets, _:tbox ;
     # dcat:dataset  _:param-uplift;
-    dcfg:hasProfileSource    "sparql:http://defs-dev.opengis.net:8080/rdf4j-server/repositories/profiles",
-                                     ".ogc/profiles.ttl" ;
+    dcfg:hasProfileSource          ".ogc/profiles.ttl" ;
     dcfg:ignoreProfileArtifactErrors true ;
 .
 
@@ -80,8 +79,7 @@ _:sheets
     dct:identifier  "sheets" ;
     dct:description "Publish sheets as linked RDF" ;
     dcfg:glob       "sources/*.csv.ttl" ;
-    dct:conformsTo  profiles:skos_shared, profiles:skos_conceptscheme, profiles:skos_conceptscheme_ogc,
-                    profiles:vocprez_ogc, profiles:dqm-register;
+    dct:conformsTo   profiles:dqm-register;
 .
 
 _:tbox
