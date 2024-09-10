@@ -20,7 +20,7 @@ _:iso19157-3-register
 _:basic-uplift
     a                        dcat:Dataset, dcfg:UpliftConfiguration ;
     dct:description          "Basic Measure sheet uplift" ;
-    dcfg:glob                "**/*Basic*.csv.json" ;
+    dcfg:glob                "**/BasicMeasures.csv.json" ;
     dcfg:hasUpliftDefinition [ dcfg:order 1 ;
                                dcfg:file  "basic-uplift.yml" ; ] ;
 .
@@ -37,7 +37,7 @@ _:master-uplift
 _:desc-uplift
     a                        dcat:Dataset, dcfg:UpliftConfiguration ;
     dct:description          "Description sheet uplift" ;
-    dcfg:glob                "**/*Description.csv.json" ;
+    dcfg:glob                "**/MeasureDescription.csv.json" ;
     dcfg:hasUpliftDefinition [ dcfg:order 1 ;
                                dcfg:file  "desc-uplift.yml" ; ] ;
 .
@@ -45,7 +45,7 @@ _:desc-uplift
 _:param-uplift
     a                        dcat:Dataset, dcfg:UpliftConfiguration ;
     dct:description          "Master sheet uplift" ;
-    dcfg:glob                "**/*Parameter.csv.json" ;
+    dcfg:glob                "**/MeasureParameter.csv.json" ;
     dcfg:hasUpliftDefinition [ dcfg:order 1 ;
                                dcfg:file  "param-uplift.yml" ; ] ;
 .
