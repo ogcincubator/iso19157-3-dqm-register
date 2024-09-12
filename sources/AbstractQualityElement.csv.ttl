@@ -1,4 +1,5 @@
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
@@ -30,19 +31,21 @@
     skos:prefLabel "Metaquality" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme ;
-    skos:prefLabel "ISO19157-3 abstract quality measures" .
+    ns1:targetGraph "https://standards.isotc211.org/19157/-3/1/dqc/content/abstractQualityMeasure" ;
+    skos:prefLabel "ISO19157-3 abstract quality measures" ;
+    skos:scopeNote "Top level groupings to inject into register for navigations - without overwirting main register graph" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-10T13:09:31.474369"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-10T13:09:31.419421"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-12T05:09:39.001848"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-12T05:09:38.945872"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:57794f311633719a6690d7986204bd7c6f8c06f7" ;
+            dct:hasVersion "git:80b831b644a3e3df71aa37b732368f737bc190ee" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/AbstractQualityElement.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.51" ;
+            dct:hasVersion "0.3.52" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "8a487b7b-3e4a-4497-9a66-83a6075bf59a" ] .
+    prov:wasInformedBy [ dct:identifier "0f2adb20-0f0c-4b64-b770-0fea78ec3ba8" ] .
 
