@@ -9,25 +9,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:c77280ad879dbabd3df2d4d682f1f9dd1b8f7f5a" ;
-    prov:wasAttributedTo _:Ncf73145f048a46cc81ab4264faad26b4 ;
+    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
+    prov:wasAttributedTo _:Nfef8825e8f4e4049a6410142e2e9bbc5 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-12T09:04:36.861701"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-12T09:04:33.391263"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-12T10:18:47.191683"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-12T10:18:43.473819"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:c77280ad879dbabd3df2d4d682f1f9dd1b8f7f5a" ;
+                    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c77280ad879dbabd3df2d4d682f1f9dd1b8f7f5a" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ] ;
-            prov:wasAssociatedWith _:Ncf73145f048a46cc81ab4264faad26b4 ;
-            prov:wasInformedBy [ dct:identifier "eb2a8b48-cccb-48c2-aec7-5a61ec8a75ac" ] ] .
+                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
+            prov:wasAssociatedWith _:Nfef8825e8f4e4049a6410142e2e9bbc5 ;
+            prov:wasInformedBy [ dct:identifier "1bca6bc8-dfd8-4976-8b2b-5ead46105fd3" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD1> a skos:Concept ;
     skos:definition "The value true indicates that the item is in excess." ;
@@ -1173,20 +1173,20 @@ Example 2: 6,6% of all pixels in the scene is clouded with no ground information
     skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-12T08:53:56.353671"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-12T08:53:56.076868"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-12T10:17:44.686915"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-12T10:17:44.437226"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:1527db2b0f829ca27b05bb2704668400d2258b7b" ;
+            dct:hasVersion "git:9665ce35c93abba6110ce5f41361653b9f1c501a" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureDescription.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.52" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "a7c00f3d-2ffe-4d9f-aa10-50c93a178ddc" ] .
+    prov:wasInformedBy [ dct:identifier "92576f38-95d0-44d7-a5ef-f3b6ff081877" ] .
 
-_:Ncf73145f048a46cc81ab4264faad26b4 a prov:Agent,
+_:Nfef8825e8f4e4049a6410142e2e9bbc5 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.3.52" ;
