@@ -8,27 +8,28 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
-    prov:wasAttributedTo _:N31187f68a7ac47b4a7eafe212163398d ;
+    dct:hasVersion "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f" ;
+    prov:wasAttributedTo _:N835b7cd2a402423dae3e93959457b70e ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-12T10:18:43.059477"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-12T10:18:41.728490"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-17T04:46:15.488186"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-17T04:46:14.274547"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
+                    dct:hasVersion "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:N31187f68a7ac47b4a7eafe212163398d ;
-            prov:wasInformedBy [ dct:identifier "1bca6bc8-dfd8-4976-8b2b-5ead46105fd3" ] ] .
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N835b7cd2a402423dae3e93959457b70e ;
+            prov:wasInformedBy [ dct:identifier "e5d79b4b-5e40-493d-b2a2-dc21533d3b44" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a skos:Concept ;
+    ns1:basicMeasureID "BM1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
     skos:definition "Indicator that an item is in error." ;
@@ -37,6 +38,7 @@
     skos:prefLabel "error indicator" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a skos:Concept ;
+    ns1:basicMeasureID "BM2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
     skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
@@ -45,6 +47,7 @@
     skos:prefLabel "error rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a skos:Concept ;
+    ns1:basicMeasureID "BM3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
     skos:definition "Total number of items that are subject to an error of a specified type." ;
@@ -53,6 +56,7 @@
     skos:prefLabel "error count" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a skos:Concept ;
+    ns1:basicMeasureID "BM4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
     skos:definition "Indicator that an item is correct." ;
@@ -61,6 +65,7 @@
     skos:prefLabel "correctness indicator" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a skos:Concept ;
+    ns1:basicMeasureID "BM5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
     skos:definition "Total number of items that are free of errors of a specified type." ;
@@ -69,6 +74,7 @@
     skos:prefLabel "correct items count" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a skos:Concept ;
+    ns1:basicMeasureID "BM6" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
     skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
@@ -77,6 +83,7 @@
     skos:prefLabel "correct items rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a skos:Concept ;
+    ns1:basicMeasureID "CE39.4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area" ;
@@ -84,6 +91,7 @@
     skos:prefLabel "2D random variable 39.4 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> a skos:Concept ;
+    ns1:basicMeasureID "CE50" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "2D random variable 50 % probability" ;
@@ -91,6 +99,7 @@
     skos:prefLabel "2D random variable 50 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> a skos:Concept ;
+    ns1:basicMeasureID "CE90" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "2D random variable 90 % probability" ;
@@ -98,6 +107,7 @@
     skos:prefLabel "2D random variable 90 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> a skos:Concept ;
+    ns1:basicMeasureID "CE95" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "2D random variable 95 % probability" ;
@@ -105,6 +115,7 @@
     skos:prefLabel "2D random variable 95 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> a skos:Concept ;
+    ns1:basicMeasureID "CE99.8" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "2D random variable 99.8 % probability" ;
@@ -112,6 +123,7 @@
     skos:prefLabel "2D random variable 99.8 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> a skos:Concept ;
+    ns1:basicMeasureID "LE50" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit." ;
@@ -119,6 +131,7 @@
     skos:prefLabel "1D variable 50 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> a skos:Concept ;
+    ns1:basicMeasureID "LE50r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement." ;
@@ -126,6 +139,7 @@
     skos:prefLabel "1D variable 50 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> a skos:Concept ;
+    ns1:basicMeasureID "LE50r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements." ;
@@ -133,6 +147,7 @@
     skos:prefLabel "1D variable 50 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> a skos:Concept ;
+    ns1:basicMeasureID "LE50r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements." ;
@@ -140,6 +155,7 @@
     skos:prefLabel "1D variable 50 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> a skos:Concept ;
+    ns1:basicMeasureID "LE50r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements." ;
@@ -147,6 +163,7 @@
     skos:prefLabel "1D variable 50 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> a skos:Concept ;
+    ns1:basicMeasureID "LE50r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements." ;
@@ -154,6 +171,7 @@
     skos:prefLabel "1D variable 50 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> a skos:Concept ;
+    ns1:basicMeasureID "LE50r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements." ;
@@ -161,6 +179,7 @@
     skos:prefLabel "1D variable 50 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit" ;
@@ -168,6 +187,7 @@
     skos:prefLabel "1D variable 68.3 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement." ;
@@ -175,6 +195,7 @@
     skos:prefLabel "1D variable 68.3 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements." ;
@@ -182,6 +203,7 @@
     skos:prefLabel "1D variable 68.3 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements." ;
@@ -189,6 +211,7 @@
     skos:prefLabel "1D variable 68.3 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements." ;
@@ -196,6 +219,7 @@
     skos:prefLabel "1D variable 68.3 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements." ;
@@ -203,6 +227,7 @@
     skos:prefLabel "1D variable 68.3 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> a skos:Concept ;
+    ns1:basicMeasureID "LE68.3r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements." ;
@@ -210,6 +235,7 @@
     skos:prefLabel "1D variable 68.3 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> a skos:Concept ;
+    ns1:basicMeasureID "LE90" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit." ;
@@ -217,6 +243,7 @@
     skos:prefLabel "1D variable 90 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> a skos:Concept ;
+    ns1:basicMeasureID "LE90r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement." ;
@@ -224,6 +251,7 @@
     skos:prefLabel "1D variable 90 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> a skos:Concept ;
+    ns1:basicMeasureID "LE90r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements." ;
@@ -231,6 +259,7 @@
     skos:prefLabel "1D variable 90 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> a skos:Concept ;
+    ns1:basicMeasureID "LE90r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements." ;
@@ -238,6 +267,7 @@
     skos:prefLabel "1D variable 90 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> a skos:Concept ;
+    ns1:basicMeasureID "LE90r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements." ;
@@ -245,6 +275,7 @@
     skos:prefLabel "1D variable 90 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> a skos:Concept ;
+    ns1:basicMeasureID "LE90r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements." ;
@@ -252,6 +283,7 @@
     skos:prefLabel "1D variable 90 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> a skos:Concept ;
+    ns1:basicMeasureID "LE90r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements." ;
@@ -259,6 +291,7 @@
     skos:prefLabel "1D variable 90 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> a skos:Concept ;
+    ns1:basicMeasureID "LE95" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit." ;
@@ -266,6 +299,7 @@
     skos:prefLabel "1D variable 95 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> a skos:Concept ;
+    ns1:basicMeasureID "LE95r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement." ;
@@ -273,6 +307,7 @@
     skos:prefLabel "1D variable 95 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> a skos:Concept ;
+    ns1:basicMeasureID "LE95r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements." ;
@@ -280,6 +315,7 @@
     skos:prefLabel "1D variable 95 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> a skos:Concept ;
+    ns1:basicMeasureID "LE95r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements." ;
@@ -287,6 +323,7 @@
     skos:prefLabel "1D variable 95 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> a skos:Concept ;
+    ns1:basicMeasureID "LE95r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements." ;
@@ -294,6 +331,7 @@
     skos:prefLabel "1D variable 95 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> a skos:Concept ;
+    ns1:basicMeasureID "LE95r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements." ;
@@ -301,6 +339,7 @@
     skos:prefLabel "1D variable 95 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> a skos:Concept ;
+    ns1:basicMeasureID "LE95r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements." ;
@@ -308,6 +347,7 @@
     skos:prefLabel "1D variable 95 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> a skos:Concept ;
+    ns1:basicMeasureID "LE99" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit." ;
@@ -315,6 +355,7 @@
     skos:prefLabel "1D variable 99 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit" ;
@@ -322,6 +363,7 @@
     skos:prefLabel "One dimensional variable 99,8 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement." ;
@@ -329,6 +371,7 @@
     skos:prefLabel "1D variable 99.8 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements." ;
@@ -336,6 +379,7 @@
     skos:prefLabel "1D variable 99.8 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements." ;
@@ -343,6 +387,7 @@
     skos:prefLabel "1D variable 99.8 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements." ;
@@ -350,6 +395,7 @@
     skos:prefLabel "1D variable 99.8 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements." ;
@@ -357,6 +403,7 @@
     skos:prefLabel "1D variable 99.8 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> a skos:Concept ;
+    ns1:basicMeasureID "LE99.8r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements." ;
@@ -364,6 +411,7 @@
     skos:prefLabel "1D variable 99.8 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> a skos:Concept ;
+    ns1:basicMeasureID "LE99r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement." ;
@@ -371,6 +419,7 @@
     skos:prefLabel "1D variable 99 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> a skos:Concept ;
+    ns1:basicMeasureID "LE99r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements." ;
@@ -378,6 +427,7 @@
     skos:prefLabel "1D variable 99 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> a skos:Concept ;
+    ns1:basicMeasureID "LE99r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements." ;
@@ -385,6 +435,7 @@
     skos:prefLabel "1D variable 99 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> a skos:Concept ;
+    ns1:basicMeasureID "LE99r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements." ;
@@ -392,6 +443,7 @@
     skos:prefLabel "1D variable 99 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> a skos:Concept ;
+    ns1:basicMeasureID "LE99r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements." ;
@@ -399,6 +451,7 @@
     skos:prefLabel "1D variable 99 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> a skos:Concept ;
+    ns1:basicMeasureID "LE99r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements." ;
@@ -406,6 +459,7 @@
     skos:prefLabel "1D variable 99 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> a skos:Concept ;
+    ns1:basicMeasureID "MRSE" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%." ;
@@ -413,6 +467,7 @@
     skos:prefLabel "Mean radial spherical error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> a skos:Concept ;
+    ns1:basicMeasureID "SAS90" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%." ;
@@ -420,6 +475,7 @@
     skos:prefLabel "90% spherical accuracy standard" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> a skos:Concept ;
+    ns1:basicMeasureID "SAS99" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%." ;
@@ -427,6 +483,7 @@
     skos:prefLabel "99% spherical accuracy standard" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a skos:Concept ;
+    ns1:basicMeasureID "SD1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
@@ -434,6 +491,7 @@
     skos:prefLabel "Standard deviation - true value known" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> a skos:Concept ;
+    ns1:basicMeasureID "SD1x" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
@@ -441,6 +499,7 @@
     skos:prefLabel "Standard deviation in x-direction - true value known" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> a skos:Concept ;
+    ns1:basicMeasureID "SD1y" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
@@ -448,6 +507,7 @@
     skos:prefLabel "Standard deviation in y-direction - true value known" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> a skos:Concept ;
+    ns1:basicMeasureID "SD1z" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value known." ;
@@ -455,6 +515,7 @@
     skos:prefLabel "Standard deviation in z-direction - true value known" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> a skos:Concept ;
+    ns1:basicMeasureID "SD2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Standard deviation for observations or measurements where the true value unknown." ;
@@ -462,6 +523,7 @@
     skos:prefLabel "Standard deviation - true value unknown" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> a skos:Concept ;
+    ns1:basicMeasureID "SEP" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%." ;
@@ -473,23 +535,23 @@
     skos:prefLabel "ISO19157-3 basic quality measures" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-12T10:17:44.903229"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-12T10:17:44.799343"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-17T04:44:58.421399"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-17T04:44:58.299619"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:9665ce35c93abba6110ce5f41361653b9f1c501a" ;
+            dct:hasVersion "git:edd07ca61d53c2e14304a42050a25c893217ae23" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.52" ;
+            dct:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "92576f38-95d0-44d7-a5ef-f3b6ff081877" ] .
+    prov:wasInformedBy [ dct:identifier "0e037a85-7656-4794-8bff-50bfc7a163a0" ] .
 
-_:N31187f68a7ac47b4a7eafe212163398d a prov:Agent,
+_:N835b7cd2a402423dae3e93959457b70e a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.52" ;
-    rdfs:comment "ogc.na.update_vocabs version 0.3.52" ;
+    dct:hasVersion "0.3.53" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

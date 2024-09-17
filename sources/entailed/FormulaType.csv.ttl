@@ -8,25 +8,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/FormulaType.csv.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
-    prov:wasAttributedTo _:N1814eee17c554c7d8b0e6cc5ff030035 ;
+    dct:hasVersion "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f" ;
+    prov:wasAttributedTo _:Nb1a44c9422844cf78c2e40d4a41adb3d ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-12T10:18:39.492325"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-12T10:18:36.900271"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-17T04:46:13.730407"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-17T04:46:11.138574"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                    dct:hasVersion "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:2792b5d4dacee33443271393dfcdd715a4a57fa4" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/FormulaType.csv.ttl> ] ;
-            prov:wasAssociatedWith _:N1814eee17c554c7d8b0e6cc5ff030035 ;
-            prov:wasInformedBy [ dct:identifier "1bca6bc8-dfd8-4976-8b2b-5ead46105fd3" ] ] .
+                    dct:hasVersion "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
+            prov:wasAssociatedWith _:Nb1a44c9422844cf78c2e40d4a41adb3d ;
+            prov:wasInformedBy [ dct:identifier "e5d79b4b-5e40-493d-b2a2-dc21533d3b44" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1> a skos:Concept ;
     dqm:formulaKey "Calculation of single deviations." ;
@@ -60,7 +60,7 @@
     dqm:formulaKey "where a is the erroneous area and A are the total area that should have been present" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mrow> <munderover> <mo>&#x2211;</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mrow> <mi>n</mi> <mi>&#x27;</mi> </mrow> </munderover> <msub> <mrow> <mi>a</mi> <mi>&#x27;</mi> </mrow> <mi>i</mi> </msub> </mrow> <mi>&#xa0;</mi> <mi>A</mi> </mfrac> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msubsup><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>'</mo></mrow></msubsup><msub><mi>a</mi><mi>i</mi></msub></mrow><mi>A</mi></mfrac></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FT208_A" .
 
@@ -68,7 +68,7 @@
     dqm:formulaKey "where l is the erroneous length and L are the total length that should have been present" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mrow> <munderover> <mo>&#x2211;</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mi>n</mi> </munderover> <msub> <mi>l</mi> <mi>i</mi> </msub> </mrow> <mi>&#xa0;</mi> <mi>L</mi> </mfrac> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msubsup><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>'</mo></mrow></msubsup><msub><mi>p</mi><mi>i</mi></msub></mrow><mi>P</mi></mfrac></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FT208_L" .
 
@@ -76,7 +76,7 @@
     dqm:formulaKey "Where n is erroneous items and N is the total number of items that should have been present" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mrow> <mi>n</mi> <mi>&#xa0;</mi> </mrow> <mi>N</mi> </mfrac> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msubsup><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>'</mo></mrow></msubsup><msub><mi>l</mi><mi>i</mi></msub></mrow><mi>L</mi></mfrac></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FT208_P" .
 
@@ -84,7 +84,7 @@
     dqm:formulaKey "where t is the erroneous time and T are the total time that should have been present" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mrow> <munderover> <mo>&#x2211;</mo> <mrow> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mi>n</mi> </munderover> <msub> <mi>t</mi> <mi>i</mi> </msub> </mrow> <mi>&#xa0;</mi> <mi>T</mi> </mfrac> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msubsup><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><msub><mi>t</mi><mi>i</mi></msub></mrow><mi>T</mi></mfrac></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FT210" .
 
@@ -734,7 +734,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <msub> <mi>&#x3c3;</mi> <mi>Z</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#x3c3;</mi><mi>Z</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1" .
 
@@ -744,7 +744,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50</mn> <mo>=</mo> <mn>0.6745</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mo>=</mo><mn>0.6745</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1_LE50" .
 
@@ -754,7 +754,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3</mn> <mo>=</mo> <mn>1</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mo>=</mo><mn>1</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1_LE68.3" .
 
@@ -764,7 +764,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90</mn> <mo>=</mo> <mn>1.645</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mo>=</mo><mn>1.645</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1_LE90" .
 
@@ -774,7 +774,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95</mn> <mo>=</mo> <mn>3</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mo>=</mo><mn>1.960</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1_LE95" .
 
@@ -784,7 +784,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99</mn> <mo>=</mo> <mn>2.576</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mo>=</mo><mn>2.576</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1_LE99" .
 
@@ -794,7 +794,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8</mn> <mo>=</mo> <mn>3</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mo>=</mo><mn>3</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1_LE99.8" .
 
@@ -804,7 +804,7 @@ xmi is the ith measurement
 xt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <msub> <mi>&#x3c3;</mi> <mi>X</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>x</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1x" .
 
@@ -813,7 +813,7 @@ xt is the true value""" ;
 sy is the standard deviation in y-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mn>1</mn> <msqrt> <mn>2</mn> </msqrt> </mfrac> <msqrt> <msubsup> <mi>&#x3c3;</mi> <mi>x</mi> <mn>2</mn> </msubsup> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><msqrt><mn>2</mn></msqrt></mfrac><msqrt><mrow><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xy_CE39.4" .
 
@@ -822,7 +822,7 @@ sy is the standard deviation in y-direction""" ;
 sy is the standard deviation in y-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mn>1.1774</mn> <msqrt> <mn>2</mn> </msqrt> </mfrac> <msqrt> <msubsup> <mi>&#x3c3;</mi> <mi>x</mi> <mn>2</mn> </msubsup> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1.1774</mn><msqrt><mn>2</mn></msqrt></mfrac><msqrt><mrow><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xy_CE50" .
 
@@ -831,7 +831,7 @@ sy is the standard deviation in y-direction""" ;
 sy is the standard deviation in y-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mn>2.146</mn> <msqrt> <mn>2</mn> </msqrt> </mfrac> <msqrt> <msubsup> <mi>&#x3c3;</mi> <mi>x</mi> <mn>2</mn> </msubsup> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2.146</mn><msqrt><mn>2</mn></msqrt></mfrac><msqrt><mrow><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xy_CE90" .
 
@@ -840,7 +840,7 @@ sy is the standard deviation in y-direction""" ;
 sy is the standard deviation in y-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mn>2.4477</mn> <msqrt> <mn>2</mn> </msqrt> </mfrac> <msqrt> <msubsup> <mi>&#x3c3;</mi> <mi>x</mi> <mn>2</mn> </msubsup> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2.4477</mn><msqrt><mn>2</mn></msqrt></mfrac><msqrt><mrow><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xy_CE95" .
 
@@ -849,7 +849,7 @@ sy is the standard deviation in y-direction""" ;
 sy is the standard deviation in y-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mfrac> <mn>3.5</mn> <msqrt> <mn>2</mn> </msqrt> </mfrac> <msqrt> <msubsup> <mi>&#x3c3;</mi> <mi>x</mi> <mn>2</mn> </msubsup> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>3.5</mn><msqrt><mn>2</mn></msqrt></mfrac><msqrt><mrow><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xy_CE99.8" .
 
@@ -859,7 +859,7 @@ sy is the standard deviation in y-direction
 sz is the standard deviation in z-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <msqrt> <msubsup> <mi>&#x3c3;</mi> <mi>x</mi> <mn>2</mn> </msubsup> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mrow><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>z</mi></msub><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xyz_MRSE" .
 
@@ -869,7 +869,7 @@ sy is the standard deviation in y-direction
 sz is the standard deviation in z-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mn>0.833</mn> <mo>&#xd7;</mo> <mo>(</mo> <msub> <mi>&#x3c3;</mi> <mi>x</mi> </msub> <mo>+</mo> <msub> <mi>&#x3c3;</mi> <mi>y</mi> </msub> <mo>+</mo> <msub> <mi>&#x3c3;</mi> <mi>z</mi> </msub> <mo>)</mo> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0.833</mn><mo>&#xd7;</mo><mo>(</mo><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>z</mi></msub><mn>2</mn></msup><mo>)</mo></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xyz_SAS90" .
 
@@ -879,7 +879,7 @@ sy is the standard deviation in y-direction
 sz is the standard deviation in z-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mn>1.122</mn> <mo>&#xd7;</mo> <mo>(</mo> <msub> <mi>&#x3c3;</mi> <mi>x</mi> </msub> <mo>+</mo> <msub> <mi>&#x3c3;</mi> <mi>y</mi> </msub> <mo>+</mo> <msub> <mi>&#x3c3;</mi> <mi>z</mi> </msub> <mo>)</mo> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1.22</mn><mo>&#xd7;</mo><mo>(</mo><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>z</mi></msub><mn>2</mn></msup><mo>)</mo></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xyz_SAS99" .
 
@@ -889,7 +889,7 @@ sy is the standard deviation in y-direction
 sz is the standard deviation in z-direction""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mn>0.51</mn> <mo>&#xd7;</mo> <mo>(</mo> <msub> <mi>&#x3c3;</mi> <mi>x</mi> </msub> <mo>+</mo> <msub> <mi>&#x3c3;</mi> <mi>y</mi> </msub> <mo>+</mo> <msub> <mi>&#x3c3;</mi> <mi>z</mi> </msub> <mo>)</mo> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0.51</mn><mo>&#xd7;</mo><mo>(</mo><msup><msub><mi>&#x3c3;</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>&#x3c3;</mi><mi>z</mi></msub><mn>2</mn></msup><mo>)</mo></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1xyz_SEP" .
 
@@ -899,7 +899,7 @@ ymi is the ith measurement
 yt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <msub> <mi>&#x3c3;</mi> <mi>Y</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#x3c3;</mi><mi>y</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>y</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>y</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1y" .
 
@@ -909,7 +909,7 @@ zmi is the ith measurement
 zt is the true value""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <msub> <mi>&#x3c3;</mi> <mi>Z</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mi>N</mi> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#x3c3;</mi><mi>z</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd1z" .
 
@@ -919,367 +919,367 @@ zmi is the ith measurement
 zt is the estimated true value from the mean of all observations """ ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <msub> <mi>S</mi> <mi>Z</mi> </msub> <mo>=</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>S</mi><mi>Z</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r1> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50r1</mn> <mo>=</mo> <mn>2.414</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mi>r</mi><mn>1</mn><mo>=</mo><mn>2.414</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE50r1" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r10> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50r10</mn> <mo>=</mo> <mn>1.221</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mi>r</mi><mn>10</mn><mo>=</mo><mn>1.221</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE50r10" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r2> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50r2</mn> <mo>=</mo> <mn>1.604</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mi>r</mi><mn>2</mn><mo>=</mo><mn>1.604</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE50r2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r3> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50r3</mn> <mo>=</mo> <mn>1.423</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mi>r</mi><mn>3</mn><mo>=</mo><mn>1.423</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE50r3" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r4> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50r4</mn> <mo>=</mo> <mn>1.344</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mi>r</mi><mn>4</mn><mo>=</mo><mn>1.344</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE50r4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r5> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>50r5</mn> <mo>=</mo> <mn>1.301</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>50</mn><mi>r</mi><mn>5</mn><mo>=</mo><mn>1.301</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE50r5" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r1> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3r1</mn> <mo>=</mo> <mn>3.933</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mi>r</mi><mn>1</mn><mo>=</mo><mn>3.933</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE68.3r1" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r10> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3r10</mn> <mo>=</mo> <mn>1.524</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mi>r</mi><mn>10</mn><mo>=</mo><mn>1.524</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE68.3r10" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r2> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3r2</mn> <mo>=</mo> <mn>2.203</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mi>r</mi><mn>2</mn><mo>=</mo><mn>2.203</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE68.3r2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r3> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3r3</mn> <mo>=</mo> <mn>1.868</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mi>r</mi><mn>3</mn><mo>=</mo><mn>1.868</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE68.3r3" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r4> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3r4</mn> <mo>=</mo> <mn>1.731</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mi>r</mi><mn>4</mn><mo>=</mo><mn>1.731</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE68.3r4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r5> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>68.3r5</mn> <mo>=</mo> <mn>1.657</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>68.3</mn><mi>r</mi><mn>5</mn><mo>=</mo><mn>1.657</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE68.3r5" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r1> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90r1</mn> <mo>=</mo> <mn>12.706</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mi>r</mi><mn>1</mn><mo>=</mo><mn>12.706</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE90r1" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r10> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90r10</mn> <mo>=</mo> <mn>2.228</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mi>r</mi><mn>10</mn><mo>=</mo><mn>2.228</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE90r10" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r2> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90r2</mn> <mo>=</mo> <mn>4.303</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mi>r</mi><mn>2</mn><mo>=</mo><mn>4.303</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE90r2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r3> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90r3</mn> <mo>=</mo> <mn>3.182</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mi>r</mi><mn>3</mn><mo>=</mo><mn>3.182</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE90r3" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r4> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90r4</mn> <mo>=</mo> <mn>2.776</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mi>r</mi><mn>4</mn><mo>=</mo><mn>2.776</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE90r4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r5> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>90r5</mn> <mo>=</mo> <mn>2.571</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>90</mn><mi>r</mi><mn>5</mn><mo>=</mo><mn>2.571</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE90r5" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r1> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95r1</mn> <mo>=</mo> <mn>25.452</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mi>r</mi><mn>1</mn><mo>=</mo><mn>25.452</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE95r1" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r10> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95r10</mn> <mo>=</mo> <mn>2.634</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mi>r</mi><mn>10</mn><mo>=</mo><mn>2.634</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE95r10" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r2> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95r2</mn> <mo>=</mo> <mn>6.205</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mi>r</mi><mn>2</mn><mo>=</mo><mn>6.205</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE95r2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r3> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95r3</mn> <mo>=</mo> <mn>4.177</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mi>r</mi><mn>3</mn><mo>=</mo><mn>4.177</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE95r3" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r4> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95r4</mn> <mo>=</mo> <mn>3.495</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mi>r</mi><mn>4</mn><mo>=</mo><mn>3.495</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE95r4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r5> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>95r5</mn> <mo>=</mo> <mn>3.163</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>95</mn><mi>r</mi><mn>5</mn><mo>=</mo><mn>3.163</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE95r5" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r1> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8r1</mn> <mo>=</mo> <mn>636.619</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mi>r</mi><mn>1</mn><mo>=</mo><mn>636.619</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99.8r1" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r10> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8r10</mn> <mo>=</mo> <mn>4.587</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mi>r</mi><mn>10</mn><mo>=</mo><mn>4.587</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99.8r10" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r2> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8r2</mn> <mo>=</mo> <mn>31.599</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mi>r</mi><mn>2</mn><mo>=</mo><mn>31.599</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99.8r2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r3> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8r3</mn> <mo>=</mo> <mn>12.924</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mi>r</mi><mn>3</mn><mo>=</mo><mn>12.924</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99.8r3" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r4> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8r4</mn> <mo>=</mo> <mn>8.610</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mi>r</mi><mn>4</mn><mo>=</mo><mn>8.610</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99.8r4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r5> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99.8r5</mn> <mo>=</mo> <mn>6.869</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99.8</mn><mi>r</mi><mn>5</mn><mo>=</mo><mn>6.869</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99.8r5" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r1> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99r1</mn> <mo>=</mo> <mn>127.321</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mi>r</mi><mn>1</mn><mo>=</mo><mn>127.321</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99r1" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r10> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99r10</mn> <mo>=</mo> <mn>3.581</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mi>r</mi><mn>10</mn><mo>=</mo><mn>3.581</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99r10" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r2> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99r2</mn> <mo>=</mo> <mn>14.089</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mi>r</mi><mn>2</mn><mo>=</mo><mn>14.089</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99r2" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r3> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99r3</mn> <mo>=</mo> <mn>7.453</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mi>r</mi><mn>3</mn><mo>=</mo><mn>7.453</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99r3" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r4> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99r4</mn> <mo>=</mo> <mn>5.598</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mi>r</mi><mn>4</mn><mo>=</mo><mn>5.598</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99r4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r5> a skos:Concept ;
     dqm:formulaKey """N is a number of observations
 zmi is the ith measurement
-zt is the true value""" ;
+zt is the arithmetic mean of the observations""" ;
     dqm:formulaLanguage <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/MathML> ;
     dqm:formulaLanguageVersion "1.0" ;
-    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"> <mstyle displaystyle=\"true\"> <mi>L</mi> <mi>E</mi> <mn>99r5</mn> <mo>=</mo> <mn>4.773</mn> <mo>&#x2219;</mo> <msqrt> <mfrac> <mn>1</mn> <mrow> <mi>N</mi> <mo>&#x2212;</mo> <mn>1</mn> </mrow> </mfrac> </msqrt> </mstyle> </math>" ;
+    skos:definition "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mi>E</mi><mn>99</mn><mi>r</mi><mn>5</mn><mo>=</mo><mn>4.773</mn><mo>&#xd7;</mo><msqrt><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></mfrac><munderover accent='false' accentunder='false'><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo>(</mo><mrow><msub><mi>z</mi><mrow><mi>m</mi><mi>i</mi></mrow></msub><mo>-</mo><msub><mi>z</mi><mi>t</mi></msub></mrow></mrow><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></math>" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType> ;
     skos:prefLabel "FTsd2_LE99r5" .
 
@@ -1288,23 +1288,23 @@ zt is the true value""" ;
     skos:prefLabel "ISO19157-3 Quality Measures Formulas" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-12T10:17:45.157245"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-12T10:17:44.917561"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-17T04:44:57.897865"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-17T04:44:57.669865"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:9665ce35c93abba6110ce5f41361653b9f1c501a" ;
+            dct:hasVersion "git:edd07ca61d53c2e14304a42050a25c893217ae23" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/FormulaType.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.52" ;
+            dct:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "92576f38-95d0-44d7-a5ef-f3b6ff081877" ] .
+    prov:wasInformedBy [ dct:identifier "0e037a85-7656-4794-8bff-50bfc7a163a0" ] .
 
-_:N1814eee17c554c7d8b0e6cc5ff030035 a prov:Agent,
+_:Nb1a44c9422844cf78c2e40d4a41adb3d a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.52" ;
-    rdfs:comment "ogc.na.update_vocabs version 0.3.52" ;
+    dct:hasVersion "0.3.53" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
