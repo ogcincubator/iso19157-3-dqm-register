@@ -1,17 +1,17 @@
 [
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "SD2"
+        "@value": "SAS90"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -21,7 +21,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Standard deviation for observations or measurements where the true value unknown."
+        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -31,59 +31,186 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Standard deviation - true value unknown"
+        "@value": "90% spherical accuracy standard"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3",
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.rdf",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/prov#Entity"
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+    "http://purl.org/dc/terms/format": [
       {
-        "@value": "LE68.3r3"
+        "@value": "application/rdf+xml"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+    "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
       }
     ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+        "@id": "_:N823b35f0b15d4acd89370444a849b0a9"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 68.3 % probability; 3 redundant measurements"
+        "@id": "_:N47c2d718631c4e6b8ae333b3842f084f"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP",
+    "@id": "_:N823b35f0b15d4acd89370444a849b0a9",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:N47c2d718631c4e6b8ae333b3842f084f",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-09-17T07:55:50.934528"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-09-17T07:55:49.683186"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N2fd1afca098d4efa98cab94ae670a2ca"
+      },
+      {
+        "@id": "_:N5b286ac38d9b4484af4b3f85a544288e"
+      },
+      {
+        "@id": "_:Nd2f1c4e4d7474010a77d3400da787c76"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:N823b35f0b15d4acd89370444a849b0a9"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:N8e0e752363f446c5934bf0adca03172b"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2fd1afca098d4efa98cab94ae670a2ca",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5b286ac38d9b4484af4b3f85a544288e",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "entailments.shapes.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd2f1c4e4d7474010a77d3400da787c76",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8e0e752363f446c5934bf0adca03172b",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "19f1d884-5f84-4284-8bb8-20a3c829d7d7"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "SEP"
+        "@value": "LE50r4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -93,7 +220,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%."
+        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -103,7 +230,686 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Spherical error probable"
+        "@value": "1D variable 50 % probability; 4 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE99.8r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99.8 % probability; 3 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE99r1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99 % probability; 1 redundant measurement"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE50r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 50 % probability; 5 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE50r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 50 % probability; 3 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAttributedTo": [
+      {
+        "@id": "_:N3855a60857a740de97c24f5bf7d2fed1"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+      {
+        "@id": "_:N6205a4841dd548c58dcd18cc98c736b5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3855a60857a740de97c24f5bf7d2fed1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ogc.na.update_vocabs version 0.3.53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6205a4841dd548c58dcd18cc98c736b5",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entailment and validation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-09-17T07:55:50.903673"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-09-17T07:55:49.683186"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:N03aa72e607e34409baebfe1ca1a7e769"
+      },
+      {
+        "@id": "_:Na4037d0a00684a8c82a854e0c5b33f81"
+      },
+      {
+        "@id": "_:N25f0a3e80be54d239cb031814f6b3207"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:N3855a60857a740de97c24f5bf7d2fed1"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:N2e7075b708da4869a1755edd33a7d5e2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N03aa72e607e34409baebfe1ca1a7e769",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "entailments.shapes.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na4037d0a00684a8c82a854e0c5b33f81",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N25f0a3e80be54d239cb031814f6b3207",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e7075b708da4869a1755edd33a7d5e2",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "19f1d884-5f84-4284-8bb8-20a3c829d7d7"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "SD1y"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Standard deviation for observations or measurements where the true value known."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Standard deviation in y-direction - true value known"
+      }
+    ]
+  },
+  {
+    "@id": "_:nabc47212792f4ffe936555fad547eabab1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Activity"
+    ],
+    "http://www.w3.org/ns/prov#endedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-09-17T07:55:11.675503"
+      }
+    ],
+    "http://www.w3.org/ns/prov#startedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2024-09-17T07:55:11.559676"
+      }
+    ],
+    "http://www.w3.org/ns/prov#used": [
+      {
+        "@id": "_:nabc47212792f4ffe936555fad547eabab2"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+      {
+        "@id": "_:nabc47212792f4ffe936555fad547eabab3"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasInformedBy": [
+      {
+        "@id": "_:nabc47212792f4ffe936555fad547eabab4"
+      }
+    ]
+  },
+  {
+    "@id": "_:nabc47212792f4ffe936555fad547eabab4",
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "6815dd26-8c15-4401-b220-9f81d0d442bf"
+      }
+    ]
+  },
+  {
+    "@id": "_:nabc47212792f4ffe936555fad547eabab2",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "application/json"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:26244dfc8345c503ef5aa2118bf7a04b7f026581"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json"
+      }
+    ]
+  },
+  {
+    "@id": "_:nabc47212792f4ffe936555fad547eabab3",
+    "@type": [
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "0.3.53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OGC-NA tools"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE90r4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 90 % probability; 4 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE95r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 95 % probability; 10 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "SAS99"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "99% spherical accuracy standard"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "CE90"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "2D random variable 90 % probability"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "2D random variable 90 % probability"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE99.8"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "One dimensional variable 99,8 % probability"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE99.8r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99.8 % probability; 5 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE50r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 50 % probability; 10 redundant measurements"
       }
     ]
   },
@@ -144,33 +950,28 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "BM5"
+        "@value": "LE68.3r10"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Total number of items that are free of errors of a specified type."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "571"
+        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -180,7 +981,187 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "correct items count"
+        "@value": "1D variable 68.3 % probability; 10 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE95r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 95 % probability; 3 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE68.3r4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 68.3 % probability; 4 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "SEP"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Spherical error probable"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "MRSE"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Mean radial spherical error"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "SD1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Standard deviation for observations or measurements where the true value known."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Standard deviation - true value known"
       }
     ]
   },
@@ -221,18 +1202,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE50r2"
+        "@value": "CE39.4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -242,7 +1223,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements."
+        "@value": "confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -252,23 +1233,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 50 % probability; 2 redundant measurements"
+        "@value": "2D random variable 39.4 % probability"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE95"
+        "@value": "LE68.3r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -278,7 +1259,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit."
+        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -288,107 +1269,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 95 % probability"
+        "@value": "1D variable 68.3 % probability; 2 redundant measurements"
       }
     ]
   },
   {
-    "@id": "_:necc4817ba8134dbca323f4dee6dac79db1",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:44:58.421399"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:44:58.299619"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:necc4817ba8134dbca323f4dee6dac79db2"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:necc4817ba8134dbca323f4dee6dac79db3"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:necc4817ba8134dbca323f4dee6dac79db4"
-      }
-    ]
-  },
-  {
-    "@id": "_:necc4817ba8134dbca323f4dee6dac79db3",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.53"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "_:necc4817ba8134dbca323f4dee6dac79db2",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:edd07ca61d53c2e14304a42050a25c893217ae23"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json"
-      }
-    ]
-  },
-  {
-    "@id": "_:necc4817ba8134dbca323f4dee6dac79db4",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "0e037a85-7656-4794-8bff-50bfc7a163a0"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE99.8r2"
+        "@value": "SD1z"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -398,7 +1295,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements."
+        "@value": "Standard deviation for observations or measurements where the true value known."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -408,23 +1305,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 99.8 % probability; 2 redundant measurements"
+        "@value": "Standard deviation in z-direction - true value known"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE68.3"
+        "@value": "LE99r4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -434,7 +1331,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit"
+        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -444,23 +1341,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 68.3 % probability"
+        "@value": "1D variable 99 % probability; 4 redundant measurements"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE50"
+        "@value": "LE99.8r1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -470,7 +1367,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit."
+        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -480,115 +1377,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 50 % probability"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE95r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 95 % probability; 2 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE68.3r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 68.3 % probability; 1 redundant measurement"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99 % probability; 10 redundant measurements"
+        "@value": "1D variable 99.8 % probability; 1 redundant measurement"
       }
     ]
   },
@@ -634,18 +1423,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE99.8r10"
+        "@value": "LE99.8r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -655,7 +1444,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements."
+        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -665,23 +1454,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 99.8 % probability; 10 redundant measurements"
+        "@value": "1D variable 99.8 % probability; 2 redundant measurements"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE90r4"
+        "@value": "LE50"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -691,7 +1480,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements."
+        "@value": "Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -701,38 +1490,33 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 90 % probability; 4 redundant measurements"
+        "@value": "1D variable 50 % probability"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "BM1"
+        "@value": "LE68.3"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Indicator that an item is in error."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#example": [
-      {
-        "@value": "False"
+        "@value": "Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -742,7 +1526,43 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "error indicator"
+        "@value": "1D variable 68.3 % probability"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE90r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 90 % probability; 3 redundant measurements"
       }
     ]
   },
@@ -783,165 +1603,326 @@
     ]
   },
   {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10",
     "@type": [
-      "http://www.w3.org/ns/prov#Entity"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://purl.org/dc/terms/format": [
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "text/turtle"
+        "@value": "LE90r10"
       }
     ],
-    "http://purl.org/dc/terms/hasVersion": [
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"
       }
     ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@id": "_:N835b7cd2a402423dae3e93959457b70e"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
       }
     ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "_:N793856f839f24f7ca2a985e1fa82c48b"
+        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 90 % probability; 10 redundant measurements"
       }
     ]
   },
   {
-    "@id": "_:N793856f839f24f7ca2a985e1fa82c48b",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x",
     "@type": [
-      "http://www.w3.org/ns/prov#Activity"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
+        "@value": "SD1x"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@value": "Entailment and validation"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"
       }
     ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:46:15.488186"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
       }
     ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:46:14.274547"
+        "@value": "Standard deviation for observations or measurements where the true value known."
       }
     ],
-    "http://www.w3.org/ns/prov#used": [
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
-        "@id": "_:N8e1114b357c643f79b721f4bc41699e0"
-      },
-      {
-        "@id": "_:Nba42aa8d8f8a4277bd8aba7a65bd5e82"
-      },
-      {
-        "@id": "_:Na4f399614e2246c981dd80476fd272aa"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
       }
     ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@id": "_:N835b7cd2a402423dae3e93959457b70e"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:Nba6cf6ece85b4c2f94a2680b6c6f2f87"
+        "@value": "Standard deviation in x-direction - true value known"
       }
     ]
   },
   {
-    "@id": "_:N8e1114b357c643f79b721f4bc41699e0",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2",
     "@type": [
-      "http://www.w3.org/ns/prov#Entity"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://purl.org/dc/terms/format": [
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "text/turtle"
+        "@value": "LE95r2"
       }
     ],
-    "http://purl.org/dc/terms/hasVersion": [
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 95 % probability; 2 redundant measurements"
       }
     ]
   },
   {
-    "@id": "_:Nba42aa8d8f8a4277bd8aba7a65bd5e82",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2",
     "@type": [
-      "http://www.w3.org/ns/prov#Entity"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://purl.org/dc/terms/format": [
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "text/turtle"
+        "@value": "SD2"
       }
     ],
-    "http://purl.org/dc/terms/hasVersion": [
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Standard deviation for observations or measurements where the true value unknown."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Standard deviation - true value unknown"
       }
     ]
   },
   {
-    "@id": "_:Na4f399614e2246c981dd80476fd272aa",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10",
     "@type": [
-      "http://www.w3.org/ns/prov#Entity"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@id": "entailments.shapes.ttl"
+        "@value": "LE99r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99 % probability; 10 redundant measurements"
       }
     ]
   },
   {
-    "@id": "_:N835b7cd2a402423dae3e93959457b70e",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3",
     "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://purl.org/dc/terms/hasVersion": [
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "0.3.53"
+        "@value": "LE99r3"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@value": "ogc.na.update_vocabs version 0.3.53"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@value": "OGC-NA tools"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
+        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99 % probability; 3 redundant measurements"
       }
     ]
   },
   {
-    "@id": "_:Nba6cf6ece85b4c2f94a2680b6c6f2f87",
-    "http://purl.org/dc/terms/identifier": [
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "e5d79b4b-5e40-493d-b2a2-dc21533d3b44"
+        "@value": "LE99r2"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99 % probability; 2 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE99.8r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99.8 % probability; 10 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE95r1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 95 % probability; 1 redundant measurement"
       }
     ]
   },
@@ -987,18 +1968,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE90r1"
+        "@value": "LE68.3r3"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -1008,7 +1989,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement."
+        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1018,23 +1999,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 90 % probability; 1 redundant measurement"
+        "@value": "1D variable 68.3 % probability; 3 redundant measurements"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE99.8r4"
+        "@value": "LE95"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -1044,7 +2025,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements."
+        "@value": "Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1054,7 +2035,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 99.8 % probability; 4 redundant measurements"
+        "@value": "1D variable 95 % probability"
       }
     ]
   },
@@ -1095,18 +2076,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE99r1"
+        "@value": "LE99.8r4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -1116,7 +2097,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement."
+        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1126,23 +2107,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 99 % probability; 1 redundant measurement"
+        "@value": "1D variable 99.8 % probability; 4 redundant measurements"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "CE39.4"
+        "@value": "LE99"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -1152,7 +2133,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area"
+        "@value": "Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1162,23 +2143,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "2D random variable 39.4 % probability"
+        "@value": "1D variable 99 % probability"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "SAS99"
+        "@value": "LE50r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -1188,7 +2169,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%."
+        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1198,33 +2179,38 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "99% spherical accuracy standard"
+        "@value": "1D variable 50 % probability; 2 redundant measurements"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "SD1z"
+        "@value": "BM1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
       {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Standard deviation for observations or measurements where the true value known."
+        "@value": "Indicator that an item is in error."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "False"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -1234,870 +2220,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Standard deviation in z-direction - true value known"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE90"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 90 % probability"
-      }
-    ]
-  },
-  {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.jsonld",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "application/ld+json"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAttributedTo": [
-      {
-        "@id": "_:N54af18ee455244ce9afd9e4453bc729a"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasGeneratedBy": [
-      {
-        "@id": "_:Ned79d28bc3f7441d9f14d7d5521b9f53"
-      }
-    ]
-  },
-  {
-    "@id": "_:Ned79d28bc3f7441d9f14d7d5521b9f53",
-    "@type": [
-      "http://www.w3.org/ns/prov#Activity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Entailment and validation"
-      }
-    ],
-    "http://www.w3.org/ns/prov#endedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:46:15.567065"
-      }
-    ],
-    "http://www.w3.org/ns/prov#startedAtTime": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:46:14.274547"
-      }
-    ],
-    "http://www.w3.org/ns/prov#used": [
-      {
-        "@id": "_:N8ae12a53026245629b505da63e272491"
-      },
-      {
-        "@id": "_:N939687e587224f7390cc991633aa99ff"
-      },
-      {
-        "@id": "_:N3396af8f71b24c65b3ca5d7b9d4b6c2a"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasAssociatedWith": [
-      {
-        "@id": "_:N54af18ee455244ce9afd9e4453bc729a"
-      }
-    ],
-    "http://www.w3.org/ns/prov#wasInformedBy": [
-      {
-        "@id": "_:Nd4fd219c4818446bb4e96ceea48661ff"
-      }
-    ]
-  },
-  {
-    "@id": "_:N8ae12a53026245629b505da63e272491",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N939687e587224f7390cc991633aa99ff",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N3396af8f71b24c65b3ca5d7b9d4b6c2a",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "entailments.shapes.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:Nd4fd219c4818446bb4e96ceea48661ff",
-    "http://purl.org/dc/terms/identifier": [
-      {
-        "@value": "e5d79b4b-5e40-493d-b2a2-dc21533d3b44"
-      }
-    ]
-  },
-  {
-    "@id": "_:N54af18ee455244ce9afd9e4453bc729a",
-    "@type": [
-      "http://www.w3.org/ns/prov#Agent",
-      "https://schema.org/SoftwareApplication"
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "0.3.53"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "ogc.na.update_vocabs version 0.3.53"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "OGC-NA tools"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://github.com/opengeospatial/ogc-na-tools"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99 % probability; 3 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "SD1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Standard deviation for observations or measurements where the true value known."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Standard deviation - true value known"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE50r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 50 % probability; 1 redundant measurement"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE95r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 95 % probability; 3 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "SD1x"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Standard deviation for observations or measurements where the true value known."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Standard deviation in x-direction - true value known"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE95r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 95 % probability; 5 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "SAS90"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "90% spherical accuracy standard"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99.8"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "One dimensional variable 99,8 % probability"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE90r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 90 % probability; 3 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "ISO19157-3 basic quality measures"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "ISO19157-3 basic quality measures"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE90r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 90 % probability; 2 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE95r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 95 % probability; 10 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99.8r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99.8 % probability; 1 redundant measurement"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99 % probability; 5 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99.8r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99.8 % probability; 3 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE50r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 50 % probability; 5 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE90r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 90 % probability; 10 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE68.3r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 68.3 % probability; 2 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "SD1y"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Standard deviation for observations or measurements where the true value known."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Standard deviation in y-direction - true value known"
+        "@value": "error indicator"
       }
     ]
   },
@@ -2143,402 +2266,6 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99 % probability"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "CE99.8"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "2D random variable 99.8 % probability"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "2D random variable 99.8 % probability"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE95r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 95 % probability; 1 redundant measurement"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE68.3r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 68.3 % probability; 10 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE68.3r4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 68.3 % probability; 4 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99r2"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99 % probability; 2 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE50r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 50 % probability; 10 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99r4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99 % probability; 4 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE50r4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 50 % probability; 4 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "LE99.8r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "1D variable 99.8 % probability; 5 redundant measurements"
-      }
-    ]
-  },
-  {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
-      {
-        "@value": "CE95"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"
-      }
-    ],
-    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
-      {
-        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@value": "2D random variable 95 % probability"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "2D random variable 95 % probability"
-      }
-    ]
-  },
-  {
     "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -2580,18 +2307,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "MRSE"
+        "@value": "LE68.3r1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -2601,7 +2328,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%."
+        "@value": "Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -2611,23 +2338,23 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Mean radial spherical error"
+        "@value": "1D variable 68.3 % probability; 1 redundant measurement"
       }
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "LE50r3"
+        "@value": "LE90r1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -2637,7 +2364,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements."
+        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -2647,38 +2374,38 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "1D variable 50 % probability; 3 redundant measurements"
+        "@value": "1D variable 90 % probability; 1 redundant measurement"
       }
     ]
   },
   {
-    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.rdf",
+    "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.jsonld",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
     "http://purl.org/dc/terms/format": [
       {
-        "@value": "application/rdf+xml"
+        "@value": "application/ld+json"
       }
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
       }
     ],
     "http://www.w3.org/ns/prov#wasAttributedTo": [
       {
-        "@id": "_:N8b0b53609b924de9b783228a0216f450"
+        "@id": "_:N6ea2cf101b74446eabbedf9998c57510"
       }
     ],
     "http://www.w3.org/ns/prov#wasGeneratedBy": [
       {
-        "@id": "_:Nf355978360854bc5a4df0f9178ed2ff9"
+        "@id": "_:N66dc5d8e76a84c6590a515895a846380"
       }
     ]
   },
   {
-    "@id": "_:Nf355978360854bc5a4df0f9178ed2ff9",
+    "@id": "_:N66dc5d8e76a84c6590a515895a846380",
     "@type": [
       "http://www.w3.org/ns/prov#Activity"
     ],
@@ -2695,39 +2422,81 @@
     "http://www.w3.org/ns/prov#endedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:46:15.546745"
+        "@value": "2024-09-17T07:55:50.955551"
       }
     ],
     "http://www.w3.org/ns/prov#startedAtTime": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@value": "2024-09-17T04:46:14.274547"
+        "@value": "2024-09-17T07:55:49.683186"
       }
     ],
     "http://www.w3.org/ns/prov#used": [
       {
-        "@id": "_:N832ca8d69ff34fa49c2abcfc5520b3eb"
+        "@id": "_:N6907de7587fe4f4d97ae6f0005d0de75"
       },
       {
-        "@id": "_:N71a878fbd0b6413c991bf9321681e419"
+        "@id": "_:N12b49c24200841abbf384f4a60300fee"
       },
       {
-        "@id": "_:N3703cb3ff5334e0394777dcc69eb8230"
+        "@id": "_:N213be6d4a68143a7918ed5acf98fca8d"
       }
     ],
     "http://www.w3.org/ns/prov#wasAssociatedWith": [
       {
-        "@id": "_:N8b0b53609b924de9b783228a0216f450"
+        "@id": "_:N6ea2cf101b74446eabbedf9998c57510"
       }
     ],
     "http://www.w3.org/ns/prov#wasInformedBy": [
       {
-        "@id": "_:N981b13d0e6a74ccd98a04322721866ce"
+        "@id": "_:N5f5aefe0cb0c47bd9f4b929f4507c7ae"
       }
     ]
   },
   {
-    "@id": "_:N832ca8d69ff34fa49c2abcfc5520b3eb",
+    "@id": "_:N6907de7587fe4f4d97ae6f0005d0de75",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N12b49c24200841abbf384f4a60300fee",
+    "@type": [
+      "http://www.w3.org/ns/prov#Entity"
+    ],
+    "http://purl.org/dc/terms/format": [
+      {
+        "@value": "text/turtle"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "git:436c1f18e903e1249e346621220751fbfce8a3ca"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
+      }
+    ]
+  },
+  {
+    "@id": "_:N213be6d4a68143a7918ed5acf98fca8d",
     "@type": [
       "http://www.w3.org/ns/prov#Entity"
     ],
@@ -2738,60 +2507,18 @@
     ]
   },
   {
-    "@id": "_:N71a878fbd0b6413c991bf9321681e419",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N3703cb3ff5334e0394777dcc69eb8230",
-    "@type": [
-      "http://www.w3.org/ns/prov#Entity"
-    ],
-    "http://purl.org/dc/terms/format": [
-      {
-        "@value": "text/turtle"
-      }
-    ],
-    "http://purl.org/dc/terms/hasVersion": [
-      {
-        "@value": "git:d963ffaf7e9e2e422fe218ba908ac7e59b0aec6f"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@id": "https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"
-      }
-    ]
-  },
-  {
-    "@id": "_:N981b13d0e6a74ccd98a04322721866ce",
+    "@id": "_:N5f5aefe0cb0c47bd9f4b929f4507c7ae",
     "http://purl.org/dc/terms/identifier": [
       {
-        "@value": "e5d79b4b-5e40-493d-b2a2-dc21533d3b44"
+        "@value": "19f1d884-5f84-4284-8bb8-20a3c829d7d7"
       }
     ]
   },
   {
-    "@id": "_:N8b0b53609b924de9b783228a0216f450",
+    "@id": "_:N6ea2cf101b74446eabbedf9998c57510",
     "@type": [
-      "https://schema.org/SoftwareApplication",
-      "http://www.w3.org/ns/prov#Agent"
+      "http://www.w3.org/ns/prov#Agent",
+      "https://schema.org/SoftwareApplication"
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
@@ -2815,18 +2542,18 @@
     ]
   },
   {
-    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90",
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
       {
-        "@value": "CE90"
+        "@value": "LE90r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
       {
-        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"
       }
     ],
     "http://www.opengis.net/def/metamodel/isodqm/valueType": [
@@ -2836,7 +2563,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@value": "2D random variable 90 % probability"
+        "@value": "Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -2846,7 +2573,280 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "2D random variable 90 % probability"
+        "@value": "1D variable 90 % probability; 2 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE90"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 90 % probability"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "ISO19157-3 basic quality measures"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ISO19157-3 basic quality measures"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE99r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 99 % probability; 5 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "BM5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Total number of items that are free of errors of a specified type."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "571"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "correct items count"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE50r1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 50 % probability; 1 redundant measurement"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "LE95r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "1D variable 95 % probability; 5 redundant measurements"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "CE99.8"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "2D random variable 99.8 % probability"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "2D random variable 99.8 % probability"
+      }
+    ]
+  },
+  {
+    "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/basicMeasureID": [
+      {
+        "@value": "CE95"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/measureDescription": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"
+      }
+    ],
+    "http://www.opengis.net/def/metamodel/isodqm/valueType": [
+      {
+        "@id": "http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@value": "2D random variable 95 % probability"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "2D random variable 95 % probability"
       }
     ]
   }
