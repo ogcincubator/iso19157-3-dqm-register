@@ -5,6 +5,10 @@ transform:
   - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
   # Remove colons in field names with spaces
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  # duplicate id into notation
+  - walk(if (type == "object") then
+    .notation = .basicMeasureID
+    else . end)
   # Add ConceptScheme
   - |
     {

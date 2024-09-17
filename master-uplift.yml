@@ -5,6 +5,10 @@ transform:
   - 'walk(if type == "object" then with_entries(if (.value | test("^\\s*-?\\s*$")) then .value = null else . end) else . end)'
   # Remove colons in field names with spaces
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
+  # duplicate id into notation
+  - walk(if (type == "object") then
+        .notation = .measureIdentifier
+        else . end)
   # turn known fields with space separated lists into arrays
   - |
     walk(if (type == "object") then
@@ -31,6 +35,7 @@ context:
     dqm: http://www.opengis.net/def/metamodel/isodqm/
     '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/
     measureIdentifier: '@id'
+    notation: skos:notation
     name: skos:prefLabel
     alias: skos:altLabel
     elementName: dqm:elementName
