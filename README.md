@@ -9,7 +9,7 @@ The content is (currently) pushed to a staging/development node of the OGC Rainb
 
 [Search for iso19157 on HOSTED node of OGC RAINBOW (Development)](http://defs-dev.opengis.net/vocprez-hosted/vocab/?filter=iso19157)
 
-Top level [Quality Measures Register](http://defs-dev.opengis.net/vocprez-hosted/object?uri=https%3A//standards.isotc211.org/19157/-3/1/req/content/qualityMeasure)
+Top level [Quality Measures Register](https://defs-dev.opengis.net/vocprez-hosted/object?uri=https%3A//standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure)
 
 Note that when live, the URIs for each measure will redirect to these or equivalent machine-readable resources using HTTP Content-Negotiation.
 
