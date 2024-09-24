@@ -37,9 +37,8 @@
 :NodeShape_conceptscheme
   a sh:NodeShape ;
   sh:rule  :entail_top_concepts ;
-  sh:targetClass <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>
+  sh:targetClass <http://www.opengis.net/def/metamodel/isodqm/AbstractConcept>,<http://www.opengis.net/def/metamodel/isodqm/BasicMeasure>
 .
-
 
 :NodeShape_collection
   a sh:NodeShape ;
@@ -50,7 +49,7 @@
 :NodeShape_descriptions-as-narrower
   a sh:NodeShape ;
   sh:rule :entail-description-as-narrower;
-  sh:targetSubjectsOf <http://www.opengis.net/def/metamodel/isodqm/measureDescription>
+  sh:targetSubjectsOf <http://www.opengis.net/def/metamodel/isodqm/measureDescription>, skos:example
 .
 
 
@@ -65,7 +64,7 @@ CONSTRUCT {
     ?skosdef skos:broader ?this .
 }
 WHERE {
-    ?this <http://www.opengis.net/def/metamodel/isodqm/measureDescription> ?skosdef
+    ?this (<http://www.opengis.net/def/metamodel/isodqm/measureDescription>| skos:example) ?skosdef
     }
 """ ;
 .
@@ -85,6 +84,7 @@ WHERE {
     ?this skos:inScheme ?scheme}
 """ ;
 .
+
 
 :entail_narrower
   a sh:SPARQLRule ;

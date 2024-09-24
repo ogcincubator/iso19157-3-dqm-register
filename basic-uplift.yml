@@ -19,7 +19,7 @@ transform:
     }
 
 types:
-  '$.concepts[*]': skos:Concept
+  '$.concepts[*]': http://www.opengis.net/def/metamodel/isodqm/BasicMeasure
 
 context:
   $:
@@ -36,7 +36,11 @@ context:
       '@type': '@id'
       '@context':
         '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/
-    example: skos:example
+    example:
+      '@id': skos:example
+      '@type': '@id'
+      '@context':
+        '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/
     valueType:
       '@id': 'http://www.opengis.net/def/metamodel/isodqm/valueType'
       '@type': '@id'
