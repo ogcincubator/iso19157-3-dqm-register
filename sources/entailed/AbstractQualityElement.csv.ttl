@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,53 +7,59 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/AbstractQualityElement.csv.ttl> a prov:Entity ;
-    dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:74984b0341e921c3101db92ec0ff6c40df1da666" ;
-    prov:wasAttributedTo _:N4d38efdfcfbf48b183fa7a89475119e0 ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:0d95977a67a185bf22f61cffdf8be90c4e047afc" ;
+    prov:wasAttributedTo _:N5ade1e112c9f4d668f71a8eb5118a67c ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-24T02:31:38.222002"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-24T02:31:38.062032"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-24T02:47:31.535849"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-24T02:47:31.365159"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ],
-                [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:74984b0341e921c3101db92ec0ff6c40df1da666" ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:0d95977a67a185bf22f61cffdf8be90c4e047afc" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:74984b0341e921c3101db92ec0ff6c40df1da666" ;
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:0d95977a67a185bf22f61cffdf8be90c4e047afc" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/AbstractQualityElement.csv.ttl> ] ;
-            prov:wasAssociatedWith _:N4d38efdfcfbf48b183fa7a89475119e0 ;
-            prov:wasInformedBy [ dcterms:identifier "9fd78802-b38e-4c4d-b90f-9ab31469ec57" ] ] .
+            prov:wasAssociatedWith _:N5ade1e112c9f4d668f71a8eb5118a67c ;
+            prov:wasInformedBy [ dct:identifier "50380fd7-a1b1-44b7-9df9-c81a275e7812" ] ] .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> a <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>,
+        skos:Concept ;
     skos:definition "Positional Accuracy" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Positional Accuracy" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> a <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>,
+        skos:Concept ;
     skos:definition "Thematic Quality" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Thematic Quality" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> a <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>,
+        skos:Concept ;
     skos:definition "Temporal Quality" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Temporal Quality" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC4> a <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>,
+        skos:Concept ;
     skos:definition "Completeness" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Completeness" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC5> a <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>,
+        skos:Concept ;
     skos:definition "Logical Consistency" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Logical Consistency" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC6> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC6> a <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>,
+        skos:Concept ;
     skos:definition "Metaquality" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Metaquality" .
@@ -61,27 +67,33 @@
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme ;
     ns1:targetGraph "https://standards.isotc211.org/19157/-3/1/dqc/content/abstractQualityMeasure" ;
     skos:definition "ISO19157-3 abstract quality measures" ;
+    skos:hasTopConcept <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC6> ;
     skos:prefLabel "ISO19157-3 abstract quality measures" ;
     skos:scopeNote "Top level groupings to inject into register for navigations - without overwirting main register graph" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-24T02:30:38.423245"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-24T02:30:38.367825"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-24T02:46:58.724901"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-24T02:46:58.671135"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dcterms:format "application/json" ;
-            dcterms:hasVersion "git:33560ddfae0c8198b02091121ebabfbe7a8bc7f3" ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:9397eb9d267b65f504305df1f092b5bb20bfd017" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/AbstractQualityElement.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dcterms:hasVersion "0.3.53" ;
+            dct:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "912d728f-862d-4d9e-a11a-16a239f8496c" ] .
+    prov:wasInformedBy [ dct:identifier "acdb492c-a688-4ab7-858f-fd642b52b5a8" ] .
 
-_:N4d38efdfcfbf48b183fa7a89475119e0 a prov:Agent,
+_:N5ade1e112c9f4d668f71a8eb5118a67c a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.53" ;
+    dct:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
