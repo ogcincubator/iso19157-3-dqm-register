@@ -8,25 +8,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/AbstractQualityElement.csv.ttl> a prov:Entity ;
     dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
-    prov:wasAttributedTo _:N5fe123e0db114d698cfaacadf42e778b ;
+    dcterms:hasVersion "git:610c9ab7b8dad5077868584ce41db173f1d993d8" ;
+    prov:wasAttributedTo _:N9810063adb47440ba2da6db134a9351d ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-20T08:00:40.565756"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-20T08:00:40.417305"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-24T01:56:41.471247"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-24T01:56:41.327462"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ],
-                [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
+                    dcterms:hasVersion "git:610c9ab7b8dad5077868584ce41db173f1d993d8" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/AbstractQualityElement.csv.ttl> ],
                 [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N5fe123e0db114d698cfaacadf42e778b ;
-            prov:wasInformedBy [ dcterms:identifier "a1ce6f30-7d12-4bf8-ac7b-daf13b167b86" ] ] .
+                    dcterms:hasVersion "git:610c9ab7b8dad5077868584ce41db173f1d993d8" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
+            prov:wasAssociatedWith _:N9810063adb47440ba2da6db134a9351d ;
+            prov:wasInformedBy [ dcterms:identifier "5c04a819-757b-4aca-aa32-c78d5d912fae" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> a skos:Concept ;
     skos:definition "Positional Accuracy" ;
@@ -65,20 +65,20 @@
     skos:scopeNote "Top level groupings to inject into register for navigations - without overwirting main register graph" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-20T07:58:35.770840"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-20T07:58:35.715263"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-24T01:55:49.757060"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-24T01:55:49.701703"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dcterms:format "application/json" ;
-            dcterms:hasVersion "git:8de0c2a253b6c6d342a894989bfb996e6671e6a6" ;
+            dcterms:hasVersion "git:6e949a5e5eae74c3e9b30e9729d23cbe0c5fe435" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/AbstractQualityElement.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "ed7fe3f5-d9de-44e3-8ba4-002f87339889" ] .
+    prov:wasInformedBy [ dcterms:identifier "2a410e52-a8e3-41a4-8efc-956b777d47c9" ] .
 
-_:N5fe123e0db114d698cfaacadf42e778b a prov:Agent,
+_:N9810063adb47440ba2da6db134a9351d a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dcterms:hasVersion "0.3.53" ;
