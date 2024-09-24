@@ -12,7 +12,7 @@ transform:
   # generate an id for the description object from measure and sequence information
   - |
     walk(if (type == "object") then
-      ( if .sequence then .measureDescriptionID = "\(.measureDescriptionID)_\(.sequence)" else .measureDescriptionID = "\(.measureDescriptionID)" end ) |
+      ( if .sequence then .ID = "\(.measureDescriptionID)_\(.sequence)" else .ID = "\(.measureDescriptionID)" end ) |
       .prefLabel = .measureDescriptionID
       else . end)
   # turn known fields with space separated lists into arrays
@@ -44,7 +44,12 @@ context:
     foaf: http://xmlns.com/foaf/0.1/
     '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/'
     targetGraph: 'http://www.opengis.net/ogc-na#targetGraph'
-    measureDescriptionID: '@id'
+    ID: '@id'
+    measureDescriptionID:
+      '@id': skos:broader
+      '@type': '@id'
+      '@context':
+        '@base': 'https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/'
     sequence: dqm:sequence
     prefLabel: skos:prefLabel
     extendedDescription:

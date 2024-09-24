@@ -59,6 +59,37 @@
   sh:targetSubjectsOf dqm:measureDescription, skos:example, dqm:formula
 .
 
+:NodeShape_group_subdescriptions
+  a sh:NodeShape ;
+  sh:rule :entail-grouped;
+  sh:targetSubjectsOf dqm:sequence
+.
+
+
+:entail-grouped
+  a sh:SPARQLRule ;
+  rdfs:label "Create group concept for sequenced sub-concepts" ;
+  sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
+  prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/>
+CONSTRUCT {
+    ?this skos:broader ?b .
+    ?b skos:narrower ?this .
+    ?b a skos:Concept.
+    ?b skos:prefLabel ?notation .
+    ?b skos:inScheme ?s
+
+}
+WHERE {
+
+    ?this skos:notation ?notation .
+    $this skos:inScheme ?s  .
+    FILTER ( CONTAINS( STR($this),"_"))
+    BIND( URI(STRBEFORE( STR($this),"_" )) AS ?b)
+    }
+""" ;
+.
 
 :entail-description-as-narrower
   a sh:SPARQLRule ;
