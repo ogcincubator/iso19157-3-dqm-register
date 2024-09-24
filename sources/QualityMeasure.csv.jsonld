@@ -7,7 +7,8 @@
     "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/",
     "measureIdentifier": "@id",
     "notation": "http://www.opengis.net/def/metamodel/isodqm/measureID",
-    "name": "skos:prefLabel",
+    "name_id": "skos:prefLabel",
+    "name": "dct:title",
     "alias": "skos:altLabel",
     "elementName": "dqm:elementName",
     "definition": "skos:definition",
@@ -48,7 +49,13 @@
         "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/"
       }
     },
-    "example": "skos:example",
+    "example": {
+      "@id": "skos:example",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/"
+      }
+    },
     "version": "dct:hasVersion",
     "versionDateTime": "dct:date",
     "status": {
@@ -87,6 +94,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "1",
+      "name_id": "1 - excess item",
       "@type": "skos:Concept"
     },
     {
@@ -110,6 +118,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "2",
+      "name_id": "2 - number of excess items",
       "@type": "skos:Concept"
     },
     {
@@ -133,6 +142,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "3",
+      "name_id": "3 - rate of excess items",
       "@type": "skos:Concept"
     },
     {
@@ -156,6 +166,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "4",
+      "name_id": "4 - number of duplicate feature instances",
       "@type": "skos:Concept"
     },
     {
@@ -179,6 +190,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "5",
+      "name_id": "5 - missing item",
       "@type": "skos:Concept"
     },
     {
@@ -202,6 +214,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "6",
+      "name_id": "6 - number of missing items",
       "@type": "skos:Concept"
     },
     {
@@ -225,6 +238,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "7",
+      "name_id": "7 - rate of missing items",
       "@type": "skos:Concept"
     },
     {
@@ -248,6 +262,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "8",
+      "name_id": "8 - conceptual schema non-compliance",
       "@type": "skos:Concept"
     },
     {
@@ -271,6 +286,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "9",
+      "name_id": "9 - conceptual schema compliance",
       "@type": "skos:Concept"
     },
     {
@@ -294,6 +310,7 @@
       "status": null,
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "10",
+      "name_id": "10 - number of items not compliant with the rules of the conceptual schema",
       "@type": "skos:Concept"
     },
     {
@@ -317,6 +334,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "11",
+      "name_id": "11 - number of invalid overlaps of surfaces",
       "@type": "skos:Concept"
     },
     {
@@ -340,6 +358,7 @@
       "status": "draft",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "12",
+      "name_id": "12 - non-compliance rate with respect to the rules of the conceptual schema",
       "@type": "skos:Concept"
     },
     {
@@ -363,6 +382,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "13",
+      "name_id": "13 - compliance rate with the rules of the conceptual schema",
       "@type": "skos:Concept"
     },
     {
@@ -386,6 +406,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "14",
+      "name_id": "14 - value domain non-conformance",
       "@type": "skos:Concept"
     },
     {
@@ -409,6 +430,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "15",
+      "name_id": "15 - value domain conformance",
       "@type": "skos:Concept"
     },
     {
@@ -432,6 +454,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "16",
+      "name_id": "16 - number of items not in conformance with their value domain",
       "@type": "skos:Concept"
     },
     {
@@ -455,6 +478,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "17",
+      "name_id": "17 - value domain conformance rate",
       "@type": "skos:Concept"
     },
     {
@@ -478,6 +502,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "18",
+      "name_id": "18 - value domain non-conformance rate",
       "@type": "skos:Concept"
     },
     {
@@ -501,6 +526,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "19",
+      "name_id": "19 - number of physical structure conflicts",
       "@type": "skos:Concept"
     },
     {
@@ -524,6 +550,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "20",
+      "name_id": "20 - physical structure conflict rate",
       "@type": "skos:Concept"
     },
     {
@@ -547,6 +574,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "21",
+      "name_id": "21 - number of faulty point-curve connections",
       "@type": "skos:Concept"
     },
     {
@@ -570,6 +598,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "22",
+      "name_id": "22 - rate of faulty point-curve connections",
       "@type": "skos:Concept"
     },
     {
@@ -593,6 +622,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "23",
+      "name_id": "23 - number of missing connections due to undershoot",
       "@type": "skos:Concept"
     },
     {
@@ -616,6 +646,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "24",
+      "name_id": "24 - number of missing connections due to overshoots",
       "@type": "skos:Concept"
     },
     {
@@ -639,6 +670,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "25",
+      "name_id": "25 - number of invalid slivers",
       "@type": "skos:Concept"
     },
     {
@@ -662,6 +694,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "26",
+      "name_id": "26 - number of invalid self-intersect errors",
       "@type": "skos:Concept"
     },
     {
@@ -685,6 +718,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "27",
+      "name_id": "27 - number of invalid self-overlap errors",
       "@type": "skos:Concept"
     },
     {
@@ -710,6 +744,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "28",
+      "name_id": "28 - mean value of positional uncertainties (1D, 2D and 3D)",
       "@type": "skos:Concept"
     },
     {
@@ -734,6 +769,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "29",
+      "name_id": "29 - mean value of positional uncertainties excluding outliers (1D, 2D, 3D)",
       "@type": "skos:Concept"
     },
     {
@@ -757,6 +793,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "30",
+      "name_id": "30 - number of positional uncertainties above a given threshold",
       "@type": "skos:Concept"
     },
     {
@@ -780,6 +817,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "31",
+      "name_id": "31 - rate of positional uncertainties above a given threshold",
       "@type": "skos:Concept"
     },
     {
@@ -806,6 +844,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "32",
+      "name_id": "32 - covariance matrix",
       "@type": "skos:Concept"
     },
     {
@@ -835,6 +874,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "33",
+      "name_id": "33 - linear error probable",
       "@type": "skos:Concept"
     },
     {
@@ -864,6 +904,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "34",
+      "name_id": "34 - standard linear error",
       "@type": "skos:Concept"
     },
     {
@@ -893,6 +934,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "35",
+      "name_id": "35 - linear map accuracy at 90\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -922,6 +964,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "36",
+      "name_id": "36 - linear map accuracy at 95\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -951,6 +994,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "37",
+      "name_id": "37 - linear map accuracy at 99\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -980,6 +1024,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "38",
+      "name_id": "38 - near certainty linear error",
       "@type": "skos:Concept"
     },
     {
@@ -1003,6 +1048,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "39",
+      "name_id": "39 - root mean square error",
       "@type": "skos:Concept"
     },
     {
@@ -1026,6 +1072,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "40",
+      "name_id": "40 - absolute linear error at 90\u00a0% significance level of biased vertical data (Alternative 1)",
       "@type": "skos:Concept"
     },
     {
@@ -1049,6 +1096,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "41",
+      "name_id": "41 - absolute linear error at 90\u00a0% significance level of biased vertical data (Alternative 2)",
       "@type": "skos:Concept"
     },
     {
@@ -1072,6 +1120,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "42",
+      "name_id": "42 - circular standard deviation",
       "@type": "skos:Concept"
     },
     {
@@ -1095,6 +1144,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "43",
+      "name_id": "43 - circular error probable",
       "@type": "skos:Concept"
     },
     {
@@ -1118,6 +1168,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "44",
+      "name_id": "44 - circular error at 90\u00a0% significant level",
       "@type": "skos:Concept"
     },
     {
@@ -1141,6 +1192,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "45",
+      "name_id": "45 - circular error at 95\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1164,6 +1216,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "46",
+      "name_id": "46 - circular near certainty error",
       "@type": "skos:Concept"
     },
     {
@@ -1187,6 +1240,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "47",
+      "name_id": "47 - root mean square error of planimetry",
       "@type": "skos:Concept"
     },
     {
@@ -1210,6 +1264,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "48",
+      "name_id": "48 - absolute circular error at 90\u00a0% significance level of biased data",
       "@type": "skos:Concept"
     },
     {
@@ -1233,6 +1288,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "49",
+      "name_id": "49 - absolute circular error at 90 % significance level of biased data",
       "@type": "skos:Concept"
     },
     {
@@ -1256,6 +1312,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "50",
+      "name_id": "50 - uncertainty ellipse",
       "@type": "skos:Concept"
     },
     {
@@ -1279,6 +1336,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "51",
+      "name_id": "51 - confidence ellipse",
       "@type": "skos:Concept"
     },
     {
@@ -1302,6 +1360,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "52",
+      "name_id": "52 - relative vertical error",
       "@type": "skos:Concept"
     },
     {
@@ -1325,6 +1384,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "53",
+      "name_id": "53 - relative horizontal error",
       "@type": "skos:Concept"
     },
     {
@@ -1354,6 +1414,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "54",
+      "name_id": "54 - time accuracy at 68,3\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1383,6 +1444,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "55",
+      "name_id": "55 - time accuracy at 50\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1412,6 +1474,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "56",
+      "name_id": "56 - time accuracy at 90\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1441,6 +1504,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "57",
+      "name_id": "57 - time accuracy at 95\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1470,6 +1534,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "58",
+      "name_id": "58 - time accuracy at 99\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1499,6 +1564,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "59",
+      "name_id": "59 - time accuracy at 99,8\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1522,6 +1588,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "60",
+      "name_id": "60 - number of incorrectly classified features",
       "@type": "skos:Concept"
     },
     {
@@ -1545,6 +1612,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "61",
+      "name_id": "61 - misclassification rate",
       "@type": "skos:Concept"
     },
     {
@@ -1568,6 +1636,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "62",
+      "name_id": "62 - misclassification matrix",
       "@type": "skos:Concept"
     },
     {
@@ -1591,6 +1660,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "63",
+      "name_id": "63 - relative misclassification matrix",
       "@type": "skos:Concept"
     },
     {
@@ -1614,6 +1684,7 @@
       "status": null,
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "64",
+      "name_id": "64 - kappa coefficient",
       "@type": "skos:Concept"
     },
     {
@@ -1637,6 +1708,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "65",
+      "name_id": "65 - number of incorrect attribute values",
       "@type": "skos:Concept"
     },
     {
@@ -1660,6 +1732,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "66",
+      "name_id": "66 - rate of correct attribute values",
       "@type": "skos:Concept"
     },
     {
@@ -1683,6 +1756,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "67",
+      "name_id": "67 - rate of incorrect attribute values",
       "@type": "skos:Concept"
     },
     {
@@ -1712,6 +1786,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "68",
+      "name_id": "68 - attribute value uncertainty at 68,3\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1741,6 +1816,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "69",
+      "name_id": "69 - attribute value uncertainty at 50\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1770,6 +1846,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "70",
+      "name_id": "70 - attribute value uncertainty at 90\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1799,6 +1876,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "71",
+      "name_id": "71 - attribute value uncertainty at 95\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1828,6 +1906,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "72",
+      "name_id": "72 - attribute value uncertainty at 99\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1857,6 +1936,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "73",
+      "name_id": "73 - attribute value uncertainty at 99,8\u00a0% significance level",
       "@type": "skos:Concept"
     },
     {
@@ -1880,6 +1960,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "101",
+      "name_id": "101 - data product specification passed",
       "@type": "skos:Concept"
     },
     {
@@ -1903,6 +1984,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "102",
+      "name_id": "102 - data product specification fail count",
       "@type": "skos:Concept"
     },
     {
@@ -1926,6 +2008,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "103",
+      "name_id": "103 - data product specification pass count",
       "@type": "skos:Concept"
     },
     {
@@ -1949,6 +2032,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "104",
+      "name_id": "104 - data product specification fail rate",
       "@type": "skos:Concept"
     },
     {
@@ -1972,6 +2056,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "105",
+      "name_id": "105 - data product specification pass rate",
       "@type": "skos:Concept"
     },
     {
@@ -1995,6 +2080,7 @@
       "status": "retired",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "119",
+      "name_id": "119 - physical structure conflicts",
       "@type": "skos:Concept"
     },
     {
@@ -2018,6 +2104,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "128",
+      "name_id": "128 - bias of positions (1D, 2D and 3D)",
       "@type": "skos:Concept"
     },
     {
@@ -2041,6 +2128,7 @@
       "status": "valid",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "159",
+      "name_id": "159 - chronological disorder",
       "@type": "skos:Concept"
     },
     {
@@ -2064,6 +2152,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "201",
+      "name_id": "201 - rate of geometric inconsistency",
       "@type": "skos:Concept"
     },
     {
@@ -2087,6 +2176,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "202",
+      "name_id": "202 - count of geometric fidelity failure",
       "@type": "skos:Concept"
     },
     {
@@ -2110,6 +2200,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "203",
+      "name_id": "203 - rate of geometric fidelity failure",
       "@type": "skos:Concept"
     },
     {
@@ -2133,6 +2224,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "204",
+      "name_id": "204 - complete tessellation",
       "@type": "skos:Concept"
     },
     {
@@ -2156,6 +2248,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "205",
+      "name_id": "205 - user defined maintenance frequency",
       "@type": "skos:Concept"
     },
     {
@@ -2179,6 +2272,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "206",
+      "name_id": "206 - maintenance frequency",
       "@type": "skos:Concept"
     },
     {
@@ -2202,6 +2296,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "207",
+      "name_id": "207 - currentness",
       "@type": "skos:Concept"
     },
     {
@@ -2225,6 +2320,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "208",
+      "name_id": "208 - rate of omission for spatial coverage",
       "@type": "skos:Concept"
     },
     {
@@ -2248,6 +2344,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "209",
+      "name_id": "209 - rate of spatial discontinuity",
       "@type": "skos:Concept"
     },
     {
@@ -2271,6 +2368,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "210",
+      "name_id": "210 - rate of omission for temporal coverage",
       "@type": "skos:Concept"
     },
     {
@@ -2294,6 +2392,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "211",
+      "name_id": "211 - rate of imperfect coverage",
       "@type": "skos:Concept"
     },
     {
@@ -2317,6 +2416,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "212",
+      "name_id": "212 - rate of omission for metadata",
       "@type": "skos:Concept"
     },
     {
@@ -2340,6 +2440,7 @@
       "status": "submitted",
       "statusDateTime": "2024-09-17 13:56:22.510",
       "notation": "213",
+      "name_id": "213 - rate of occurrence of sensitive information",
       "@type": "skos:Concept"
     }
   ]
