@@ -6,11 +6,11 @@ MD2e,,,,2 (12 houses are in the data set although only 10 exist within the unive
 MD2bme,,,,0.0189
 MD3,,,,Divide excess items in relation to number of items in the universe of discourse.
 MD3e,,,,10 % (The data set has 10 % more houses than the universe of discourse).
-MD4,,"4_1.PNG
-4_2.PNG
-4_3.PNG",,Count of all items in the data that are incorrectly extracted with duplicate geometries.
-MD4e,,"4e_1.PNG
-4e_2.PNG",,"Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other.
+MD4,,"4_1.png
+4_2.png
+4_3.png",,Count of all items in the data that are incorrectly extracted with duplicate geometries.
+MD4e,,"4e_1.png
+4e_2.png",,"Features with identical attribution and identical coordinates representing the same real object, for example: two (or more) points collected on top of each other.
 D13288RZ.EPS two (or more) curves collected on top of each other
 D13288SZ.EPS two (or more) surfaces collected on top of each other."
 MD5,,-,-,The value true indicates that an item is missing.
@@ -30,17 +30,17 @@ MD8e,,,,True (One feature relationship exists which is not defined in the concep
 MDbm4,,,,Boolean value expressing the item is not indicated as an error.
 MD9,,,,True indicates that an item is in compliance with the rules of the conceptual schema.
 MD10,,,,"If the conceptual schema explicitly or implicitly describes rules, these rules shall be followed. Violations against such rules can be, for example, invalid placement of features within a defined tolerance, duplication of features and invalid overlap of features."
-MD10e,,"10e_1.PNG
-10e_2.PNG
-10e_3.PNG
-10e_4.PNG",,"Example 1: Towers with identical attribution and within search tolerance (search tolerance = 10 m)
+MD10e,,"10e_1.png
+10e_2.png
+10e_3.png
+10e_4.png",,"Example 1: Towers with identical attribution and within search tolerance (search tolerance = 10 m)
 Example 2: Bridge has invalid Transportation. Use Category of Road
 Example 3: Invalid placement of Airport inside a Lake
 Example 4: Invalid overlap of area feature Lake within line feature Railroad
 Key: 1. Bridge 2.  Railroad 3. Lake 4. Airport"
 MD11,,,,"Which surfaces may overlap and which shall not is application dependent. Not all overlapping surfaces are necessarily erroneous. When reporting this data quality measure, the types of feature classes corresponding to the illegal overlapping surfaces shall be reported as well. 
 See also Complete tessellation: https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD204"
-MD11e,,11e.PNG,,"Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap."
+MD11e,,11e.png,,"Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap."
 MD12,,,,The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset.
 MD12e,,,,"0.02 (in a test area there is 227 objects coded as living houses in the dataset but in the universe of discourse there are 231 objects that should be coded as living houses, 4 of them was coded as farm buildings)."
 MD13,,,,Conceptual schema describes the rules and content of the dataset.
@@ -58,28 +58,28 @@ MD19,,,,Conceptual schema describes the physical structure.
 MD19e,,,,5 (5 living quarters type code is coded on more than 3 characters although the requirement in data product specification is 3).
 MD20,,,,Conceptual schema describes the physical structure.
 MD21,,,,"A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. The data quality measure counts the number of errors of this kind."
-MD21e,,"21e_1.PNG
-21e_2.PNG",,"Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists).
+MD21e,,"21e_1.png
+21e_2.png",,"Count the number of wrong curve connections - e.g. two-point curve connections exist where only one should be present, or count all curves with more than the threshold value of 500 vertices (in which system automatically places point-curve based on vertices limitation built into software code where no spatial justification for point-curve exists).
 "
 MD22,,,,"A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections."
 MD23,,,,Search distance as defined in the specification.
-MD23e,,23e.PNG,,Key: 1) search distance = 3 m
+MD23e,,23e.png,,Key: 1) search distance = 3 m
 MD24,,,,Search distance as defined in the specification.
-MD24e,,24e.PNG,,A road must have a length at least 3 meters. Key: 1) search distance = 3 m
+MD24e,,24e.png,,A road must have a length at least 3 meters. Key: 1) search distance = 3 m
 MD25,,,,Sliver is an unintended area that occurs when adjacent surfaces are not digitized properly. The borders of the adjacent surfaces may unintentionally gap or overlap by small amounts to cause a topological error.
-MD25e_1,,25e_1.PNG,,"48 (count double line drain and slivers that do not fulfil the threshold values set by thinness ratio and maximum sliver area).
+MD25e_1,,25e_1.png,,"48 (count double line drain and slivers that do not fulfil the threshold values set by thinness ratio and maximum sliver area).
 Key: 1) Single line drain
 2) Double line drain
 a) Maximum area parameter prevents correct double line drain portrayal from being flagged as an error"
-MD25e_2,,25e_2.PNG,,"Key: 1) Sand
+MD25e_2,,25e_2.png,,"Key: 1) Sand
 2) Sliver
 3) Double line drain
 b) The sliver is less than the maximum parameter and is flagged for evaluation of possible error."
 MD26,,,,Topological rules as defined in the specification.
-MD26e,,26e.PNG,,"Key: 1) Building 1
+MD26e,,26e.png,,"Key: 1) Building 1
 2) illegal intersection (loop)"
 MD27,,,,Topological rules as defined in the specification.
-MD27e,,27e.PNG,,"324 (count road segment with overlap by other road segment)
+MD27e,,27e.png,,"324 (count road segment with overlap by other road segment)
 Key: a) vertices"
 MD28,1.0,-,FT28_1,"For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions."
 MD28,2.0,,FT28_2,"For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions."
@@ -155,13 +155,13 @@ FT53_5
 FT53_6",A manner of calculating the comparison of the data (measured) and the control (true).
 MD60,,,,Number of incorrectly classified features compared to the specification. Features and the classification method as defined in the specification.
 MD61,,,,Number of incorrectly classified features compared to the specification. Features and the classification method as defined in the specification.
-MD62,,62.PNG,,"The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
+MD62,,62.png,,"The misclassification matrix (MCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors."
-MD62e,,62e.PNG,,Example misclassification matrix.
+MD62e,,62e.png,,Example misclassification matrix.
 MD63,,,,"The relative misclassification matrix (RMCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
 RMCM (i,j ) = [# items of class (i ) classified as class (j )] / (# items of class (i )] × 100 %"
-MD63e,,63e.PNG,,Example relative misclassification matrix.
+MD63e,,63e.png,,Example relative misclassification matrix.
 MD64,,,FT64,With the elements of the misclassification matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/62).
 MD65,,,,Count of all attribute values where the value is incorrect.
 MD65e,,,,5 (5 geographical names are misspelled)
@@ -180,14 +180,14 @@ MD119,,,,The value true indicates physical structure conflict.
 MD159,,,,True indicates that there are events incorrectly ordered.
 MD159e,,,,True (5 historical events are present in the dataset but are not ordered correctly).
 MD201,,,,Rate of items in a common area representing the same real world object with different coordinates in two different datasets according to a specified tolerance.
-MD201e,,201e.PNG,,"Rate of objects not in conformity to the tolerance.
+MD201e,,201e.png,,"Rate of objects not in conformity to the tolerance.
 In a common area for two datasets the coordinates compare to each other, an error is outside the tolerance.
 Key: 1 Search tolerance 0,3 meter"
 MD202,,,,"The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification."
-MD202e,,202e.PNG,,"Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular."
+MD202e,,202e.png,,"Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular."
 MD203,,,,"The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification."
 MD204,,,,"All child polygons must be located inside the parent polygon. Reports the number of child polygons not inside the parent polygon. A set of features instances (set of child’s) which completely, covers the testbed feature."
-MD204e,,204e.PNG,,Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons.
+MD204e,,204e.png,,Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons.
 MD205,,,,The update frequency as shown in metadata.
 MD205e,,,,It is ‘true’ if the value for an address has been updated in the database within user defined AQL (e.g. 5 days) since the decision on its change.
 MD206,,,,Mean time from when an object has been changed until its updated in the data base.
@@ -262,7 +262,7 @@ Step 2: Split the lines at the snapped locations and calculate the length of eac
 Step 3: Rate of omission is thus calculated as the sum of lengths of uncovered segments, divided by the sum of lengths of all segments.
 The example demonstrates a way to calculate the omission rate for the whole dataset. Besides, the omission rate can also be calculated at a finer spatial scale, i.e. for each geometry unit. For instance, it can be calculated at the street level, where the omission rate is calculated for each street segment."
 MD208e2,,MD208e2.png,,"Calculate the rate of omission of street view imagery coverage against a reference area. The street view imagery is represented as constructed buffers of imagery points with a radius, and the reference area is a rectangular grid cell of area A1."
-MD209,,MD209e,,"The number of intervals with a distance longer than a certain threshold, divided by the total number of intervals present in the data. "
+MD209,,MD209e.png,,"The number of intervals with a distance longer than a certain threshold, divided by the total number of intervals present in the data. "
 MD209e,,,FT208_P,"In this example, there are three sequences of data, S1, S2, and S3. There are eight points in S1 and the interval distance between each pair of consecutive points is measured as d1, d2, … d7. Similarly, d8 and d9 are measured for S2 and d10, d11, and d12 for S3. Among these distances, d3, d5, and d6 are above a specified threshold (e.g. 50 m) indicating lack of continuity in spatial coverage.
 The rate of spatial discontinuity in this example is thus calculated as:
 where n is the number of intervals with a distance above the threshold, and N is the total number of intervals in the data."
