@@ -1,6 +1,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
@@ -9,25 +10,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
     dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:6f93445715758528e2bb5810810e23ae07990368" ;
-    prov:wasAttributedTo _:N6b732e99dd264c0b9ccb734e3db03abd ;
+    dcterms:hasVersion "git:74984b0341e921c3101db92ec0ff6c40df1da666" ;
+    prov:wasAttributedTo _:N050cbd4bbbc344d0888d5fbd3348b024 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-24T02:18:13.233480"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-24T02:18:09.788437"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-24T02:31:47.467153"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-24T02:31:44.134409"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:6f93445715758528e2bb5810810e23ae07990368" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
-                [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:6f93445715758528e2bb5810810e23ae07990368" ;
+                    dcterms:hasVersion "git:74984b0341e921c3101db92ec0ff6c40df1da666" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:74984b0341e921c3101db92ec0ff6c40df1da666" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N6b732e99dd264c0b9ccb734e3db03abd ;
-            prov:wasInformedBy [ dcterms:identifier "754bb239-028c-44cd-a661-8f6cc1963c94" ] ] .
+            prov:wasAssociatedWith _:N050cbd4bbbc344d0888d5fbd3348b024 ;
+            prov:wasInformedBy [ dcterms:identifier "9fd78802-b38e-4c4d-b90f-9ab31469ec57" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD1> a skos:Concept ;
     skos:definition "The value true indicates that the item is in excess." ;
@@ -984,24 +985,25 @@ Example 2: 6,6% of all pixels in the scene is clouded with no ground information
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme ;
+    ns1:targetGraph "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription" ;
     skos:definition "ISO19157-3 Data Quality Measures (Extended Description Components)" ;
     skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-24T02:16:43.510263"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-24T02:16:43.259782"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-24T02:30:37.831337"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-24T02:30:37.582810"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dcterms:format "application/json" ;
-            dcterms:hasVersion "git:660e477c7d570211a32a80451ec03fe2909a0676" ;
+            dcterms:hasVersion "git:33560ddfae0c8198b02091121ebabfbe7a8bc7f3" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureDescription.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "e724770a-e4ee-42b6-9b62-2d4052686b0b" ] .
+    prov:wasInformedBy [ dcterms:identifier "912d728f-862d-4d9e-a11a-16a239f8496c" ] .
 
-_:N6b732e99dd264c0b9ccb734e3db03abd a prov:Agent,
+_:N050cbd4bbbc344d0888d5fbd3348b024 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dcterms:hasVersion "0.3.53" ;
