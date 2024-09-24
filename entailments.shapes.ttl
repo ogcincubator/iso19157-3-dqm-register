@@ -34,6 +34,13 @@
   sh:targetClass skos:ConceptScheme ;
 .
 
+:NodeShape_conceptscheme
+  a sh:NodeShape ;
+  sh:rule  :entail_top_concepts ;
+  sh:targetClass <http://www.opengis.net/def/metamodel/isodqm/abstractConcept>
+.
+
+
 :NodeShape_collection
   a sh:NodeShape ;
   sh:rule :definition_required;
@@ -65,16 +72,17 @@ WHERE {
 
 :entail_top_concepts
   a sh:SPARQLRule ;
-  rdfs:label "Best definition option" ;
+  rdfs:label "Make abstract measures top concepts" ;
   sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
   prefix dcterms: <http://purl.org/dc/terms/>
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 CONSTRUCT {
-?this skos:hasTopConcept ?skosdef .
+ ?this a skos:Concept .
+?scheme skos:hasTopConcept $this .
 
 }
 WHERE {
-    ?concept skos:broader ?skosdef}
+    ?this skos:inScheme ?scheme}
 """ ;
 .
 
