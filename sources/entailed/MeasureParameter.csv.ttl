@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,26 +8,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureParameter.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:c2f2ffa18a38401d8f3bee63d0e0c8cb6be9bc91" ;
-    prov:wasAttributedTo _:Nda78b74e2cae404aa0a710831df9fa51 ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:7089f4c6244e0d22e39003687cb860561fe2446c" ;
+    prov:wasAttributedTo _:N426c68b666de4abbabd53c3ebe55788b ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-24T07:32:34.614767"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-24T07:32:34.070236"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-24T07:47:16.814862"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-24T07:47:16.272809"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c2f2ffa18a38401d8f3bee63d0e0c8cb6be9bc91" ;
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:7089f4c6244e0d22e39003687cb860561fe2446c" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureParameter.csv.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c2f2ffa18a38401d8f3bee63d0e0c8cb6be9bc91" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:Nda78b74e2cae404aa0a710831df9fa51 ;
-            prov:wasInformedBy [ dct:identifier "9cb1fac7-4f1d-4f37-9a8a-c92cbaeeff04" ] ] .
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:7089f4c6244e0d22e39003687cb860561fe2446c" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N426c68b666de4abbabd53c3ebe55788b ;
+            prov:wasInformedBy [ dcterms:identifier "d20a711c-a505-401a-810e-ce16c5139518" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1> a skos:Concept ;
     dqm:valueType "Real" ;
@@ -88,7 +88,7 @@
     skos:prefLabel "Maximum sliver area size" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_2> a skos:Concept ;
-    dct:description "MD25" ;
+    dcterms:description "MD25" ;
     dqm:valueType "Real" ;
     skos:definition """The thickness quotient shall be a real number between 0 and 1. This quotient is determined by the following formula:
 T is the thickness quotient
@@ -117,42 +117,42 @@ T= 0 value corresponds to a line that has the smallest area/perimeter 2 value"""
     skos:prefLabel "emax" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP33> a skos:Concept ;
-    dct:description "50" ;
+    dcterms:description "50" ;
     dqm:valueType "Percentage" ;
     skos:definition "Measure 50%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP34> a skos:Concept ;
-    dct:description "68.3" ;
+    dcterms:description "68.3" ;
     dqm:valueType "Percentage" ;
     skos:definition "Measure 68.3%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35> a skos:Concept ;
-    dct:description "90" ;
+    dcterms:description "90" ;
     dqm:valueType "Percentage" ;
     skos:definition "Measure 90%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36> a skos:Concept ;
-    dct:description "95" ;
+    dcterms:description "95" ;
     dqm:valueType "Percentage" ;
     skos:definition "Measure 95%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP37> a skos:Concept ;
-    dct:description "99" ;
+    dcterms:description "99" ;
     dqm:valueType "Percentage" ;
     skos:definition "Measure 99%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38> a skos:Concept ;
-    dct:description "99.8" ;
+    dcterms:description "99.8" ;
     dqm:valueType "Percentage" ;
     skos:definition "Measure 99.8%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
@@ -212,23 +212,23 @@ T= 0 value corresponds to a line that has the smallest area/perimeter 2 value"""
     skos:prefLabel "ISO19157-3 quality measure Parameters" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-24T07:19:06.635987"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-24T07:19:06.528220"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-24T07:39:20.306628"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-24T07:39:20.230916"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:fddd1e69d4a6829a2f63fd5cc7f801b546edfa27" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:0b0162420424e15c7dad3395369b60efb8b9796f" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureParameter.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.53" ;
+            dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "55347081-c5f8-4608-bc78-0effe99f9e08" ] .
+    prov:wasInformedBy [ dcterms:identifier "4b02c508-22ae-4519-84c3-767f10ccadec" ] .
 
-_:Nda78b74e2cae404aa0a710831df9fa51 a prov:Agent,
+_:N426c68b666de4abbabd53c3ebe55788b a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.53" ;
+    dcterms:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
