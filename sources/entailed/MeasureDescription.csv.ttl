@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,26 +8,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:c7c90e1085de4d13bce671f04fd48c77bf1ab703" ;
-    prov:wasAttributedTo _:N749fc6773fe24abb8013b091ee8fc2c9 ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
+    prov:wasAttributedTo _:N73ae695b4fb3475ba802a77b8f334aae ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-17T08:11:33.490204"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-17T08:11:29.948886"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-20T08:00:49.658554"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-20T08:00:46.177866"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c7c90e1085de4d13bce671f04fd48c77bf1ab703" ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c7c90e1085de4d13bce671f04fd48c77bf1ab703" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:N749fc6773fe24abb8013b091ee8fc2c9 ;
-            prov:wasInformedBy [ dct:identifier "431c7710-51ad-4644-beed-69f84b80e1ee" ] ] .
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ] ;
+            prov:wasAssociatedWith _:N73ae695b4fb3475ba802a77b8f334aae ;
+            prov:wasInformedBy [ dcterms:identifier "a1ce6f30-7d12-4bf8-ac7b-daf13b167b86" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD1> a skos:Concept ;
     skos:definition "The value true indicates that the item is in excess." ;
@@ -1173,23 +1173,23 @@ Example 2: 6,6% of all pixels in the scene is clouded with no ground information
     skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-17T08:10:51.850528"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-17T08:10:51.583786"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-20T07:58:35.681460"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-20T07:58:35.429616"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:2e0253a9a70098bd37f7734a838f7f0c6b9a474c" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:8de0c2a253b6c6d342a894989bfb996e6671e6a6" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureDescription.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.53" ;
+            dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "cc22321c-d8f3-46c3-b11b-229a62fa4f46" ] .
+    prov:wasInformedBy [ dcterms:identifier "ed7fe3f5-d9de-44e3-8ba4-002f87339889" ] .
 
-_:N749fc6773fe24abb8013b091ee8fc2c9 a prov:Agent,
+_:N73ae695b4fb3475ba802a77b8f334aae a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.53" ;
+    dcterms:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

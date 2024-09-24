@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
@@ -6,35 +6,35 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/SourceReference.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:c7c90e1085de4d13bce671f04fd48c77bf1ab703" ;
-    prov:wasAttributedTo _:N860e10fa48224c6faa71ed30304ce0c3 ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
+    prov:wasAttributedTo _:Nb9de7866998d4e31a8f668dd7bb51631 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-17T08:11:29.745730"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-17T08:11:29.574101"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-20T08:00:40.187375"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-20T08:00:40.021263"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c7c90e1085de4d13bce671f04fd48c77bf1ab703" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:c7c90e1085de4d13bce671f04fd48c77bf1ab703" ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:f6ee88da1854623b18b6f53b0e0d7cabb7f8a6f7" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl> ],
+                [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:N860e10fa48224c6faa71ed30304ce0c3 ;
-            prov:wasInformedBy [ dct:identifier "431c7710-51ad-4644-beed-69f84b80e1ee" ] ] .
+            prov:wasAssociatedWith _:Nb9de7866998d4e31a8f668dd7bb51631 ;
+            prov:wasInformedBy [ dcterms:identifier "a1ce6f30-7d12-4bf8-ac7b-daf13b167b86" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR1> a skos:Concept ;
-    dct:source "https://standards.globalspec.com/std/1296998/stanag-2215" ;
+    dcterms:source "https://standards.globalspec.com/std/1296998/stanag-2215" ;
     skos:definition "NATO STANAG 2215 IGEO" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
     skos:prefLabel "NATO STANAG 2215 IGEO" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR2> a skos:Concept ;
-    dct:source "https://www.ordnancesurvey.co.uk/documents/os-mastermap-real-world-object-catalogue.pdf" ;
+    dcterms:source "https://www.ordnancesurvey.co.uk/documents/os-mastermap-real-world-object-catalogue.pdf" ;
     skos:definition """Ordnance Survey topo-96 (2007), redefined
 """ ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
@@ -42,31 +42,31 @@
 """ .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR3> a skos:Concept ;
-    dct:source "https://doi.org/10.5593/sgem2017/21/S08.112" ;
+    dcterms:source "https://doi.org/10.5593/sgem2017/21/S08.112" ;
     skos:definition "Exploring subset profile and validation procedures of geographical markup language (GML) for 3D areal plan information. " ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
     skos:prefLabel "Exploring subset profile and validation procedures of geographical markup language (GML) for 3D areal plan information. " .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR4> a skos:Concept ;
-    dct:source "https://schemas.isotc211.org/19115/-1/mmi/1.3.0/" ;
+    dcterms:source "https://schemas.isotc211.org/19115/-1/mmi/1.3.0/" ;
     skos:definition "ISO 19115-1 Geographic information - Metadata - Part 1: Fundamentals" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
     skos:prefLabel "ISO 19115-1 Geographic information - Metadata - Part 1: Fundamentals" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR5> a skos:Concept ;
-    dct:source "https://doi.org/10.1016/j.jag.2022.103094" ;
+    dcterms:source "https://doi.org/10.1016/j.jag.2022.103094" ;
     skos:definition "Yujun Hou and Filip Biljecki (2022). A comprehensive framework for evaluating the quality of street view imagery" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
     skos:prefLabel "Yujun Hou and Filip Biljecki (2022). A comprehensive framework for evaluating the quality of street view imagery" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR6> a skos:Concept ;
-    dct:source "https://support.esri.com/en-us/technical-paper/plts-gis-data-reviewer-4-2-528" ;
+    dcterms:source "https://support.esri.com/en-us/technical-paper/plts-gis-data-reviewer-4-2-528" ;
     skos:definition "Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
     skos:prefLabel "Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR7> a skos:Concept ;
-    dct:source "https://www.iso.org/standard/35736.html" ;
+    dcterms:source "https://www.iso.org/standard/35736.html" ;
     skos:definition "ISO/IEC 25012:2008 Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource> ;
     skos:prefLabel "ISO/IEC 25012:2008 Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model" .
@@ -76,23 +76,23 @@
     skos:prefLabel "ISO19157-3 Quality Source References" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-17T08:10:51.941594"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-17T08:10:51.884485"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-20T07:58:36.217106"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-20T07:58:36.161296"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:2e0253a9a70098bd37f7734a838f7f0c6b9a474c" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:8de0c2a253b6c6d342a894989bfb996e6671e6a6" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/SourceReference.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.53" ;
+            dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "cc22321c-d8f3-46c3-b11b-229a62fa4f46" ] .
+    prov:wasInformedBy [ dcterms:identifier "ed7fe3f5-d9de-44e3-8ba4-002f87339889" ] .
 
-_:N860e10fa48224c6faa71ed30304ce0c3 a prov:Agent,
+_:Nb9de7866998d4e31a8f668dd7bb51631 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.53" ;
+    dcterms:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
