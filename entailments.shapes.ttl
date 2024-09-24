@@ -4,6 +4,7 @@
 
 @prefix dash: <http://datashapes.org/dash#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -37,7 +38,13 @@
 :NodeShape_conceptscheme
   a sh:NodeShape ;
   sh:rule  :entail_top_concepts ;
-  sh:targetClass <http://www.opengis.net/def/metamodel/isodqm/AbstractConcept>,<http://www.opengis.net/def/metamodel/isodqm/BasicMeasure>
+  sh:targetClass dqm:AbstractConcept,dqm:BasicMeasure
+.
+
+:NodeShape_Basic_top
+  a sh:NodeShape ;
+  sh:rule  :entail_basic_top ;
+  sh:targetClass dqm:BasicMeasure
 .
 
 :NodeShape_collection
@@ -49,7 +56,7 @@
 :NodeShape_descriptions-as-narrower
   a sh:NodeShape ;
   sh:rule :entail-description-as-narrower;
-  sh:targetSubjectsOf <http://www.opengis.net/def/metamodel/isodqm/measureDescription>, skos:example
+  sh:targetSubjectsOf dqm:measureDescription, skos:example, dqm:formula
 .
 
 
@@ -59,12 +66,13 @@
   sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
   prefix dcterms: <http://purl.org/dc/terms/>
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/>
 CONSTRUCT {
     ?this skos:narrower ?skosdef .
     ?skosdef skos:broader ?this .
 }
 WHERE {
-    ?this (<http://www.opengis.net/def/metamodel/isodqm/measureDescription>| skos:example) ?skosdef
+    ?this (dqm:measureDescription| skos:example | dqm:formula ) ?skosdef
     }
 """ ;
 .
@@ -84,6 +92,20 @@ WHERE {
     ?this skos:inScheme ?scheme}
 """ ;
 .
+
+:entail_basic_top
+  a sh:SPARQLRule ;
+  rdfs:label "Make BM Descriptions narrower in measures to suppress as top concepts. " ;
+  sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
+  prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+CONSTRUCT {
+$this skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM>.
+
+}
+""" ;
+.
+
 
 
 :entail_narrower
