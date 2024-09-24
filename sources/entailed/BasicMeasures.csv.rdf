@@ -7,426 +7,212 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="N4b9569d01fd543e48f37d850183b1387">
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasInformedBy rdf:nodeID="N6401ed35c1c042188a02b7e312d5c0b6"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:47.473430</prov:endedAtTime>
-    <prov:used rdf:nodeID="N95e963341b1c47838f0a0993d6f8e0b4"/>
-    <prov:used rdf:nodeID="N0c8ecf7461b343598b0697aaba62b722"/>
-    <prov:used rdf:nodeID="Ne433493e2cdf4aa2b5a0731478c361b5"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasAssociatedWith rdf:nodeID="Ne90448fd624347bc8f5680ffcbc9cada"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:45.950097</prov:startedAtTime>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"/>
-    <skos:prefLabel>1D variable 90 % probability; 1 redundant measurement</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE90r1</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Mean radial spherical error</skos:prefLabel>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"/>
-    <ns1:basicMeasureID>MRSE</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:prefLabel>1D variable 99.8 % probability; 4 redundant measurements</skos:prefLabel>
-    <ns1:basicMeasureID>LE99.8r4</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"/>
-    <ns1:basicMeasureID>LE99.8r10</ns1:basicMeasureID>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 99.8 % probability; 10 redundant measurements</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
-    <skos:prefLabel>error indicator</skos:prefLabel>
-    <ns1:basicMeasureID>BM1</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"/>
-    <skos:definition>Indicator that an item is in error.</skos:definition>
-    <skos:example>False</skos:example>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE99.8</ns1:basicMeasureID>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"/>
-    <skos:definition>confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit</skos:definition>
-    <skos:prefLabel>One dimensional variable 99,8 % probability</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Standard deviation in x-direction - true value known</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-    <ns1:basicMeasureID>SD1x</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1">
-    <skos:prefLabel>1D variable 95 % probability; 1 redundant measurement</skos:prefLabel>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE95r1</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"/>
-    <skos:prefLabel>Standard deviation - true value unknown</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>SD2</ns1:basicMeasureID>
-    <skos:definition>Standard deviation for observations or measurements where the true value unknown.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 50 % probability; 2 redundant measurements</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <ns1:basicMeasureID>LE50r2</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50"/>
-    <skos:definition>2D random variable 50 % probability</skos:definition>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:prefLabel>2D random variable 50 % probability</skos:prefLabel>
-    <ns1:basicMeasureID>CE50</ns1:basicMeasureID>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE90r10</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 90 % probability; 10 redundant measurements</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3">
-    <skos:prefLabel>1D variable 50 % probability; 3 redundant measurements</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>LE50r3</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4"/>
-    <ns1:basicMeasureID>LE95r4</ns1:basicMeasureID>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 95 % probability; 4 redundant measurements</skos:prefLabel>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure">
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4"/>
+    <skos:hasTopConcept rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:definition>ISO19157-3 basic quality measures</skos:definition>
+    <skos:prefLabel>ISO19157-3 basic quality measures</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP">
     <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%.</skos:definition>
-    <skos:prefLabel>Spherical error probable</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"/>
     <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:prefLabel>Spherical error probable</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
     <ns1:basicMeasureID>SEP</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3">
+    <skos:definition>Total number of items that are subject to an error of a specified type.</skos:definition>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:example>0.9811</skos:example>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
-    <skos:prefLabel>correct items rate</skos:prefLabel>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6"/>
-    <ns1:basicMeasureID>BM6</ns1:basicMeasureID>
-    <skos:definition>Number of the correct items with respect to the total number of items that should have been present.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6"/>
+    <ns1:basicMeasureID>BM3</ns1:basicMeasureID>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3"/>
+    <skos:example rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11"/>
+    <skos:prefLabel>error count</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>SD1</ns1:basicMeasureID>
-    <skos:prefLabel>Standard deviation - true value known</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"/>
+    <ns1:basicMeasureID>LE90r1</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1"/>
+    <skos:prefLabel>1D variable 90 % probability; 1 redundant measurement</skos:prefLabel>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit.</skos:definition>
+  <rdf:Description rdf:nodeID="N5127b22011c74a898ac578e78359aa9f">
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:23.301445</prov:startedAtTime>
+    <prov:used rdf:nodeID="N3f03356dc5404a30ab81464cad025e0e"/>
+    <prov:used rdf:nodeID="N745340427cdd4890846f533434a06dff"/>
+    <prov:used rdf:nodeID="N8f940613ee214b3aa155898f5fd8a84f"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:24.920280</prov:endedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="N8c96258966fb4f8a9afbbc86c082463b"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:wasInformedBy rdf:nodeID="N1fe4622bdc43406aa2cc5c3888df0a93"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3">
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"/>
+    <skos:prefLabel>1D variable 95 % probability; 3 redundant measurements</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 50 % probability</skos:prefLabel>
-    <ns1:basicMeasureID>LE50</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl">
-    <prov:wasAttributedTo rdf:nodeID="Ne90448fd624347bc8f5680ffcbc9cada"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <dct:format>text/turtle</dct:format>
-    <prov:wasGeneratedBy rdf:nodeID="N4b9569d01fd543e48f37d850183b1387"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE90r3</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 90 % probability; 3 redundant measurements</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:prefLabel>1D variable 99.8 % probability; 3 redundant measurements</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"/>
-    <ns1:basicMeasureID>LE99.8r3</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"/>
-    <ns1:basicMeasureID>SAS99</ns1:basicMeasureID>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>99% spherical accuracy standard</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"/>
+    <ns1:basicMeasureID>LE95r3</ns1:basicMeasureID>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10">
     <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5"/>
-    <skos:prefLabel>1D variable 90 % probability; 5 redundant measurements</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>LE90r5</ns1:basicMeasureID>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1">
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"/>
+    <skos:prefLabel>1D variable 50 % probability; 10 redundant measurements</skos:prefLabel>
+    <ns1:basicMeasureID>LE50r10</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements.</skos:definition>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"/>
-    <ns1:basicMeasureID>LE68.3r1</ns1:basicMeasureID>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"/>
-    <skos:prefLabel>1D variable 68.3 % probability; 1 redundant measurement</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Indicator that an item is correct.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4"/>
+    <skos:example rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True"/>
+    <skos:prefLabel>correctness indicator</skos:prefLabel>
+    <ns1:basicMeasureID>BM4</ns1:basicMeasureID>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2">
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE99.8r2</ns1:basicMeasureID>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"/>
     <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:basicMeasureID>LE99.8r2</ns1:basicMeasureID>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements.</skos:definition>
     <skos:prefLabel>1D variable 99.8 % probability; 2 redundant measurements</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99">
+    <skos:prefLabel>99% spherical accuracy standard</skos:prefLabel>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit.</skos:definition>
-    <skos:prefLabel>1D variable 90 % probability</skos:prefLabel>
-    <ns1:basicMeasureID>LE90</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"/>
-    <skos:prefLabel>1D variable 90 % probability; 2 redundant measurements</skos:prefLabel>
-    <ns1:basicMeasureID>LE90r2</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2">
-    <skos:prefLabel>1D variable 99 % probability; 2 redundant measurements</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE99r2</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"/>
+    <ns1:basicMeasureID>SAS99</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"/>
-    <ns1:basicMeasureID>LE95r5</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 95 % probability; 5 redundant measurements</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8">
+    <skos:prefLabel>One dimensional variable 99,8 % probability</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"/>
+    <skos:definition>confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:basicMeasureID>LE99.8</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc229d7638ccb45768553be9274c1df07">
-    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:basicMeasureID>LE95r10</ns1:basicMeasureID>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"/>
+    <skos:prefLabel>1D variable 95 % probability; 10 redundant measurements</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne433493e2cdf4aa2b5a0731478c361b5">
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
+  <rdf:Description rdf:nodeID="N44ec6a8d8cc843c0ac57d947d2124560">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     <dct:format>text/turtle</dct:format>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>2D random variable 95 % probability</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"/>
-    <ns1:basicMeasureID>CE95</ns1:basicMeasureID>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:prefLabel>2D random variable 95 % probability</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3">
-    <ns1:basicMeasureID>LE68.3r3</ns1:basicMeasureID>
-    <skos:prefLabel>1D variable 68.3 % probability; 3 redundant measurements</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4">
-    <skos:prefLabel>1D variable 50 % probability; 4 redundant measurements</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE50r4</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>LE68.3r2</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"/>
-    <skos:prefLabel>1D variable 68.3 % probability; 2 redundant measurements</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:prefLabel>1D variable 50 % probability; 5 redundant measurements</skos:prefLabel>
-    <ns1:basicMeasureID>LE50r5</ns1:basicMeasureID>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1">
-    <skos:prefLabel>1D variable 99.8 % probability; 1 redundant measurement</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-    <ns1:basicMeasureID>LE99.8r1</ns1:basicMeasureID>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>CE99.8</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>2D random variable 99.8 % probability</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:prefLabel>2D random variable 99.8 % probability</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:prefLabel>1D variable 68.3 % probability</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>LE68.3</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4">
-    <skos:prefLabel>2D random variable 39.4 % probability</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"/>
-    <skos:definition>confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area</skos:definition>
-    <ns1:basicMeasureID>CE39.4</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbf688c94106642a8a3667bc13e5cfdbf">
+  <rdf:Description rdf:nodeID="Na00996efb8094b33850a2c8bed7643f9">
     <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
@@ -434,510 +220,872 @@
     <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
     <dct:hasVersion>0.3.53</dct:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Na6e9ebd2c3db470da094f4096a60ebcc">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90">
-    <skos:definition>2D random variable 90 % probability</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>2D random variable 90 % probability</skos:prefLabel>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8">
+    <skos:prefLabel>2D random variable 99.8 % probability</skos:prefLabel>
+    <skos:definition>2D random variable 99.8 % probability</skos:definition>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:basicMeasureID>CE99.8</ns1:basicMeasureID>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>CE90</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4"/>
-    <skos:definition>Indicator that an item is correct.</skos:definition>
-    <ns1:basicMeasureID>BM4</ns1:basicMeasureID>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
-    <skos:example>True</skos:example>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4"/>
-    <skos:prefLabel>correctness indicator</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3">
+    <skos:prefLabel>1D variable 90 % probability; 3 redundant measurements</skos:prefLabel>
+    <ns1:basicMeasureID>LE90r3</ns1:basicMeasureID>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10">
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 99 % probability; 10 redundant measurements</skos:prefLabel>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"/>
-    <ns1:basicMeasureID>LE99r10</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 95 % probability; 3 redundant measurements</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <ns1:basicMeasureID>LE95r3</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3">
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3"/>
-    <skos:prefLabel>error count</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>BM3</ns1:basicMeasureID>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>11</skos:example>
-    <skos:definition>Total number of items that are subject to an error of a specified type.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10">
-    <ns1:basicMeasureID>LE95r10</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"/>
-    <skos:prefLabel>1D variable 95 % probability; 10 redundant measurements</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10">
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 50 % probability; 10 redundant measurements</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>LE50r10</ns1:basicMeasureID>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2">
-    <ns1:basicMeasureID>LE95r2</ns1:basicMeasureID>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"/>
-    <skos:prefLabel>1D variable 95 % probability; 2 redundant measurements</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb3">
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <dct:hasVersion>0.3.53</dct:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"/>
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"/>
-    <skos:prefLabel>Standard deviation in z-direction - true value known</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>SD1z</ns1:basicMeasureID>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r">
     <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"/>
-    <ns1:basicMeasureID>LE99r1</ns1:basicMeasureID>
-    <skos:prefLabel>1D variable 99 % probability; 1 redundant measurement</skos:prefLabel>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1">
-    <skos:prefLabel>1D variable 50 % probability; 1 redundant measurement</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>LE50r1</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement.</skos:definition>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>1D variable 68.3 % probability; 10 redundant measurements</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"/>
-    <ns1:basicMeasureID>LE68.3r10</ns1:basicMeasureID>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5">
-    <skos:prefLabel>1D variable 99.8 % probability; 5 redundant measurements</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"/>
-    <ns1:basicMeasureID>LE99.8r5</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4">
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 68.3 % probability; 4 redundant measurements</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>LE68.3r4</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5">
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"/>
     <skos:prefLabel>1D variable 99 % probability; 5 redundant measurements</skos:prefLabel>
     <ns1:basicMeasureID>LE99r5</ns1:basicMeasureID>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4">
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <ns1:basicMeasureID>LE99.8r4</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:prefLabel>1D variable 99.8 % probability; 4 redundant measurements</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:definition>Number of the erroneous items with respect to the total number of items that should have been present.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:example rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme"/>
+    <skos:prefLabel>error rate</skos:prefLabel>
+    <ns1:basicMeasureID>BM2</ns1:basicMeasureID>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1">
+    <ns1:basicMeasureID>LE50r1</ns1:basicMeasureID>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 50 % probability; 1 redundant measurement</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>LE99.8r10</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10"/>
+    <skos:prefLabel>1D variable 99.8 % probability; 10 redundant measurements</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5">
-    <skos:prefLabel>correct items count</skos:prefLabel>
     <ns1:basicMeasureID>BM5</ns1:basicMeasureID>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:example>571</skos:example>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
+    <skos:example rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571"/>
     <skos:definition>Total number of items that are free of errors of a specified type.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"/>
-    <ns1:basicMeasureID>LE99r4</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 99 % probability; 4 redundant measurements</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:basicMeasureID>LE99r3</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 99 % probability; 3 redundant measurements</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90">
-    <ns1:basicMeasureID>SAS90</ns1:basicMeasureID>
-    <skos:prefLabel>90% spherical accuracy standard</skos:prefLabel>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"/>
-    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne90448fd624347bc8f5680ffcbc9cada">
-    <dct:hasVersion>0.3.53</dct:hasVersion>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <ns1:basicMeasureID>LE68.3r5</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements.</skos:definition>
-    <skos:prefLabel>1D variable 68.3 % probability; 5 redundant measurements</skos:prefLabel>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99">
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>LE99</ns1:basicMeasureID>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit.</skos:definition>
-    <skos:prefLabel>1D variable 99 % probability</skos:prefLabel>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N25856ffb6a944794a2dffeef9bea600a">
-    <prov:used rdf:nodeID="Na6e9ebd2c3db470da094f4096a60ebcc"/>
-    <prov:used rdf:nodeID="Ne70cd679d5c04d0da9ec7cd731221f7a"/>
-    <prov:used rdf:nodeID="Nc229d7638ccb45768553be9274c1df07"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:45.950097</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:47.510556</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="N5a8d337cd437483e9788ea458509a829"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="Nbf688c94106642a8a3667bc13e5cfdbf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer"/>
+    <skos:prefLabel>correct items count</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95">
     <ns1:basicMeasureID>LE95</ns1:basicMeasureID>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:prefLabel>1D variable 95 % probability</skos:prefLabel>
-    <skos:definition>Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"/>
     <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"/>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2">
-    <skos:definition>Number of the erroneous items with respect to the total number of items that should have been present.</skos:definition>
+    <skos:definition>Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95"/>
+    <skos:prefLabel>1D variable 95 % probability</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <skos:example>MD2bme</skos:example>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
-    <skos:prefLabel>error rate</skos:prefLabel>
-    <ns1:basicMeasureID>BM2</ns1:basicMeasureID>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb2">
-    <dct:format>application/json</dct:format>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json"/>
-    <dct:hasVersion>git:a44cea16274bed8c04b4897d71d85be91d058901</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y">
-    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"/>
-    <ns1:basicMeasureID>SD1y</ns1:basicMeasureID>
     <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:prefLabel>Standard deviation in y-direction - true value known</skos:prefLabel>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb1">
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:08.204839</prov:endedAtTime>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:08.089545</prov:startedAtTime>
-    <prov:used rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb2"/>
-    <prov:wasInformedBy rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb4"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasAssociatedWith rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0c8ecf7461b343598b0697aaba62b722">
-    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.rdf">
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>application/rdf+xml</dct:format>
-    <prov:wasGeneratedBy rdf:nodeID="N25856ffb6a944794a2dffeef9bea600a"/>
-    <prov:wasAttributedTo rdf:nodeID="Nbf688c94106642a8a3667bc13e5cfdbf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne27d563baf704924a81f0de6bfa3fcbbb4">
-    <dct:identifier>40b29e2f-968f-4c80-aeab-45f59fb86347</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4">
-    <skos:prefLabel>1D variable 90 % probability; 4 redundant measurements</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
-    <ns1:basicMeasureID>LE90r4</ns1:basicMeasureID>
-    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements.</skos:definition>
-    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
-    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N95e963341b1c47838f0a0993d6f8e0b4">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dct:format>text/turtle</dct:format>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5a8d337cd437483e9788ea458509a829">
-    <dct:identifier>40969a9f-8e0d-4fbf-9fa2-2e84ef9bf866</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne70cd679d5c04d0da9ec7cd731221f7a">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6401ed35c1c042188a02b7e312d5c0b6">
-    <dct:identifier>40969a9f-8e0d-4fbf-9fa2-2e84ef9bf866</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure">
-    <skos:prefLabel>ISO19157-3 basic quality measures</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <skos:definition>ISO19157-3 basic quality measures</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3">
     <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2">
+    <skos:definition>Standard deviation for observations or measurements where the true value unknown.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:basicMeasureID>SD2</ns1:basicMeasureID>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2"/>
+    <skos:prefLabel>Standard deviation - true value unknown</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5">
+    <skos:prefLabel>1D variable 99.8 % probability; 5 redundant measurements</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <ns1:basicMeasureID>LE99.8r5</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"/>
+    <skos:prefLabel>1D variable 50 % probability</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50"/>
+    <skos:definition>Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:basicMeasureID>LE50</ns1:basicMeasureID>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10"/>
+    <ns1:basicMeasureID>LE68.3r10</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:prefLabel>1D variable 68.3 % probability; 10 redundant measurements</skos:prefLabel>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10">
+    <ns1:basicMeasureID>LE99r10</ns1:basicMeasureID>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"/>
+    <skos:prefLabel>1D variable 99 % probability; 10 redundant measurements</skos:prefLabel>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3">
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 99 % probability; 1 redundant measurement</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1"/>
+    <ns1:basicMeasureID>LE99r1</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1">
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>LE68.3r1</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <skos:prefLabel>1D variable 68.3 % probability; 1 redundant measurement</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:basicMeasureID>LE99</ns1:basicMeasureID>
+    <skos:definition>Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 99 % probability</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3">
     <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:basicMeasureID>LE90r2</ns1:basicMeasureID>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"/>
+    <skos:prefLabel>1D variable 90 % probability; 2 redundant measurements</skos:prefLabel>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1">
+    <ns1:basicMeasureID>BM1</ns1:basicMeasureID>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:example rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False"/>
+    <skos:prefLabel>error indicator</skos:prefLabel>
+    <skos:definition>Indicator that an item is in error.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f316c464cb64011b8ab46a7577e4560">
+    <prov:used rdf:nodeID="Nb25578dd4ab7413d8e2ab38a0efe965b"/>
+    <prov:used rdf:nodeID="N44ec6a8d8cc843c0ac57d947d2124560"/>
+    <prov:used rdf:nodeID="N75065ec7d2134b33ac37b5333c77988a"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:23.301445</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:24.961392</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N513c69c8b2584106988b4df7b66ad8f3"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="Na00996efb8094b33850a2c8bed7643f9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"/>
+    <ns1:basicMeasureID>LE95r5</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 95 % probability; 5 redundant measurements</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4"/>
+    <ns1:basicMeasureID>LE90r4</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <skos:prefLabel>1D variable 90 % probability; 4 redundant measurements</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"/>
+    <skos:prefLabel>90% spherical accuracy standard</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:basicMeasureID>SAS90</ns1:basicMeasureID>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"/>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <ns1:basicMeasureID>LE99.8r1</ns1:basicMeasureID>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 99.8 % probability; 1 redundant measurement</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4">
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4"/>
+    <skos:prefLabel>1D variable 95 % probability; 4 redundant measurements</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4"/>
+    <ns1:basicMeasureID>LE95r4</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb1">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:09:49.905316</prov:endedAtTime>
+    <prov:used rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb2"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:09:49.787603</prov:startedAtTime>
+    <prov:wasAssociatedWith rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb3"/>
+    <prov:wasInformedBy rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>1D variable 95 % probability; 1 redundant measurement</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1"/>
+    <ns1:basicMeasureID>LE95r1</ns1:basicMeasureID>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4"/>
+    <ns1:basicMeasureID>LE99r4</ns1:basicMeasureID>
+    <skos:prefLabel>1D variable 99 % probability; 4 redundant measurements</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE">
+    <ns1:basicMeasureID>MRSE</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:prefLabel>Mean radial spherical error</skos:prefLabel>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE"/>
+    <skos:definition>Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"/>
+    <ns1:basicMeasureID>LE99r2</ns1:basicMeasureID>
+    <skos:prefLabel>1D variable 99 % probability; 2 redundant measurements</skos:prefLabel>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"/>
+    <skos:prefLabel>1D variable 68.3 % probability; 2 redundant measurements</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2"/>
+    <ns1:basicMeasureID>LE68.3r2</ns1:basicMeasureID>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.rdf">
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>application/rdf+xml</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="N1f316c464cb64011b8ab46a7577e4560"/>
+    <prov:wasAttributedTo rdf:nodeID="Na00996efb8094b33850a2c8bed7643f9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90">
+    <skos:prefLabel>1D variable 90 % probability</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit.</skos:definition>
+    <ns1:basicMeasureID>LE90</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:definition>Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>LE68.3</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"/>
+    <skos:prefLabel>1D variable 68.3 % probability</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>SD1z</ns1:basicMeasureID>
+    <skos:prefLabel>Standard deviation in z-direction - true value known</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50"/>
+    <skos:prefLabel>2D random variable 50 % probability</skos:prefLabel>
+    <skos:definition>2D random variable 50 % probability</skos:definition>
+    <ns1:basicMeasureID>CE50</ns1:basicMeasureID>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>LE68.3r3</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:prefLabel>1D variable 68.3 % probability; 3 redundant measurements</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5">
+    <ns1:basicMeasureID>LE68.3r5</ns1:basicMeasureID>
+    <skos:prefLabel>1D variable 68.3 % probability; 5 redundant measurements</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>LE50r5</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <skos:prefLabel>1D variable 50 % probability; 5 redundant measurements</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95">
+    <skos:prefLabel>2D random variable 95 % probability</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"/>
+    <ns1:basicMeasureID>CE95</ns1:basicMeasureID>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:definition>2D random variable 95 % probability</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"/>
+    <skos:definition>Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <skos:prefLabel>1D variable 68.3 % probability; 4 redundant measurements</skos:prefLabel>
+    <ns1:basicMeasureID>LE68.3r4</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb3">
+    <dct:hasVersion>0.3.53</dct:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real"/>
+    <skos:example rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6"/>
+    <ns1:basicMeasureID>BM6</ns1:basicMeasureID>
+    <skos:definition>Number of the correct items with respect to the total number of items that should have been present.</skos:definition>
+    <skos:prefLabel>correct items rate</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10">
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements.</skos:definition>
+    <ns1:basicMeasureID>LE90r10</ns1:basicMeasureID>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:prefLabel>1D variable 90 % probability; 10 redundant measurements</skos:prefLabel>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>SD1</ns1:basicMeasureID>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <skos:prefLabel>Standard deviation - true value known</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N745340427cdd4890846f533434a06dff">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5"/>
+    <ns1:basicMeasureID>LE90r5</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements.</skos:definition>
+    <skos:prefLabel>1D variable 90 % probability; 5 redundant measurements</skos:prefLabel>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:basicMeasureID>LE99r3</ns1:basicMeasureID>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"/>
+    <skos:prefLabel>1D variable 99 % probability; 3 redundant measurements</skos:prefLabel>
+    <skos:definition>Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl">
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <prov:wasGeneratedBy rdf:nodeID="N5127b22011c74a898ac578e78359aa9f"/>
+    <dct:format>text/turtle</dct:format>
+    <prov:wasAttributedTo rdf:nodeID="N8c96258966fb4f8a9afbbc86c082463b"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>Standard deviation in y-direction - true value known</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:basicMeasureID>SD1y</ns1:basicMeasureID>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3">
+    <skos:prefLabel>1D variable 99.8 % probability; 3 redundant measurements</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"/>
+    <ns1:basicMeasureID>LE99.8r3</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb4">
+    <dct:identifier>3a79b4ac-a8be-4be1-a642-058e60c29232</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 50 % probability; 2 redundant measurements</skos:prefLabel>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2"/>
+    <ns1:basicMeasureID>LE50r2</ns1:basicMeasureID>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"/>
+    <ns1:basicMeasureID>CE90</ns1:basicMeasureID>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90"/>
+    <skos:definition>2D random variable 90 % probability</skos:definition>
+    <skos:prefLabel>2D random variable 90 % probability</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb25578dd4ab7413d8e2ab38a0efe965b">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4">
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:basicMeasureID>LE50r4</ns1:basicMeasureID>
+    <skos:prefLabel>1D variable 50 % probability; 4 redundant measurements</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"/>
+    <skos:definition>Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:prefLabel>1D variable 95 % probability; 2 redundant measurements</skos:prefLabel>
+    <ns1:basicMeasureID>LE95r2</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x">
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <skos:prefLabel>Standard deviation in x-direction - true value known</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>Standard deviation for observations or measurements where the true value known.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x"/>
+    <ns1:basicMeasureID>SD1x</ns1:basicMeasureID>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f940613ee214b3aa155898f5fd8a84f">
+    <dct:format>text/turtle</dct:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4">
+    <ns1:basicMeasureID>CE39.4</ns1:basicMeasureID>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <skos:definition>confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area</skos:definition>
+    <skos:prefLabel>2D random variable 39.4 % probability</skos:prefLabel>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/BasicMeasure"/>
+    <skos:prefLabel>1D variable 50 % probability; 3 redundant measurements</skos:prefLabel>
+    <skos:definition>Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements.</skos:definition>
+    <ns1:measureDescription rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure"/>
+    <ns1:valueType rdf:resource="http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure"/>
+    <ns1:basicMeasureID>LE50r3</ns1:basicMeasureID>
+    <skos:narrower rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c96258966fb4f8a9afbbc86c082463b">
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <dct:hasVersion>0.3.53</dct:hasVersion>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3">
     <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n043af388de48458a8e5f26a4b73f8f1fb2">
+    <dct:format>application/json</dct:format>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json"/>
+    <dct:hasVersion>git:3e6c70232311cd0fa9cbb96a6f81d351cd53ac8c</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N513c69c8b2584106988b4df7b66ad8f3">
+    <dct:identifier>432d1217-3281-42cc-aed2-33aad23d920a</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1fe4622bdc43406aa2cc5c3888df0a93">
+    <dct:identifier>432d1217-3281-42cc-aed2-33aad23d920a</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f03356dc5404a30ab81464cad025e0e">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75065ec7d2134b33ac37b5333c77988a">
+    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10">
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10"/>
   </rdf:Description>
 </rdf:RDF>

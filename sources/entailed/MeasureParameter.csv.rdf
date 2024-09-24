@@ -2,335 +2,337 @@
 <rdf:RDF
    xmlns:dct="http://purl.org/dc/terms/"
    xmlns:dqm="http://www.opengis.net/def/metamodel/isodqm/"
+   xmlns:ns1="http://www.opengis.net/ogc-na#"
    xmlns:prov="http://www.w3.org/ns/prov#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP41">
-    <dqm:valueType>Real</dqm:valueType>
-    <skos:definition>Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP204">
+    <skos:definition>Identification of child polygons.</skos:definition>
+    <dqm:valueType>Percentage</dqm:valueType>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Sample size</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Polygon ID</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N81d962c6b4d84746bed64a97c096a212">
-    <dct:identifier>40969a9f-8e0d-4fbf-9fa2-2e84ef9bf866</dct:identifier>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_1">
+    <skos:prefLabel>Maximum sliver area size</skos:prefLabel>
+    <dqm:valueType>Real</dqm:valueType>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>The maximum area determines the upper limit of a sliver. This is to prevent surfaces with sinuous perimeters and large areas from being mistaken as slivers.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nde0f19d3360840ceafeb1c1572d29163">
-    <prov:used rdf:nodeID="N4b10ac9a2a614597b5d5bc6cb1afb057"/>
-    <prov:used rdf:nodeID="N72fd4863c233488ab6d39f30176ce039"/>
-    <prov:used rdf:nodeID="N0635fb68decf4177b737685d36dd95f1"/>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureParameter.csv.ttl">
+    <dct:format>text/turtle</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="N6dee85d866f941a0814185efa7b675a2"/>
+    <prov:wasAttributedTo rdf:nodeID="N3739dff5f0e14464b19443033dd8d594"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP30">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>emax</skos:prefLabel>
+    <skos:definition>Threshold for accepted positional discrepancy.</skos:definition>
+    <dqm:valueType>Integer</dqm:valueType>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_2">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>n</skos:prefLabel>
+    <dqm:valueType>Ratio</dqm:valueType>
+    <skos:definition>Number of classes under consideration.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP201">
+    <skos:definition>Tolerance of differences in the coordinates for two datasets.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Tolerance</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35">
+    <dct:description>90</dct:description>
+    <dqm:valueType>Percentage</dqm:valueType>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Significance level</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Measure 90%</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0f7f3beeeeda484f8b74dec701f330fe">
+    <prov:used rdf:nodeID="N1500b21765f448c9905e060a77a5281d"/>
+    <prov:used rdf:nodeID="Neec37b32ca31471693409b5262bdba03"/>
+    <prov:used rdf:nodeID="Nfc8fc65e0f324bc38d4c586c2295a348"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:44.983925</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:45.549719</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="N81d962c6b4d84746bed64a97c096a212"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:35.558915</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:36.129971</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="Nae47a6beceb64a0ca0329fc8f0bed82d"/>
     <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="N3da975bb4f9a4b7d9aa3aa78c96d42b8"/>
+    <prov:wasAssociatedWith rdf:nodeID="N017eca832d584b348ef848c748922888"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP34">
+    <skos:definition>Measure 68.3%</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:valueType>Percentage</dqm:valueType>
+    <dct:description>68.3</dct:description>
+    <skos:prefLabel>Significance level</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b1">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasAssociatedWith rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b3"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:09:49.411346</prov:startedAtTime>
+    <prov:used rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b2"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:09:49.521749</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP2">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:valueType>Integer</dqm:valueType>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Number of items.</skos:definition>
+    <skos:prefLabel>n</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b3">
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <dct:hasVersion>0.3.53</dct:hasVersion>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP31">
+    <dqm:valueType>Integer</dqm:valueType>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>Threshold above which the positional discrepancies are counted.</skos:definition>
+    <skos:prefLabel>emax</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP23">
+    <dqm:valueType>Real</dqm:valueType>
+    <skos:definition>Search distance from the end of a dangling line.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Search distance</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureParameter.csv.rdf">
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>application/rdf+xml</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="N0f7f3beeeeda484f8b74dec701f330fe"/>
+    <prov:wasAttributedTo rdf:nodeID="N017eca832d584b348ef848c748922888"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b4">
+    <dct:identifier>3a79b4ac-a8be-4be1-a642-058e60c29232</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP207">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Maximum permitted age</skos:prefLabel>
+    <skos:definition>Maximum permitted age as defined in the data product specification.</skos:definition>
+    <dqm:valueType>Integer</dqm:valueType>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6dee85d866f941a0814185efa7b675a2">
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:36.113608</prov:endedAtTime>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T04:10:35.558915</prov:startedAtTime>
+    <prov:used rdf:nodeID="Nd8cb664ad1154485b8f09a531e33cf30"/>
+    <prov:used rdf:nodeID="N5dc25abd72b4472798993dcc13c3b27b"/>
+    <prov:used rdf:nodeID="N534256623a074470a47d3c653c891f08"/>
+    <prov:wasInformedBy rdf:nodeID="N3b44700176884691ad9c356b0cf99e35"/>
+    <prov:wasAssociatedWith rdf:nodeID="N3739dff5f0e14464b19443033dd8d594"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure">
+    <ns1:targetGraph>https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter</ns1:targetGraph>
+    <skos:definition>ISO19157-3 quality measure Parameters</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:prefLabel>ISO19157-3 quality measure Parameters</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP69">
+    <skos:definition>Measure 50%</skos:definition>
+    <dqm:valueType>Percentage</dqm:valueType>
+    <skos:prefLabel>Significance level</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N534256623a074470a47d3c653c891f08">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1500b21765f448c9905e060a77a5281d">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureParameter.csv.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neec37b32ca31471693409b5262bdba03">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP68">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:valueType>Percentage</dqm:valueType>
+    <skos:prefLabel>Significance level</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Measure 68.3%</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP49">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Sample size</skos:prefLabel>
+    <dqm:valueType>Real</dqm:valueType>
+    <skos:definition>Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n37a81e161ca0464d9a0f9bf988675cf7b2">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>application/json</dct:format>
+    <dct:hasVersion>git:3e6c70232311cd0fa9cbb96a6f81d351cd53ac8c</dct:hasVersion>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureParameter.csv.json"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP37">
+    <skos:definition>Measure 99%</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:description>99</dct:description>
+    <dqm:valueType>Percentage</dqm:valueType>
+    <skos:prefLabel>Significance level</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_2">
+    <dqm:valueType>Real</dqm:valueType>
     <skos:definition>The thickness quotient shall be a real number between 0 and 1. This quotient is determined by the following formula:
 T is the thickness quotient
 T= 4 π [area]/[perimeter] 2
 T= 1 value corresponds to a circle that has the largest area/perimeter 2 value.
 T= 0 value corresponds to a line that has the smallest area/perimeter 2 value</skos:definition>
-    <dqm:valueType>Real</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Thickness quotient</skos:prefLabel>
     <dct:description>MD25</dct:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP37">
-    <dqm:valueType>Percentage</dqm:valueType>
+    <skos:prefLabel>Thickness quotient</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>Measure 99%</skos:definition>
-    <skos:prefLabel>Significance level</skos:prefLabel>
-    <dct:description>99</dct:description>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb1">
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:08.083431</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb4"/>
-    <prov:used rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb2"/>
-    <prov:wasAssociatedWith rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb3"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:08.010490</prov:startedAtTime>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP206">
+    <skos:prefLabel>Maintenance and update frequency</skos:prefLabel>
+    <dqm:valueType>MD_MaintenanceFrequencyCode</dqm:valueType>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>Frequency with which modifications and deletions are made to the data after it is first produced.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_1">
+  <rdf:Description rdf:nodeID="N5dc25abd72b4472798993dcc13c3b27b">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureParameter.csv.ttl"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP29">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Threshold for accepted positional uncertainties.</skos:definition>
+    <skos:prefLabel>emax</skos:prefLabel>
     <dqm:valueType>Real</dqm:valueType>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36">
+    <dct:description>95</dct:description>
+    <dqm:valueType>Percentage</dqm:valueType>
+    <skos:prefLabel>Significance level</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Maximum sliver area size</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>The maximum area determines the upper limit of a sliver. This is to prevent surfaces with sinuous perimeters and large areas from being mistaken as slivers.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:definition>Measure 95%</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb4">
-    <dct:identifier>40b29e2f-968f-4c80-aeab-45f59fb86347</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9faa5b2b1c3c4f628510639ccb61e35f">
-    <prov:wasAssociatedWith rdf:nodeID="N584c62b6f4c241b9a4d424b28fd239fb"/>
-    <prov:used rdf:nodeID="Nf7454c93a73b4d35bb5a7435d058e276"/>
-    <prov:used rdf:nodeID="N50db9f1049b5434db4f98a191ef3ab0c"/>
-    <prov:used rdf:nodeID="N572eb4b24bd045b9a7aa86700aaa556a"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:44.983925</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-24T02:58:45.532805</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="Nd69c88f3b46d481da0d0fbf9f0397657"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
+  <rdf:Description rdf:nodeID="Nd8cb664ad1154485b8f09a531e33cf30">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:hasVersion>git:bac8fee0b5ea6b60387c2913afc339b7d4615b46</dct:hasVersion>
+    <dct:format>text/turtle</dct:format>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP33">
-    <dct:description>50</dct:description>
     <skos:definition>Measure 50%</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
+    <dqm:valueType>Percentage</dqm:valueType>
     <skos:prefLabel>Significance level</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Percentage</dqm:valueType>
+    <dct:description>50</dct:description>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP201">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_1">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Tolerance of differences in the coordinates for two datasets.</skos:definition>
-    <skos:prefLabel>Tolerance</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_2">
-    <dqm:valueType>Ratio</dqm:valueType>
     <skos:prefLabel>n</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition>Number of classes under consideration.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:valueType>Real</dqm:valueType>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP49">
+  <rdf:Description rdf:nodeID="Nfc8fc65e0f324bc38d4c586c2295a348">
+    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP41">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
     <skos:prefLabel>Sample size</skos:prefLabel>
     <dqm:valueType>Real</dqm:valueType>
-    <skos:definition>Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3739dff5f0e14464b19443033dd8d594">
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dct:hasVersion>0.3.53</dct:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP24">
     <skos:prefLabel>Search tolerance </skos:prefLabel>
+    <dqm:valueType>Real</dqm:valueType>
     <skos:definition>Search tolerance of minimum allowable length in the dataset.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Real</dqm:valueType>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35">
-    <skos:prefLabel>Significance level</skos:prefLabel>
-    <dqm:valueType>Percentage</dqm:valueType>
-    <dct:description>90</dct:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>Measure 90%</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N3da975bb4f9a4b7d9aa3aa78c96d42b8">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
-    <dct:hasVersion>0.3.53</dct:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <dqm:valueType>Percentage</dqm:valueType>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Measure 99.8%</skos:definition>
-    <skos:prefLabel>Significance level</skos:prefLabel>
-    <dct:description>99.8</dct:description>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb2">
-    <dct:hasVersion>git:a44cea16274bed8c04b4897d71d85be91d058901</dct:hasVersion>
-    <dct:format>application/json</dct:format>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureParameter.csv.json"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP2">
-    <dqm:valueType>Integer</dqm:valueType>
-    <skos:prefLabel>n</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>Number of items.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP51">
-    <skos:definition>1α</skos:definition>
-    <dqm:valueType>Integer</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:prefLabel>Significance level</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP205">
-    <skos:prefLabel>User defined maintenance</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>TM_PeriodDuration described with at least one of the parameters described in ISO 19108:2005.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP68">
-    <skos:prefLabel>Significance level</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Percentage</dqm:valueType>
-    <skos:definition>Measure 68.3%</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureParameter.csv.ttl">
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <prov:wasGeneratedBy rdf:nodeID="N9faa5b2b1c3c4f628510639ccb61e35f"/>
-    <prov:wasAttributedTo rdf:nodeID="N584c62b6f4c241b9a4d424b28fd239fb"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP34">
-    <dqm:valueType>Percentage</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>Measure 68.3%</skos:definition>
-    <skos:prefLabel>Significance level</skos:prefLabel>
-    <dct:description>68.3</dct:description>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4b10ac9a2a614597b5d5bc6cb1afb057">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureParameter.csv.ttl"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP30">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Threshold for accepted positional discrepancy.</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:prefLabel>emax</skos:prefLabel>
-    <dqm:valueType>Integer</dqm:valueType>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>Sample size</skos:prefLabel>
-    <dqm:valueType>Real</dqm:valueType>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n521cb9015b1c443fa41d74425f2ed99eb3">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <dct:hasVersion>0.3.53</dct:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N584c62b6f4c241b9a4d424b28fd239fb">
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
-    <dct:hasVersion>0.3.53</dct:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP207">
-    <dqm:valueType>Integer</dqm:valueType>
-    <skos:prefLabel>Maximum permitted age</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Maximum permitted age as defined in the data product specification.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP31">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Integer</dqm:valueType>
-    <skos:prefLabel>emax</skos:prefLabel>
-    <skos:definition>Threshold above which the positional discrepancies are counted.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_1">
-    <skos:definition>Number of classes under consideration.</skos:definition>
-    <dqm:valueType>Real</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>n</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_3">
-    <skos:definition>Number of classes under consideration.</skos:definition>
-    <dqm:valueType>Percentage</dqm:valueType>
     <skos:prefLabel>n</skos:prefLabel>
+    <dqm:valueType>Percentage</dqm:valueType>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
+    <skos:definition>Number of classes under consideration.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N72fd4863c233488ab6d39f30176ce039">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>text/turtle</dct:format>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N50db9f1049b5434db4f98a191ef3ab0c">
-    <dct:format>text/turtle</dct:format>
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP206">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>MD_MaintenanceFrequencyCode</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:prefLabel>Maintenance and update frequency</skos:prefLabel>
-    <skos:definition>Frequency with which modifications and deletions are made to the data after it is first produced.</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP29">
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1">
     <dqm:valueType>Real</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:prefLabel>emax</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition>Threshold for accepted positional uncertainties.</skos:definition>
+    <skos:definition>Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population.</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Sample size</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf7454c93a73b4d35bb5a7435d058e276">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureParameter.csv.ttl"/>
-    <dct:format>text/turtle</dct:format>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd69c88f3b46d481da0d0fbf9f0397657">
-    <dct:identifier>40969a9f-8e0d-4fbf-9fa2-2e84ef9bf866</dct:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36">
-    <skos:definition>Measure 95%</skos:definition>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP51">
     <skos:prefLabel>Significance level</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <dct:description>95</dct:description>
+    <skos:definition>1α</skos:definition>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dqm:valueType>Integer</dqm:valueType>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38">
     <dqm:valueType>Percentage</dqm:valueType>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureParameter.csv.rdf">
-    <dct:hasVersion>git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0</dct:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dct:format>application/rdf+xml</dct:format>
-    <prov:wasGeneratedBy rdf:nodeID="Nde0f19d3360840ceafeb1c1572d29163"/>
-    <prov:wasAttributedTo rdf:nodeID="N3da975bb4f9a4b7d9aa3aa78c96d42b8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter">
-    <skos:definition>ISO19157-3 quality measure Parameters</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <skos:prefLabel>ISO19157-3 quality measure Parameters</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N572eb4b24bd045b9a7aa86700aaa556a">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP204">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:prefLabel>Polygon ID</skos:prefLabel>
-    <skos:definition>Identification of child polygons.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Percentage</dqm:valueType>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP23">
-    <dqm:valueType>Real</dqm:valueType>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
-    <skos:definition>Search distance from the end of a dangling line.</skos:definition>
-    <skos:prefLabel>Search distance</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP69">
-    <skos:definition>Measure 50%</skos:definition>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter"/>
     <skos:prefLabel>Significance level</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dqm:valueType>Percentage</dqm:valueType>
+    <dct:description>99.8</dct:description>
+    <skos:definition>Measure 99.8%</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N0635fb68decf4177b737685d36dd95f1">
-    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  <rdf:Description rdf:nodeID="N3b44700176884691ad9c356b0cf99e35">
+    <dct:identifier>432d1217-3281-42cc-aed2-33aad23d920a</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP205">
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition>TM_PeriodDuration described with at least one of the parameters described in ISO 19108:2005.</skos:definition>
+    <skos:prefLabel>User defined maintenance</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae47a6beceb64a0ca0329fc8f0bed82d">
+    <dct:identifier>432d1217-3281-42cc-aed2-33aad23d920a</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N017eca832d584b348ef848c748922888">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.3.53</rdfs:comment>
+    <dct:hasVersion>0.3.53</dct:hasVersion>
   </rdf:Description>
 </rdf:RDF>

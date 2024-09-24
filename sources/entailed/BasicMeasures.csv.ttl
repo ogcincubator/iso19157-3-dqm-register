@@ -8,87 +8,28 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0" ;
-    prov:wasAttributedTo _:Ne90448fd624347bc8f5680ffcbc9cada ;
+    dct:hasVersion "git:bac8fee0b5ea6b60387c2913afc339b7d4615b46" ;
+    prov:wasAttributedTo _:N8c96258966fb4f8a9afbbc86c082463b ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-24T02:58:47.473430"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-24T02:58:45.950097"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-24T04:10:24.920280"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-24T04:10:23.301445"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                    dct:hasVersion "git:bac8fee0b5ea6b60387c2913afc339b7d4615b46" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ] ;
-            prov:wasAssociatedWith _:Ne90448fd624347bc8f5680ffcbc9cada ;
-            prov:wasInformedBy [ dct:identifier "40969a9f-8e0d-4fbf-9fa2-2e84ef9bf866" ] ] .
+                    dct:hasVersion "git:bac8fee0b5ea6b60387c2913afc339b7d4615b46" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N8c96258966fb4f8a9afbbc86c082463b ;
+            prov:wasInformedBy [ dct:identifier "432d1217-3281-42cc-aed2-33aad23d920a" ] ] .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a skos:Concept ;
-    ns1:basicMeasureID "BM1" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
-    skos:definition "Indicator that an item is in error." ;
-    skos:example "False" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
-    skos:prefLabel "error indicator" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a skos:Concept ;
-    ns1:basicMeasureID "BM2" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
-    skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
-    skos:example "MD2bme" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
-    skos:prefLabel "error rate" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a skos:Concept ;
-    ns1:basicMeasureID "BM3" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
-    skos:definition "Total number of items that are subject to an error of a specified type." ;
-    skos:example "11" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
-    skos:prefLabel "error count" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a skos:Concept ;
-    ns1:basicMeasureID "BM4" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
-    skos:definition "Indicator that an item is correct." ;
-    skos:example "True" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
-    skos:prefLabel "correctness indicator" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a skos:Concept ;
-    ns1:basicMeasureID "BM5" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
-    skos:definition "Total number of items that are free of errors of a specified type." ;
-    skos:example "571" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
-    skos:prefLabel "correct items count" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a skos:Concept ;
-    ns1:basicMeasureID "BM6" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
-    skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
-    skos:example "0.9811" ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
-    skos:prefLabel "correct items rate" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "CE39.4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -97,7 +38,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     skos:prefLabel "2D random variable 39.4 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "CE50" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -106,7 +48,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     skos:prefLabel "2D random variable 50 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "CE90" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -115,7 +58,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     skos:prefLabel "2D random variable 90 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "CE95" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -124,7 +68,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     skos:prefLabel "2D random variable 95 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "CE99.8" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -133,7 +78,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     skos:prefLabel "2D random variable 99.8 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -142,7 +88,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     skos:prefLabel "1D variable 50 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -151,7 +98,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     skos:prefLabel "1D variable 50 % probability; 1 redundant measurement" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -160,7 +108,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     skos:prefLabel "1D variable 50 % probability; 10 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -169,7 +118,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     skos:prefLabel "1D variable 50 % probability; 2 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -178,7 +128,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     skos:prefLabel "1D variable 50 % probability; 3 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -187,7 +138,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     skos:prefLabel "1D variable 50 % probability; 4 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE50r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -196,7 +148,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     skos:prefLabel "1D variable 50 % probability; 5 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -205,7 +158,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     skos:prefLabel "1D variable 68.3 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -214,7 +168,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     skos:prefLabel "1D variable 68.3 % probability; 1 redundant measurement" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -223,7 +178,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     skos:prefLabel "1D variable 68.3 % probability; 10 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -232,7 +188,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     skos:prefLabel "1D variable 68.3 % probability; 2 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -241,7 +198,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     skos:prefLabel "1D variable 68.3 % probability; 3 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -250,7 +208,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     skos:prefLabel "1D variable 68.3 % probability; 4 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE68.3r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -259,7 +218,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     skos:prefLabel "1D variable 68.3 % probability; 5 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -268,7 +228,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     skos:prefLabel "1D variable 90 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -277,7 +238,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     skos:prefLabel "1D variable 90 % probability; 1 redundant measurement" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -286,7 +248,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     skos:prefLabel "1D variable 90 % probability; 10 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -295,7 +258,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     skos:prefLabel "1D variable 90 % probability; 2 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -304,7 +268,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     skos:prefLabel "1D variable 90 % probability; 3 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -313,7 +278,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     skos:prefLabel "1D variable 90 % probability; 4 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE90r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -322,7 +288,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     skos:prefLabel "1D variable 90 % probability; 5 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -331,7 +298,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     skos:prefLabel "1D variable 95 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -340,7 +308,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     skos:prefLabel "1D variable 95 % probability; 1 redundant measurement" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -349,7 +318,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     skos:prefLabel "1D variable 95 % probability; 10 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -358,7 +328,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     skos:prefLabel "1D variable 95 % probability; 2 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -367,7 +338,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     skos:prefLabel "1D variable 95 % probability; 3 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -376,7 +348,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     skos:prefLabel "1D variable 95 % probability; 4 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE95r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -385,7 +358,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     skos:prefLabel "1D variable 95 % probability; 5 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -394,7 +368,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     skos:prefLabel "1D variable 99 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -403,7 +378,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> ;
     skos:prefLabel "One dimensional variable 99,8 % probability" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -412,7 +388,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     skos:prefLabel "1D variable 99.8 % probability; 1 redundant measurement" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -421,7 +398,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     skos:prefLabel "1D variable 99.8 % probability; 10 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -430,7 +408,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     skos:prefLabel "1D variable 99.8 % probability; 2 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -439,7 +418,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     skos:prefLabel "1D variable 99.8 % probability; 3 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -448,7 +428,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     skos:prefLabel "1D variable 99.8 % probability; 4 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99.8r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -457,7 +438,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     skos:prefLabel "1D variable 99.8 % probability; 5 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99r1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -466,7 +448,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     skos:prefLabel "1D variable 99 % probability; 1 redundant measurement" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99r10" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -475,7 +458,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     skos:prefLabel "1D variable 99 % probability; 10 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99r2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -484,7 +468,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     skos:prefLabel "1D variable 99 % probability; 2 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99r3" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -493,7 +478,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     skos:prefLabel "1D variable 99 % probability; 3 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99r4" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -502,7 +488,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     skos:prefLabel "1D variable 99 % probability; 4 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "LE99r5" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -511,7 +498,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     skos:prefLabel "1D variable 99 % probability; 5 redundant measurements" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "MRSE" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -520,7 +508,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     skos:prefLabel "Mean radial spherical error" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SAS90" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -529,7 +518,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     skos:prefLabel "90% spherical accuracy standard" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SAS99" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -538,7 +528,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     skos:prefLabel "99% spherical accuracy standard" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SD1" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -547,7 +538,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
     skos:prefLabel "Standard deviation - true value known" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SD1x" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -556,7 +548,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
     skos:prefLabel "Standard deviation in x-direction - true value known" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SD1y" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -565,7 +558,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
     skos:prefLabel "Standard deviation in y-direction - true value known" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SD1z" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -574,7 +568,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
     skos:prefLabel "Standard deviation in z-direction - true value known" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SD2" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -583,7 +578,8 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
     skos:prefLabel "Standard deviation - true value unknown" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> a ns1:BasicMeasure,
+        skos:Concept ;
     ns1:basicMeasureID "SEP" ;
     ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
@@ -591,6 +587,16 @@
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     skos:prefLabel "Spherical error probable" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
 
@@ -716,25 +722,161 @@
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM1" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
+    skos:definition "Indicator that an item is in error." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
+    skos:prefLabel "error indicator" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM2" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
+    skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
+    skos:prefLabel "error rate" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM3" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
+    skos:definition "Total number of items that are subject to an error of a specified type." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
+    skos:prefLabel "error count" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM4" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
+    skos:definition "Indicator that an item is correct." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
+    skos:prefLabel "correctness indicator" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM5" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
+    skos:definition "Total number of items that are free of errors of a specified type." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
+    skos:prefLabel "correct items count" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM6" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
+    skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
+    skos:prefLabel "correct items rate" .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> a skos:ConceptScheme ;
     skos:definition "ISO19157-3 basic quality measures" ;
+    skos:hasTopConcept <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> ;
     skos:prefLabel "ISO19157-3 basic quality measures" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-24T02:58:08.204839"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-24T02:58:08.089545"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-24T04:09:49.905316"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-24T04:09:49.787603"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:a44cea16274bed8c04b4897d71d85be91d058901" ;
+            dct:hasVersion "git:3e6c70232311cd0fa9cbb96a6f81d351cd53ac8c" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "40b29e2f-968f-4c80-aeab-45f59fb86347" ] .
+    prov:wasInformedBy [ dct:identifier "3a79b4ac-a8be-4be1-a642-058e60c29232" ] .
 
-_:Ne90448fd624347bc8f5680ffcbc9cada a prov:Agent,
+_:N8c96258966fb4f8a9afbbc86c082463b a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.3.53" ;
