@@ -7,7 +7,8 @@ transform:
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
   # duplicate id into notation
   - walk(if (type == "object") then
-        .notation = .measureIdentifier
+         ( .notation = .measureIdentifier |
+        .name_id = "\(.measureIdentifier) - \(.name)" )
         else . end)
   # turn known fields with space separated lists into arrays
   - |
@@ -27,8 +28,8 @@ types:
 
 context:
   $:
-    # name,alias,elementName,basicMeasure,definition,description,parameter,
-    # Value type,Value structure,Source reference,example,Measure Identifier,Version,Status,ID
+    # measureIdentifier,name,alias,elementName,AbstractQualityElementID,BasicMeasure,definition,description,parameter,
+    # valueType,valueStructure,SourceReference,example,version,versionDateTime,status,statusDateTime
     skos: http://www.w3.org/2004/02/skos/core#
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
@@ -36,7 +37,8 @@ context:
     '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/
     measureIdentifier: '@id'
     notation: 'http://www.opengis.net/def/metamodel/isodqm/measureID'
-    name: skos:prefLabel
+    name_id: skos:prefLabel
+    name: dct:title
     alias: skos:altLabel
     elementName: dqm:elementName
     definition: skos:definition
@@ -67,7 +69,11 @@ context:
       '@type': '@id'
       '@context':
         '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/
-    example: skos:example
+    example:
+      '@id': skos:example
+      '@type': '@id'
+      '@context':
+        '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/
     version: dct:hasVersion
     versionDateTime: dct:date
     status:
