@@ -31,11 +31,11 @@
 
 :NodeShape_conceptscheme
   a sh:NodeShape ;
-  sh:rule :definition_required, :entail_top_concepts ;
+  sh:rule :definition_required ;
   sh:targetClass skos:ConceptScheme ;
 .
 
-:NodeShape_conceptscheme
+:NodeShape_specials
   a sh:NodeShape ;
   sh:rule  :entail_top_concepts ;
   sh:targetClass dqm:AbstractConcept,dqm:BasicMeasure
@@ -62,7 +62,8 @@
 :NodeShape_group_subdescriptions
   a sh:NodeShape ;
   sh:rule :entail-grouped;
-  sh:targetSubjectsOf dqm:sequence
+  sh:targetSubjectsOf dqm:sequence ;
+  # sh:targetClass skos:Concept
 .
 
 
@@ -74,16 +75,15 @@
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/>
 CONSTRUCT {
-    ?this skos:broader ?b .
-    ?b skos:narrower ?this .
+    $this skos:broader ?b .
+    ?b skos:narrower $this .
     ?b a skos:Concept.
     ?b skos:prefLabel ?notation .
     ?b skos:inScheme ?s
 
 }
 WHERE {
-
-    ?this skos:notation ?notation .
+    OPTIONAL { $this skos:notation ?notation . }
     $this skos:inScheme ?s  .
     FILTER ( CONTAINS( STR($this),"_"))
     BIND( URI(STRBEFORE( STR($this),"_" )) AS ?b)
@@ -99,11 +99,11 @@ WHERE {
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
   prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/>
 CONSTRUCT {
-    ?this skos:narrower ?skosdef .
-    ?skosdef skos:broader ?this .
+    $this skos:narrower ?skosdef .
+    ?skosdef skos:broader $this .
 }
 WHERE {
-    ?this (dqm:measureDescription| skos:example | dqm:formula ) ?skosdef
+    $this (dqm:measureDescription| skos:example | dqm:formula ) ?skosdef
     }
 """ ;
 .
@@ -115,12 +115,12 @@ WHERE {
   prefix dcterms: <http://purl.org/dc/terms/>
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 CONSTRUCT {
- ?this a skos:Concept .
+ $this a skos:Concept .
 ?scheme skos:hasTopConcept $this .
 
 }
 WHERE {
-    ?this skos:inScheme ?scheme}
+    $this skos:inScheme ?scheme}
 """ ;
 .
 

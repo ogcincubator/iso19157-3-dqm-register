@@ -13,7 +13,8 @@ transform:
   - |
     walk(if (type == "object") then
       ( if .sequence then .ID = "\(.measureDescriptionID)_\(.sequence)" else .ID = "\(.measureDescriptionID)" end ) |
-      .prefLabel = .measureDescriptionID
+      .prefLabel = .ID |
+      .notation = .measureDescriptionID
       else . end)
   # turn known fields with space separated lists into arrays
   - |
@@ -45,6 +46,7 @@ context:
     '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/'
     targetGraph: 'http://www.opengis.net/ogc-na#targetGraph'
     ID: '@id'
+    notation: skos:notation
     measureDescriptionID:
       '@id': skos:broader
       '@type': '@id'

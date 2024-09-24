@@ -13,7 +13,9 @@ transform:
   # turn known fields with space separated lists into arrays
   - |
     walk(if (type == "object") then
-      ( if (.description and .description != "-") then .description |= split("\n") else .description = [] end ) else . end )
+      ( if (.description and .description != "-") then .description |= split("\n") else .description = [] end ) |
+      if ( .example and .example != "-") then .example |= split("\n") else .example = [] end 
+    else . end)
   # Add ConceptScheme
   - |
     {
