@@ -7,24 +7,24 @@ transform:
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
   # force sequence to integer
   - |
-      walk(if (type == "object") then
-        ( if .sequence then .sequence = ( .sequence | tonumber | floor | tostring ) else . end ) else . end )
+    walk(if (type == "object") then
+      ( if .sequence then .sequence = ( .sequence | tonumber | floor | tostring ) else . end ) else . end )
   # generate an id for the description object from measure and sequence information
   - |
-      walk(if (type == "object") then
-        ( if .sequence then .measureDescriptionID = "\(.measureDescriptionID)_\(.sequence)" else .measureDescriptionID = "\(.measureDescriptionID)" end ) |
-        .prefLabel = .measureDescriptionID
-        else . end)
+    walk(if (type == "object") then
+      ( if .sequence then .measureDescriptionID = "\(.measureDescriptionID)_\(.sequence)" else .measureDescriptionID = "\(.measureDescriptionID)" end ) |
+      .prefLabel = .measureDescriptionID
+      else . end)
   # turn known fields with space separated lists into arrays
   - |
-        walk(if (type == "object") then 
-          ( if (.formula and .formula != "-") then .formula |= split("\n") else .formula = [] end | 
-            if (.extendedDescription and .extendedDescription != "-") then .extendedDescription |= split("\n") else .extendedDescription = [] end )
-          else . end)
+    walk(if (type == "object") then 
+      ( if (.formula and .formula != "-") then .formula |= split("\n") else .formula = [] end | 
+        if (.extendedDescription and .extendedDescription != "-") then .extendedDescription |= split("\n") else .extendedDescription = [] end )
+      else . end)
   # Add ConceptScheme
   - |
     {
-      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription",
+      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure",
       "@type": "skos:ConceptScheme",
       "skos:prefLabel": "ISO19157-3 Data Quality Measures (Extended Description Components)",
       "concepts": .
@@ -35,7 +35,7 @@ types:
 
 context:
   $:
-    # measureDescriptionID,extendedDescription,formula,textDescription
+    # measureDescriptionID,sequence,extendedDescription,formula,textDescription
     skos: http://www.w3.org/2004/02/skos/core#
     dct: http://purl.org/dc/terms/
     policy: http://www.opengis.net/def/metamodel/ogc-na/
@@ -43,14 +43,6 @@ context:
     foaf: http://xmlns.com/foaf/0.1/
     '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/'
     measureDescriptionID: '@id'
-    measureID:
-      '@type': '@id'
-      '@id': dqm:describes
-      '@reverse': dqm:hasDescription
-      '@context':
-        '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/'
-    textDescription: skos:definition
-    prefLabel: skos:prefLabel
     sequence: dqm:sequence
     extendedDescription:
       #'@id': 'http://www.opengis.net/def/metamodel/isodqm/illustration'
@@ -59,9 +51,10 @@ context:
       '@context':
         '@base': 'https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/'
     formula:
-        '@id': 'http://www.opengis.net/def/metamodel/isodqm/formula'
-        '@type': '@id'
-        '@context':
-          '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/'
+      '@id': 'http://www.opengis.net/def/metamodel/isodqm/formula'
+      '@type': '@id'
+      '@context':
+        '@base': 'https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/'
+    textDescription: skos:definition
     concepts:
       '@reverse': skos:inScheme

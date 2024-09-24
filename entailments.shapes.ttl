@@ -40,6 +40,28 @@
   sh:targetClass skos:Collection ;
 .
 
+:NodeShape_descriptions-as-narrower
+  a sh:NodeShape ;
+  sh:rule :entail-description-as-narrower;
+  sh:targetSubjectsOf <http://www.opengis.net/def/metamodel/isodqm/measureDescription>
+.
+
+
+:entail-description-as-narrower
+  a sh:SPARQLRule ;
+  rdfs:label "Make a description a skos:narrower concept." ;
+  sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
+  prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+CONSTRUCT {
+    ?this skos:narrower ?skosdef .
+    ?skosdef skos:broader ?this .
+}
+WHERE {
+    ?this <http://www.opengis.net/def/metamodel/isodqm/measureDescription> ?skosdef
+    }
+""" ;
+.
 
 :entail_top_concepts
   a sh:SPARQLRule ;
