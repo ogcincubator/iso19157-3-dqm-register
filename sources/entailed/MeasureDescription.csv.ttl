@@ -10,25 +10,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:0d95977a67a185bf22f61cffdf8be90c4e047afc" ;
-    prov:wasAttributedTo _:Nd5d76e951bba4690a05be2577de1258a ;
+    dct:hasVersion "git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0" ;
+    prov:wasAttributedTo _:Nb07c085614fa490e979a1694ba0ed3eb ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-24T02:47:43.713302"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-24T02:47:40.242876"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-24T02:58:44.458177"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-24T02:58:40.969046"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:0d95977a67a185bf22f61cffdf8be90c4e047afc" ;
+                    dct:hasVersion "git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:0d95977a67a185bf22f61cffdf8be90c4e047afc" ;
+                    dct:hasVersion "git:6852cdf97cecb4aec320d19c358bd8eb59e9c0e0" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:Nd5d76e951bba4690a05be2577de1258a ;
-            prov:wasInformedBy [ dct:identifier "50380fd7-a1b1-44b7-9df9-c81a275e7812" ] ] .
+            prov:wasAssociatedWith _:Nb07c085614fa490e979a1694ba0ed3eb ;
+            prov:wasInformedBy [ dct:identifier "40969a9f-8e0d-4fbf-9fa2-2e84ef9bf866" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD1> a skos:Concept ;
     skos:definition "The value true indicates that the item is in excess." ;
@@ -73,10 +73,10 @@ Example 4: Invalid overlap of area feature Lake within line feature Railroad
 Key: 1. Bridge 2.  Railroad 3. Lake 4. Airport""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD10e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_1.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_2.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_3.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_4.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_1.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_2.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_3.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/10e_4.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD11> a skos:Concept ;
     skos:definition """Which surfaces may overlap and which shall not is application dependent. Not all overlapping surfaces are necessarily erroneous. When reporting this data quality measure, the types of feature classes corresponding to the illegal overlapping surfaces shall be reported as well. 
@@ -99,7 +99,7 @@ See also Complete tessellation: https://standards.isotc211.org/19157/-3/1/dqc/co
     skos:definition "Search for surfaces that are not allowed to overlap according to the conceptual schema. In this case, forest and built-up-area are not allowed to overlap." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD11e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/11e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/11e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD12> a skos:Concept ;
     skos:definition "The value indicates number of items in the dataset that are not compliant with the rules of the conceptual schema in relation to the total number of these items supposed to be in the dataset." ;
@@ -214,7 +214,7 @@ In a common area for two datasets the coordinates compare to each other, an erro
 Key: 1 Search tolerance 0,3 meter""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD201e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/201e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/201e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD202> a skos:Concept ;
     skos:definition "The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification." ;
@@ -225,7 +225,7 @@ Key: 1 Search tolerance 0,3 meter""" ;
     skos:definition "Count error not in compliance with the definition of feature type in the Data Product Specification, DPS In the specification a house shall be stored with perpendicular corners if the real world house is perpendicular." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD202e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/202e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/202e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD203> a skos:Concept ;
     skos:definition "The principle of geometric fidelity is that any real world alignment or shape, when viewed at the source survey scale, shall be accurately reflected in the data to the required specification." ;
@@ -241,7 +241,7 @@ Key: 1 Search tolerance 0,3 meter""" ;
     skos:definition "Parent polygon dashed (quadrat) filled currently with child polygons (colored) Reporting by parent polygons." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD204e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/204e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/204e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD205> a skos:Concept ;
     skos:definition "The update frequency as shown in metadata." ;
@@ -317,7 +317,7 @@ The example demonstrates a way to calculate the omission rate for the whole data
     skos:definition "The number of intervals with a distance longer than a certain threshold, divided by the total number of intervals present in the data. " ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD209" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/MD209e> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/MD209e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD209e> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_P> ;
@@ -377,8 +377,8 @@ The rate of omission can also be calculated for each metadata attribute A, B and
 """ ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD21e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/21e_1.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/21e_2.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/21e_1.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/21e_2.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD22> a skos:Concept ;
     skos:definition "A point-curve connection exists where different curves touch. These curves have an intrinsic topological relationship that shall reflect the true constellation. If the point-curve connection contradicts the universe of discourse, the point-curve connection is faulty with respect to this data quality measure. This data quality measure gives the erroneous point-curve connections in relation to the total number of point-curve connections." ;
@@ -394,7 +394,7 @@ The rate of omission can also be calculated for each metadata attribute A, B and
     skos:definition "Key: 1) search distance = 3 m" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD23e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/23e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/23e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD24> a skos:Concept ;
     skos:definition "Search distance as defined in the specification." ;
@@ -405,7 +405,7 @@ The rate of omission can also be calculated for each metadata attribute A, B and
     skos:definition "A road must have a length at least 3 meters. Key: 1) search distance = 3 m" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD24e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/24e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/24e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25> a skos:Concept ;
     skos:definition "Sliver is an unintended area that occurs when adjacent surfaces are not digitized properly. The borders of the adjacent surfaces may unintentionally gap or overlap by small amounts to cause a topological error." ;
@@ -419,7 +419,7 @@ Key: 1) Single line drain
 a) Maximum area parameter prevents correct double line drain portrayal from being flagged as an error""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD25e_1" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/25e_1.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/25e_1.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25e_2> a skos:Concept ;
     skos:definition """Key: 1) Sand
@@ -428,7 +428,7 @@ a) Maximum area parameter prevents correct double line drain portrayal from bein
 b) The sliver is less than the maximum parameter and is flagged for evaluation of possible error.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD25e_2" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/25e_2.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/25e_2.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD26> a skos:Concept ;
     skos:definition "Topological rules as defined in the specification." ;
@@ -440,7 +440,7 @@ b) The sliver is less than the maximum parameter and is flagged for evaluation o
 2) illegal intersection (loop)""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD26e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/26e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/26e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD27> a skos:Concept ;
     skos:definition "Topological rules as defined in the specification." ;
@@ -452,7 +452,7 @@ b) The sliver is less than the maximum parameter and is flagged for evaluation o
 Key: a) vertices""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD27e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/27e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/27e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
@@ -573,9 +573,9 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:definition "Count of all items in the data that are incorrectly extracted with duplicate geometries." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD4" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_1.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_2.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4_3.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD40> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_1>,
@@ -644,8 +644,8 @@ D13288RZ.EPS two (or more) curves collected on top of each other
 D13288SZ.EPS two (or more) surfaces collected on top of each other.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD4e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4e_1.PNG>,
-        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4e_2.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4e_1.png>,
+        <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/4e_2.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD5> a skos:Concept ;
     skos:definition "The value true indicates that an item is missing." ;
@@ -721,13 +721,13 @@ tower.name = “Beijing Tower, Beijing, China”""" ;
 MCM (i,j) = [# items of class (i) classified as class (j)] The diagonal elements of the misclassification matrix contain the correctly classified items, and the off diagonal elements contain the number of misclassification errors.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD62" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD62e> a skos:Concept ;
     skos:definition "Example misclassification matrix." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD62e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/62e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD63> a skos:Concept ;
     skos:definition """The relative misclassification matrix (RMCM) is a quadratic matrix with n columns and n rows. n denotes the number of classes under consideration.
@@ -739,7 +739,7 @@ RMCM (i,j ) = [# items of class (i ) classified as class (j )] / (# items of c
     skos:definition "Example relative misclassification matrix." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "MD63e" ;
-    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/63e.PNG> .
+    foaf:depiction <https://ogcincubator.github.io/iso19157-3-dqm-register/ISO19157-3/img/63e.png> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD64> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT64> ;
@@ -1175,20 +1175,20 @@ Example 2: 6,6% of all pixels in the scene is clouded with no ground information
     skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-24T02:46:57.716988"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-24T02:46:57.428341"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-24T02:58:07.919237"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-24T02:58:07.666190"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:9397eb9d267b65f504305df1f092b5bb20bfd017" ;
+            dct:hasVersion "git:a44cea16274bed8c04b4897d71d85be91d058901" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureDescription.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "acdb492c-a688-4ab7-858f-fd642b52b5a8" ] .
+    prov:wasInformedBy [ dct:identifier "40b29e2f-968f-4c80-aeab-45f59fb86347" ] .
 
-_:Nd5d76e951bba4690a05be2577de1258a a prov:Agent,
+_:Nb07c085614fa490e979a1694ba0ed3eb a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.3.53" ;
