@@ -108,6 +108,7 @@ CONSTRUCT {
     $this skos:narrower ?skosdef .
     ?skosdef skos:broader $this .
     $this skos:narrower ?s .
+    ?s skos:broader $this .
 }
 WHERE {
     $this (dqm:measureDescription| skos:example | dqm:formula ) ?skosdef
