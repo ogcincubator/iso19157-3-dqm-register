@@ -10,25 +10,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
     dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-    prov:wasAttributedTo _:Ne4ef6c5b921f4c1a8b1a2938c97bd81e ;
+    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+    prov:wasAttributedTo _:Ne3de3cfc8a7445248153e460d804aa5b ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-25T04:46:58.017177"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-25T04:46:53.671051"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-25T12:25:16.380238"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-25T12:25:10.633279"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
+                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
                 [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:Ne4ef6c5b921f4c1a8b1a2938c97bd81e ;
-            prov:wasInformedBy [ dcterms:identifier "a00dc51d-95a8-44ac-b8a3-acb99829cd1c" ] ] .
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:Ne3de3cfc8a7445248153e460d804aa5b ;
+            prov:wasInformedBy [ dcterms:identifier "adfc8266-a8a0-40fd-8a76-23c26fd7be7c" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD128> .
 
@@ -172,8 +172,6 @@
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT64> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD64> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE68.3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> .
@@ -209,8 +207,6 @@
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1y> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1z> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDs1z> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> .
 
@@ -659,7 +655,8 @@ Key: 1 Search tolerance 0,3 meter""" ;
     skos:definition """If reference data is in point geometry:
 Where n is the total number of reference point features that are not captured by the coverage of source data, and N is the total number of reference point features.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_P> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_P> ;
     skos:notation "MD208" ;
     skos:prefLabel "MD208_1" .
 
@@ -670,7 +667,8 @@ Where n is the total number of reference point features that are not captured by
     skos:definition """If reference data is in line geometry:
 Where l’ is the length of each segment of reference data that is not captured by the coverage of the source data, n is the total number of uncovered segments, and L is the total length of all reference line features. """ ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_L> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_L> ;
     skos:notation "MD208" ;
     skos:prefLabel "MD208_2" .
 
@@ -681,7 +679,8 @@ Where l’ is the length of each segment of reference data that is not captured 
     skos:definition """If reference data is in polygon geometry:
 Where a is the area of each segment of reference data that is not captured by the coverage of the source data, n is the total number of uncovered segments, and A is the total area of all reference polygon features.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_A> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_A> ;
     skos:notation "MD208" ;
     skos:prefLabel "MD208_3" .
 
@@ -912,7 +911,8 @@ Key: a) vertices""" ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> ;
     skos:definition "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
     skos:notation "MD28" ;
     skos:prefLabel "MD28_1" .
 
@@ -922,7 +922,8 @@ Key: a) vertices""" ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> ;
     skos:definition "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> ;
     skos:notation "MD28" ;
     skos:prefLabel "MD28_2" .
 
@@ -932,7 +933,8 @@ Key: a) vertices""" ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> ;
     skos:definition "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> ;
     skos:notation "MD28" ;
     skos:prefLabel "MD28_3" .
 
@@ -956,7 +958,8 @@ Key: a) vertices""" ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29> ;
     skos:definition "The calculation of ei is given by MD28_1, MD28_2 and MD28_3 in one, two and three dimensions. " ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_1> ;
     skos:notation "MD29" ;
     skos:prefLabel "MD29_1" .
 
@@ -966,7 +969,8 @@ Key: a) vertices""" ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29> ;
     skos:definition "A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criteria for finding the corresponding points shall be reported with the data quality evaluation result." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_2> ;
     skos:notation "MD29" ;
     skos:prefLabel "MD29_2" .
 
@@ -1267,7 +1271,8 @@ Example 2: 6,6% of all pixels in the scene is clouded with no ground information
 The rate of spatial discontinuity in this example is thus calculated as:
 where n is the number of intervals with a distance above the threshold, and N is the total number of intervals in the data.""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_P>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_P>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD209e> ;
     skos:notation "MD209e" ;
     skos:prefLabel "MD209e" .
@@ -1309,7 +1314,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32> ;
     skos:definition "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_6> ;
     skos:notation "MD32" ;
     skos:prefLabel "MD32_2" .
@@ -1321,7 +1327,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32> ;
     skos:definition "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_7>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_7>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_8> ;
     skos:notation "MD32" ;
     skos:prefLabel "MD32_3" .
@@ -1333,7 +1340,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32> ;
     skos:definition "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_9> ;
     skos:notation "MD32" ;
     skos:prefLabel "MD32_4" .
@@ -1393,7 +1401,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_CE99.8> ;
     skos:definition "Standard deviation - true value known; significance level 99.8%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE99.8>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE99.8>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_CE99.8> ;
     skos:notation "MDsd1_CE99.8" ;
     skos:prefLabel "MDsd1_CE99.8" .
@@ -1403,7 +1412,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     skos:definition "Standard deviation - true value known; significance level 50%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE50>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE50>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     skos:notation "MDsd1_LE50" ;
     skos:prefLabel "MDsd1_LE50" .
@@ -1413,7 +1423,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     skos:definition "Standard deviation - true value known; significance level 68.3%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE68.3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE68.3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     skos:notation "MDsd1_LE68.3" ;
     skos:prefLabel "MDsd1_LE68.3" .
@@ -1423,7 +1434,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     skos:definition "Standard deviation - true value known; significance level 90%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE90>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE90>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     skos:notation "MDsd1_LE90" ;
     skos:prefLabel "MDsd1_LE90" .
@@ -1433,7 +1445,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     skos:definition "Standard deviation - true value known; significance level 95%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE95>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE95>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     skos:notation "MDsd1_LE95" ;
     skos:prefLabel "MDsd1_LE95" .
@@ -1443,7 +1456,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     skos:definition "Standard deviation - true value known; significance level 99%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE99>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1_LE99>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     skos:notation "MDsd1_LE99" ;
     skos:prefLabel "MDsd1_LE99" .
@@ -1463,7 +1477,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     skos:definition "Standard deviation 2D - true value known; significance level 39.4%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE39.4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE39.4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     skos:notation "MDsd1xy_CE39.4" ;
     skos:prefLabel "MDsd1xy_CE39.4" .
@@ -1473,7 +1488,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     skos:definition "Standard deviation 2D - true value known; significance level 50%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE50>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE50>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     skos:notation "MDsd1xy_CE50" ;
     skos:prefLabel "MDsd1xy_CE50" .
@@ -1483,7 +1499,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     skos:definition "Standard deviation 2D - true value known; significance level 90%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE90>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE90>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     skos:notation "MDsd1xy_CE90" ;
     skos:prefLabel "MDsd1xy_CE90" .
@@ -1493,7 +1510,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     skos:definition "Standard deviation 2D - true value known; significance level 95%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE95>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE95>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     skos:notation "MDsd1xy_CE95" ;
     skos:prefLabel "MDsd1xy_CE95" .
@@ -1503,7 +1521,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     skos:definition "Standard deviation 2D - true value known; significance level 99.8%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE99.8>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xy_CE99.8>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     skos:notation "MDsd1xy_CE99.8" ;
     skos:prefLabel "MDsd1xy_CE99.8" .
@@ -1513,7 +1532,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     skos:definition "Standard deviation 3D - true value known; Mean spherical error; significance level 61%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_MRSE>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_MRSE>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     skos:notation "MDsd1xyz_MRSE" ;
     skos:prefLabel "MDsd1xyz_MRSE" .
@@ -1523,7 +1543,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     skos:definition "Standard deviation 3D - true value known; spherical accuracy standard; significance level 90%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_SAS90>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_SAS90>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     skos:notation "MDsd1xyz_SAS90" ;
     skos:prefLabel "MDsd1xyz_SAS90" .
@@ -1533,7 +1554,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     skos:definition "Standard deviation 3D - true value known; spherical accuracy standard; significance level 99%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_SAS99>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_SAS99>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     skos:notation "MDsd1xyz_SAS99" ;
     skos:prefLabel "MDsd1xyz_SAS99" .
@@ -1543,7 +1565,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     skos:definition "Standard deviation 3D - true value known; Spherical error probable; significance level 50%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_SEP>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1xyz_SEP>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     skos:notation "MDsd1xyz_SEP" ;
     skos:prefLabel "MDsd1xyz_SEP" .
@@ -1573,7 +1596,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     skos:definition "Standard deviation - true value unknown; significance level 50%; 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     skos:notation "MDsd2_LE50r1" ;
     skos:prefLabel "MDsd2_LE50r1" .
@@ -1583,7 +1607,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     skos:definition "Standard deviation - true value unknown; significance level 50%; 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     skos:notation "MDsd2_LE50r10" ;
     skos:prefLabel "MDsd2_LE50r10" .
@@ -1593,7 +1618,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     skos:definition "Standard deviation - true value unknown; significance level 50%; 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r2>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     skos:notation "MDsd2_LE50r2" ;
     skos:prefLabel "MDsd2_LE50r2" .
@@ -1603,7 +1629,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     skos:definition "Standard deviation - true value unknown; significance level 50%; 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     skos:notation "MDsd2_LE50r3" ;
     skos:prefLabel "MDsd2_LE50r3" .
@@ -1613,7 +1640,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     skos:definition "Standard deviation - true value unknown; significance level 50%; 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     skos:notation "MDsd2_LE50r4" ;
     skos:prefLabel "MDsd2_LE50r4" .
@@ -1623,7 +1651,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     skos:definition "Standard deviation - true value unknown; significance level 50%; 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE50r5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     skos:notation "MDsd2_LE50r5" ;
     skos:prefLabel "MDsd2_LE50r5" .
@@ -1633,7 +1662,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     skos:definition "Standard deviation - true value unknown; significance level 68.3%; 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     skos:notation "MDsd2_LE68.3r1" ;
     skos:prefLabel "MDsd2_LE68.3r1" .
@@ -1643,7 +1673,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     skos:definition "Standard deviation - true value unknown; significance level 68.3%; 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     skos:notation "MDsd2_LE68.3r10" ;
     skos:prefLabel "MDsd2_LE68.3r10" .
@@ -1653,7 +1684,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     skos:definition "Standard deviation - true value unknown; significance level 68.3%; 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r2>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     skos:notation "MDsd2_LE68.3r2" ;
     skos:prefLabel "MDsd2_LE68.3r2" .
@@ -1663,7 +1695,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     skos:definition "Standard deviation - true value unknown; significance level 68.3%; 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     skos:notation "MDsd2_LE68.3r3" ;
     skos:prefLabel "MDsd2_LE68.3r3" .
@@ -1673,7 +1706,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     skos:definition "Standard deviation - true value unknown; significance level 68.3%; 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     skos:notation "MDsd2_LE68.3r4" ;
     skos:prefLabel "MDsd2_LE68.3r4" .
@@ -1683,7 +1717,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     skos:definition "Standard deviation - true value unknown; significance level 68.3%; 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE68.3r5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     skos:notation "MDsd2_LE68.3r5" ;
     skos:prefLabel "MDsd2_LE68.3r5" .
@@ -1693,7 +1728,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     skos:definition "Standard deviation - true value unknown; significance level 90%; 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     skos:notation "MDsd2_LE90r1" ;
     skos:prefLabel "MDsd2_LE90r1" .
@@ -1703,7 +1739,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     skos:definition "Standard deviation - true value unknown; significance level 90%; 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     skos:notation "MDsd2_LE90r10" ;
     skos:prefLabel "MDsd2_LE90r10" .
@@ -1713,7 +1750,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     skos:definition "Standard deviation - true value unknown; significance level 90%; 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r2>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     skos:notation "MDsd2_LE90r2" ;
     skos:prefLabel "MDsd2_LE90r2" .
@@ -1723,7 +1761,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     skos:definition "Standard deviation - true value unknown; significance level 90%; 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     skos:notation "MDsd2_LE90r3" ;
     skos:prefLabel "MDsd2_LE90r3" .
@@ -1733,7 +1772,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     skos:definition "Standard deviation - true value unknown; significance level 90%; 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     skos:notation "MDsd2_LE90r4" ;
     skos:prefLabel "MDsd2_LE90r4" .
@@ -1743,7 +1783,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     skos:definition "Standard deviation - true value unknown; significance level 90%; 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE90r5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     skos:notation "MDsd2_LE90r5" ;
     skos:prefLabel "MDsd2_LE90r5" .
@@ -1753,7 +1794,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     skos:definition "Standard deviation - true value unknown; significance level 95%; 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     skos:notation "MDsd2_LE95r1" ;
     skos:prefLabel "MDsd2_LE95r1" .
@@ -1763,7 +1805,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     skos:definition "Standard deviation - true value unknown; significance level 95%; 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     skos:notation "MDsd2_LE95r10" ;
     skos:prefLabel "MDsd2_LE95r10" .
@@ -1773,7 +1816,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     skos:definition "Standard deviation - true value unknown; significance level 95%; 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r2>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     skos:notation "MDsd2_LE95r2" ;
     skos:prefLabel "MDsd2_LE95r2" .
@@ -1783,7 +1827,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     skos:definition "Standard deviation - true value unknown; significance level 95%; 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     skos:notation "MDsd2_LE95r3" ;
     skos:prefLabel "MDsd2_LE95r3" .
@@ -1793,7 +1838,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     skos:definition "Standard deviation - true value unknown; significance level 95%; 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     skos:notation "MDsd2_LE95r4" ;
     skos:prefLabel "MDsd2_LE95r4" .
@@ -1803,7 +1849,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     skos:definition "Standard deviation - true value unknown; significance level 95%; 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE95r5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     skos:notation "MDsd2_LE95r5" ;
     skos:prefLabel "MDsd2_LE95r5" .
@@ -1813,7 +1860,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     skos:definition "Standard deviation - true value unknown; significance level 99.8%; 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     skos:notation "MDsd2_LE99.8r1" ;
     skos:prefLabel "MDsd2_LE99.8r1" .
@@ -1823,7 +1871,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     skos:definition "Standard deviation - true value unknown; significance level 99.8%; 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     skos:notation "MDsd2_LE99.8r10" ;
     skos:prefLabel "MDsd2_LE99.8r10" .
@@ -1833,7 +1882,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     skos:definition "Standard deviation - true value unknown; significance level 99.8%; 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r2>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     skos:notation "MDsd2_LE99.8r2" ;
     skos:prefLabel "MDsd2_LE99.8r2" .
@@ -1843,7 +1893,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     skos:definition "Standard deviation - true value unknown; significance level 99.8%; 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     skos:notation "MDsd2_LE99.8r3" ;
     skos:prefLabel "MDsd2_LE99.8r3" .
@@ -1853,7 +1904,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     skos:definition "Standard deviation - true value unknown; significance level 99.8%; 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     skos:notation "MDsd2_LE99.8r4" ;
     skos:prefLabel "MDsd2_LE99.8r4" .
@@ -1863,7 +1915,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     skos:definition "Standard deviation - true value unknown; significance level 99.8%; 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99.8r5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     skos:notation "MDsd2_LE99.8r5" ;
     skos:prefLabel "MDsd2_LE99.8r5" .
@@ -1873,7 +1926,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     skos:definition "Standard deviation - true value unknown; significance level 99%; 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r2>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     skos:notation "MDsd2_LE99r" ;
     skos:prefLabel "MDsd2_LE99r" .
@@ -1883,7 +1937,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     skos:definition "Standard deviation - true value unknown; significance level 99%; 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     skos:notation "MDsd2_LE99r1" ;
     skos:prefLabel "MDsd2_LE99r1" .
@@ -1893,7 +1948,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     skos:definition "Standard deviation - true value unknown; significance level 99%; 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r10>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     skos:notation "MDsd2_LE99r10" ;
     skos:prefLabel "MDsd2_LE99r10" .
@@ -1903,7 +1959,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     skos:definition "Standard deviation - true value unknown; significance level 99%; 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     skos:notation "MDsd2_LE99r3" ;
     skos:prefLabel "MDsd2_LE99r3" .
@@ -1913,7 +1970,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     skos:definition "Standard deviation - true value unknown; significance level 99%; 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r4>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r4>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     skos:notation "MDsd2_LE99r4" ;
     skos:prefLabel "MDsd2_LE99r4" .
@@ -1923,7 +1981,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     skos:definition "Standard deviation - true value unknown; significance level 99%; 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r5>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2_LE99r5>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     skos:notation "MDsd2_LE99r5" ;
     skos:prefLabel "MDsd2_LE99r5" .
@@ -1937,7 +1996,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD128> ;
     skos:definition "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions. A criterion for the establishing of correspondence should also be stated (e.g. allowing for correspondence to the closest position, correspondence on vertices or along lines). The criterion/criteria for finding the corresponding points shall be reported with the data quality evaluation result." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD128> ;
     skos:notation "MD128" ;
@@ -1960,7 +2020,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32> ;
     skos:definition "The covariance matrix generalizes the concept of variance from one to n dimensions, i.e. from scalar-valued random variables to vector-valued random variables (tuples of scalar random variables)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32_4> ;
@@ -1974,7 +2035,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD50> ;
     skos:definition "Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT50_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD50> ;
@@ -1989,7 +2051,8 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
     skos:definition """Calculation of uncertainty ellipse parameters by eigenvalues from a given covariance matrix (https://standards.isotc211.org/19157/-1/1/dqc/content/qualityMeasure/32) of 2D point coordinates. 
 With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msubsup> <mi>χ</mi> <mrow> <mn>1</mn> <mo>-</mo> <mi>α</mi> </mrow> <mn>2</mn> </msubsup> <mfenced> <mn>2</mn> </mfenced></math></span>-distribution of a 2D-confidence ellipse</div> <div class="sts-p "><span class="inline-formula"><math id="id-870f1e92-7dac-44c3-964d-aaca5be575df"> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>α</mi> <mo>=</mo> <mn>95</mn> <mo></mo> <mo>%</mo></math></span>5,99</div> <div class="sts-p "><span class="inline-formula"><math id="id-297effe3-a0bb-4b80-ab4c-cf739b483a55"> <mi>P</mi> <mo>=</mo> <mn>1</mn> <mo></mo> <mi>α</mi> <mo>=</mo> <mn>99</mn> <mo></mo> <mo>%</mo></math></span>9,21""" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT51_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD51> ;
@@ -2005,7 +2068,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD52> ;
     skos:definition "A manner of calculating the comparison of the data (measured) and the control (true)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT52_4>,
@@ -2013,6 +2077,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD52> ;
     skos:notation "MD52" ;
     skos:prefLabel "MD52" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD48> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_1>,
@@ -2024,7 +2090,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD48> ;
     skos:definition "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT48_4>,
@@ -2044,7 +2111,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD53> ;
     skos:definition "A manner of calculating the comparison of the data (measured) and the control (true)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT53_4>,
@@ -2066,7 +2134,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD40> ;
     skos:definition "A manner of calculating the comparison of the data (source) and the control (reference)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT40_4>,
@@ -2090,7 +2159,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD41> ;
     skos:definition "A manner of calculating the comparison of the data (source) and the control (reference)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT41_4>,
@@ -2114,7 +2184,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49> ;
     skos:definition "Absolute horizontal accuracy of the data coordinates, expressed in terms of circular error at 90 % probability given that a bias is present. A manner of calculating the comparison of the data (source) and the control (reference)." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT49_4>,
@@ -2125,6 +2196,8 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD49> ;
     skos:notation "MD49" ;
     skos:prefLabel "MD49" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FTsd2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme ;
     ns1:targetGraph "https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription" ;
@@ -2145,7 +2218,7 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
     prov:wasInformedBy [ dcterms:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
 
-_:Ne4ef6c5b921f4c1a8b1a2938c97bd81e a prov:Agent,
+_:Ne3de3cfc8a7445248153e460d804aa5b a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dcterms:hasVersion "0.3.53" ;

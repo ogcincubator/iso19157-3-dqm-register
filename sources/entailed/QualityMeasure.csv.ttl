@@ -9,25 +9,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/QualityMeasure.csv.ttl> a prov:Entity ;
     dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-    prov:wasAttributedTo _:Nc3142cadeab14d978fc0adbb3883e4d9 ;
+    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+    prov:wasAttributedTo _:Ne8a60c205217497296313ebd86c6801e ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-25T04:47:05.041889"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-25T04:47:02.459426"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-25T12:25:22.578731"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-25T12:25:18.213310"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/QualityMeasure.csv.ttl> ],
+                [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/QualityMeasure.csv.ttl> ],
-                [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
+                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:Nc3142cadeab14d978fc0adbb3883e4d9 ;
-            prov:wasInformedBy [ dcterms:identifier "a00dc51d-95a8-44ac-b8a3-acb99829cd1c" ] ] .
+            prov:wasAssociatedWith _:Ne8a60c205217497296313ebd86c6801e ;
+            prov:wasInformedBy [ dcterms:identifier "adfc8266-a8a0-40fd-8a76-23c26fd7be7c" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/1> .
 
@@ -1351,7 +1351,8 @@ It is a function of the random errors in the two elevations with respect to a co
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "For a set of points where the discrepancy does not exceed a defined threshold, the arithmetical average of discrepancies between their measured positions and what is accepted as the corresponding true positions." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_2> ;
     skos:prefLabel "29 - mean value of positional uncertainties excluding outliers (1D, 2D, 3D)" .
 
@@ -1578,6 +1579,7 @@ The discrepancies are defined as the distance between a measured position and wh
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25e_2> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25e>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25e_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD25e_2> ;
     skos:prefLabel "25 - number of invalid slivers" .
@@ -1596,7 +1598,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:definition "Mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is accepted as the corresponding true position." ;
     skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28e> ;
@@ -1619,7 +1622,8 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Symmetrical square matrix with variances of point discrepancies on the main diagonal and covariance between these discrepancies as off-diagonal elements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_1>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_3>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_4> ;
@@ -1813,7 +1817,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 50 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2>,
@@ -1842,7 +1848,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 68.3 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2>,
@@ -1872,7 +1880,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 90 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2>,
@@ -1902,7 +1912,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 95 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2>,
@@ -1932,7 +1944,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r2>,
@@ -1961,7 +1975,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC1> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value lies with probability 99.8 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2>,
@@ -1989,7 +2005,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 68.3 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2>,
@@ -2017,7 +2035,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 50 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2>,
@@ -2046,7 +2066,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 90 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2>,
@@ -2075,7 +2097,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 95 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2>,
@@ -2104,7 +2128,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r2>,
@@ -2132,7 +2158,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC3> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the time instance lies with probability 99.8 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2>,
@@ -2161,7 +2189,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 68.3 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2>,
@@ -2190,7 +2220,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 50 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2>,
@@ -2219,7 +2251,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 90 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2>,
@@ -2248,7 +2282,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 95 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2>,
@@ -2277,7 +2313,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r2>,
@@ -2306,7 +2344,9 @@ The discrepancies are defined as the distance between a measured position and wh
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/QC2> ;
     skos:definition "Half length of the interval defined by an upper and a lower limit, in which the true value for the quantitative attribute lies with probability 99.8 %." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8>,
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2>,
@@ -2438,7 +2478,7 @@ The discrepancies are defined as the distance between a measured position and wh
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
     prov:wasInformedBy [ dcterms:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
 
-_:Nc3142cadeab14d978fc0adbb3883e4d9 a prov:Agent,
+_:Ne8a60c205217497296313ebd86c6801e a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dcterms:hasVersion "0.3.53" ;

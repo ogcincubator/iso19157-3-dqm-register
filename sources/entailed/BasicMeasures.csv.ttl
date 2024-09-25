@@ -8,25 +8,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
     dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-    prov:wasAttributedTo _:Nefbb5ead996b4c07b695963e83ac1ea9 ;
+    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+    prov:wasAttributedTo _:N0f74402e37f74c9380199e8fd4f9cae3 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-25T04:47:07.154050"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-25T04:47:06.134627"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-25T12:25:25.763442"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-25T12:25:23.609358"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ],
                 [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ] ;
-            prov:wasAssociatedWith _:Nefbb5ead996b4c07b695963e83ac1ea9 ;
-            prov:wasInformedBy [ dcterms:identifier "a00dc51d-95a8-44ac-b8a3-acb99829cd1c" ] ] .
+                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
+            prov:wasAssociatedWith _:N0f74402e37f74c9380199e8fd4f9cae3 ;
+            prov:wasInformedBy [ dcterms:identifier "adfc8266-a8a0-40fd-8a76-23c26fd7be7c" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a ns1:BasicMeasure,
         skos:Concept ;
@@ -36,7 +36,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "confidence interval in two dimensions given by the probability P=39,4 % of the true value within an area" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> ;
     skos:prefLabel "2D random variable 39.4 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> a ns1:BasicMeasure,
@@ -46,7 +47,8 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> ;
     skos:prefLabel "2D random variable 50 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> a ns1:BasicMeasure,
@@ -56,7 +58,8 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> ;
     skos:prefLabel "2D random variable 90 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> a ns1:BasicMeasure,
@@ -66,7 +69,8 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> ;
     skos:prefLabel "2D random variable 95 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> a ns1:BasicMeasure,
@@ -76,7 +80,8 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> ;
     skos:prefLabel "2D random variable 99.8 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> a ns1:BasicMeasure,
@@ -87,7 +92,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval given by the probability P=50 % of the true value being between the lower and upper limit." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> ;
     skos:prefLabel "1D variable 50 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> a ns1:BasicMeasure,
@@ -98,7 +104,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> ;
     skos:prefLabel "1D variable 50 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> a ns1:BasicMeasure,
@@ -109,7 +116,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> ;
     skos:prefLabel "1D variable 50 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> a ns1:BasicMeasure,
@@ -120,7 +128,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> ;
     skos:prefLabel "1D variable 50 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> a ns1:BasicMeasure,
@@ -131,7 +140,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> ;
     skos:prefLabel "1D variable 50 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> a ns1:BasicMeasure,
@@ -142,7 +152,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> ;
     skos:prefLabel "1D variable 50 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> a ns1:BasicMeasure,
@@ -153,7 +164,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=50 % derived from t-distribution by 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> ;
     skos:prefLabel "1D variable 50 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> a ns1:BasicMeasure,
@@ -164,7 +176,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval given by the probability P=68,3 % of the true value being between the lower and upper limit" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> ;
     skos:prefLabel "1D variable 68.3 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> a ns1:BasicMeasure,
@@ -175,7 +188,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> ;
     skos:prefLabel "1D variable 68.3 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> a ns1:BasicMeasure,
@@ -186,7 +200,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> ;
     skos:prefLabel "1D variable 68.3 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> a ns1:BasicMeasure,
@@ -197,7 +212,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> ;
     skos:prefLabel "1D variable 68.3 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> a ns1:BasicMeasure,
@@ -208,7 +224,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> ;
     skos:prefLabel "1D variable 68.3 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> a ns1:BasicMeasure,
@@ -219,7 +236,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> ;
     skos:prefLabel "1D variable 68.3 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> a ns1:BasicMeasure,
@@ -230,7 +248,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=68,3 % derived from t-distribution by 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> ;
     skos:prefLabel "1D variable 68.3 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> a ns1:BasicMeasure,
@@ -241,7 +260,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval given by the probability P=90 % of the true value being between the lower and upper limit." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> ;
     skos:prefLabel "1D variable 90 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> a ns1:BasicMeasure,
@@ -252,7 +272,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> ;
     skos:prefLabel "1D variable 90 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> a ns1:BasicMeasure,
@@ -263,7 +284,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> ;
     skos:prefLabel "1D variable 90 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> a ns1:BasicMeasure,
@@ -274,7 +296,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> ;
     skos:prefLabel "1D variable 90 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> a ns1:BasicMeasure,
@@ -285,7 +308,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> ;
     skos:prefLabel "1D variable 90 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> a ns1:BasicMeasure,
@@ -296,7 +320,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> ;
     skos:prefLabel "1D variable 90 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> a ns1:BasicMeasure,
@@ -307,7 +332,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=90 % derived from t-distribution by 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> ;
     skos:prefLabel "1D variable 90 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> a ns1:BasicMeasure,
@@ -318,7 +344,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval given by the probability P=95 % of the true value being between the lower and upper limit." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> ;
     skos:prefLabel "1D variable 95 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> a ns1:BasicMeasure,
@@ -329,7 +356,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> ;
     skos:prefLabel "1D variable 95 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> a ns1:BasicMeasure,
@@ -340,7 +368,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> ;
     skos:prefLabel "1D variable 95 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> a ns1:BasicMeasure,
@@ -351,7 +380,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> ;
     skos:prefLabel "1D variable 95 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> a ns1:BasicMeasure,
@@ -362,7 +392,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> ;
     skos:prefLabel "1D variable 95 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> a ns1:BasicMeasure,
@@ -373,7 +404,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> ;
     skos:prefLabel "1D variable 95 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> a ns1:BasicMeasure,
@@ -384,7 +416,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=95 % derived from t-distribution by 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> ;
     skos:prefLabel "1D variable 95 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> a ns1:BasicMeasure,
@@ -395,7 +428,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval given by the probability P=99 % of the true value being between the lower and upper limit." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> ;
     skos:prefLabel "1D variable 99 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> a ns1:BasicMeasure,
@@ -406,7 +440,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "confidence interval given by the probability P=99,8 % of the true value being between the lower and upper limit" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> ;
     skos:prefLabel "One dimensional variable 99,8 % probability" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> a ns1:BasicMeasure,
@@ -417,7 +452,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> ;
     skos:prefLabel "1D variable 99.8 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> a ns1:BasicMeasure,
@@ -428,7 +464,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> ;
     skos:prefLabel "1D variable 99.8 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> a ns1:BasicMeasure,
@@ -439,7 +476,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> ;
     skos:prefLabel "1D variable 99.8 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> a ns1:BasicMeasure,
@@ -450,7 +488,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> ;
     skos:prefLabel "1D variable 99.8 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> a ns1:BasicMeasure,
@@ -461,7 +500,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> ;
     skos:prefLabel "1D variable 99.8 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> a ns1:BasicMeasure,
@@ -472,7 +512,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99,8 % derived from t-distribution by 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> ;
     skos:prefLabel "1D variable 99.8 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> a ns1:BasicMeasure,
@@ -483,7 +524,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 1 redundant measurement." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> ;
     skos:prefLabel "1D variable 99 % probability; 1 redundant measurement" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> a ns1:BasicMeasure,
@@ -494,7 +536,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 10 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> ;
     skos:prefLabel "1D variable 99 % probability; 10 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> a ns1:BasicMeasure,
@@ -505,7 +548,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 2 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> ;
     skos:prefLabel "1D variable 99 % probability; 2 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> a ns1:BasicMeasure,
@@ -516,7 +560,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 3 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> ;
     skos:prefLabel "1D variable 99 % probability; 3 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> a ns1:BasicMeasure,
@@ -527,7 +572,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 4 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> ;
     skos:prefLabel "1D variable 99 % probability; 4 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> a ns1:BasicMeasure,
@@ -538,7 +584,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Confidence interval for probability P=99 % derived from t-distribution by 5 redundant measurements." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> ;
     skos:prefLabel "1D variable 99 % probability; 5 redundant measurements" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> a ns1:BasicMeasure,
@@ -549,7 +596,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 61%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> ;
     skos:prefLabel "Mean radial spherical error" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> a ns1:BasicMeasure,
@@ -560,7 +608,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 90%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> ;
     skos:prefLabel "90% spherical accuracy standard" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> a ns1:BasicMeasure,
@@ -571,7 +620,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 99%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     skos:prefLabel "99% spherical accuracy standard" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a ns1:BasicMeasure,
@@ -637,7 +687,8 @@
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Radius of sphere centered at the true position, containing the position estimate in 3D with probability of 50%." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     skos:prefLabel "Spherical error probable" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
@@ -661,8 +712,6 @@
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> .
 
@@ -699,8 +748,6 @@
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> .
 
@@ -854,6 +901,10 @@
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
     skos:prefLabel "correct items rate" .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> a skos:ConceptScheme ;
     skos:definition "ISO19157-3 basic quality measures" ;
     skos:hasTopConcept <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1>,
@@ -934,7 +985,7 @@
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
     prov:wasInformedBy [ dcterms:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
 
-_:Nefbb5ead996b4c07b695963e83ac1ea9 a prov:Agent,
+_:N0f74402e37f74c9380199e8fd4f9cae3 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dcterms:hasVersion "0.3.53" ;
