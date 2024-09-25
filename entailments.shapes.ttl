@@ -107,9 +107,13 @@ WHERE {
 CONSTRUCT {
     $this skos:narrower ?skosdef .
     ?skosdef skos:broader $this .
+    $this skos:narrower ?s .
 }
 WHERE {
     $this (dqm:measureDescription| skos:example | dqm:formula ) ?skosdef
+    BIND( STRBEFORE( STR(?skosdef),"_" ) AS ?superseq)
+    BIND( IF( ?superseq != "",URI(?superseq),?skosdef) AS ?s)
+
     }
 """ ;
 .
