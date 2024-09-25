@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -8,88 +8,99 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureParameter.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:029328193dd81986e5081eb53bbd53a1b1868c4a" ;
-    prov:wasAttributedTo _:N469a29b6a11d4dad93504ea067f54e5c ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
+    prov:wasAttributedTo _:N122365afe4d845b899600380101a69b3 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-24T09:11:51.445666"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-24T09:11:50.910635"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-25T04:47:02.111993"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-25T04:47:01.917687"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:029328193dd81986e5081eb53bbd53a1b1868c4a" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:029328193dd81986e5081eb53bbd53a1b1868c4a" ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:28d230c99152cc14e94cdb114391f98ae657352f" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureParameter.csv.ttl> ] ;
-            prov:wasAssociatedWith _:N469a29b6a11d4dad93504ea067f54e5c ;
-            prov:wasInformedBy [ dct:identifier "2d19f5e6-d69d-4fee-b58e-5e2be643eb2b" ] ] .
+            prov:wasAssociatedWith _:N122365afe4d845b899600380101a69b3 ;
+            prov:wasInformedBy [ dcterms:identifier "a00dc51d-95a8-44ac-b8a3-acb99829cd1c" ] ] .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP1> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Sample size" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP2> a dqm:MeasureParameter ;
     dqm:valueType "Integer" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Number of items." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "n" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP201> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP201> a dqm:MeasureParameter ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Tolerance of differences in the coordinates for two datasets." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Tolerance" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP204> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP204> a dqm:MeasureParameter ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Identification of child polygons." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Polygon ID" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP205> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP205> a dqm:MeasureParameter ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "TM_PeriodDuration described with at least one of the parameters described in ISO 19108:2005." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "User defined maintenance" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP206> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP206> a dqm:MeasureParameter ;
     dqm:valueType "MD_MaintenanceFrequencyCode" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Frequency with which modifications and deletions are made to the data after it is first produced." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Maintenance and update frequency" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP207> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP207> a dqm:MeasureParameter ;
     dqm:valueType "Integer" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Maximum permitted age as defined in the data product specification." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Maximum permitted age" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP23> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP23> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Search distance from the end of a dangling line." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Search distance" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP24> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP24> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Search tolerance of minimum allowable length in the dataset." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Search tolerance " .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_1> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "The maximum area determines the upper limit of a sliver. This is to prevent surfaces with sinuous perimeters and large areas from being mistaken as slivers." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Maximum sliver area size" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_2> a skos:Concept ;
-    dct:description "MD25" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP25_2> a dqm:MeasureParameter ;
+    dcterms:description "MD25" ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition """The thickness quotient shall be a real number between 0 and 1. This quotient is determined by the following formula:
 T is the thickness quotient
 T= 4 π [area]/[perimeter] 2
@@ -98,110 +109,127 @@ T= 0 value corresponds to a line that has the smallest area/perimeter 2 value"""
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Thickness quotient" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP29> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP29> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Threshold for accepted positional uncertainties." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "emax" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP30> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP30> a dqm:MeasureParameter ;
     dqm:valueType "Integer" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Threshold for accepted positional discrepancy." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "emax" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP31> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP31> a dqm:MeasureParameter ;
     dqm:valueType "Integer" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Threshold above which the positional discrepancies are counted." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "emax" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP33> a skos:Concept ;
-    dct:description "50" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP33> a dqm:MeasureParameter ;
+    dcterms:description "50" ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 50%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP34> a skos:Concept ;
-    dct:description "68.3" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP34> a dqm:MeasureParameter ;
+    dcterms:description "68.3" ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 68.3%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35> a skos:Concept ;
-    dct:description "90" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP35> a dqm:MeasureParameter ;
+    dcterms:description "90" ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 90%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36> a skos:Concept ;
-    dct:description "95" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP36> a dqm:MeasureParameter ;
+    dcterms:description "95" ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 95%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP37> a skos:Concept ;
-    dct:description "99" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP37> a dqm:MeasureParameter ;
+    dcterms:description "99" ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 99%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38> a skos:Concept ;
-    dct:description "99.8" ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP38> a dqm:MeasureParameter ;
+    dcterms:description "99.8" ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 99.8%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP41> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP41> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Sample size" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP49> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP49> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Minimum of 30 points is normally used but may not always be possible depending on identifiable control points. For feature level attribution sample 10 % of the feature population." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Sample size" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP51> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP51> a dqm:MeasureParameter ;
     dqm:valueType "Integer" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "1α" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_1> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_1> a dqm:MeasureParameter ;
     dqm:valueType "Real" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Number of classes under consideration." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "n" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_2> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_2> a dqm:MeasureParameter ;
     dqm:valueType "Ratio" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Number of classes under consideration." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "n" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_3> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP63_3> a dqm:MeasureParameter ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Number of classes under consideration." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "n" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP68> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP68> a dqm:MeasureParameter ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 68.3%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP69> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureParameter/MP69> a dqm:MeasureParameter ;
     dqm:valueType "Percentage" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param> ;
     skos:definition "Measure 50%" ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "Significance level" .
@@ -212,23 +240,23 @@ T= 0 value corresponds to a line that has the smallest area/perimeter 2 value"""
     skos:prefLabel "ISO19157-3 quality measure Parameters" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-24T09:10:52.495677"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-24T09:10:52.418189"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-25T04:42:29.009059"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-25T04:42:28.926309"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:1834efaff1baf4583e9a1b20974bd55d82e9d4e6" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:8905abaf759b215933ee907f77a56f2a4d68d28b" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureParameter.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.53" ;
+            dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "1121a8ac-825e-4b53-88a2-5a586f9a77fc" ] .
+    prov:wasInformedBy [ dcterms:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
 
-_:N469a29b6a11d4dad93504ea067f54e5c a prov:Agent,
+_:N122365afe4d845b899600380101a69b3 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.53" ;
+    dcterms:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
