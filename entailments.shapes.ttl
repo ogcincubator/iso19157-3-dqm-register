@@ -47,6 +47,12 @@
   sh:targetClass dqm:BasicMeasure
 .
 
+:NodeShape_Param_top
+  a sh:NodeShape ;
+  sh:rule  :entail_param_top ;
+  sh:targetClass dqm:MeasureParameter
+.
+
 :NodeShape_collection
   a sh:NodeShape ;
   sh:rule :definition_required;
@@ -132,6 +138,19 @@ WHERE {
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 CONSTRUCT {
 $this skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM>.
+
+} WHERE {}
+""" ;
+.
+
+:entail_param_top
+  a sh:SPARQLRule ;
+  rdfs:label "Make BM Descriptions narrower in measures to suppress as top concepts. " ;
+  sh:construct """PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
+  prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+CONSTRUCT {
+$this skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Param>.
 
 } WHERE {}
 """ ;
