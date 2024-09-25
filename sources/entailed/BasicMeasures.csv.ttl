@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,26 +7,291 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
-    dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
-    prov:wasAttributedTo _:N0f74402e37f74c9380199e8fd4f9cae3 ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:0a4437f12209acd971b9be6d4426a4726858737c" ;
+    prov:wasAttributedTo _:N6eaca54b837640ca83364e086d7b43b5 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-25T12:25:25.763442"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-25T12:25:23.609358"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-25T12:31:56.037706"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-25T12:31:53.953611"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ],
-                [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:0a4437f12209acd971b9be6d4426a4726858737c" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ],
                 [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:2ee5a3a93f258ce6da3f28b1054485bf73027dd1" ;
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:0a4437f12209acd971b9be6d4426a4726858737c" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N0f74402e37f74c9380199e8fd4f9cae3 ;
-            prov:wasInformedBy [ dcterms:identifier "adfc8266-a8a0-40fd-8a76-23c26fd7be7c" ] ] .
+            prov:wasAssociatedWith _:N6eaca54b837640ca83364e086d7b43b5 ;
+            prov:wasInformedBy [ dct:identifier "5ef61847-289d-4ca9-ae1c-94500a75fca8" ] ] .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "SD1" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Standard deviation for observations or measurements where the true value known." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
+    skos:prefLabel "Standard deviation - true value known" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "SD1x" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Standard deviation for observations or measurements where the true value known." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
+    skos:prefLabel "Standard deviation in x-direction - true value known" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "SD1y" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Standard deviation for observations or measurements where the true value known." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
+    skos:prefLabel "Standard deviation in y-direction - true value known" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "SD1z" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Standard deviation for observations or measurements where the true value known." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
+    skos:prefLabel "Standard deviation in z-direction - true value known" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "SD2" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Standard deviation for observations or measurements where the true value unknown." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
+    skos:prefLabel "Standard deviation - true value unknown" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM1" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Indicator that an item is in error." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
+    skos:prefLabel "error indicator" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM2" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
+    skos:prefLabel "error rate" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM3" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Total number of items that are subject to an error of a specified type." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
+    skos:prefLabel "error count" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM4" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Indicator that an item is correct." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
+    skos:prefLabel "correctness indicator" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM5" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Total number of items that are free of errors of a specified type." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
+    skos:prefLabel "correct items count" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a ns1:BasicMeasure,
+        skos:Concept ;
+    ns1:basicMeasureID "BM6" ;
+    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
+    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
+    skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
+    skos:prefLabel "correct items rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a ns1:BasicMeasure,
         skos:Concept ;
@@ -624,61 +889,6 @@
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> ;
     skos:prefLabel "99% spherical accuracy standard" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "SD1" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> ;
-    skos:prefLabel "Standard deviation - true value known" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "SD1x" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> ;
-    skos:prefLabel "Standard deviation in x-direction - true value known" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "SD1y" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> ;
-    skos:prefLabel "Standard deviation in y-direction - true value known" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "SD1z" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Standard deviation for observations or measurements where the true value known." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> ;
-    skos:prefLabel "Standard deviation in z-direction - true value known" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "SD2" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Measure> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Standard deviation for observations or measurements where the true value unknown." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
-    skos:prefLabel "Standard deviation - true value unknown" .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> a ns1:BasicMeasure,
         skos:Concept ;
     ns1:basicMeasureID "SEP" ;
@@ -691,219 +901,62 @@
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> ;
     skos:prefLabel "Spherical error probable" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE68.3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE90> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE95> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE99.8> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1x> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1x> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE39.4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE90> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE95> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy_CE99.8> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_MRSE> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS90> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SAS99> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz_SEP> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1y> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1y> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1z> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1z> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE50r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE68.3r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE90r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE95r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99.8r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r10> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "BM1" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Indicator that an item is in error." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
-    skos:prefLabel "error indicator" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "BM2" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
-    skos:prefLabel "error rate" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "BM3" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Total number of items that are subject to an error of a specified type." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
-    skos:prefLabel "error count" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "BM4" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Indicator that an item is correct." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
-    skos:prefLabel "correctness indicator" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "BM5" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Total number of items that are free of errors of a specified type." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
-    skos:prefLabel "correct items count" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a ns1:BasicMeasure,
-        skos:Concept ;
-    ns1:basicMeasureID "BM6" ;
-    ns1:measureDescription <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
-    ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
-    skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
-    skos:prefLabel "correct items rate" .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> .
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xyz> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/MRSE>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SAS99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SEP> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1xy> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE99.8> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE68.3r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE90r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE95r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99.8r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r10>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r4>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD2> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> a skos:ConceptScheme ;
     skos:definition "ISO19157-3 basic quality measures" ;
@@ -975,20 +1028,20 @@
     prov:endedAtTime "2024-09-25T04:42:28.909431"^^xsd:dateTime ;
     prov:startedAtTime "2024-09-25T04:42:28.773929"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dcterms:format "application/json" ;
-            dcterms:hasVersion "git:8905abaf759b215933ee907f77a56f2a4d68d28b" ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:8905abaf759b215933ee907f77a56f2a4d68d28b" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dcterms:hasVersion "0.3.53" ;
+            dct:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
+    prov:wasInformedBy [ dct:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
 
-_:N0f74402e37f74c9380199e8fd4f9cae3 a prov:Agent,
+_:N6eaca54b837640ca83364e086d7b43b5 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.53" ;
+    dct:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
