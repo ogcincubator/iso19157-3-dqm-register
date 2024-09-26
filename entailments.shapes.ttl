@@ -57,7 +57,7 @@
 :NodeShape_Source_top
   a sh:NodeShape ;
   sh:rule  :entail_source_top ;
-  sh:targetObjectsOf dct:source
+  sh:targetClass dqm:SourceReference
 .
 
 :NodeShape_collection
@@ -149,6 +149,7 @@ WHERE {
   prefix dcterms: <http://purl.org/dc/terms/>
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 CONSTRUCT {
+$this a skos:Concept .
 $this skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM>.
 
 } WHERE {}
@@ -162,6 +163,7 @@ $this skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualit
   prefix dcterms: <http://purl.org/dc/terms/>
   prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 CONSTRUCT {
+$this a skos:Concept .
 $this skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source>.
 
 } WHERE {}
