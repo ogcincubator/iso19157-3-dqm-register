@@ -1,4 +1,4 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.opengis.net/ogc-na#> .
@@ -9,26 +9,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/MeasureDescription.csv.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    dct:hasVersion "git:0a4437f12209acd971b9be6d4426a4726858737c" ;
-    prov:wasAttributedTo _:N62f28e6c39a24049b681aa9f5c15dc71 ;
+    dcterms:format "text/turtle" ;
+    dcterms:hasVersion "git:aaec463c12ea95c79478078b317e8d16f9512762" ;
+    prov:wasAttributedTo _:N8dd270e606b349ed99a49f3f812f84e8 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-09-25T12:31:53.243956"^^xsd:dateTime ;
-            prov:startedAtTime "2024-09-25T12:31:47.461195"^^xsd:dateTime ;
+            prov:endedAtTime "2024-09-26T01:34:34.803130"^^xsd:dateTime ;
+            prov:startedAtTime "2024-09-26T01:34:28.915220"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:0a4437f12209acd971b9be6d4426a4726858737c" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:0a4437f12209acd971b9be6d4426a4726858737c" ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:aaec463c12ea95c79478078b317e8d16f9512762" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/MeasureDescription.csv.ttl> ],
                 [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:aaec463c12ea95c79478078b317e8d16f9512762" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:N62f28e6c39a24049b681aa9f5c15dc71 ;
-            prov:wasInformedBy [ dct:identifier "5ef61847-289d-4ca9-ae1c-94500a75fca8" ] ] .
+            prov:wasAssociatedWith _:N8dd270e606b349ed99a49f3f812f84e8 ;
+            prov:wasInformedBy [ dcterms:identifier "3a2c112d-24d7-4031-a7de-9dcbcba77249" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT128> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD128> .
 
@@ -56,11 +56,15 @@
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_L> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD208_2> .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT210> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_2> .
@@ -708,14 +712,6 @@ The example demonstrates a way to calculate the omission rate for the whole data
     skos:notation "MD21" ;
     skos:prefLabel "MD21" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> a skos:Concept ;
-    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> ;
-    skos:definition "The amount of time (e.g. number of years, number of months, number of days, number of hours etc.) during which no data is present, divided by the total amount of time during which data is supposed to be present." ;
-    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> ;
-    skos:notation "MD210" ;
-    skos:prefLabel "MD210" .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD211> a skos:Concept ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD211> ;
     skos:definition "Quantity of data that suffers from imperfect coverage, divided by the total quantity of data." ;
@@ -1187,10 +1183,6 @@ Example 2: 6,6% of all pixels in the scene is clouded with no ground information
     skos:notation "MDbm4" ;
     skos:prefLabel "MDbm4" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3> .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD208> a skos:Concept ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD208_1>,
@@ -1234,12 +1226,15 @@ Where a is the area of each segment of reference data that is not captured by th
     skos:notation "MD208" ;
     skos:prefLabel "MD208_3" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> a skos:Concept ;
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT210> ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> ;
+    skos:definition "The amount of time (e.g. number of years, number of months, number of days, number of hours etc.) during which no data is present, divided by the total amount of time during which data is supposed to be present." ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3> ;
-    skos:prefLabel "MD28" .
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT210>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD210> ;
+    skos:notation "MD210" ;
+    skos:prefLabel "MD210" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_1> ;
@@ -1273,6 +1268,17 @@ Where a is the area of each segment of reference data that is not captured by th
         <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_3> ;
     skos:notation "MD28" ;
     skos:prefLabel "MD28_3" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4> a skos:Concept ;
+    dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> ;
+    dqm:sequence "4" ;
+    skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> ;
+    skos:definition "For a number of points (N), the measured positions are given as xmi, ymi and zmi coordinates depending on the dimension in which the position of the point is measured. A corresponding coordinates xti, yti and zti are considered to represent true positions." ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28_4> ;
+    skos:notation "MD28" ;
+    skos:prefLabel "MD28_4" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD29_1> a skos:Concept ;
     dqm:formula <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT29_1> ;
@@ -1407,6 +1413,11 @@ A criterion for the establishing of correspondence should also be stated (e.g. a
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT208_P> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD208_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD209e> .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT28> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4> .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/formulaType/FT32> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_1>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_2>,
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32_3>,
@@ -1429,6 +1440,14 @@ where n is the number of intervals with a distance above the threshold, and N is
         <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD209e> ;
     skos:notation "MD209e" ;
     skos:prefLabel "MD209e" .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28> a skos:Concept ;
+    skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD28_4> ;
+    skos:prefLabel "MD28" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD32> a skos:Concept ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
@@ -2293,23 +2312,23 @@ With values for the <span class="inline-formula"><math xmlns="http://www.w3.org/
     skos:prefLabel "ISO19157-3 Data Quality Measures (Extended Description Components)" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-25T04:42:28.728792"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-25T04:42:28.456195"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-26T01:32:48.753717"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-26T01:32:48.444782"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:8905abaf759b215933ee907f77a56f2a4d68d28b" ;
+            dcterms:format "application/json" ;
+            dcterms:hasVersion "git:0ceaa13fb7b7b85a8ba0dbaedfbbbede32f892bc" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/MeasureDescription.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.53" ;
+            dcterms:hasVersion "0.3.53" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "3c7b094c-0e86-491c-81a7-a371b9ddda0f" ] .
+    prov:wasInformedBy [ dcterms:identifier "37af95bc-e62b-4628-a3d2-e791eaa7e68c" ] .
 
-_:N62f28e6c39a24049b681aa9f5c15dc71 a prov:Agent,
+_:N8dd270e606b349ed99a49f3f812f84e8 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.3.53" ;
+    dcterms:hasVersion "0.3.53" ;
     rdfs:comment "ogc.na.update_vocabs version 0.3.53" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 
