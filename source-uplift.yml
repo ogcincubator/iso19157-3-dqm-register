@@ -10,9 +10,9 @@ transform:
   # Add ConceptScheme
   - |
     {
-      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource",
+      "@id": "https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure",
+      "targetGraph": "https://standards.isotc211.org/19157/-3/1/dqc/content/sourceReference",
       "@type": "skos:ConceptScheme",
-      "skos:prefLabel": "ISO19157-3 Quality Source References",
       "concepts": .
     }
 
@@ -31,7 +31,7 @@ context:
     ID: '@id'
     title: skos:prefLabel
     onlineResource:
-      'type': '@id'
+      '@type': '@id'
       '@id': dct:source
     concepts:
       '@reverse': skos:inScheme
