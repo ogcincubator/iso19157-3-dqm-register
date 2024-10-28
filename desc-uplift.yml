@@ -12,10 +12,13 @@ transform:
   # generate an id for the description object from measure and sequence information
   - |
     walk(if (type == "object") then
-      ( if .sequence then .ID = "\(.measureDescriptionID)_\(.sequence)" else .ID = "\(.measureDescriptionID)" end ) |
+      ( if .sequence then  .ID = "\(.measureDescriptionID)_\(.sequence)"  else .ID = "\(.measureDescriptionID)" end ) |
       .prefLabel = .ID |
       .notation = .measureDescriptionID
       else . end)
+  - |
+    walk(if (type == "object") then
+      ( if .sequence then .PARENT = .measureDescriptionID  else . end ) else . end )
   # turn known fields with space separated lists into arrays
   - |
     walk(if (type == "object") then 
@@ -46,7 +49,7 @@ context:
     targetGraph: 'http://www.opengis.net/ogc-na#targetGraph'
     ID: '@id'
     notation: skos:notation
-    measureDescriptionID:
+    PARENT:
       '@id': skos:broader
       '@type': '@id'
       '@context':
