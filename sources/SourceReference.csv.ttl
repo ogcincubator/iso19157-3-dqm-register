@@ -1,5 +1,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
@@ -42,19 +43,20 @@
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "ISO/IEC 25012:2008 Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme .
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme ;
+    ns1:targetGraph "https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-10-28T10:18:52.382474"^^xsd:dateTime ;
-    prov:startedAtTime "2024-10-28T10:18:52.321476"^^xsd:dateTime ;
+    prov:endedAtTime "2024-10-30T11:16:03.265037"^^xsd:dateTime ;
+    prov:startedAtTime "2024-10-30T11:16:03.167068"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:8a1d5973c88101c70eb813e421d4d5560794ec7e" ;
+            dct:hasVersion "git:2e96d5d52fc77ff4ede97202fafae853a8527931" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/SourceReference.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.54" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "8304f5df-70f9-48ea-a10f-09416efb25f9" ] .
+    prov:wasInformedBy [ dct:identifier "61eb6dd3-bbdb-4a3d-97e3-5892e295ff15" ] .
 
