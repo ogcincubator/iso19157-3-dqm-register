@@ -7,9 +7,9 @@ transform:
   - 'walk(if type == "object" then with_entries(.key |= sub(" ?: ?"; " ")) else . end)'
   # duplicate id into notation
   - walk(if (type == "object") then
-         ( .notation = .measureIdentifier |
-        .name_id = "\(.measureIdentifier) - \(.name)" )
-        else . end)
+    ( .notation = .measureIdentifier |
+    .name_id = "\(.measureIdentifier) - \(.name)" )
+    else . end)
   # turn known fields with space separated lists into arrays
   - |
     walk(if (type == "object") then
@@ -37,6 +37,7 @@ context:
     policy: http://www.opengis.net/def/metamodel/ogc-na/
     dqm: http://www.opengis.net/def/metamodel/isodqm/
     '@base': https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/
+    targetGraph: 'http://www.opengis.net/ogc-na#targetGraph'
     measureIdentifier: '@id'
     notation: 'http://www.opengis.net/def/metamodel/isodqm/measureID'
     name_id: skos:prefLabel
