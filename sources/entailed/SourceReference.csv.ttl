@@ -1,5 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dqm: <http://www.opengis.net/def/metamodel/isodqm/> .
+@prefix ns1: <http://www.opengis.net/ogc-na#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
@@ -8,25 +9,25 @@
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/SourceReference.csv.ttl> a prov:Entity ;
     dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:50ec9ee9e9129276f5f47a769f15276667d77186" ;
-    prov:wasAttributedTo _:Ne92ef88066d445caa8fdfd9ac36329fe ;
+    dcterms:hasVersion "git:a233676233b1bc0ce649b40c1f18988ac8f0b1ee" ;
+    prov:wasAttributedTo _:Ncccf8684349e4da493158d0e9f8a2371 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-10-28T10:23:33.771492"^^xsd:dateTime ;
-            prov:startedAtTime "2024-10-28T10:23:33.696216"^^xsd:dateTime ;
+            prov:endedAtTime "2024-10-30T11:17:36.904817"^^xsd:dateTime ;
+            prov:startedAtTime "2024-10-30T11:17:36.828566"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:50ec9ee9e9129276f5f47a769f15276667d77186" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl> ],
-                [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:50ec9ee9e9129276f5f47a769f15276667d77186" ;
+                    dcterms:hasVersion "git:a233676233b1bc0ce649b40c1f18988ac8f0b1ee" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
                 [ a prov:Entity ;
-                    rdfs:seeAlso <entailments.shapes.ttl> ] ;
-            prov:wasAssociatedWith _:Ne92ef88066d445caa8fdfd9ac36329fe ;
-            prov:wasInformedBy [ dcterms:identifier "3adeff8e-d849-4554-97a1-e0078896216a" ] ] .
+                    rdfs:seeAlso <entailments.shapes.ttl> ],
+                [ a prov:Entity ;
+                    dcterms:format "text/turtle" ;
+                    dcterms:hasVersion "git:a233676233b1bc0ce649b40c1f18988ac8f0b1ee" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl> ] ;
+            prov:wasAssociatedWith _:Ncccf8684349e4da493158d0e9f8a2371 ;
+            prov:wasInformedBy [ dcterms:identifier "7b10dae0-5e6b-4372-8a69-3908b0356fca" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR1> a dqm:SourceReference,
         skos:Concept ;
@@ -78,23 +79,24 @@
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> ;
     skos:prefLabel "ISO/IEC 25012:2008 Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme .
+<https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure> a skos:ConceptScheme ;
+    ns1:targetGraph "https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-10-28T10:18:52.382474"^^xsd:dateTime ;
-    prov:startedAtTime "2024-10-28T10:18:52.321476"^^xsd:dateTime ;
+    prov:endedAtTime "2024-10-30T11:16:03.265037"^^xsd:dateTime ;
+    prov:startedAtTime "2024-10-30T11:16:03.167068"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dcterms:format "application/json" ;
-            dcterms:hasVersion "git:8a1d5973c88101c70eb813e421d4d5560794ec7e" ;
+            dcterms:hasVersion "git:2e96d5d52fc77ff4ede97202fafae853a8527931" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/SourceReference.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dcterms:hasVersion "0.3.54" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "8304f5df-70f9-48ea-a10f-09416efb25f9" ] .
+    prov:wasInformedBy [ dcterms:identifier "61eb6dd3-bbdb-4a3d-97e3-5892e295ff15" ] .
 
-_:Ne92ef88066d445caa8fdfd9ac36329fe a prov:Agent,
+_:Ncccf8684349e4da493158d0e9f8a2371 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dcterms:hasVersion "0.3.54" ;
