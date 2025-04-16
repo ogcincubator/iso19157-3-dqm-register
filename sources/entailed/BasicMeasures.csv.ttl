@@ -1,4 +1,4 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix ns1: <http://www.opengis.net/def/metamodel/isodqm/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,26 +7,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/BasicMeasures.csv.ttl> a prov:Entity ;
-    dcterms:format "text/turtle" ;
-    dcterms:hasVersion "git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516" ;
-    prov:wasAttributedTo _:N478b246ca35b4e328e378285385ea236 ;
+    dct:format "text/turtle" ;
+    dct:hasVersion "git:dfbc9643d802fd8ee9f76285eefc18196b08d559" ;
+    prov:wasAttributedTo _:N95249d0e66134bcb8ecac84bf865cade ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data" ;
-            prov:endedAtTime "2024-11-18T22:06:39.047110"^^xsd:dateTime ;
-            prov:startedAtTime "2024-11-18T22:06:37.069391"^^xsd:dateTime ;
+            prov:endedAtTime "2025-04-16T07:41:43.095710"^^xsd:dateTime ;
+            prov:startedAtTime "2025-04-16T07:41:41.016110"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ],
-                [ a prov:Entity ;
                     rdfs:seeAlso <entailments.shapes.ttl> ],
                 [ a prov:Entity ;
-                    dcterms:format "text/turtle" ;
-                    dcterms:hasVersion "git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N478b246ca35b4e328e378285385ea236 ;
-            prov:wasInformedBy [ dcterms:identifier "bff70b14-2dfd-44f8-aad1-44dbe60eb0fb" ] ] .
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:dfbc9643d802fd8ee9f76285eefc18196b08d559" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:dfbc9643d802fd8ee9f76285eefc18196b08d559" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/BasicMeasures.csv.ttl> ] ;
+            prov:wasAssociatedWith _:N95249d0e66134bcb8ecac84bf865cade ;
+            prov:wasInformedBy [ dct:identifier "f9a56d60-3571-4fc4-a842-b2d5ce89ea18" ] ] .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/SD1> a ns1:BasicMeasure,
         skos:Concept ;
@@ -83,27 +83,29 @@
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2> ;
     skos:prefLabel "Standard deviation - true value unknown" .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
-
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1e> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2e> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3e> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4e> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
 
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5e> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> .
+
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
+
+<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6e> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd1_LE50> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE50> .
 
@@ -213,8 +215,6 @@
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDsd2_LE99r5> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/LE99r5> .
 
-<https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> .
-
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM1> a ns1:BasicMeasure,
         skos:Concept ;
     ns1:basicMeasureID "BM1" ;
@@ -222,10 +222,10 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Indicator that an item is in error." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False> ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/False>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM1e> ;
     skos:prefLabel "error indicator" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM2> a ns1:BasicMeasure,
@@ -235,10 +235,10 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Number of the erroneous items with respect to the total number of items that should have been present." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme> ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MD2bme>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM2e> ;
     skos:prefLabel "error rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM3> a ns1:BasicMeasure,
@@ -248,10 +248,10 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Total number of items that are subject to an error of a specified type." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11> ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/11>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM3e> ;
     skos:prefLabel "error count" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM4> a ns1:BasicMeasure,
@@ -261,10 +261,10 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Boolean> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Indicator that an item is correct." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
     skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/True> ;
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM4e> ;
     skos:prefLabel "correctness indicator" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM5> a ns1:BasicMeasure,
@@ -274,10 +274,10 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Integer> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Total number of items that are free of errors of a specified type." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571> ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/571>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM5e> ;
     skos:prefLabel "correct items count" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/BM6> a ns1:BasicMeasure,
@@ -287,10 +287,10 @@
     ns1:valueType <http://def.isotc211.org/iso19103/2015/PrimitiveTypes/Real> ;
     skos:broader <https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/BM> ;
     skos:definition "Number of the correct items with respect to the total number of items that should have been present." ;
-    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811> ;
+    skos:example <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6e> ;
     skos:inScheme <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure> ;
-    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/0.9811>,
-        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6> ;
+    skos:narrower <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6>,
+        <https://standards.isotc211.org/19157/-3/1/dqc/content/measureDescription/MDBM6e> ;
     skos:prefLabel "correct items rate" .
 
 <https://standards.isotc211.org/19157/-3/1/dqc/content/basicMeasure/CE39.4> a ns1:BasicMeasure,
@@ -1025,23 +1025,23 @@
     skos:prefLabel "ISO19157-3 basic quality measures" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-11-18T22:05:27.513345"^^xsd:dateTime ;
-    prov:startedAtTime "2024-11-18T22:05:27.389246"^^xsd:dateTime ;
+    prov:endedAtTime "2025-04-16T07:33:49.674717"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-16T07:33:49.551793"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dcterms:format "application/json" ;
-            dcterms:hasVersion "git:1b8ed15c1b8285bc8977ee4385b53966d1cc2b6a" ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:b28a93a470890317ddc3c6fb11baeac316b65559" ;
             rdfs:seeAlso <file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/BasicMeasures.csv.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dcterms:hasVersion "0.3.55" ;
+            dct:hasVersion "0.4" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dcterms:identifier "22bb4d44-9559-4fde-a349-8aa34d2f1a26" ] .
+    prov:wasInformedBy [ dct:identifier "2c364aeb-4d2a-4e54-bb19-1b321f669185" ] .
 
-_:N478b246ca35b4e328e378285385ea236 a prov:Agent,
+_:N95249d0e66134bcb8ecac84bf865cade a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dcterms:hasVersion "0.3.55" ;
-    rdfs:comment "ogc.na.update_vocabs version 0.3.55" ;
+    dct:hasVersion "0.4" ;
+    rdfs:comment "ogc.na.update_vocabs version 0.4" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

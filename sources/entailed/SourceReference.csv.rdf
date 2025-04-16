@@ -1,187 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dct="http://purl.org/dc/terms/"
    xmlns:ns1="http://www.opengis.net/ogc-na#"
    xmlns:prov="http://www.w3.org/ns/prov#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR7">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <dcterms:source rdf:resource="https://www.iso.org/standard/35736.html"/>
-    <skos:prefLabel>ISO/IEC 25012:2008 Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model</skos:prefLabel>
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N20ee6d8999f7459782ca400bec6ff2b6">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl"/>
-    <dcterms:hasVersion>git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR4">
-    <skos:prefLabel>ISO 19115-1 Geographic information - Metadata - Part 1: Fundamentals</skos:prefLabel>
-    <dcterms:source rdf:resource="https://schemas.isotc211.org/19115/-1/mmi/1.3.0/"/>
+    <dct:source rdf:resource="https://schemas.isotc211.org/19115/-1/mmi/1.3.0/"/>
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
     <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
+    <skos:prefLabel>ISO 19115-1 Geographic information - Metadata - Part 1: Fundamentals</skos:prefLabel>
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N19e140b323664904b606bb4b453a3458">
-    <prov:used rdf:nodeID="N20ee6d8999f7459782ca400bec6ff2b6"/>
-    <prov:used rdf:nodeID="Nc185be3c36424c0c90c325f9ed5d4218"/>
-    <prov:used rdf:nodeID="Ne845c06a45da454da0f6ce8ecaf90254"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-18T22:06:23.736528</prov:startedAtTime>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-18T22:06:23.842582</prov:endedAtTime>
-    <prov:wasInformedBy rdf:nodeID="N1e81aec1893c4421bfacf0a0bbb18d7f"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-    <prov:wasAssociatedWith rdf:nodeID="Nf38da6fc89a14c369fb9d801b6d31c73"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N75dd5999757b42fcaac777df6abaab02">
-    <rdfs:label>Entailment and validation</rdfs:label>
-    <prov:used rdf:nodeID="Nbbcf0d9d65d24b61b6005094f0dca8d5"/>
-    <prov:used rdf:nodeID="N2cd7ed6532e3485181a7917e24a765e2"/>
-    <prov:used rdf:nodeID="Nd2a5b90f049a426c87bb0951b5d4f749"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-18T22:06:23.828009</prov:endedAtTime>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-18T22:06:23.736528</prov:startedAtTime>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:wasAssociatedWith rdf:nodeID="N475c3c17f8794c4eb6fea3caf9bed9bd"/>
-    <prov:wasInformedBy rdf:nodeID="N61b3559d43d84e2ebe9532070eb16ef1"/>
-    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="na3e75ad495774d2eba35d973014b26aab3">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <dcterms:hasVersion>0.3.55</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="na3e75ad495774d2eba35d973014b26aab2">
-    <dcterms:format>application/json</dcterms:format>
-    <dcterms:hasVersion>git:1b8ed15c1b8285bc8977ee4385b53966d1cc2b6a</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/SourceReference.csv.json"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2cd7ed6532e3485181a7917e24a765e2">
-    <dcterms:hasVersion>git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516</dcterms:hasVersion>
-    <dcterms:format>text/turtle</dcterms:format>
+  <rdf:Description rdf:nodeID="N847b1cec2fa34b1c88f0538a1c271b8f">
+    <dct:format>text/turtle</dct:format>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dct:hasVersion>git:dfbc9643d802fd8ee9f76285eefc18196b08d559</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR2">
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <dct:source rdf:resource="https://www.ordnancesurvey.co.uk/documents/os-mastermap-real-world-object-catalogue.pdf"/>
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
+    <skos:prefLabel>Ordnance Survey topo-96 (2007), redefined
+</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/SourceReference.csv.ttl">
+    <prov:wasGeneratedBy rdf:nodeID="Nc0907d4db4384e4981a191728f2b982a"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+    <prov:wasAttributedTo rdf:nodeID="N6446e36e10784aa7bd489f886e184d18"/>
+    <dct:hasVersion>git:dfbc9643d802fd8ee9f76285eefc18196b08d559</dct:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N143f5b88999e41ecb80be6c0a3576587">
+    <dct:identifier>f9a56d60-3571-4fc4-a842-b2d5ce89ea18</dct:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR3">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
+    <dct:source rdf:resource="https://doi.org/10.5593/sgem2017/21/S08.112"/>
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
+    <skos:prefLabel>Exploring subset profile and validation procedures of geographical markup language (GML) for 3D areal plan information. </skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR5">
+    <dct:source rdf:resource="https://doi.org/10.1016/j.jag.2022.103094"/>
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <skos:prefLabel>Yujun Hou and Filip Biljecki (2022). A comprehensive framework for evaluating the quality of street view imagery</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne056fddb3e5641c1a421c86b6d19f890">
+    <prov:used rdf:nodeID="Nd4fd10df71d8435a8b0c6701cadc7c18"/>
+    <prov:used rdf:nodeID="N28b12e218f304854ad114b547e653172"/>
+    <prov:used rdf:nodeID="N45510b010a71428ab8ef6afd05d37710"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T07:41:33.858080</prov:startedAtTime>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T07:41:33.944883</prov:endedAtTime>
+    <prov:wasInformedBy rdf:nodeID="N0f27d405a58848ce95ec5afcdff4b1dc"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:wasAssociatedWith rdf:nodeID="N9a06fb6de5914f49b5acf38284467de7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0907d4db4384e4981a191728f2b982a">
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T07:41:33.933808</prov:endedAtTime>
+    <rdfs:label>Entailment and validation</rdfs:label>
+    <prov:used rdf:nodeID="N847b1cec2fa34b1c88f0538a1c271b8f"/>
+    <prov:used rdf:nodeID="Na5a5b985694f490c9f34de53d1d1cef4"/>
+    <prov:used rdf:nodeID="N32c4839e017742eaa3821804caf7c828"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:wasInformedBy rdf:nodeID="N143f5b88999e41ecb80be6c0a3576587"/>
+    <prov:wasAssociatedWith rdf:nodeID="N6446e36e10784aa7bd489f886e184d18"/>
+    <rdfs:comment>python ogc.na.update_vocabs -w . .ogc/catalog.ttl --batch --base-uri https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master --update --graph-store http://defs-dev.opengis.net:8061/fuseki-hosted/data</rdfs:comment>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T07:41:33.858080</prov:startedAtTime>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR1">
     <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
-    <dcterms:source rdf:resource="https://standards.globalspec.com/std/1296998/stanag-2215"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel>NATO STANAG 2215 IGEO</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR5">
     <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
-    <dcterms:source rdf:resource="https://doi.org/10.1016/j.jag.2022.103094"/>
-    <skos:prefLabel>Yujun Hou and Filip Biljecki (2022). A comprehensive framework for evaluating the quality of street view imagery</skos:prefLabel>
+    <dct:source rdf:resource="https://standards.globalspec.com/std/1296998/stanag-2215"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc185be3c36424c0c90c325f9ed5d4218">
-    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
-    <dcterms:hasVersion>git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516</dcterms:hasVersion>
+  <rdf:Description rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b1">
+    <prov:wasInformedBy rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b4"/>
+    <prov:wasAssociatedWith rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b3"/>
+    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T07:33:49.484505</prov:endedAtTime>
+    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T07:33:49.383188</prov:startedAtTime>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <prov:used rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5a5b985694f490c9f34de53d1d1cef4">
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>text/turtle</dcterms:format>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N475c3c17f8794c4eb6fea3caf9bed9bd">
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.55</rdfs:comment>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <dcterms:hasVersion>0.3.55</dcterms:hasVersion>
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd2a5b90f049a426c87bb0951b5d4f749">
-    <dcterms:format>text/turtle</dcterms:format>
+    <dct:hasVersion>git:dfbc9643d802fd8ee9f76285eefc18196b08d559</dct:hasVersion>
+    <dct:format>text/turtle</dct:format>
     <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b2">
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:hasVersion>git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516</dcterms:hasVersion>
+    <rdfs:seeAlso rdf:resource="file:///home/runner/work/iso19157-3-dqm-register/iso19157-3-dqm-register/sources/SourceReference.csv.json"/>
+    <dct:hasVersion>git:b28a93a470890317ddc3c6fb11baeac316b65559</dct:hasVersion>
+    <dct:format>application/json</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6446e36e10784aa7bd489f886e184d18">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dct:hasVersion>0.4</dct:hasVersion>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.4</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N32c4839e017742eaa3821804caf7c828">
+    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28b12e218f304854ad114b547e653172">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/.ogc/catalog.ttl"/>
+    <dct:hasVersion>git:dfbc9643d802fd8ee9f76285eefc18196b08d559</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR6">
+    <skos:prefLabel>Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide</skos:prefLabel>
+    <dct:source rdf:resource="https://support.esri.com/en-us/technical-paper/plts-gis-data-reviewer-4-2-528"/>
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR7">
+    <dct:source rdf:resource="https://www.iso.org/standard/35736.html"/>
+    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
+    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>ISO/IEC 25012:2008 Software engineering — Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b3">
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <dct:hasVersion>0.4</dct:hasVersion>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4fd10df71d8435a8b0c6701cadc7c18">
+    <rdfs:seeAlso rdf:resource="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/SourceReference.csv.ttl"/>
+    <dct:hasVersion>git:dfbc9643d802fd8ee9f76285eefc18196b08d559</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>text/turtle</dct:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/SourceReference.csv.rdf">
+    <dct:hasVersion>git:dfbc9643d802fd8ee9f76285eefc18196b08d559</dct:hasVersion>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <dct:format>application/rdf+xml</dct:format>
+    <prov:wasGeneratedBy rdf:nodeID="Ne056fddb3e5641c1a421c86b6d19f890"/>
+    <prov:wasAttributedTo rdf:nodeID="N9a06fb6de5914f49b5acf38284467de7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a06fb6de5914f49b5acf38284467de7">
+    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
+    <rdfs:label>OGC-NA tools</rdfs:label>
+    <rdfs:comment>ogc.na.update_vocabs version 0.4</rdfs:comment>
+    <dct:hasVersion>0.4</dct:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure">
     <ns1:targetGraph>https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource</ns1:targetGraph>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/SourceReference.csv.rdf">
-    <dcterms:hasVersion>git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <dcterms:format>application/rdf+xml</dcterms:format>
-    <prov:wasGeneratedBy rdf:nodeID="N19e140b323664904b606bb4b453a3458"/>
-    <prov:wasAttributedTo rdf:nodeID="Nf38da6fc89a14c369fb9d801b6d31c73"/>
+  <rdf:Description rdf:nodeID="N0f27d405a58848ce95ec5afcdff4b1dc">
+    <dct:identifier>f9a56d60-3571-4fc4-a842-b2d5ce89ea18</dct:identifier>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="na3e75ad495774d2eba35d973014b26aab1">
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-18T22:05:27.897099</prov:startedAtTime>
-    <prov:wasInformedBy rdf:nodeID="na3e75ad495774d2eba35d973014b26aab4"/>
-    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-18T22:05:27.957876</prov:endedAtTime>
-    <prov:used rdf:nodeID="na3e75ad495774d2eba35d973014b26aab2"/>
-    <prov:wasAssociatedWith rdf:nodeID="na3e75ad495774d2eba35d973014b26aab3"/>
+  <rdf:Description rdf:nodeID="n1f048e2d0159419683e379cf7b861d03b4">
+    <dct:identifier>2c364aeb-4d2a-4e54-bb19-1b321f669185</dct:identifier>
   </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR3">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
-    <skos:prefLabel>Exploring subset profile and validation procedures of geographical markup language (GML) for 3D areal plan information. </skos:prefLabel>
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <dcterms:source rdf:resource="https://doi.org/10.5593/sgem2017/21/S08.112"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR6">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:prefLabel>Environmental Systems Research Institute, Inc (ERSI) GSI Data ReViewer 4.2 User Guide</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
-    <dcterms:source rdf:resource="https://support.esri.com/en-us/technical-paper/plts-gis-data-reviewer-4-2-528"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N61b3559d43d84e2ebe9532070eb16ef1">
-    <dcterms:identifier>bff70b14-2dfd-44f8-aad1-44dbe60eb0fb</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://standards.isotc211.org/19157/-3/1/dqc/content/onlineResource/SR2">
-    <skos:inScheme rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure"/>
-    <skos:broader rdf:resource="https://standards.isotc211.org/19157/-3/1/dqc/content/qualityMeasure/Source"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.opengis.net/def/metamodel/isodqm/SourceReference"/>
-    <skos:prefLabel>Ordnance Survey topo-96 (2007), redefined
-</skos:prefLabel>
-    <dcterms:source rdf:resource="https://www.ordnancesurvey.co.uk/documents/os-mastermap-real-world-object-catalogue.pdf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/ogcincubator/iso19157-3-dqm-register/master/sources/entailed/SourceReference.csv.ttl">
-    <dcterms:format>text/turtle</dcterms:format>
-    <prov:wasAttributedTo rdf:nodeID="N475c3c17f8794c4eb6fea3caf9bed9bd"/>
-    <dcterms:hasVersion>git:3fcb2ca90c114402a2bafe952bd8a0e0680aa516</dcterms:hasVersion>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <prov:wasGeneratedBy rdf:nodeID="N75dd5999757b42fcaac777df6abaab02"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf38da6fc89a14c369fb9d801b6d31c73">
-    <rdfs:seeAlso rdf:resource="https://github.com/opengeospatial/ogc-na-tools"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdf:type rdf:resource="https://schema.org/SoftwareApplication"/>
-    <rdfs:label>OGC-NA tools</rdfs:label>
-    <rdfs:comment>ogc.na.update_vocabs version 0.3.55</rdfs:comment>
-    <dcterms:hasVersion>0.3.55</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="na3e75ad495774d2eba35d973014b26aab4">
-    <dcterms:identifier>22bb4d44-9559-4fde-a349-8aa34d2f1a26</dcterms:identifier>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbbcf0d9d65d24b61b6005094f0dca8d5">
+  <rdf:Description rdf:nodeID="N45510b010a71428ab8ef6afd05d37710">
     <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne845c06a45da454da0f6ce8ecaf90254">
-    <rdfs:seeAlso rdf:resource="entailments.shapes.ttl"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1e81aec1893c4421bfacf0a0bbb18d7f">
-    <dcterms:identifier>bff70b14-2dfd-44f8-aad1-44dbe60eb0fb</dcterms:identifier>
   </rdf:Description>
 </rdf:RDF>
